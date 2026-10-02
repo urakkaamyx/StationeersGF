@@ -1,0 +1,55 @@
+<GameData>
+	<!--	
+	<Sell Value="75" Id="CircuitNameHere">
+		<Name Value="Integrated Circuit (Name Here)"/>
+		<Stock Min="1" Max="1"/>
+		<Chance Value="0.5"/>
+		<Item Id="ItemIntegratedCircuit10">
+			<SourceCode>
+				<Text>
+				</Text>
+			</SourceCode>
+		</Item>
+	</Sell>
+	-->
+	
+	<Sell Value="75" Id="CircuitSolarPanels01">
+		<Name Value="Integrated Circuit (Solar Panel Tracking)"/>
+		<Stock Min="1" Max="1"/>
+		<Chance Value="0.5"/>
+		<Item Id="ItemIntegratedCircuit10">
+			<SourceCode>
+				<Text># SOLAR PANEL CONTROL
+# Author: BigfootMSR
+# Description: Automated solar panel tracking
+# Place the Daylight Sensor flat on the ground with the face toward the sky.
+alias Sensor d0 # assign to a daylight sensor
+
+# change horizoffset increments of 90
+# if needed to align with the sun: (0,90,180,270)
+define horizoffset 0
+
+Loop:
+yield
+#Vertical angle adjustments
+l r0 Sensor Vertical
+sub r0 90 r0
+sb HASH("StructureSolarPanel") Vertical r0 #Regular panel
+sb HASH("StructureSolarPanelDual") Vertical r0 #Reg dual panels
+sb HASH("StructureSolarPanelReinforced") Vertical r0 #Heavy panel
+sb HASH("StructureSolarPanelDualReinforced") Vertical r0 #Heavy dual panels
+
+#Horizontal Angle adjustments
+l r0 Sensor Horizontal
+add r0 r0 horizoffset
+sb HASH("StructureSolarPanel") Horizontal r0 #reg panel
+sb HASH("StructureSolarPanelDual") Horizontal r0 #reg dual panels
+sb HASH("StructureSolarPanelReinforced") Horizontal r0 #Heavy panel
+sb HASH("StructureSolarPanelDualReinforced") Horizontal r0 #Heavy dual panels
+j Loop</Text>
+			</SourceCode>
+		</Item>
+	</Sell>
+	
+	
+</GameData>

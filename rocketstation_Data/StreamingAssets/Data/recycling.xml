@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RecycleRecipes>
+<!--
+    <RecipeData>
+      <PrefabName>ItemIronIngot</PrefabName>
+      <Recipe>
+        <Flour>0</Flour>
+        <Milk>0</Milk>
+        <Egg>0</Egg>
+        <Iron>1</Iron>
+        <Gold>0</Gold>
+        <Carbon>0</Carbon>
+        <Uranium>0</Uranium>
+        <Copper>0</Copper>
+        <Steel>0</Steel>
+        <Hydrocarbon>0</Hydrocarbon>
+        <Silver>0</Silver>
+        <Nickel>0</Nickel>
+        <Lead>0</Lead>
+        <Electrum>0</Electrum>
+        <Invar>0</Invar>
+        <Constantan>0</Constantan>
+        <Solder>0</Solder>
+        <Plastic>0</Plastic>
+        <Silicon>0</Silicon>
+        <SalicylicAcid>0</SalicylicAcid>
+        <Alcohol>0</Alcohol>
+        <Oil>0</Oil>
+        <Time>1</Time>
+        <Energy>400</Energy>
+        <Temperature>
+          <Start>0</Start>
+          <Stop>0</Stop>
+        </Temperature>
+        <Pressure>
+          <Start>0</Start>
+          <Stop>0</Stop>
+        </Pressure>
+      </Recipe>
+    </RecipeData>
+-->
+  </RecycleRecipes>
+</GameData>

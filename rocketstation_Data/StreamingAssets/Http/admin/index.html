@@ -1,0 +1,255 @@
+<!--
+Stationeers Dedicated Server Remote Administrator was customized in basis on CUDLR. 
+https://github.com/proletariatgames/CUDLR
+
+[v0.12 11-12-2017]
+- Added ban/unban/kick commands
+
+[v0.11 10-12-2017]
+- Added remote control password.
+RCONPASSWORD is defined in default.ini
+[RCON]
+RCONPASSWORD=Stationeers
+- Added status command
+
+[v0.10 09-12-2017]
+- Added save, shutdown, notice commands
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+	<style>
+	table {
+		border-collapse: collapse;
+	}
+
+	table, td, th {
+		border: 1px solid white;
+	}
+	</style>
+    <link rel="stylesheet" type="text/css" href="console.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-image">
+    <link rel="icon" href="favicon.icon" type="image/x-image">
+    <title>Stationeers Dedicated Server Remote Administrator v0.16</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+
+    <script>
+      var commandIndex = -1;
+      var hash = null;
+      var isUpdatePaused = false;
+	  var welcomeMessage = "Stationeers Dedicated Server Remote Administrator v0.16<br>";
+	  var help = 
+		"<table><tr>" +
+		"<th>command</th>" +
+		"<th>parameter</th>" +
+		"<th>details</th>" +
+		"</tr><tr>" +
+		"<td>help</td>" +
+		"<td></td>" +
+		"<td>Print help commands<br></td>" +
+		"</tr><tr>" +
+		"<td>login</td>" +
+		"<td>password</td>" +
+		"<td>RCONPASSWORD is defined in default.ini.<br>Default rcon password is stationeers.<br></td>" +
+		"</tr><tr>" +
+		"<td>save</td>" +
+		"<td>worldname</td>" +
+		"<td>Save world to basedirectory<br>When basedirectory is \"C:\Profile\Player1\",<br>>> save \"Moon 2\"<br>Save world to \"C:\Profile\Player1\Moon 2\"<br>>> save Moon<br>Save world to \"C:\Profile\Player1\Moon\"<br></td>" +
+		"</tr><tr>" +
+		"<td>shutdown</td>" +
+		"<td>[-m message] [-t timeout in seconds]</td>" +
+		"<td>Shutdown dedicated server. <br>If you run this command without any parameters,<br>dedicated server will shutdown immediately.<br>Countdown starts from 10 seconds.<br>>> shutdown -m \"Server will shutdown in 30 seconds\" -t 30<br></td>" +
+		"</tr><tr>" +
+		"<td>notice</td>" +
+		"<td>message</td>" +
+		"<td>Notice to all players.<br>>> notice \"Welcome to Stationeers!\"<br></td>" +
+		"</tr><tr>" +
+		"<td>status</td>" +
+		"<td></td>" +
+		"<td>Display game state and player lists.</td>" +
+		"</tr><tr>" +
+		"<td>ban</td>" +
+		"<td>steamdId timeout</td>" +
+		"<td>Ban player for specific time. Timeout is double in hour.<br>0.5 is 30 minutes. 0 is infinite. <br>>> ban 76561198299941358 0.5<br></td>" +
+		"</tr><tr>" +
+		"<td>unban</td>" +
+		"<td>steamId</td>" +
+		"<td>Remove player from the ban lists<br></td>" +
+		"</tr><tr>" +
+		"<td>kick</td>" +
+		"<td>steamId</td>" +
+		"<td>Kick player from the current server<br></td>" +
+		"</tr><tr>" +
+		"<td>clearall</td>" +
+		"<td></td>" +
+		"<td>Delete disconnected players<br></td>" +
+		"</tr><tr>" +
+		"<td>hungerRate&nbsp</td>" +
+		"<td>hunger rate</td>" +
+		"<td>Set hunger rate of server. 0 to disable hunger, </br>higher numbers to make hunger drop more quickly.</br></td>" +
+		"</tr><tr>" +
+		"<td>pause&nbsp</td>" +
+		"<td>pause</td>" +
+		"<td>Pause game play</td>" +
+		"</tr><tr>" +
+		"<td>resume&nbsp</td>" +
+		"<td>resume</td>" +
+		"<td>Resume game play</td>" +
+		"</tr><tr>" +
+		"</tr></table>";
+	  
+	  function printWelcome() {
+		var output = $('#output');
+          shouldScroll = Math.abs((output[0].scrollHeight - output.scrollTop()) - output.innerHeight()) < 5;
+          output.html(document.getElementById('output').innerHTML + String(welcomeMessage) + "<br>");
+          if (shouldScroll) scrollBottom();
+	  }
+	  
+	  function printHelp() {
+		var output = $('#output');
+          shouldScroll = Math.abs((output[0].scrollHeight - output.scrollTop()) - output.innerHeight()) < 5;
+          output.html(document.getElementById('output').innerHTML + String(help) + "<br>");
+          if (shouldScroll) scrollBottom();
+	  }
+	  
+      function scrollBottom() {
+        $('#output').scrollTop($('#output')[0].scrollHeight);
+      }
+
+	  
+      function runCommand(command) {
+        scrollBottom();
+		if (command == "help"){
+			printHelp();
+			resetInput();
+			return;
+		}
+		
+		if (command == "clear"){
+			var output = $('#output');
+			shouldScroll = Math.abs((output[0].scrollHeight - output.scrollTop()) - output.innerHeight()) < 5;
+			output.html("");
+			if (shouldScroll) scrollBottom();
+			resetInput();
+			return;
+		}
+
+        $.get("console/run?command="+encodeURI(encodeURIComponent(command)), function (data, status) {
+          // Check if we are scrolled to the bottom to force scrolling on update
+          var output = $('#output');
+          shouldScroll = Math.abs((output[0].scrollHeight - output.scrollTop()) - output.innerHeight()) < 5;
+          output.html(document.getElementById('output').innerHTML + String(data).replace(/\n|\r/g, '<br>') + "<br>");
+          console.log(shouldScroll + " := " + output[0].scrollHeight + " - " + output.scrollTop() + " (" + Math.abs((output[0].scrollHeight - output.scrollTop()) - output.innerHeight()) + ") == " + output.innerHeight());
+
+          if (shouldScroll) scrollBottom();
+          //updateConsole(function () {
+          //  updateCommand(commandIndex - 1);
+          //});
+        });
+        resetInput();
+      }
+
+      function updateConsole(callback) {
+        if (isUpdatePaused) return;
+        $.get("console/out", function (data, status) {
+          // Check if we are scrolled to the bottom to force scrolling on update
+          var output = $('#output');
+          shouldScroll = Math.abs((output[0].scrollHeight - output.scrollTop()) - output.innerHeight()) < 5;
+          output.html(String(data).replace(/\n|\r/g, '<br>') + "<br>");
+          //console.log(shouldScroll + " := " + output[0].scrollHeight + " - " + output.scrollTop() + " (" + Math.abs((output[0].scrollHeight - output.scrollTop()) - output.innerHeight()) + ") == " + output.innerHeight());
+          //console.log(String(data));
+          if (callback) callback();
+          if (shouldScroll) scrollBottom();
+        });
+      }
+
+      function resetInput() {
+        commandIndex = -1;
+        $("#input").val("");
+      }
+
+      function previousCommand() {
+        updateCommand(commandIndex + 1);
+      }
+
+      function nextCommand() {
+        updateCommand(commandIndex - 1);
+      }
+
+      function updateCommand(index) {
+        // Check if we are at the defualt index and clear the input
+        if (index < 0) {
+          resetInput();
+          return;
+        }
+
+        //$.get("console/commandHistory?index="+index, function (data, status) {
+        //  if (data) {
+        //    commandIndex = index;
+        //    $("#input").val(String(data));
+        //  }
+        //});
+      }
+
+      function complete(command) {
+        $.get("console/complete?command="+command, function (data, status) {
+          if (data) {
+            $("#input").val(String(data));
+          }
+        });
+      }
+
+      // Poll to update the console output
+      //window.setInterval(function () { updateConsole(null) }, 5000);
+    </script>
+  </head>
+
+  <body class="console">
+    <!--<button id="pauseUpdates">Resume Updates</button>-->
+    <div id="output" class="console"></div>
+    <textarea id="input" class="console" autofocus rows="1"></textarea>
+    <script>
+      // setup our pause updates button      
+	  //$("#pauseUpdates").click(function() {
+        //console.log("pause updates " + isUpdatePaused);
+        //isUpdatePaused = !isUpdatePaused;
+        //$("#pauseUpdates").html(isUpdatePaused ? "Resume Updates" : "Pause Updates");
+      //});
+
+      $("#input").keydown( function (e) {
+        if (e.keyCode == 13) { // Enter
+          // we don't want a line break in the console
+          e.preventDefault();
+		  // don't print password
+		  if ($("#input").val().indexOf("login") == -1)
+		  {
+			  // print current command before sending
+			  var timestamp = new Date().toUTCString();
+			  var output = $('#output');
+			  shouldScroll = Math.abs((output[0].scrollHeight - output.scrollTop()) - output.innerHeight()) < 5;
+			  output.html(document.getElementById('output').innerHTML + timestamp + "> " + String($("#input").val()).replace(/\n|\r/g, '<br>') + "<br>");
+			  if (shouldScroll) scrollBottom();
+		  }
+		  // send command
+          runCommand($("#input").val());
+        } else if (e.keyCode == 38) { // Up
+          previousCommand();
+        } else if (e.keyCode == 40) { // Down
+          nextCommand();
+        } else if (e.keyCode == 27) { // Escape
+          resetInput();
+        } else if (e.keyCode == 9) { // Tab
+          e.preventDefault();
+          complete($("#input").val());
+        }
+      });
+	  //$('#output').height(600)
+	  printWelcome();
+	  printHelp();
+    </script>
+  </body>
+
+</html>

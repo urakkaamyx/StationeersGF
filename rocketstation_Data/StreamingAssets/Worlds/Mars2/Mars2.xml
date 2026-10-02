@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WorldSettings>
+
+        <World Id="Mars2" Priority="1" Hidden="false">
+            <AmbienceSound>Mars</AmbienceSound>
+            <Name Key="NewWorldAreaMars" />
+            <Description Key="NewWorldMarsShortDesc" />
+            <ShortDescription Key="MarsWorldDescriptionShort"/>
+            <Rating Key="WorldRatingBeginner" Color="Green" />
+            <PreviewButton Path="Interface/preview_mars.png" Format="RGB24"/>
+            <StartCondition Id="DefaultStart" IsDefault="true"/>
+            <StartCondition Id="Brutal"/>
+            <StartCondition Id="DefaultStartCommunity"/>
+            <StartCondition Id="BrutalCommunity"/>
+<!--            <StartCondition Id="TerrainEdit"/>-->
+            <WorldObjective Id="ManufacturingBasics"/>
+            <WorldObjective Id="Stations"/>
+            <WorldObjective Id="Trading"/>
+            <WorldObjective Id="Concepts"/>
+            <SpaceMap Id="MarsSpaceMap"/>
+            <GlobalAtmosphere>
+                <Temperature>
+                    <Key Time="0" Value="261" InTangent="0" OutTangent="0" InWeight="0.6" OutWeight="0.2" WeightedMode="Both" />
+                    <Key Time="120" Value="240" InTangent="0" OutTangent="0" InWeight="0.3" OutWeight="0" WeightedMode="In" />
+                </Temperature>
+                <SolarRadiationTemperature>
+                    <Day>
+                        <Key Time="0" Value="0" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0" WeightedMode="None" />
+                        <Key Time="100" Value="10" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0" WeightedMode="None" />
+                    </Day>
+                    <Night>
+                        <Key Time="0" Value="5" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0" WeightedMode="None" />
+                        <Key Time="100" Value="10" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0" WeightedMode="None" />
+                    </Night>
+                </SolarRadiationTemperature>
+                <GHGTemperatureOffset>
+                    <Day>
+                        <Key Time="-100" Value="-50" InTangent="0" OutTangent="-0.2" InWeight="0" OutWeight="0.3" WeightedMode="Both" />
+                        <Key Time="0" Value="0" InTangent="1.5" OutTangent="0" InWeight="0" OutWeight="0.1" WeightedMode="Both" />
+                        <Key Time="100" Value="250" InTangent="0" OutTangent="0" InWeight="0.5" OutWeight="0" WeightedMode="Both" />
+                    </Day>
+                    <Night>
+                        <Key Time="-100" Value="-50" InTangent="0" OutTangent="-0.2" InWeight="0" OutWeight="0.3" WeightedMode="Both" />
+                        <Key Time="0" Value="0" InTangent="1.5" OutTangent="0" InWeight="0" OutWeight="0.1" WeightedMode="Both" />
+                        <Key Time="100" Value="250" InTangent="0" OutTangent="0" InWeight="0.5" OutWeight="0" WeightedMode="Both" />
+                    </Night>
+                </GHGTemperatureOffset>
+                <DensityOffset>
+                    <Day>
+                        <Key Time="0" Value="50" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0.01" WeightedMode="Both" />
+                        <Key Time="1.2" Value="15" InTangent="0" OutTangent="-0.9" InWeight="0.3" OutWeight="0.1" WeightedMode="Both" />
+                        <Key Time="100" Value="-10" InTangent="0" OutTangent="0" InWeight="0.9" OutWeight="0" WeightedMode="Both" />
+                    </Day>
+                    <Night>
+                        <Key Time="0" Value="-60" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0.01" WeightedMode="Both" />
+                        <Key Time="1.2" Value="-25" InTangent="0" OutTangent="1.1" InWeight="0.3" OutWeight="0.25" WeightedMode="Both" />
+                        <Key Time="100" Value="10" InTangent="0.2" OutTangent="0" InWeight="0.1" OutWeight="0" WeightedMode="Both" />
+                    </Night>
+                </DensityOffset>
+                <Gas>
+                    <Gas Type="CarbonDioxide" Quantity="8.66" />
+                    <Gas Type="Nitrogen" Quantity="0.27" />
+                    <Gas Type="Oxygen" Quantity="0.131" />
+                    <Gas Type="Pollutant" Quantity="0.058" />
+                </Gas>
+            </GlobalAtmosphere>
+            <SkyBoxMaterialName>MarsSky</SkyBoxMaterialName>
+            <SetSunInSkybox>true</SetSunInSkybox>
+            <SunPrefabName>MarsSun</SunPrefabName>
+            <TerrainPrefabName>TerrainMars</TerrainPrefabName>
+            <Gravity>-3.7</Gravity>
+            <Skybox />
+            <CelestialConstants BodyScale="5.5">
+                <TimeOffset Minutes="18" Seconds="0" />
+            </CelestialConstants>
+            <PlayableBody Id="Mars" Latitude="13.5" Longitude="-17.1" />
+            <CelestialBodies>
+                <Sprite Id="Mercury" Magnitude="1.5" />
+                <Sprite Id="Venus" Magnitude="1.2" />
+                <Sprite Id="Earth" Magnitude="1" />
+                <!--				<Body Id="Mars">-->
+                <!--					<FixedRotation x="0.436" y="0.9" z="0" Speed="359.91" />-->
+                <!--				</Body>-->
+                <Body Id="Mars">
+                    <SynodicRotation x="0.436" y="0.9" z="0" Days="1.02749125"  />
+                </Body>
+                <RockyBody Id="Phobos" Parent="Mars" RadiusKm="12.1" CanOccult="false">
+                    <FixedRotation x="0" y="1" z="0" Speed="1129.2" />
+                    <Mesh Id="Asteroid" />
+                    <Emissive Value="3" />
+                    <Texture Path="Textures/phobos_diffuse.png" Format="DXT1" LoadType="OnRequest"/>
+                    <Normal Path="Textures/phobos_normal.png" LoadType="OnRequest"/>
+                </RockyBody>
+                <RockyBody Id="Deimos" Parent="Mars" RadiusKm="6.2" CanOccult="false">
+                    <Mesh Id="Asteroid" />
+                    <Emissive Value="3" />
+                    <Texture Path="Textures/phobos_diffuse.png" Format="DXT1" LoadType="OnRequest"/>
+                    <Normal Path="Textures/phobos_normal.png" LoadType="OnRequest"/>
+                </RockyBody>
+                <Sprite Id="Jupiter" Magnitude="1" />
+                <Sprite Id="Saturn" Magnitude="1" />
+                <Sprite Id="Uranus" SMagnitudeize="1.2" />
+                <Sprite Id="Neptune" Magnitude="1.2" />
+                <Sprite Id="Pluto" Magnitude="3.5" />
+            </CelestialBodies>
+            <WeatherEvent Id="MarsDustStorm"/>
+            <Stars>
+                <Star FadeHeight="400" />
+                <Star FadeHeight="400" />
+            </Stars>
+            <AmbientLighting>
+                <Sky r="0.1911765" g="0.1552097" b="0.1419766" />
+                <Equator r="0.08823532" g="0.05644465" b="0.05644465" />
+                <Ground r="0.02941179" g="0.02941179" b="0.02941179" />
+            </AmbientLighting>
+            <AtmosphericScattering>true</AtmosphericScattering>
+            <AtmosphericScatteringData>
+                <RayleighColorRampColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.5647059</r>
+                            <g>0.447058827</g>
+                            <b>0.447058827</b>
+                            <a>1</a>
+                        </color>
+                        <time>0.00588998245</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.272058845</r>
+                            <g>0.158034176</g>
+                            <b>0.158034176</b>
+                            <a>1</a>
+                        </color>
+                        <time>1</time>
+                    </GradientColorKey>
+                </RayleighColorRampColorKey>
+                <RayleighColorRampAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>1</alpha>
+                        <time>0</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>1</alpha>
+                        <time>1</time>
+                    </GradientAlphaKey>
+                </RayleighColorRampAlphaKey>
+                <RayleighColorRampMode>Blend</RayleighColorRampMode>
+                <WorldRayleighColorIntensity>1</WorldRayleighColorIntensity>
+                <WorldRayleighDensity>1200</WorldRayleighDensity>
+                <WorldRayleighExtinctionFactor>0.82</WorldRayleighExtinctionFactor>
+                <WorldRayleighIndirectScatter>0.4</WorldRayleighIndirectScatter>
+                <WorldMieColorIntensity>1</WorldMieColorIntensity>
+                <MieColorRampColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>1</r>
+                            <g>0.117647059</g>
+                            <b>0.117647059</b>
+                            <a>1</a>
+                        </color>
+                        <time>0</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>1</r>
+                            <g>0.549019635</g>
+                            <b>0.235294119</b>
+                            <a>1</a>
+                        </color>
+                        <time>1</time>
+                    </GradientColorKey>
+                </MieColorRampColorKey>
+                <MieColorRampAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>1</alpha>
+                        <time>0</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>1</alpha>
+                        <time>1</time>
+                    </GradientAlphaKey>
+                </MieColorRampAlphaKey>
+                <MieColorRampMode>Blend</MieColorRampMode>
+                <WorldMieDensity>2.07</WorldMieDensity>
+                <WorldMieExtinctionFactor>1</WorldMieExtinctionFactor>
+                <WorldMiePhaseAnisotropy>0.57</WorldMiePhaseAnisotropy>
+                <WorldNearScatterPush>5.2</WorldNearScatterPush>
+                <WorldNormalDistance>1000</WorldNormalDistance>
+                <HeightRayleighColor>
+                    <r>0.4044118</r>
+                    <g>0.175709948</g>
+                    <b>0</b>
+                    <a>1</a>
+                </HeightRayleighColor>
+                <HeightRayleighIntensity>1</HeightRayleighIntensity>
+                <HeightRayleighDensity>42.3</HeightRayleighDensity>
+                <HeightMieDensity>15.99</HeightMieDensity>
+                <HeightExtinctionFactor>0</HeightExtinctionFactor>
+                <HeightSeaLevel>108.19</HeightSeaLevel>
+                <HeightDistance>80</HeightDistance>
+                <HeightPlaneShift>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </HeightPlaneShift>
+                <HeightNearScatterPush>10.8</HeightNearScatterPush>
+                <HeightNormalDistance>1000</HeightNormalDistance>
+                <UseOcclusion>false</UseOcclusion>
+                <OcclusionBias>0</OcclusionBias>
+                <OcclusionBiasIndirect>0.8</OcclusionBiasIndirect>
+                <OcclusionBiasClouds>0.1</OcclusionBiasClouds>
+                <OcclusionDownscale>x2</OcclusionDownscale>
+                <OcclusionSamples>x64</OcclusionSamples>
+                <OcclusionDepthFixup>true</OcclusionDepthFixup>
+                <OcclusionDepthThreshold>25</OcclusionDepthThreshold>
+                <OcclusionFullSky>true</OcclusionFullSky>
+                <OcclusionBiasSkyRayleigh>0.2</OcclusionBiasSkyRayleigh>
+                <OcclusionBiasSkyMie>0.4</OcclusionBiasSkyMie>
+                <WorldScaleExponent>1</WorldScaleExponent>
+                <ForcePerPixel>false</ForcePerPixel>
+                <ForcePostEffect>false</ForcePostEffect>
+            </AtmosphericScatteringData>
+            <PreviewScene>
+                <CameraPosition>
+                    <x>0.000</x>
+                    <y>0.000</y>
+                    <z>0.000</z>
+                </CameraPosition>
+                <CameraRotation>
+                    <x>329.491</x>
+                    <y>232.357</y>
+                    <z>28.686</z>
+                </CameraRotation>
+                <SunRotation>
+                    <x>54.324</x>
+                    <y>327.181</y>
+                    <z>341.240</z>
+                </SunRotation>
+                <Prefabs>
+                    <Prefab>
+                        <Name>Sun</Name>
+                        <Position>
+                            <x>-408.723</x>
+                            <y>553.302</y>
+                            <z>-490.209</z>
+                        </Position>
+                        <Rotation>
+                            <x>34.391</x>
+                            <y>299.500</y>
+                            <z>53.295</z>
+                        </Rotation>
+                        <Scale>
+                            <x>7.778</x>
+                            <y>7.778</y>
+                            <z>7.778</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>-180.6224</x>
+                            <y>178.7017</y>
+                            <z>-63.7075</z>
+                        </Position>
+                        <Rotation>
+                            <x>-113.104</x>
+                            <y>83.113</y>
+                            <z>35.242</z>
+                        </Rotation>
+                        <Scale>
+                            <x>45.858</x>
+                            <y>45.858</y>
+                            <z>45.858</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>-428.6327</x>
+                            <y>661.0817</y>
+                            <z>-470.8385</z>
+                        </Position>
+                        <Rotation>
+                            <x>-113.104</x>
+                            <y>16.89</y>
+                            <z>35.242</z>
+                        </Rotation>
+                        <Scale>
+                            <x>12.85655</x>
+                            <y>12.85655</y>
+                            <z>12.85655</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>-195.8224</x>
+                            <y>103.1017</y>
+                            <z>-135.8085</z>
+                        </Position>
+                        <Rotation>
+                            <x>5.715</x>
+                            <y>-63.77</y>
+                            <z>114.140</z>
+                        </Rotation>
+                        <Scale>
+                            <x>18.130</x>
+                            <y>18.130</y>
+                            <z>18.130</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>-584.9227</x>
+                            <y>986.302</y>
+                            <z>-845.908</z>
+                        </Position>
+                        <Rotation>
+                            <x>-15.112</x>
+                            <y>23.55</y>
+                            <z>-72.716</z>
+                        </Rotation>
+                        <Scale>
+                            <x>9.305</x>
+                            <y>9.305</y>
+                            <z>9.305</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIMars</Name>
+                        <Position>
+                            <x>-426.5227</x>
+                            <y>288.802</y>
+                            <z>-203.8085</z>
+                        </Position>
+                        <Rotation>
+                            <x>-146.332</x>
+                            <y>-88.13699</y>
+                            <z>24.582</z>
+                        </Rotation>
+                        <Scale>
+                            <x>400</x>
+                            <y>400</y>
+                            <z>400</z>
+                        </Scale>
+                    </Prefab>
+                </Prefabs>
+                <SunPrefab>SpaceSun (UnityEngine.Light)</SunPrefab>
+                <LensFlare>true</LensFlare>
+                <LensFlareIntensity>0.000</LensFlareIntensity>
+                <SkyBoxMaterial>SceneSkyMars</SkyBoxMaterial>
+            </PreviewScene>
+            
+            <StartLocation Id="MarsSpawnCanyonOverlook">
+                <Name Key="MarsSpawnCanyonOverlookName"/>
+                <Description Key="MarsSpawnCanyonOverlookDescription"/>
+                <Position x="-612" y="803"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+            <StartLocation Id="MarsSpawnButchersFlat">
+                <Name Key="MarsSpawnButchersFlatName"/>
+                <Description Key="MarsSpawnButchersFlatDescription"/>
+                <Position x="347" y="-281"/>
+                <SpawnRadius Value="20"/>
+            </StartLocation>
+            <StartLocation Id="MarsSpawnFindersCanyon">
+                <Name Key="MarsSpawnFindersCanyonName"/>
+                <Description Key="MarsSpawnFindersCanyonDescription"/>
+                <Position x="-1405" y="32"/>
+                <SpawnRadius Value="15"/>
+            </StartLocation>
+            <StartLocation Id="MarsSpawnHellasCrags">
+                <Name Key="MarsSpawnHellasCragsName"/>
+                <Description Key="MarsSpawnHellasCragsDescription"/>
+                <Position x="-990" y="-986"/>
+                <SpawnRadius Value="12"/>
+            </StartLocation>
+            <StartLocation Id="MarsSpawnDonutFlats">
+                <Name Key="MarsSpawnDonutFlatsName"/>
+                <Description Key="MarsSpawnDonutFlatsDescription"/>
+                <Position x="1359" y="-315"/>
+                <SpawnRadius Value="22"/>
+            </StartLocation>
+
+            <RandomStartLocation Id="MarsSpawnRoundRobin">
+                <Name Key="SpawnRoundRobin"/>
+                <Description Key="SpawnRoundRobinDescription"/>
+                <SpawnRadius Value="6"/>
+                <StartLocation Id="MarsSpawnCanyonOverlook"/>
+                <StartLocation Id="MarsSpawnButchersFlat"/>
+                <StartLocation Id="MarsSpawnFindersCanyon"/>
+                <StartLocation Id="MarsSpawnHellasCrags"/>
+                <StartLocation Id="MarsSpawnDonutFlatsDescription"/>
+            </RandomStartLocation>
+
+            <RegionSet Id="Mars2PlayableBounds">
+                <Texture Path="Worlds/SharedTextures/4KMissionArea.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="Mars2ValidPlayArea" R="0" G="255" B="0"/>
+                <Region Id="Mars2OutOfBounds" R="255" G="0" B="0"/>
+                <Region Id="Mars2LeavingArea" R="0" G="0" B="255"/>
+            </RegionSet>
+            
+            <RegionSet Id="MarsNamedRegions">
+                <Texture Path="Worlds/Mars2/Textures/mars_named_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="MarsNamedRegionOuterBasinWest" R="255" G="154" B="154">
+                    <Name Key="MarsNamedRegionOuterBasinWestName"/>
+                </Region>
+                <Region Id="MarsNamedRegionOuterBasinKnoll" R="211" G="49" B="74">
+                    <Name Key="MarsNamedRegionOuterBasinKnollName"/>
+                </Region>
+                <Region Id="MarsNamedRegionOuterBasinEast" R="255" G="109" B="109">
+                    <Name Key="MarsNamedRegionOuterBasinEastName"/>
+                </Region>
+                <Region Id="MarsNamedRegionRockyRidge" R="15" G="159" B="137">
+                    <Name Key="MarsNamedRegionRockyRidgeName"/>
+                </Region>
+                <Region Id="MarsNamedRegionDusterPlainSouth" R="255" G="80" B="80">
+                    <Name Key="MarsNamedRegionDusterPlainSouthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionDusterPlainNorth" R="255" G="49" B="49">
+                    <Name Key="MarsNamedRegionDusterPlainNorthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionDusterRidge" R="67" G="196" B="177">
+                    <Name Key="MarsNamedRegionDusterRidgeName"/>
+                </Region>
+                <Region Id="MarsNamedRegionShelter" R="15" G="193" B="167">
+                    <Name Key="MarsNamedRegionShelterName"/>
+                </Region>
+                <Region Id="MarsNamedRegionShelteredFlat" R="255" G="165" B="137">
+                    <Name Key="MarsNamedRegionShelteredFlatName"/>
+                </Region>
+                <Region Id="MarsNamedRegionHesperianStrip" R="255" G="130" B="92">
+                    <Name Key="MarsNamedRegionHesperianStripName"/>
+                </Region>
+                <Region Id="MarsNamedRegionHesperianPlain" R="255" G="97" B="49">
+                    <Name Key="MarsNamedRegionHesperianPlainName"/>
+                </Region>
+                <Region Id="MarsNamedRegionHellasCrags" R="40" G="159" B="185">
+                    <Name Key="MarsNamedRegionHellasCragsName"/>
+                </Region>
+                <Region Id="MarsNamedRegionHellasPlainsWest" R="255" G="199" B="155">
+                    <Name Key="MarsNamedRegionHellasPlainsWestName"/>
+                </Region>
+                <Region Id="MarsNamedRegionHellasPlainsEast" R="146" G="107" B="77">
+                    <Name Key="MarsNamedRegionHellasPlainsEastName"/>
+                </Region>
+                <Region Id="MarsNamedRegionHellasPlainsSouth" R="255" G="179" B="155">
+                    <Name Key="MarsNamedRegionHellasPlainsSouthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionJuniperFlats" R="202" G="199" B="34">
+                    <Name Key="MarsNamedRegionJuniperFlatsName"/>
+                </Region>
+                <Region Id="MarsNamedRegionJuniperHills" R="123" G="175" B="186">
+                    <Name Key="MarsNamedRegionJuniperHillsName"/>
+                </Region>
+                <Region Id="MarsNamedRegionBeaconPlains" R="255" G="212" B="103">
+                    <Name Key="MarsNamedRegionBeaconPlainsName"/>
+                </Region>
+                <Region Id="MarsNamedRegionArcadiaFlatsSouth" R="255" G="150" B="69">
+                    <Name Key="MarsNamedRegionArcadiaFlatsSouthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionArcadiaFlatsNorth" R="255" G="134" B="42">
+                    <Name Key="MarsNamedRegionArcadiaFlatsNorthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionTharsisRiseSouth" R="75" G="97" B="162">
+                    <Name Key="MarsNamedRegionTharsisRiseSouthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionTharsisRiseWest" R="29" G="91" B="139">
+                    <Name Key="MarsNamedRegionTharsisRiseWestName"/>
+                </Region>
+                <Region Id="MarsNamedRegionTharsisRiseEast" R="31" G="91" B="116">
+                    <Name Key="MarsNamedRegionTharsisRiseEastName"/>
+                </Region>
+                <Region Id="MarsNamedRegionAeolisRidge" R="25" G="124" B="199">
+                    <Name Key="MarsNamedRegionAeolisRidgeName"/>
+                </Region>
+                <Region Id="MarsNamedRegionButchersFlat" R="255" G="123" B="22">
+                    <Name Key="MarsNamedRegionButchersFlatName"/>
+                </Region>
+                <Region Id="MarsNamedRegionCrescentCliffs" R="13" G="127" B="110">
+                    <Name Key="MarsNamedRegionCrescentCliffsName"/>
+                </Region>
+                <Region Id="MarsNamedRegionButchersScoop" R="202" G="78" B="97">
+                    <Name Key="MarsNamedRegionButchersScoopName"/>
+                </Region>
+                <Region Id="MarsNamedRegionBuckSaddle" R="255" G="182" B="126">
+                    <Name Key="MarsNamedRegionBuckSaddleName"/>
+                </Region>
+                <Region Id="MarsNamedRegionDavisRidge" R="61" G="153" B="154">
+                    <Name Key="MarsNamedRegionDavisRidgeName"/>
+                </Region>
+                <Region Id="MarsNamedRegionDavisPass" R="255" G="168" B="102">
+                    <Name Key="MarsNamedRegionDavisPassName"/>
+                </Region>
+                <Region Id="MarsNamedRegionArcadiaMons" R="61" G="137" B="154">
+                    <Name Key="MarsNamedRegionArcadiaMonsName"/>
+                </Region>
+                <Region Id="MarsNamedRegionJebSaddle" R="255" G="179" B="79">
+                    <Name Key="MarsNamedRegionJebSaddleName"/>
+                </Region>
+                <Region Id="MarsNamedRegionJebCliffsNorth" R="40" G="177" B="179">
+                    <Name Key="MarsNamedRegionJebCliffsNorthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionJebCliffsSouth" R="67" G="194" B="196">
+                    <Name Key="MarsNamedRegionJebCliffsSouthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionEloKnoll" R="26" G="137" B="221">
+                    <Name Key="MarsNamedRegionEloKnollName"/>
+                </Region>
+                <Region Id="MarsNamedRegionDonutFlatsWest" R="255" G="154" B="22">
+                    <Name Key="MarsNamedRegionDonutFlatsWestName"/>
+                </Region>
+                <Region Id="MarsNamedRegionDonutFlatsEast" R="255" G="165" B="47">
+                    <Name Key="MarsNamedRegionDonutFlatsEastName"/>
+                </Region>
+                <Region Id="MarsNamedRegionDelosFlats" R="255" G="212" B="155">
+                    <Name Key="MarsNamedRegionDelosFlatsName"/>
+                </Region>
+                <Region Id="MarsNamedRegionCrowesPassage" R="27" G="107" B="169">
+                    <Name Key="MarsNamedRegionCrowesPassageName"/>
+                </Region>
+                <Region Id="MarsNamedRegionCasiusRidge" R="118" G="151" B="176">
+                    <Name Key="MarsNamedRegionCasiusRidgeName"/>
+                </Region>
+                <Region Id="MarsNamedRegionCrowesLookout" R="111" G="184" B="240">
+                    <Name Key="MarsNamedRegionCrowesLookoutName"/>
+                </Region>
+                <Region Id="MarsNamedRegionOuterPlainsEast" R="255" G="197" B="121">
+                    <Name Key="MarsNamedRegionOuterPlainsEastName"/>
+                </Region>
+                <Region Id="MarsNamedRegionCallistoCrater" R="66" G="128" B="208">
+                    <Name Key="MarsNamedRegionCallistoCraterName"/>
+                </Region>
+                <Region Id="MarsNamedRegionCallistoFlats" R="255" G="227" B="155">
+                    <Name Key="MarsNamedRegionCallistoFlatsName"/>
+                </Region>
+                <Region Id="MarsNamedRegionSeleneRise" R="32" G="91" B="167">
+                    <Name Key="MarsNamedRegionSeleneRiseName"/>
+                </Region>
+                <Region Id="MarsNamedRegionEosRidge" R="60" G="165" B="244">
+                    <Name Key="MarsNamedRegionEosRidgeName"/>
+                </Region>
+                <Region Id="MarsNamedRegionOuterPlainsWest" R="255" G="251" B="7">
+                    <Name Key="MarsNamedRegionOuterPlainsWestName"/>
+                </Region>
+                <Region Id="MarsNamedRegionOuterPlainsNorthEast" R="255" G="203" B="71">
+                    <Name Key="MarsNamedRegionOuterPlainsNorthEastName"/>
+                </Region>
+                <Region Id="MarsNamedRegionOuterPlainsNorth" R="255" G="194" B="39">
+                    <Name Key="MarsNamedRegionOuterPlainsNorthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionOuterPlainsNorthWest" R="255" G="185" B="7">
+                    <Name Key="MarsNamedRegionOuterPlainsNorthWestName"/>
+                </Region>
+                <Region Id="MarsNamedRegionHoodCrater" R="56" G="127" B="13">
+                    <Name Key="MarsNamedRegionHoodCraterName"/>
+                </Region>
+                <Region Id="MarsNamedRegionCamdenCrater" R="86" G="170" B="33">
+                    <Name Key="MarsNamedRegionCamdenCraterName"/>
+                </Region>
+                <Region Id="MarsNamedRegionGalenaCrater" R="138" G="255" B="66">
+                    <Name Key="MarsNamedRegionGalenaCraterName"/>
+                </Region>
+                <Region Id="MarsNamedRegionTaosCrater" R="109" G="215" B="43">
+                    <Name Key="MarsNamedRegionTaosCraterName"/>
+                </Region>
+                <Region Id="MarsNamedRegionFindersCanyonSouth" R="32" G="72" B="192">
+                    <Name Key="MarsNamedRegionFindersCanyonSouthName"/>
+                </Region>
+                <Region Id="MarsNamedRegionFindersCanyonScarp" R="60" G="119" B="132">
+                    <Name Key="MarsNamedRegionFindersCanyonScarpName"/>
+                </Region>
+                <Region Id="MarsNamedRegionCanyonOverlook" R="60" G="101" B="132">
+                    <Name Key="MarsNamedRegionCanyonOverlookName"/>
+                </Region>
+                <Region Id="MarsNamedRegionFindersCanyon" R="119" G="71" B="156">
+                    <Name Key="MarsNamedRegionFindersCanyonName"/>
+                </Region>
+                <Region Id="MarsNamedRegionFindersCanyonWest" R="147" G="71" B="205">
+                    <Name Key="MarsNamedRegionFindersCanyonWestName"/>
+                </Region>
+                <Region Id="MarsNamedRegionFindersCanyonEast" R="175" G="116" B="220">
+                    <Name Key="MarsNamedRegionFindersCanyonEastName"/>
+                </Region>
+                <Region Id="MarsNamedRegionFindersWatch" R="93" G="189" B="210">
+                    <Name Key="MarsNamedRegionFindersWatchName"/>
+                </Region>
+            </RegionSet>
+
+            <RegionSet Id="MarsPoiRegions">
+                <Texture Path="Worlds/Mars2/Textures/mars_poi_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="MarsPoiRegionCrowesLookout" R="0" G="115" B="255"/>
+                <Region Id="MarsPoiRegionCanyonOverlookPeak" R="119" G="0" B="255"/>
+                <Region Id="MarsPoiRegionFindersWatchPlateau" R="0" G="34" B="255"/>
+                <Region Id="MarsPoiRegionCamdenCraterKnoll" R="59" G="0" B="255"/>
+            </RegionSet>
+            
+            <RegionSet Id="MarsDeepMiningRegions">
+                <Texture Path="Worlds/Mars2/Textures/mars_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="MarsDeepMiningRegionSilicon" R="182" G="0" B="255"/>
+                <Region Id="MarsDeepMiningRegionIron" R="17" G="0" B="255"/>
+                <Region Id="MarsDeepMiningRegionSilverLeadNickel" R="0" G="91" B="255"/>
+                <Region Id="MarsDeepMiningRegionGoldSilver" R="0" G="162" B="255"/>
+                <Region Id="MarsDeepMiningRegionCobalt" R="0" G="251" B="255"/>
+                <Region Id="MarsDeepMiningRegionIronCopperSilicon" R="0" G="255" B="113"/>
+                <Region Id="MarsDeepMiningRegionLead" R="10" G="255" B="0"/>
+                <Region Id="MarsDeepMiningRegionSilver" R="149" G="255" B="0"/>
+                <Region Id="MarsDeepMiningRegionGold" R="255" G="234" B="0"/>
+                <Region Id="MarsDeepMiningRegionNickel" R="255" G="132" B="0"/>
+                <Region Id="MarsDeepMiningRegionCoal" R="255" G="0" B="0"/>
+            </RegionSet>
+
+            <DeepMinables Id="DeepMinableProfileIron">
+                <Region Id="MarsDeepMiningRegionIron"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilicon">
+                <Region Id="MarsDeepMiningRegionSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
+                <Region Id="MarsDeepMiningRegionIronCopperSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
+                <Region Id="MarsDeepMiningRegionSilverLeadNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGoldSilver">
+                <Region Id="MarsDeepMiningRegionGoldSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilver">
+                <Region Id="MarsDeepMiningRegionSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileLead">
+                <Region Id="MarsDeepMiningRegionLead"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileNickel">
+                <Region Id="MarsDeepMiningRegionNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCoal">
+                <Region Id="MarsDeepMiningRegionCoal"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCobalt">
+                <Region Id="MarsDeepMiningRegionCobalt"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGold">
+                <Region Id="MarsDeepMiningRegionGold"/>
+            </DeepMinables>
+
+            <DeepMinablesRegionData>
+                <RegionSet Id="MarsDeepMiningRegions"/>
+            </DeepMinablesRegionData>
+            
+            <PointOfInterest Id="MarsPoiCrowesLookout">
+                <Region Id="MarsPoiRegionCrowesLookout"/>
+                <Name Key="MarsPoiCrowesLookoutName"/>
+                <Description Key="MarsPoiCrowesLookoutDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MarsPoiCanyonOverlookPeak">
+                <Region Id="MarsPoiRegionCanyonOverlookPeak"/>
+                <Name Key="MarsPoiCanyonOverlookPeakName"/>
+                <Description Key="MarsPoiCanyonOverlookPeakDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MarsPoiFindersWatchPlateau">
+                <Region Id="MarsPoiRegionFindersWatchPlateau"/>
+                <Name Key="MarsPoiFindersWatchPlateauName"/>
+                <Description Key="MarsPoiFindersWatchPlateauDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MarsPoiCamdenCraterKnoll">
+                <Region Id="MarsPoiRegionCamdenCraterKnoll"/>
+                <Name Key="MarsPoiCamdenCraterKnollName"/>
+                <Description Key="MarsPoiCamdenCraterKnollDescription"/>
+            </PointOfInterest>
+            
+            <Minables Id="DefaultMinablesSurface" OreDensity="0.6">
+                <Surface Value="true"/>
+            </Minables>
+            <Minables Id="DefaultMinables" OreDensity="1">
+                <Surface Value="false"/>
+            </Minables>
+
+            <PlayableArea Id="Mars2WarningArea" Rule="Warning">
+                <Region Id="Mars2LeavingArea"/>
+            </PlayableArea>
+            <PlayableArea Id="Mars2InvalidArea" Rule="Invalid">
+                <Region Id="Mars2OutOfBounds"/>
+            </PlayableArea>
+            
+            <AchievementSurvival Id="AchievementImStillAlive" DaysLived="365" Difficulty="Stationeer"/>
+
+            <GeographicRegionData>
+                <DefaultRegionName Value="Mars"/>
+                <RegionSet Id="MarsNamedRegions"/>
+            </GeographicRegionData>
+            
+            <TerrainSettings Path="Worlds/Mars2/Terrain" WorldSize="4096">
+                <Curvature Value="0.3"/>
+                <MiniMap Path="Worlds/Mars2/Textures/minimap.png" Format="DXT1" LoadType="OnRequest"/>
+                <MaterialSettings>
+                    <Macro>
+                        <MacroTextureBlend Value="1"/>
+                        <Albedo Path="Worlds/Mars2/Textures/macro_diffuse.png" Format="BC7" LoadType="OnRequest"/>
+                        <Normal Path="Worlds/Mars2/Textures/macro_normal.png" LoadType="OnRequest" Value="1"/>
+                    </Macro>
+                    <Detail
+                            UVScale="1"
+                            DetailFadeStart="75"
+                            DetailFadeEnd="150"
+                            FractalDepthScale="0.5"
+                            LodMin="2"
+                            MipmapBias="-0.1"
+                            BlendSharpness="30">
+                        <GroupOne>
+                            <Albedo Path="Worlds/Mars2/Textures/DarkPointyRock_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Mars2/Textures/DarkPointyRock_normal.png" LoadType="OnRequest" Value="0.5"/>
+                            <Roughness Path="Worlds/Mars2/Textures/DarkPointyRock_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.01"/>
+                            <Displacement Path="Worlds/Mars2/Textures/DarkPointyRock_height.png" Format="BC4" LoadType="OnRequest" Value="0.3"/>
+                        </GroupOne>
+                        <GroupTwo>
+                            <Albedo Path="Worlds/Mars2/Textures/Mars_Detail_albedo.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Mars2/Textures/Mars_Detail_normal.png" LoadType="OnRequest" Value="0.5"/>
+                            <Roughness Path="Worlds/Mars2/Textures/Mars_Detail_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
+                            <Displacement Path="Worlds/Mars2/Textures/Mars_Detail_height.png" Format="BC4" LoadType="OnRequest" Value="0.25"/>
+                        </GroupTwo>
+                    </Detail>
+                </MaterialSettings>
+            </TerrainSettings>
+
+        </World>
+    </WorldSettings>
+</GameData>

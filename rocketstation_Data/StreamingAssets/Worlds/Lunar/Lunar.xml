@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WorldSettings>
+        <World Id="Lunar" Priority="2" Hidden="false">
+            <AmbienceSound>Moon</AmbienceSound>
+            <WeatherEvent Id="SolarStorm"/>
+            <Name Key="WorldLunar" />
+            <Description Key="NewWorldLunarShortDesc" />
+            <ShortDescription Key="LunarWorldDescriptionShort"/>
+            <Rating Key="WorldRatingIntermediate" Color="Green" />
+            <PreviewButton Path="Interface/preview_lunar.png" Format="RGB24"/>
+            <StartCondition Id="DefaultStart" IsDefault="true"/>
+            <StartCondition Id="Brutal"/>
+            <StartCondition Id="DefaultStartCommunity"/>
+            <StartCondition Id="BrutalCommunity"/>
+<!--            <StartCondition Id="TerrainEdit"/>-->
+            <WorldObjective Id="ManufacturingBasics"/>
+            <WorldObjective Id="Stations"/>
+            <WorldObjective Id="Trading"/>
+            <WorldObjective Id="Concepts"/>
+            <SpaceMap Id="MoonSpaceMap"/> 
+            <GlobalAtmosphere/>
+            <SkyBoxMaterialName>Starfield Skybox</SkyBoxMaterialName>
+            <SetSunInSkybox>false</SetSunInSkybox>
+            <SunPrefabName>MarsSun</SunPrefabName>
+            <Gravity>-1.62</Gravity>
+            <Skybox />
+            <CelestialConstants BodyScale="5">
+                <TimeOffset Minutes="18" Seconds="30" />
+            </CelestialConstants>
+            <PlayableBody Id="Moon" Latitude="0" Longitude="45"/>
+            <CelestialBodies>
+                <Sprite Id="Mercury" Magnitude="1.4" />
+                <Sprite Id="Venus" Magnitude="0.9" />
+                <AtmosphericBody Id="Earth" RadiusKm="6380">
+                    <Name Key="CelestialBodyEarth"/>
+                    <FixedRotation x="0.3978" y="0.9175" z="0" Speed="9" />
+                    <!--					<SynodicRotation x="0.3978" y="0.9175" z="0" Days="1"  />-->
+                    <Texture Path="Textures/earth_diffuse.png" Format="DXT1" LoadType="OnRequest"/>
+                    <Normal Path="Textures/earth_normal.png" LoadType="OnRequest"/>
+                    <Specular Path="Textures/earth_specular.png" Format="DXT1" LoadType="OnRequest"/>
+                    <Material Smoothness="1" Metalic="0.181" />
+                    <Cloud Path="Textures/earth_clouds.png" Format="DXT1" Opacity="1" LoadType="OnRequest">
+                        <Shadow Opacity="0.5" Parallax="0.015" />
+                    </Cloud>
+                    <Fresnel r="0.4213835" g="0.586222" b="1" Power="1" Emission="1">
+                        <RimLow r="0.4245283" g="0" b="0" />
+                        <RimHigh r="0.735849" g="0.4707605" b="0" />
+                    </Fresnel>
+                </AtmosphericBody>
+                <Body Id="Moon" Parent="Earth" RadiusKm="1738">
+                    <TidalLocking x="0.0269" y="0.9996" z="0" />
+                    <!--				<SynodicRotation x="0.0269" y="0.9996" z="0" Days="27.3"  />-->
+
+                </Body>
+                <Sprite Id="Mars" Magnitude="0.99" />
+                <Sprite Id="Jupiter" Magnitude="0.98" />
+                <Sprite Id="Saturn" Magnitude="1.1" />
+                <Sprite Id="Uranus" Magnitude="1.5" />
+                <Sprite Id="Neptune" Magnitude="1.5" />
+                <Sprite Id="Pluto" Magnitude="4" />
+            </CelestialBodies>
+            <Stars>
+                <Star FadeHeight="400" />
+                <Star FadeHeight="400" />
+            </Stars>
+            <AmbientLighting>
+                <Sky r="0.1838235" g="0.1838235" b="0.1838235" />
+                <Equator r="0.1176471" g="0.1176471" b="0.1176471" />
+                <Ground r="0.08088237" g="0.08088237" b="0.08088237" />
+            </AmbientLighting>
+            <AtmosphericScattering>false</AtmosphericScattering>
+            <PreviewScene>
+                <CameraPosition>
+                    <x>0.000</x>
+                    <y>0.000</y>
+                    <z>0.000</z>
+                </CameraPosition>
+                <CameraRotation>
+                    <x>327.150</x>
+                    <y>180.420</y>
+                    <z>358.823</z>
+                </CameraRotation>
+                <SunRotation>
+                    <x>47.266</x>
+                    <y>-46.001</y>
+                    <z>-107.52</z>
+                </SunRotation>
+                <Prefabs>
+                    <Prefab>
+                        <Name>UISun</Name>
+                        <Position>
+                            <x>-12</x>
+                            <y>731</y>
+                            <z>-728</z>
+                        </Position>
+                        <Rotation>
+                            <x>0</x>
+                            <y>0</y>
+                            <z>0</z>
+                        </Rotation>
+                        <Scale>
+                            <x>13.419</x>
+                            <y>13.419</y>
+                            <z>13.419</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIShuttlecraft</Name>
+                        <Position>
+                            <x>-21</x>
+                            <y>159.1</y>
+                            <z>-236.2</z>
+                        </Position>
+                        <Rotation>
+                            <x>-36.429</x>
+                            <y>140.917</y>
+                            <z>32.933</z>
+                        </Rotation>
+                        <Scale>
+                            <x>15.85437</x>
+                            <y>15.85437</y>
+                            <z>15.85437</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIPlanetEarth</Name>
+                        <Position>
+                            <x>-165.7227</x>
+                            <y>331.3017</y>
+                            <z>-664.209</z>
+                        </Position>
+                        <Rotation>
+                            <x>71.000</x>
+                            <y>130.000</y>
+                            <z>76.000</z>
+                        </Rotation>
+                        <Scale>
+                            <x>1.274</x>
+                            <y>1.274</y>
+                            <z>1.274</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIMoon</Name>
+                        <Position>
+                            <x>78.300</x>
+                            <y>61.000</y>
+                            <z>-298.500</z>
+                        </Position>
+                        <Rotation>
+                            <x>31.644</x>
+                            <y>0.000</y>
+                            <z>0.000</z>
+                        </Rotation>
+                        <Scale>
+                            <x>50.000</x>
+                            <y>50.000</y>
+                            <z>50.000</z>
+                        </Scale>
+                    </Prefab>
+                </Prefabs>
+                <SunPrefab>SpaceSun (UnityEngine.Light)</SunPrefab>
+                <LensFlare>true</LensFlare>
+                <LensFlareIntensity>0.250</LensFlareIntensity>
+            </PreviewScene>
+            <Minables Id="DefaultMinablesSurface" OreDensity="0.6">
+                <Surface Value="true"/>
+                <Conditions Operator="None">
+                    <Region Id="LunarRichCrater0"/>
+                    <Region Id="LunarRichCrater1"/>
+                    <Region Id="LunarRichCrater2"/>
+                    <Region Id="LunarCliffs"/>
+                </Conditions>
+            </Minables>
+            <Minables Id="LunarRichSurfaceDeposit0" OreDensity="2.5">
+                <Surface Value="true"/>
+                <Region Id="LunarRichCrater0"/>
+                <OreVein Id="GoldSurfaceRich"/>
+                <OreVein Id="SilverSurfaceRich"/>
+            </Minables>
+            <Minables Id="LunarRichSurfaceDeposit1" OreDensity="1.5">
+                <Surface Value="true"/>
+                <Region Id="LunarRichCrater1"/>
+                <OreVein Id="CobaltSurfaceRich"/>
+            </Minables>
+            <Minables Id="LunarRichSurfaceDeposit2" OreDensity="2.5">
+                <Surface Value="true"/>
+                <Region Id="LunarRichCrater2"/>
+                <OreVein Id="NickelSurfaceRich"/>
+                <OreVein Id="LeadSurfaceRich"/>
+            </Minables>
+            <Minables Id="DefaultMinables" OreDensity="1">
+                <Surface Value="false"/>
+            </Minables>
+            
+            <DeepMinables Id="DeepMinableProfileIron">
+                <Region Id="DeepMinerRegionIron"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilicon">
+                <Region Id="DeepMinerRegionSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
+                <Region Id="DeepMinerRegionIronCopperSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
+                <Region Id="DeepMinerRegionSilverLeadNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGoldSilver">
+                <Region Id="DeepMinerRegionGoldSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilver">
+                <Region Id="DeepMinerRegionSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileLead">
+                <Region Id="DeepMinerRegionLead"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileNickel">
+                <Region Id="DeepMinerRegionNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCoal">
+                <Region Id="DeepMinerRegionCoal"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCobalt">
+                <Region Id="DeepMinerRegionCobalt"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGold">
+                <Region Id="DeepMinerRegionGold"/>
+            </DeepMinables>
+
+            <DeepMinablesRegionData>
+                <RegionSet Id="LunarDeepMiningRegions"/>
+            </DeepMinablesRegionData>
+            
+            <PlayableArea Id="Moon4KWarningArea" Rule="Warning">
+                <Region Id="LunarLeavingArea"/>
+            </PlayableArea>
+            <PlayableArea Id="LunarKInvalidArea" Rule="Invalid">
+                <Region Id="LunarOutOfBounds"/>
+            </PlayableArea>
+            <RegionSet Id="4kPlayableBounds">
+                <Texture Path="Worlds/SharedTextures/4KMissionArea.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="LunarValidPlayArea" R="0" G="255" B="0"/>
+                <Region Id="LunarOutOfBounds" R="255" G="0" B="0"/>
+                <Region Id="LunarLeavingArea" R="0" G="0" B="255"/>
+            </RegionSet>
+            <RegionSet Id="LunarGeographicRegions">
+                <Texture Path="Worlds/Lunar/Textures/lunar_mare_ore_map.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="LunarNorthernCraters" R="255" G="0" B="0"/>
+                <Region Id="LunarSouthernCrater" R="0" G="255" B="0"/>
+                <Region Id="LunarHighlandCrater" R="0" G="0" B="255"/>
+                <Region Id="LunarCliffs" R="255" G="255" B="0"/>
+                <Region Id="LunarHighlands" R="125" G="0" B="0"/>
+                <Region Id="LunarMidlands" R="0" G="255" B="255"/>
+                <Region Id="LunarMare" R="255" G="0" B="255"/>
+                <Region Id="LunarRichCrater0" R="128" G="0" B="0"/>
+                <Region Id="LunarRichCrater1" R="0" G="125" B="0"/>
+                <Region Id="LunarRichCrater2" R="0" G="0" B="128"/>
+            </RegionSet>
+            <RegionSet Id="LunarMarePointsOfInterestRegions">
+                <Texture Path="Worlds/Lunar/Textures/lunar_mare_points_of_interest.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="PoiLunarRichCraterGoldSilver" R="128" G="0" B="0"/>
+                <Region Id="PoiLunarRichCraterCobalt" R="0" G="125" B="0"/>
+                <Region Id="PoiLunarRichCraterNickelLead" R="0" G="0" B="128"/>
+                <Region Id="PoiLunarGrandCraterLacusBellus" R="255" G="0" B="0"/>
+                <Region Id="PoiLunarGrandCraterCraterVeritas" R="0" G="255" B="0"/>
+                <Region Id="PoiLunarGrandCraterCraterVesper" R="0" G="0" B="255"/>
+                <Region Id="PoiLunarGrandCraterCraterNox" R="255" G="255" B="0"/>
+            </RegionSet>
+            <RegionSet Id="LunarDeepMiningRegions">
+                <Texture Path="Worlds/Lunar/Textures/lunar_mare_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="DeepMinerRegionIron"                 R="255" G="0"   B="0"   />
+                <Region Id="DeepMinerRegionSilicon"              R="255" G="0"   B="255" />
+                <Region Id="DeepMinerRegionIronCopperSilicon"    R="255" G="255" B="0"   />
+                <Region Id="DeepMinerRegionSilverLeadNickel"     R="0"   G="255" B="255" />
+                <Region Id="DeepMinerRegionGoldSilver"           R="100" G="0"   B="0"   />
+                <Region Id="DeepMinerRegionSilver"               R="0"   G="100" B="0"   />
+                <Region Id="DeepMinerRegionLead"                 R="0"   G="0"   B="100" />
+                <Region Id="DeepMinerRegionNickel"               R="100" G="100" B="0"   />
+                <Region Id="DeepMinerRegionCoal"                 R="100" G="0"   B="100" />
+                <Region Id="DeepMinerRegionCobalt"               R="0"   G="100" B="100" />
+                <Region Id="DeepMinerRegionGold"                 R="50"  G="0"   B="0"   />
+            </RegionSet>
+            <RegionSet Id="LunarNamedRegions">
+                <Texture Path="Worlds/Lunar/Textures/lunar_mare_names.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="GeoRegionLunarDorsumCaradus" R="50" G="50" B="0">
+                    <Name Key="GeoNameLunarDorsumCaradus"/>
+                </Region>
+                <Region Id="GeoRegionLunarLacusJaewoo" R="255" G="0" B="0">
+                    <Name Key="GeoNameLunarLacusJaewoo"/>
+                </Region>
+                <Region Id="GeoRegionLunarPromontoriumSolis" R="0" G="0" B="255">
+                    <Name Key="GeoNameLunarPromontoriumSolis"/>
+                </Region>
+                <Region Id="GeoRegionLunarMareSimonis" R="255" G="0" B="255">
+                    <Name Key="GeoNameLunarMareSimonis"/>
+                </Region>
+                <Region Id="GeoRegionLunarMontesUmbrarum" R="100" G="0" B="100">
+                    <Name Key="GeoNameLunarMontesUmbrarum"/>
+                </Region>
+                <Region Id="GeoRegionLunarVallisLiama" R="255" G="255" B="0">
+                    <Name Key="GeoNameLunarVallisLiama"/>
+                </Region>
+                <Region Id="GeoRegionLunarCraterVeritas" R="0" G="0" B="200">
+                    <Name Key="GeoNameLunarCraterVeritas"/>
+                </Region>
+                <Region Id="GeoRegionLunarLabyrinthusPetr" R="0" G="100" B="100">
+                    <Name Key="GeoNameLunarLabyrinthusPetr"/>
+                </Region>
+                <Region Id="GeoRegionLunarTerraDylan" R="100" G="0" B="50">
+                    <Name Key="GeoNameLunarTerraDylan"/>
+                </Region>
+                <Region Id="GeoRegionLunarFossaMyers" R="0" G="255" B="0">
+                    <Name Key="GeoNameLunarFossaMyers"/>
+                </Region>
+                <Region Id="GeoRegionLunarDorsumMcLean" R="0" G="255" B="100">
+                    <Name Key="GeoNameLunarDorsumMcLean"/>
+                </Region>
+                <Region Id="GeoRegionLunarPalusAeternus" R="0" G="50" B="100">
+                    <Name Key="GeoNameLunarPalusAeternus"/>
+                </Region>
+                <Region Id="GeoRegionLunarMonsArcanus" R="255" G="100" B="0">
+                    <Name Key="GeoNameLunarMonsArcanus"/>
+                </Region>
+                <Region Id="GeoRegionLunarCraterElissae" R="0" G="200" B="0">
+                    <Name Key="GeoNameLunarCraterElissae"/>
+                </Region>
+                <Region Id="GeoRegionLunarSinusTenebrae" R="100" G="50" B="0">
+                    <Name Key="GeoNameLunarSinusTenebrae"/>
+                </Region>
+                <Region Id="GeoRegionLunarCraterVesper" R="200" G="200" B="0">
+                    <Name Key="GeoNameLunarCraterVesper"/>
+                </Region>
+                <Region Id="GeoRegionLunarPlanitiaSolstitia" R="255" G="0" B="100">
+                    <Name Key="GeoNameLunarPlanitiaSolstitia"/>
+                </Region>
+                <Region Id="GeoRegionLunarMontesFulgur" R="100" G="100" B="0">
+                    <Name Key="GeoNameLunarMontesFulgur"/>
+                </Region>
+                <Region Id="GeoRegionLunarVallisCineris" R="0" G="255" B="255">
+                    <Name Key="GeoNameLunarVallisCineris"/>
+                </Region>
+                <Region Id="GeoRegionLunarDorsumBorealis" R="50" G="0" B="50">
+                    <Name Key="GeoNameLunarDorsumBorealis"/>
+                </Region>
+                <Region Id="GeoRegionLunarLacusGelidus" R="0" G="100" B="0">
+                    <Name Key="GeoNameLunarLacusGelidus"/>
+                </Region>
+                <Region Id="GeoRegionLunarPromontoriumZenith" R="50" G="0" B="0">
+                    <Name Key="GeoNameLunarPromontoriumZenith"/>
+                </Region>
+                <Region Id="GeoRegionLunarTerraFerruginea" R="100" G="0" B="0">
+                    <Name Key="GeoNameLunarTerraFerruginea"/>
+                </Region>
+                <Region Id="GeoRegionLunarFossaAbyssus" R="50" G="100" B="0">
+                    <Name Key="GeoNameLunarFossaAbyssus"/>
+                </Region>
+                <Region Id="GeoRegionLunarMareSomnii" R="0" G="0" B="50">
+                    <Name Key="GeoNameLunarMareSomnii"/>
+                </Region>
+                <Region Id="GeoRegionLunarRimaSerpentis" R="255" G="100" B="100">
+                    <Name Key="GeoNameLunarRimaSerpentis"/>
+                </Region>
+                <Region Id="GeoRegionLunarLacusBellus" R="200" G="0" B="0">
+                    <Name Key="GeoNameLunarLacusBellus"/>
+                </Region>
+                <Region Id="GeoRegionLunarVallisOblivionis" R="0" G="50" B="0">
+                    <Name Key="GeoNameLunarVallisOblivionis"/>
+                </Region>
+                <Region Id="GeoRegionLunarCraterNox" R="200" G="0" B="200">
+                    <Name Key="GeoNameLunarCraterNox"/>
+                </Region>
+                <Region Id="GeoRegionLunarCraterSolaris" R="200" G="200" B="200">
+                    <Name Key="GeoNameLunarCraterSolaris"/>
+                </Region>
+                <Region Id="GeoRegionLunarCraterNovus" R="0" G="200" B="200">
+                    <Name Key="GeoNameLunarCraterNovus"/>
+                </Region>
+                <Region Id="GeoRegionLunarRupesMagna" R="255" G="200" B="255">
+                    <Name Key="GeoNameLunarRupesMagna"/>
+                </Region>
+                <Region Id="GeoRegionLunarSpeculaObservans" R="200" G="255" B="255">
+                    <Name Key="GeoNameLunarSpeculaObservans"/>
+                </Region>
+            </RegionSet>
+            <GeographicRegionData>
+                <DefaultRegionName Value="Lunar"/>
+                <RegionSet Id="LunarNamedRegions"/>
+            </GeographicRegionData>
+            <PointOfInterest Id="PoiLunarRichCraterGoldSilver">
+                <Region Id="PoiLunarRichCraterGoldSilver"/>
+                <Name Key="LunarPoiRichOreCraterName"/>
+                <Description Key="LunarPoiRichOreCraterGoldSilverDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="PoiLunarRichCraterCobalt">
+                <Region Id="PoiLunarRichCraterCobalt"/>
+                <Name Key="LunarPoiRichOreCraterName"/>
+                <Description Key="LunarPoiRichOreCraterCobaltDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="PoiLunarRichCraterNickelLead">
+                <Region Id="PoiLunarRichCraterNickelLead"/>
+                <Name Key="LunarPoiRichOreCraterName"/>
+                <Description Key="LunarPoiRichOreCraterNickelLeadDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="PoiLunarGrandCraterLacusBellus">
+                <Region Id="PoiLunarGrandCraterLacusBellus"/>
+                <Name Key="LunarPoiGrandCraterLacusBellusName"/>
+                <Description Key="LunarPoiGrandCraterLacusBellusDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="PoiLunarGrandCraterCraterVeritas">
+                <Region Id="PoiLunarGrandCraterCraterVeritas"/>
+                <Name Key="LunarPoiGrandCraterCraterVeritasName"/>
+                <Description Key="LunarPoiGrandCraterCraterVeritasDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="PoiLunarGrandCraterCraterVesper">
+                <Region Id="PoiLunarGrandCraterCraterVesper"/>
+                <Name Key="LunarPoiGrandCraterCraterVesperName"/>
+                <Description Key="LunarPoiGrandCraterCraterVesperDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="PoiLunarGrandCraterCraterNox">
+                <Region Id="PoiLunarGrandCraterCraterNox"/>
+                <Name Key="LunarPoiGrandCraterCraterNoxName"/>
+                <Description Key="LunarPoiGrandCraterCraterNoxDescription"/>
+            </PointOfInterest>
+            
+			<AchievementChain Id="AchievementItsNotMadeOfCheese">
+				<PointOfInterest Id="PoiLunarGrandCraterLacusBellus"/>
+				<PointOfInterest Id="PoiLunarGrandCraterCraterVeritas"/>
+				<PointOfInterest Id="PoiLunarGrandCraterCraterVesper"/>
+				<PointOfInterest Id="PoiLunarGrandCraterCraterNox"/>
+			</AchievementChain>
+            
+            <AchievementSurvival Id="AchievementHoustonStillNoProblem" DaysLived="365" Difficulty="Stationeer"/>
+
+            <StartLocation Id="LunarSpawnCraterVesper">
+                <Name Key="LunarSpawnCraterVesperName"/>
+                <Description Key="LunarSpawnCraterVesperDescription"/>
+                <Position x="1189" y="511"/>
+                <SpawnRadius Value ="15"/>
+            </StartLocation>
+            <StartLocation Id="LunarSpawnMontesUmbrarum">
+                <Name Key="LunarSpawnMontesUmbrarumName"/>
+                <Description Key="LunarSpawnMontesUmbrarumDescription"/>
+                <Position x="-565" y="185"/>
+                <SpawnRadius Value ="10"/>
+            </StartLocation>
+            <StartLocation Id="LunarSpawnCraterNox">
+                <Name Key="LunarSpawnCraterNoxName"/>
+                <Description Key="LunarSpawnCraterNoxDescription"/>
+                <Position x="1065" y="-830"/>
+                <SpawnRadius Value ="12"/>
+            </StartLocation>
+            <StartLocation Id="LunarSpawnMonsArcanus">
+                <Name Key="LunarSpawnMonsArcanusName"/>
+                <Description Key="LunarSpawnMonsArcanusDescription"/>
+                <Position x="-1302" y="-705"/>
+                <SpawnRadius Value ="16"/>
+            </StartLocation>
+
+            <RandomStartLocation Id="LunarSpawnRoundRobin">
+                <Name Key="SpawnRoundRobin"/>
+                <Description Key="SpawnRoundRobinDescription"/>
+                <SpawnRadius Value="6"/>
+                <StartLocation Id="LunarSpawnCraterVesper"/>
+                <StartLocation Id="LunarSpawnMontesUmbrarum"/>
+                <StartLocation Id="LunarSpawnCraterNox"/>
+                <StartLocation Id="LunarSpawnMonsArcanus"/>
+            </RandomStartLocation>
+            
+            <TerrainSettings Path="Worlds/Lunar/Terrain" WorldSize="4096">
+                <Curvature Value="0.5"/>
+                <MiniMap Path="Worlds/Lunar/Textures/lunar_mare_mini_map.png" Format="DXT1" LoadType="OnRequest"/>
+                <MaterialSettings>
+                    <Macro>
+                        <MacroTextureBlend Value = "1"/>
+                        <Albedo Path="Worlds/Lunar/Textures/lunar_mare_macro_albedo.png" Format="BC7" LoadType="OnRequest"/>
+                        <Normal Path="Worlds/Lunar/Textures/lunar_mare_normal_map.png" LoadType="OnRequest" Value="1"/>
+                    </Macro>
+                    <Detail 
+                            UVScale ="1" 
+                            DetailFadeStart="50"
+                            DetailFadeEnd="200"
+                            FractalDepthScale="0.5" 
+                            LodMin="2" 
+                            MipmapBias="-0.1"
+                            BlendSharpness="109">
+                        <GroupOne>
+                            <Albedo Path="Worlds/Lunar/Textures/Moon_Basalt_AO_basecolor.png" Format="DXT1" LoadType="OnRequest" />
+                            <Normal  Path="Worlds/Lunar/Textures/Moon_Basalt_normal.png" LoadType="OnRequest" Value="0.7" />
+                            <Roughness  Path="Worlds/Lunar/Textures/Moon_Basalt_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.6" />
+                            <Displacement Path="Worlds/Lunar/Textures/Moon_Basalt_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
+                        </GroupOne>
+                        <GroupTwo>
+                            <Albedo Path="Worlds/Lunar/Textures/Moon_Detail_AO_basecolor.png" Format="DXT1" LoadType="OnRequest" />
+                            <Normal  Path="Worlds/Lunar/Textures/Moon_Detail_normal.png" LoadType="OnRequest" Value="0.7" />
+                            <Roughness  Path="Worlds/Lunar/Textures/Moon_Detail_roughness_1024.png" Format="BC4" LoadType="OnRequest" Value="0.3" />
+                            <Displacement Path="Worlds/Lunar/Textures/Moon_Detail_Displacement_1024.png" Format="BC4" LoadType="OnRequest" Value="0.125"/>
+                        </GroupTwo>
+                    </Detail>
+                </MaterialSettings>
+            </TerrainSettings>
+        </World>
+    </WorldSettings>
+</GameData>

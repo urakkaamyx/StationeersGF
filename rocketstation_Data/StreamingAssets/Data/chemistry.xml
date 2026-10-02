@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ChemistryRecipes>
+  
+    <RecipeData>
+      <PrefabName>ItemPillHeal</PrefabName>
+        <Recipe>
+        <Fenoxitone>10</Fenoxitone>
+        <Cobalt>1</Cobalt>
+        <Silver>1</Silver>
+        <Time>5</Time>
+      </Recipe>
+    </RecipeData>
+    
+    <RecipeData>
+      <PrefabName>ItemPillStun</PrefabName>
+        <Recipe>
+        <Fenoxitone>10</Fenoxitone>
+        <Carbon>4</Carbon>
+        <Time>5</Time>
+      </Recipe>
+    </RecipeData>
+    
+    <RecipeData>
+      <PrefabName>ItemMilk</PrefabName>
+        <Recipe>
+        <Oil>5</Oil>
+        <Fenoxitone>5</Fenoxitone>
+        <Time>5</Time>
+      </Recipe>
+    </RecipeData>
+    
+  </ChemistryRecipes>
+</GameData>

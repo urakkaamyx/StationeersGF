@@ -1,0 +1,2029 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    
+    <!-- Start conditions -->
+    <StartLocation Id="DefaultStartLocation">
+        <Position x="0" y="0"/>
+    </StartLocation>
+    <StartCondition Id="DefaultStart">
+        <Name Key="DefaultStartCondition"/>
+        <Description Key="DefaultStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="DefaultLander" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+        <WorldInject Operator="Any"> <!--This is how you inject a StartCondition into an existing world -->
+            <World Id="Mars"/>
+            <World Id="Moon"/>
+        </WorldInject>
+    </StartCondition>
+    <StartCondition Id="DefaultScenario">
+        <Name Key="DefaultScenarioStartCondition"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="Brutal" IsBrutal="true">
+        <Name Key="BrutalStartCondition"/>
+        <Description Key="BrutalStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
+        <Spawn Id="BrutalCrate" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="EuropaBrutal" IsBrutal="true">
+        <Name Key="BrutalStartConditionEuropa"/>
+        <Description Key="BrutalStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
+        <Spawn Id="BrutalCrateEuropa" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmall" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="VulcanBrutal" IsBrutal="true">
+        <Name Key="BrutalStartConditionVulcan"/>
+        <Description Key="BrutalStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
+        <Spawn Id="BrutalCrateVulcan" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="OxygenTankInsulated" Event="NewWorld"/>
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="EuropaDefault">
+        <Name Key="DefaultStartConditionEuropa"/>
+        <Description Key="DefaultStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="EuropaLander" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="VulcanDefault">
+        <Name Key="DefaultStartConditionVulcan"/>
+        <Description Key="DefaultStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="HardsuitNewPlayer" Event="NewPlayerKit" />
+        <Spawn Id="HardsuitRespawnPlayer" Event="RespawnPlayerKit" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="VulcanLander" Event="NewWorld" />
+    </StartCondition>
+    <StartCondition Id="MimasDefault">
+        <Name Key="DefaultStartConditionMimas"/>
+        <Description Key="DefaultStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="MimasLander" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="MimasBrutal" IsBrutal="true">
+        <Name Key="BrutalStartConditionMimas"/>
+        <Description Key="BrutalStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
+        <Spawn Id="BrutalCrateMimas" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="VenusDefault">
+        <Name Key="DefaultStartConditionVenus"/>
+        <Description Key="DefaultStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="VenusLander" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="HardsuitNewPlayer" Event="NewPlayerKit" />
+        <Spawn Id="HardsuitRespawnPlayer" Event="RespawnPlayerKit" />
+    </StartCondition>
+    
+    <StartCondition Id="AsteroidsDefault">
+        <Name Key="DefaultStartCondition"/>
+        <Description Key="DefaultStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="AsteroidsLander" Event="NewWorld" />
+        <Spawn Id="OxygenTank" Event="NewWorld" />
+        <Spawn Id="OxygenTank" Event="NewWorld" />
+        <Spawn Id="NitrogenTank" Event="NewWorld" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="TerrainEdit" IsTerrainEdit="true">
+        <Name Key="TerrainEditStartCondition"/>
+        <Description Key="TerrainEditStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="TerrainEditNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="TerrainEditRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+
+    <!-- Community Starts -->
+
+    <StartCondition Id="DefaultStartCommunity">
+        <Name Key="DefaultCommunityStartCondition"/>
+        <Description Key="DefaultCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="DefaultLander" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+        <WorldInject Operator="Any"> <!--This is how you inject a StartCondition into an existing world -->
+            <World Id="Mars"/>
+            <World Id="Moon"/>
+        </WorldInject>
+    </StartCondition>
+
+    <StartCondition Id="EuropaDefaultCommunity">
+        <Name Key="DefaultCommunityStartConditionEuropa"/>
+        <Description Key="DefaultCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="EuropaLander" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="VulcanDefaultCommunity">
+        <Name Key="DefaultCommunityStartConditionVulcan"/>
+        <Description Key="DefaultCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="HardsuitNewPlayer" Event="NewPlayerKit" />
+        <Spawn Id="HardsuitRespawnPlayer" Event="RespawnPlayerKit" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="VulcanLander" Event="NewPlayer" />
+    </StartCondition>
+    <StartCondition Id="MimasDefaultCommunity">
+        <Name Key="DefaultCommunityStartConditionMimas"/>
+        <Description Key="DefaultCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="MimasLander" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="VenusDefaultCommunity">
+        <Name Key="DefaultCommunityStartConditionVenus"/>
+        <Description Key="DefaultCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="VenusLander" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="HardsuitNewPlayer" Event="NewPlayerKit" />
+        <Spawn Id="HardsuitRespawnPlayer" Event="RespawnPlayerKit" />
+    </StartCondition>
+
+    <StartCondition Id="BrutalCommunity" IsBrutal="true">
+        <Name Key="BrutalCommunityStartCondition"/>
+        <Description Key="BrutalCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
+        <Spawn Id="BrutalCrate" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+
+    <StartCondition Id="EuropaBrutalCommunity" IsBrutal="true">
+        <Name Key="BrutalCommunityStartConditionEuropa"/>
+        <Description Key="BrutalCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
+        <Spawn Id="BrutalCrateEuropa" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="VulcanBrutalCommunity" IsBrutal="true">
+        <Name Key="BrutalCommunityStartConditionVulcan"/>
+        <Description Key="BrutalCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
+        <Spawn Id="BrutalCrateVulcan" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="OxygenTankInsulated" Event="NewPlayer"/>
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    <StartCondition Id="MimasBrutalCommunity" IsBrutal="true">
+        <Name Key="BrutalCommunityStartConditionMimas"/>
+        <Description Key="BrutalCommunityStartConditionDescription"/>
+        <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
+        <Spawn Id="BrutalCrateMimas" Event="NewWorld" />
+        <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
+        <Spawn Id="LanderCapsuleSmallRespawn" Event="RespawnPlayer" />
+        <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
+        <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    
+    
+    <!-- Landers -->
+    
+    <Spawn Id="DefaultLander">
+        <DynamicThing Id="LanderMkII" ExpandInStartScreen="true">
+            <SpawnPosition Rule="Radial"/>
+            <Spawn Id="OxygenTank"/>
+            <Spawn Id="WaterTank"/>
+            <Spawn Id="FuelTankInsulated" />
+            <Spawn Id="ConstructionSupplies"/>
+            <Spawn Id="ElectricalSupplies"/>
+            <Spawn Id="AirlockSupplies"/>
+            <Spawn Id="SurvivalSupplies"/>
+            <Spawn Id="HydroponicsSupplies"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="AsteroidsLander">
+        <DynamicThing Id="LanderMkII" ExpandInStartScreen="true">
+            <SpawnPosition Rule="Radial"/>
+            <Spawn Id="LiquidOxygenTankInsulated"/>
+            <Spawn Id="LiquidVolatilesTankInsulated"/>
+            <Spawn Id="ConstructionSupplies"/>
+            <Spawn Id="ElectricalSupplies"/>
+            <Spawn Id="AirlockSupplies"/>
+            <Spawn Id="SurvivalSuppliesAsteroids"/>
+            <Spawn Id="HydroponicsSupplies"/>
+            <Spawn Id="RocketSupplies"/>
+            <Spawn Id="Ingots"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="MimasLander">
+        <DynamicThing Id="LanderMkII" ExpandInStartScreen="true">
+            <SpawnPosition Rule="Radial"/>
+            <Spawn Id="OxygenTank"/>
+            <Spawn Id="WaterTank"/>
+            <Spawn Id="HydrogenFuelTankInsulated"/>
+            <Spawn Id="ConstructionSupplies"/>
+            <Spawn Id="ElectricalSuppliesMimas"/>
+            <Spawn Id="AirlockSupplies"/>
+            <Spawn Id="SurvivalSupplies"/>
+            <Spawn Id="HydroponicsSuppliesMimas"/>
+            <Spawn Id="StirlingEngineSupplies"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="EuropaLander">
+        <DynamicThing Id="LanderMkII" ExpandInStartScreen="true">
+            <SpawnPosition Rule="Radial"/>
+            <Spawn Id="OxygenTank"/>
+            <Spawn Id="WaterTank"/>
+            <Spawn Id="FuelTankInsulated"/>
+            <Spawn Id="ConstructionSupplies"/>
+            <Spawn Id="ElectricalSuppliesEuropa"/>
+            <Spawn Id="AirlockSupplies"/>
+            <Spawn Id="SurvivalSupplies"/>
+            <Spawn Id="HydroponicsSupplies"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="VulcanLander">
+        <DynamicThing Id="LanderMkII" ExpandInStartScreen="true">
+            <SpawnPosition Rule="Radial"/>
+            <Spawn Id="OxygenTankInsulated"/>
+            <Spawn Id="OxygenTankInsulated"/>
+            <Spawn Id="LiquidNitrogenTankInsulated"/>
+            <Spawn Id="WaterTankInsulated"/>
+            <Spawn Id="ConstructionSuppliesVulcan"/>
+            <Spawn Id="ElectricalSuppliesVulcan"/>
+            <Spawn Id="AdvancedAirlockSuppliesVulcan"/>
+            <Spawn Id="AtmosphericsSuppliesVulcan"/>
+            <Spawn Id="SurvivalSuppliesVulcan"/>
+            <Spawn Id="HydroponicsSuppliesVulcan"/>
+            <Spawn Id="TradingSuppliesVulcan"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="VenusLander">
+        <DynamicThing Id="LanderMkII" ExpandInStartScreen="true">
+            <SpawnPosition Rule="Radial"/>
+            <Spawn Id="OxygenTankInsulated"/>
+            <Spawn Id="WaterTankInsulated"/>
+            <Spawn Id="LiquidNitrogenTankInsulated"/>
+            <Spawn Id="ConstructionSuppliesVulcan"/>
+            <Spawn Id="ElectricalSuppliesVenus"/>
+            <Spawn Id="AdvancedAirlockSuppliesVulcan"/>
+            <Spawn Id="SurvivalSuppliesVulcan"/>
+            <Spawn Id="HydroponicsSuppliesVenus"/>
+            <Spawn Id="TradingSuppliesVulcan"/>
+        </DynamicThing>
+    </Spawn>
+    
+    <Spawn Id="LanderCapsuleSmall" StartScreenHeader="Landing Capsule">
+        <DynamicThing Id="LanderCapsuleSmall" ExpandInStartScreen="true">
+            <Name Key="SpawnDataLanderCapsule"/>
+            <SpawnPosition Rule="Radial"/>
+            <Gas Type="Oxygen" Moles="4.1" Celsius="20"/>
+            <DynamicThing Id="LanderCapsuleSmallDoor" SlotIndex="0" HideInStartScreen="true">
+                <Name Key="SpawnDataCapsuleDoor"/>
+            </DynamicThing>
+            <Spawn Id="WaterBottleBag"/>
+            <Spawn Id="CerealBarBag"/>
+            <Item Id="ItemWasteBagEmpty">
+                <Quantity Value="10"/>
+            </Item>
+            <MovePlayer SlotIndex="1"/>
+            <Interaction Type="Mode" Value="1">
+                <Delay Seconds="0"/>
+            </Interaction>
+            <Interaction Type="Powered" Value="1">
+                <Delay Seconds="0"/>
+            </Interaction>
+        </DynamicThing>
+    </Spawn>
+
+    <Spawn Id="LanderCapsuleSmallRespawn" StartScreenHeader="Landing Capsule Respawn">
+        <DynamicThing Id="LanderCapsuleSmall" ExpandInStartScreen="true">
+            <Name Key="SpawnDataLanderCapsule"/>
+            <SpawnPosition Rule="Radial"/>
+            <Gas Type="Oxygen" Moles="4.1" Celsius="20"/>
+            <DynamicThing Id="LanderCapsuleSmallDoor" SlotIndex="0" HideInStartScreen="true">
+                <Name Key="SpawnDataCapsuleDoor"/>
+            </DynamicThing>
+            <MovePlayer SlotIndex="1"/>
+            <Interaction Type="Mode" Value="1">
+                <Delay Seconds="0"/>
+            </Interaction>
+            <Interaction Type="Powered" Value="1">
+                <Delay Seconds="0"/>
+            </Interaction>
+        </DynamicThing>
+    </Spawn>
+
+
+    <!-- Standard crates -->
+
+    <Spawn Id="ConstructionSupplies" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataConstructionSupplies"/>
+            <Color Id="Yellow"/>
+            <Item Id="ItemKitArcFurnace"/>
+            <Item Id="ItemKitAutolathe"/>
+            <Item Id="ItemIronFrames">
+                <Quantity Value="30"/>
+            </Item>
+            <Item Id="ItemIronFrames">
+                <Quantity Value="15"/>
+            </Item>
+            <Item Id="ItemKitWallIron">
+                <Quantity Value="30"/>
+            </Item>
+            <Item Id="ItemKitWallIron">
+                <Quantity Value="30"/>
+            </Item>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemPlasticSheets">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemGlassSheets">
+                <Quantity Value="50"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="ElectricalSupplies" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataElectricalSupplies"/>
+            <Color Id="Orange"/>
+            <Item Id="ItemBatteryChargerSmall"/>
+            <Item Id="ItemKitSolarPanelBasic">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitSolidGenerator"/>
+            <Item Id="ItemCableCoil">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemAreaPowerControl">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Spawn Id="PortableGeneratorPackage"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="ElectricalSuppliesEuropa" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataElectricalSupplies"/>
+            <Color Id="Orange"/>
+            <Item Id="ItemBatteryChargerSmall"/>
+            <Item Id="ItemKitUprightWindTurbine">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitSolidGenerator"/>
+            <Item Id="ItemCableCoil">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemAreaPowerControl">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Spawn Id="PortableGeneratorPackage"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="ElectricalSuppliesMimas" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataElectricalSupplies"/>
+            <Color Id="Orange"/>
+            <Item Id="ItemBatteryChargerSmall"/>
+            <Item Id="ItemCableCoil">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemAreaPowerControl">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemKitBattery">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemSteelSheets">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemCableCoilHeavy">
+                <Quantity Value="5"/>
+            </Item>
+            <Spawn Id="PortableGeneratorPackage"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="StirlingEngineSupplies" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataStirlingEngineSupplies"/>
+            <Color Id="Blue"/>
+            <Item Id="ItemKitStirlingEngine">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemSteelSheets">
+                <Quantity Value="4"/>
+            </Item>
+            <Item Id="ItemElectronicParts">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitPipe">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemKitPipe">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemPipeCowl">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitPassiveLargeRadiatorGas">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitPipeUtility">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemPipeValve">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemInsulatedCanisterPackage">
+                <Color Id="Green"/>
+                <Item Id="ItemGasCanisterEmpty">
+                    <Name Key="SpawnDataStirlingEngineGas"/>
+                    <Color Id="Green"/>
+                    <Gas Type="Nitrogen" Moles="50" Celsius="20"/>
+                </Item>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="AirlockSupplies" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataAirlockSupplies"/>
+            <Color Id="Khaki"/>
+            <Item Id="ItemActiveVent">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitConsole">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitDoor">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="CircuitboardAirlockControl"/>
+            <Item Id="ItemPassiveVent">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitPipe">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemKitSensor"/>
+            <Item Id="ItemLabeller">
+                <Item Id="ItemBatteryCell">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+
+    <Spawn Id="NavigationPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataNavigationPackage"/>
+            <Item Id="ItemBeacon">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemFlagSmall">
+                <Quantity Value="10"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="SurvivalSupplies" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataSurvivalSupplies"/>
+            <Color Id="Red"/>
+            <Spawn Id="WaterBottlePackage"/>
+            <Spawn Id="CerealBarBox"/>
+            <Spawn Id="CerealBarBox"/>
+            <Spawn Id="NavigationPackage"/>
+            <Item Id="ItemReusableFireExtinguisher">
+                <Item Id="ItemLiquidCanisterEmpty">
+                    <Name Key="SpawnDataLiquidCO2Canister"/>
+                    <Color Id="Gray"/>
+                    <Gas Type="LiquidCarbonDioxide" Litres="12" Celsius="-40"/>
+                </Item>
+            </Item>
+            <Item Id="ItemWasteBagEmpty">
+                <Quantity Value="10"/>
+            </Item>
+            <Spawn Id="PortableScrubberPackage"/>
+            <Spawn Id="ResidentialSuppliesPackage"/>
+            <Spawn Id="MiningSuppliesPackage"/>
+            <Spawn Id="PortableAcPackage"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="SurvivalSuppliesAsteroids" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataSurvivalSupplies"/>
+            <Color Id="Red"/>
+            <Spawn Id="WaterBottlePackage"/>
+            <Spawn Id="CerealBarBox"/>
+            <Spawn Id="CerealBarBox"/>
+            <Item Id="ItemInsulatedCanisterPackage">
+                <Item Id="ItemGasCanisterEmpty">
+                    <Name Key="SpawnDataOxygenCanister"/>
+                    <Color Id="White"/>
+                    <Gas Type="Oxygen" Moles="150" Celsius="20"/>
+                </Item>
+            </Item>
+            <Item Id="ItemBeacon">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemFlagSmall">
+                <Quantity Value="10"/>
+            </Item>
+            <Item Id="ItemReusableFireExtinguisher">
+                <Item Id="ItemLiquidCanisterEmpty">
+                    <Name Key="SpawnDataLiquidCO2Canister"/>
+                    <Color Id="Gray"/>
+                    <Gas Type="LiquidCarbonDioxide" Litres="12" Celsius="-40"/>
+                </Item>
+            </Item>
+            <Spawn Id="PortableScrubberPackage"/>
+            <Spawn Id="ResidentialSuppliesPackage"/>
+            <Item Id="ItemCreditCard">
+                <Quantity Value="1000"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="HydroponicsSupplies" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataHydroponicsSupplies"/>
+            <Color Id="Green"/>
+            <Item Id="ItemKitGrowLight"/>
+            <Item Id="SeedBag_Potato">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="SeedBag_Wheet">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="SeedBag_Soybean">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemHydroponicTray">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemKitPipeUtilityLiquid">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitPipeLiquid">
+                <Quantity Value="20"/>
+            </Item>
+            <Spawn Id="WaterCanisterPackaged"/>
+            <Item Id="ItemKitPortablesConnector">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitWaterBottleFiller">
+                <Quantity Value="1"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="HydroponicsSuppliesMimas" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataHydroponicsSupplies"/>
+            <Color Id="Green"/>
+            <Item Id="SeedBag_Mushroom">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="SeedBag_Soybean">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemKitGrowLight"/>
+            <Item Id="ItemHydroponicTray">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemKitPipeUtilityLiquid">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitPipeLiquid">
+                <Quantity Value="20"/>
+            </Item>
+            <Spawn Id="WaterCanisterPackaged"/>
+            <Item Id="ItemKitPortablesConnector">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitWaterBottleFiller">
+                <Quantity Value="1"/>
+            </Item>
+            <Spawn Id="H2CombustorPackage"/>
+        </DynamicThing>
+    </Spawn>
+
+    <!-- Heavy Crates -->
+    
+    <Spawn Id="ConstructionSuppliesVulcan" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataConstructionSupplies"/>
+            <Color Id="Yellow"/>
+            <Item Id="ItemKitArcFurnace"/>
+            <Item Id="ItemKitAutolathe"/>
+            <Item Id="ItemIronFrames">
+                <Quantity Value="30"/>
+            </Item>
+            <Item Id="ItemIronFrames">
+                <Quantity Value="15"/>
+            </Item>
+            <Item Id="ItemKitWallIron">
+                <Quantity Value="30"/>
+            </Item>
+            <Item Id="ItemKitWallIron">
+                <Quantity Value="30"/>
+            </Item>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemPlasticSheets">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemGlassSheets">
+                <Quantity Value="50"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="ElectricalSuppliesVulcan" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataElectricalSupplies"/>
+            <Color Id="Orange"/>
+            <Item Id="ItemBatteryChargerSmall"/>
+            <Item Id="ItemKitSolarPanelBasic">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemKitUprightWindTurbine">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemCableCoil">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemAreaPowerControl">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Spawn Id="PortableGeneratorPackage"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="ElectricalSuppliesVenus" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataElectricalSupplies"/>
+            <Color Id="Orange"/>
+            <Item Id="ItemBatteryChargerSmall"/>
+            <Item Id="ItemKitSolarPanelBasic">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitSolidGenerator"/>
+            <Item Id="ItemCableCoil">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemAreaPowerControl">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge">
+                <Charge State="Full"/>
+            </Item>
+            <Spawn Id="PortableGeneratorPackage"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="HydroponicsSuppliesVulcan" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataHydroponicsSupplies"/>
+            <Color Id="Green"/>
+            <Item Id="SeedBag_Switchgrass">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="SeedBag_Switchgrass">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemKitGrowLight"/>
+            <Item Id="ItemHydroponicTray">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemHydroponicTray">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemKitPipeUtilityLiquid">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitPipeLiquid">
+                <Quantity Value="20"/>
+            </Item>
+            <Spawn Id="WaterCanisterPackaged"/>
+            <Item Id="ItemKitPortablesConnector">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitWaterBottleFiller">
+                <Quantity Value="1"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="HydroponicsSuppliesVenus" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataHydroponicsSupplies"/>
+            <Color Id="Green"/>
+            <Item Id="SeedBag_Potato">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemHydroponicTray">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemKitPipeUtilityLiquid">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitPipeLiquid">
+                <Quantity Value="20"/>
+            </Item>
+            <Spawn Id="WaterCanisterPackaged"/>
+            <Item Id="ItemKitPortablesConnector">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitWaterBottleFiller">
+                <Quantity Value="1"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="SurvivalSuppliesVulcan" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataSurvivalSupplies"/>
+            <Color Id="Red"/>
+            <Spawn Id="WaterBottlePackage"/>
+            <Spawn Id="CerealBarBox"/>
+            <Spawn Id="CerealBarBox"/>
+            <Item Id="ItemBeacon">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemReusableFireExtinguisher">
+                <Item Id="ItemLiquidCanisterEmpty">
+                    <Name Key="SpawnDataLiquidCO2Canister"/>
+                    <Color Id="Gray"/>
+                    <Gas Type="LiquidCarbonDioxide" Litres="12" Celsius="-40"/>
+                </Item>
+            </Item>
+            <Item Id="ItemFlagSmall">
+                <Quantity Value="10"/>
+            </Item>
+            <Spawn Id="PortableScrubberPackage"/>
+            <Spawn Id="ResidentialSuppliesPackage"/>
+            <Spawn Id="MiningSuppliesPackage"/>
+            <Spawn Id="PortableAcPackage"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="AdvancedAirlockSuppliesVulcan" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataAdvancedAirlockSupplies"/>
+            <Color Id="Khaki"/>
+            <Item Id="ItemActiveVent">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitConsole">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitDoor">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="CircuitboardAdvAirlockControl"/>
+            <Item Id="ItemPassiveVent">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitPipe">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemKitSensor"/>
+            <Item Id="ItemLabeller">
+                <Item Id="ItemBatteryCell">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="AtmosphericsSuppliesVulcan" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataAtmosphericsSupplies"/>
+            <Color Id="Brown"/>
+            <Item Id="ItemKitHydraulicPipeBender"/>
+            <Item Id="ItemKitPipe">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemPipeValve">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemActiveVent">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitAtmospherics"/>
+            <Item Id="ItemKitAtmospherics"/>
+            <Item Id="ItemPipeCowl">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitPipeUtility">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemKitPipeRadiator">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemAdhesiveInsulation">
+                <Quantity Value="20"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="TradingSuppliesVulcan" ShowInSpawnMenu="true">
+        <DynamicThing Id="CrateMkII">
+            <Name Key="SpawnDataTradingSupplies"/>
+            <Color Id="Gray"/>
+            <Item Id="ItemKitLandingPadBasic">
+                <Quantity Value="10"/>
+            </Item>
+            <Item Id="ItemKitComputer"/>
+            <Item Id="MotherboardComms"/>
+            <Item Id="ItemKitSmallSatelliteDish"/>
+            <Item Id="ItemKitVendingMachine"/>
+            <Item Id="ItemSteelSheets">
+                <Quantity Value="50"/>
+            </Item>
+            <Item Id="ItemSteelFrames">
+                <Quantity Value="30"/>
+            </Item>
+            <Item Id="ItemCreditCard">
+                <Quantity Value="600"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    
+    <!-- Other Crates -->
+    
+    <Spawn Id="BrutalCrate" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <SpawnPosition Rule="Radial"/>
+            <Name Key="SpawnDataMinimumSupplies"/>
+            <Color Id="Yellow"/>
+            <Item Id="ItemIronFrames">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="40"/>
+            </Item>
+            <Spawn Id="SolarPowerPackage"/>
+            <Item Id="ItemActiveVent">
+                <Quantity Value="1"/>
+            </Item>
+            <Spawn Id="ProductionPackage"/>
+            <Spawn Id="CerealBarBox"/>
+            <Spawn Id="WaterBottlePackage"/>
+            <Item Id="SeedBag_Potato">
+                <Quantity Value="3"/>
+            </Item>
+        </DynamicThing>
+        <Item Id="ItemWreckageSteelPanel0" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelPanel1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelPieceMedium" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelFragmentMedium" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageArcFurnace" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelStrip0" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelStrip1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSolarPanelFragment" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageHalfSteelBumper" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageElevatorLevelFront1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageCoalGenerator1" HideInStartScreen="true"/>
+    </Spawn>
+    <Spawn Id="BrutalCrateVulcan" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <SpawnPosition Rule="Radial"/>
+            <Name Key="SpawnDataMinimumSupplies"/>
+            <Color Id="Yellow"/>
+            <Item Id="ItemIronFrames">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="40"/>
+            </Item>
+            <Spawn Id="SolarPowerPackage"/>
+            <Item Id="ItemActiveVent">
+                <Quantity Value="1"/>
+            </Item>
+            <Spawn Id="ProductionPackage"/>
+            <Spawn Id="CerealBarBox"/>
+            <Spawn Id="WaterBottlePackage"/>
+            <Item Id="SeedBag_Potato">
+                <Quantity Value="3"/>
+            </Item>
+            <Spawn Id="WaterCanisterPackaged"/>
+        </DynamicThing>
+        <Item Id="ItemWreckageSteelPanel0" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelPanel1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelPieceMedium" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelFragmentMedium" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageArcFurnace" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelStrip0" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelStrip1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSolarPanelFragment" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageHalfSteelBumper" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageElevatorLevelFront1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageCoalGenerator1" HideInStartScreen="true"/>
+    </Spawn>
+    <Spawn Id="BrutalCrateEuropa" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <SpawnPosition Rule="Radial"/>
+            <Name Key="SpawnDataMinimumSupplies"/>
+            <Color Id="Yellow"/>
+            <Item Id="ItemIronFrames">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="40"/>
+            </Item>
+            <Spawn Id="HybridPowerPackage"/>
+            <Item Id="ItemActiveVent">
+                <Quantity Value="1"/>
+            </Item>
+            <Spawn Id="ProductionPackage"/>
+            <Spawn Id="CerealBarBox"/>
+            <Spawn Id="WaterBottlePackage"/>
+            <Item Id="SeedBag_Potato">
+                <Quantity Value="3"/>
+            </Item>
+        </DynamicThing>
+        <Item Id="ItemWreckageSteelPanel0" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelPanel1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelPieceMedium" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelFragmentMedium" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageArcFurnace" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelStrip0" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelStrip1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSolarPanelFragment" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageHalfSteelBumper" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageElevatorLevelFront1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageCoalGenerator1" HideInStartScreen="true"/>
+    </Spawn>
+    <Spawn Id="BrutalCrateMimas" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <SpawnPosition Rule="Radial"/>
+            <Name Key="SpawnDataMinimumSupplies"/>
+            <Color Id="Yellow"/>
+            <Item Id="ItemIronFrames">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="40"/>
+            </Item>
+            <Spawn Id="GasPowerPackage"/>
+            <Item Id="ItemActiveVent">
+                <Quantity Value="1"/>
+            </Item>
+            <Spawn Id="ProductionPackage"/>
+            <Spawn Id="CerealBarBox"/>
+            <Spawn Id="WaterBottlePackage"/>
+            <Item Id="SeedBag_Potato">
+                <Quantity Value="3"/>
+            </Item>
+        </DynamicThing>
+        <Item Id="ItemWreckageSteelPanel0" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelPanel1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelPieceMedium" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelFragmentMedium" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageArcFurnace" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelStrip0" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSteelStrip1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageSolarPanelFragment" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageHalfSteelBumper" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageElevatorLevelFront1" HideInStartScreen="true"/>
+        <Item Id="ItemWreckageCoalGenerator1" HideInStartScreen="true"/>
+    </Spawn>
+    
+    <Spawn Id="RocketSupplies" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataRocketSupplies"/>
+            <Color Id="Khaki"/>
+            <Spawn Id="RocketManufactoryPackage"/>
+            <Item Id="ItemKitLaunchMount"/>
+            <Item Id="ItemKitLaunchTower">
+                <Quantity Value="4"/>
+            </Item>
+            <Item Id="ItemKitComputer"/>
+            <Item Id="MotherboardRockets"/>
+            <Item Id="ItemKitRocketDatalink">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitFuselage"/>
+            <Item Id="ItemKitFuselage"/>
+            <Item Id="ItemKitFuselage"/>
+            <Item Id="ItemKitFuselage"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="Ingots" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicCrate" ShowDeepStartScreenTooltip="true">
+            <Name Key="SpawnDataIngots"/>
+            <Color Id="Blue"/>
+            <Item Id="ItemIronIngot">
+                <Quantity Value="500"/>
+            </Item>
+            <Item Id="ItemCopperIngot">
+                <Quantity Value="400"/>
+            </Item>
+            <Item Id="ItemGoldIngot">
+                <Quantity Value="200"/>
+            </Item>
+            <Item Id="ItemSiliconIngot">
+                <Quantity Value="300"/>
+            </Item>
+            <Item Id="ItemSteelIngot">
+                <Quantity Value="500"/>
+            </Item>
+            <Item Id="ItemSteelIngot">
+                <Quantity Value="500"/>
+            </Item>
+            <Item Id="ItemInvarIngot">
+                <Quantity Value="100"/>
+            </Item>
+            <Item Id="ItemElectrumIngot">
+                <Quantity Value="100"/>
+            </Item>
+            <Item Id="ItemConstantanIngot">
+                <Quantity Value="100"/>
+            </Item>
+            <Item Id="ItemSolderIngot">
+                <Quantity Value="100"/>
+            </Item>
+        </DynamicThing>
+    </Spawn>
+    
+    <!-- Tanks -->
+    
+    <Spawn Id="FuelTankInsulated" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicGasTankAdvanced">
+            <Color Id="Orange"/>
+            <Name Key="SpawnDataFuelTank"/>
+            <Gas Type="Volatiles" Moles="1000" Celsius="20"/>
+            <Gas Type="Oxygen" Moles="500" Celsius="20"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="HydrogenFuelTankInsulated" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicGasTankAdvanced">
+            <Color Id="Red"/>
+            <Name Key="SpawnDataHydrogenFuelTank"/>
+            <Gas Type="Hydrogen" Moles="1000" Celsius="20"/>
+            <Gas Type="Oxygen" Moles="500" Celsius="20"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="OxygenTankInsulated" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicGasTankAdvanced">
+            <Color Id="White"/>
+            <Name Key="SpawnDataOxygenTank"/>
+            <Gas Type="Oxygen" Moles="2500" Celsius="15"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="LiquidNitrogenTankInsulated" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicMKIILiquidCanisterEmpty">
+            <Color Id="Green"/>
+            <Name Key="SpawnDataLiquidNitrogenTank"/>
+            <Gas Type="LiquidNitrogen" Moles="10000" Celsius="-200"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="LiquidOxygenTankInsulated" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicMKIILiquidCanisterEmpty">
+            <Color Id="White"/>
+            <Name Key="SpawnDataLiquidOxygenTank"/>
+            <Gas Type="LiquidOxygen" Litres="750" Celsius="-185"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="LiquidVolatilesTankInsulated" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicMKIILiquidCanisterEmpty">
+            <Color Id="Red"/>
+            <Name Key="SpawnDataLiquidVolatilesTank"/>
+            <Gas Type="LiquidVolatiles" Litres="750" Celsius="-155"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="WaterTankInsulated" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicMKIILiquidCanisterEmpty">
+            <Color Id="Blue"/>
+            <Name Key="SpawnDataWaterTank"/>
+            <Gas Type="Water" Moles="5000" Celsius="20"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="OxygenTank" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicGasCanisterEmpty">
+            <Color Id="White"/>
+            <Name Key="SpawnDataOxygenTank"/>
+            <Gas Type="Oxygen" Moles="2500" Celsius="20"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="NitrogenTank" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicGasCanisterEmpty">
+            <Color Id="Green"/>
+            <Name Key="SpawnDataNitrogenTank"/>
+            <Gas Type="Nitrogen" Moles="2500" Celsius="20"/>
+        </DynamicThing>
+    </Spawn>
+    <Spawn Id="WaterTank" ShowInSpawnMenu="true">
+        <DynamicThing Id="DynamicLiquidCanisterEmpty">
+            <Color Id="Blue"/>
+            <Name Key="SpawnDataWaterTank"/>
+            <Gas Type="Water" Moles="5000" Celsius="20"/>
+        </DynamicThing>
+    </Spawn>
+    
+    <!-- Standard packages -->
+    
+    <Spawn Id="CerealBarBox" ShowInSpawnMenu="true">
+        <Item Id="ItemCerealBarBox">
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+        </Item>
+    </Spawn>
+    <Spawn Id="CerealBarBag" ShowInSpawnMenu="true">
+        <Item Id="ItemCerealBarBag">
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemCerealBar"/>
+        </Item>
+    </Spawn>
+    <Spawn Id="ProductionPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataProductionPackage"/>
+            <Item Id="ItemKitArcFurnace"/>
+            <Item Id="ItemKitAutolathe"/>
+            <Item Id="ItemIronSheets">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemCableCoil">
+                <Quantity Value="4"/>
+            </Item>
+            <Item Id="ItemPlasticSheets">
+                <Quantity Value="2"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="SolarPowerPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataSolarPowerPackage"/>
+            <Item Id="ItemAreaPowerControl">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemBatteryCell">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemBatteryChargerSmall"/>
+            <Item Id="ItemKitSolarPanel">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemGlassSheets">
+                <Quantity Value="1"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="HybridPowerPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataHybridPowerPackage"/>
+            <Item Id="ItemAreaPowerControl">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemBatteryCell">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemBatteryChargerSmall"/>
+            <Item Id="ItemKitUprightWindTurbine">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitSolarPanel">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemGlassSheets">
+                <Quantity Value="1"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="GasPowerPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataGasPowerPackage"/>
+            <Item Id="ItemAreaPowerControl">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemBatteryCell">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemBatteryChargerSmall"/>
+            <Item Id="ItemKitDynamicGenerator"/>
+            <Item Id="ItemPowerConnector">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemGasCanisterEmpty">
+                <Name Key="SpawnDataFuelCanister"/>
+                <Color Id="Orange"/>
+                <Gas Type="Volatiles" Moles="100" Celsius="20"/>
+                <Gas Type="Oxygen" Moles="50" Celsius="20"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="WaterBottlePackage" ShowInSpawnMenu="true">
+        <Item Id="ItemWaterBottlePackage">
+            <Item Id="ItemWaterPacket">
+                <Percent Value="100"/>
+            </Item>
+            <Item Id="ItemWaterPacket">
+                <Percent Value="100"/>
+            </Item>
+            <Item Id="ItemWaterPacket">
+                <Percent Value="100"/>
+            </Item>
+            <Item Id="ItemWaterPacket">
+                <Percent Value="100"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="WaterBottleBag" ShowInSpawnMenu="true">
+        <Item Id="ItemWaterBottleBag">
+            <Item Id="ItemWaterPacket">
+                <Percent Value="100"/>
+            </Item>
+            <Item Id="ItemWaterPacket">
+                <Percent Value="100"/>
+            </Item>
+            <Item Id="ItemWaterPacket">
+                <Percent Value="100"/>
+            </Item>
+            <Item Id="ItemWaterPacket">
+                <Percent Value="100"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="WaterCanisterPackaged" ShowInSpawnMenu="true">
+        <Item Id="ItemInsulatedCanisterPackage">
+            <Item Id="ItemLiquidCanisterEmpty">
+                <Name Key="SpawnDataWaterCanister"/>
+                <Color Id="Blue"/>
+                <Gas Type="Water" Litres="12" Celsius="20"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="PortableGeneratorPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataPortableGeneratorPackage"/>
+            <Item Id="ItemKitDynamicGenerator"/>
+            <Item Id="ItemPowerConnector">
+                    <Quantity Value="1"/>
+                </Item>
+            <Item Id="ItemInsulatedCanisterPackage">
+                <Item Id="ItemGasCanisterEmpty">
+                    <Name Key="SpawnDataFuelCanister"/>
+                    <Color Id="Orange"/>
+                    <Gas Type="Volatiles" Moles="100" Celsius="20"/>
+                    <Gas Type="Oxygen" Moles="50" Celsius="20"/>
+                </Item>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="PortableScrubberPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataPortableScrubberPackage"/>
+            <Item Id="ItemDynamicScrubber"/>
+            <Item Id="ItemBatteryCell">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemGasFilterPollutants"/>
+            <Item Id="ItemGasFilterVolatiles"/>
+        </Item>
+    </Spawn>
+    <Spawn Id="PortableAcPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataPortableACPackage"/>
+            <Item Id="ItemDynamicAirCon"/>
+            <Item Id="ItemBatteryCell">
+                <Charge State="Full"/>
+            </Item>
+            <Item Id="ItemInsulatedCanisterPackage">
+                <Item Id="ItemLiquidCanisterEmpty">
+                    <Name Key="SpawnDataCoolantCanister"/>
+                    <Color Id="Green"/>
+                    <Gas Type="LiquidNitrogen" Litres="12" Celsius="-220"/>
+                </Item>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="ResidentialSuppliesPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemResidentialPackage">
+            <Item Id="ItemKitCrateMount">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemKitLocker">
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemKitTables">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ApplianceMicrowave"/>
+            <Item Id="ItemEggCarton">
+                <Name Key="SpawnDataEggCartonFertilized"/>
+                <Item Id="ItemFertilizedEgg" />
+                <Item Id="ItemFertilizedEgg" />
+                <Item Id="ItemFertilizedEgg" />
+                <Item Id="ItemFertilizedEgg" />
+                <Item Id="ItemFertilizedEgg" />
+                <Item Id="ItemFertilizedEgg" />
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="MiningSuppliesPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemMiningPackage">
+            <Name Key="SpawnDataMiningSupplies"/>
+            <Item Id="ItemOreDetector">
+                <Item Id="ItemBatteryCell">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="FlareGun">
+                <Item Id="ItemRoadFlare">
+                    <Quantity Value="20"/>S
+                    <Color Id="White"/>
+                </Item>
+            </Item>
+            <Item Id="ItemMiningCharge">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemMiningCharge">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemMiningBelt"/>
+            <Item Id="ItemMiningDrillPneumatic">
+                <Item Id="ItemGasCanisterEmpty">
+                    <Name Key="SpawnDataPneumaticFuel"/>
+                    <Color Id="Green"/>
+                    <Gas Type="Nitrogen" Moles="150" Celsius="20"/>
+                </Item>
+            </Item>
+            
+        </Item>
+    </Spawn>
+    <Spawn Id="H2CombustorPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataH2CombustorSupplies"/>
+            <Item Id="ItemKitAtmospherics">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitPipe">
+                <Quantity Value="5"/>
+            </Item>
+            <Item Id="ItemPipeValve">
+                <Quantity Value="1"/>
+            </Item>
+            <Item Id="ItemKitPipeRadiatorLiquid">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemKitPipeRadiator">
+                <Quantity Value="3"/>
+            </Item>
+            <Item Id="ItemKitRegulator">
+                <Quantity Value="3"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="RocketManufactoryPackage" ShowInSpawnMenu="true">
+        <Item Id="ItemPortablesPackage">
+            <Name Key="SpawnDataRocketManufactoryPackage"/>
+            <Item Id="ItemKitRocketManufactory"/>
+            <Item Id="ItemSteelSheets"> 
+                <Quantity Value="2"/>
+            </Item>
+            <Item Id="ItemCableCoil">
+                <Quantity Value="4"/>
+            </Item>
+            <Item Id="ItemPlasticSheets">
+                <Quantity Value="2"/>
+            </Item>
+        </Item>
+    </Spawn>
+    
+    <!-- Equipment -->
+    
+    <Spawn Id="EmergencyToolbelt">
+        <Item Id="ItemEmergencyToolBelt" SlotId="Belt">
+            <Item Id="ItemEmergencyWrench" SlotId="Tool"/>
+            <Item Id="ItemEmergencyCrowbar" SlotId="Tool"/>
+            <Item Id="ItemEmergencyDrill" SlotId="Tool">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemEmergencyWireCutters" SlotId="Tool"/>
+            <Item Id="ItemEmergencyArcWelder" SlotId="Tool">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemEmergencyScrewdriver" SlotId="Tool"/>
+            <Item Id="ItemEmergencyAngleGrinder" SlotId="Tool">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemEmergencyPickaxe" SlotId="Tool">
+                <Quantity Value="50"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="DefaultToolbelt" ShowInSpawnMenu="true">
+        <Name Value="Default ToolBelt"/>
+        <Item Id="ItemToolBelt" SlotId="Belt">
+            <Item Id="ItemWrench" SlotId="Tool"/>
+            <Item Id="ItemCrowbar" SlotId="Tool"/>
+            <Item Id="ItemDrill" SlotId="Tool">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemWireCutters" SlotId="Tool"/>
+            <Item Id="ItemWeldingTorch" SlotId="Tool">
+                <Item Id="ItemGasCanisterEmpty" SlotId="GasCanister">
+                    <Name Key="SpawnDataFuelCanister"/>
+                    <Color Id="Orange"/>
+                    <Gas Type="Oxygen" Moles="50" Celsius="20"/>
+                    <Gas Type="Volatiles" Moles="100" Celsius="20"/>
+                </Item>
+            </Item>
+            <Item Id="ItemScrewdriver" SlotId="Tool"/>
+            <Item Id="ItemAngleGrinder" SlotId="Tool">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemCableCoil" SlotId="Tool">
+                <Quantity Value="50"/>
+            </Item>
+        </Item>
+    </Spawn>
+    <Spawn Id="HardsuitToolbelt" ShowInSpawnMenu="true">
+        <Name Value="MkII ToolBelt"/>
+        <Item Id="ItemToolBelt" SlotId="Belt">
+            <Item Id="ItemMKIIWrench" SlotId="Tool"/>
+            <Item Id="ItemMKIICrowbar" SlotId="Tool"/>
+            <Item Id="ItemMKIIDrill" SlotId="Tool">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemMKIIWireCutters" SlotId="Tool"/>
+            <Item Id="ItemMKIIArcWelder" SlotId="Tool">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemMKIIScrewdriver" SlotId="Tool"/>
+            <Item Id="ItemMKIIAngleGrinder" SlotId="Tool">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemCableCoil" SlotId="Tool">
+                <Quantity Value="50"/>
+            </Item>
+        </Item>
+    </Spawn>
+    
+    <Spawn Id="DefaultJetpack" ShowInSpawnMenu="true">
+        <Name Value="Default Jetpack"/>
+        <Item Id="ItemJetpackBasic" SlotId="Back">
+            <Item Id="ItemGasCanisterEmpty" SlotId="Propellent">
+                <Name Key="SpawnDataPropellentCanister"/>
+                <Color Id="Green"/>
+                <Gas Type="Nitrogen" Moles="150" Celsius="20"/>
+            </Item>
+            <Item Id="ItemInjectorHealth"/>
+            <Item Id="ItemTablet">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="CartridgeTracker"/>
+            <Item Id="CartridgeNetworkAnalyser"/>
+            <Item Id="CartridgeAtmosAnalyser"/>
+            <Item Id="ItemMiningBelt">
+                <Item Id="ItemMiningDrill" SlotId="Tool">
+                    <Item Id="ItemBatteryCell" SlotId="Battery">
+                        <Charge State="Full"/>
+                    </Item>
+                </Item>
+                <Item Id="ItemPickaxe" SlotId="Tool"/>
+            </Item>
+            <Item Id="ItemRoadFlare">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="PortableSolarPanel"/>
+        </Item>
+    </Spawn>
+    <Spawn Id="HardsuitJetpack" ShowInSpawnMenu="true">
+        <Name Value="Default Hardsuit Jetpack"/>
+        <Item Id="ItemHardJetpack" SlotId="Back">
+            <Item Id="ItemGasCanisterEmpty" SlotId="Propellent">
+                <Name Key="SpawnDataPropellentCanister"/>
+                <Color Id="Green"/>
+                <Gas Type="Nitrogen" Moles="150" Celsius="20"/>
+            </Item>
+            <Item Id="ItemInjectorHealth"/>
+            <Item Id="ItemTablet">
+                <Item Id="ItemBatteryCell" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="CartridgeTracker"/>
+            <Item Id="CartridgeNetworkAnalyser"/>
+            <Item Id="CartridgeAtmosAnalyser"/>
+            <Item Id="ItemMiningBelt">
+                <Item Id="ItemMKIIMiningDrill" SlotId="Tool">
+                    <Item Id="ItemBatteryCell" SlotId="Battery">
+                        <Charge State="Full"/>
+                    </Item>
+                </Item>
+                <Item Id="ItemPickaxe" SlotId="Tool"/>
+            </Item>
+            <Item Id="ItemRoadFlare">
+                <Quantity Value="20"/>
+            </Item>
+            <Item Id="PortableSolarPanel"/>
+        </Item>
+    </Spawn>
+    <Spawn Id="TerrainEditJetpack" ShowInSpawnMenu="true">
+        <Name Value="Default Debug Jetpack"/>
+        <Item Id="ItemDebugJetpack" SlotId="Back">
+            <Item Id="ItemGasCanisterEmpty" SlotId="Propellent">
+                <Name Key="SpawnDataPropellentCanister"/>
+                <Color Id="Green"/>
+                <Gas Type="Nitrogen" Moles="150" Celsius="20"/>
+            </Item>
+        </Item>
+    </Spawn>
+
+    <Spawn Id="DefaultJumpsuit">
+        <Item Id="UniformOrangeJumpSuit" SlotId="Uniform">
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemWaterBottle">
+                <Percent Value="100"/>
+            </Item>
+            <Item Id="ItemCreditCard" SlotId="CreditCard">
+                <Quantity Value="200"/>
+            </Item>
+        </Item>
+    </Spawn>
+    
+    <!-- Player Spawn -->
+
+    <Spawn Id="DefaultBrutalKitNewPlayer">
+        <Spawn Id="DefaultBrutalKitHuman">
+            <Species Id="Human"/>
+        </Spawn>
+        <Spawn Id="DefaultBrutalKitRobot">
+            <Species Id="Robot"/>
+        </Spawn>
+        <Spawn Id="DefaultBrutalKitZrilian">
+            <Species Id="Zrilian"/>
+        </Spawn>
+    </Spawn>
+    
+    <Spawn Id="DefaultNewPlayer">
+        <Spawn Id="DefaultHuman">
+            <Species Id="Human"/>
+        </Spawn>
+        <Spawn Id="DefaultRobot">
+            <Species Id="Robot"/>
+        </Spawn>
+        <Spawn Id="DefaultZrilian">
+            <Species Id="Zrilian"/>
+        </Spawn>
+    </Spawn>
+    <Spawn Id="HardsuitNewPlayer">
+        <Spawn Id="HardsuitHuman">
+            <Species Id="Human"/>
+        </Spawn>
+        <Spawn Id="HardsuitZrilian">
+            <Species Id="Zrilian"/>
+        </Spawn>
+        <Spawn Id="DefaultRobot">
+            <Species Id="Robot"/>
+        </Spawn>
+    </Spawn>
+    <Spawn Id="TerrainEditNewPlayer">
+        <Spawn Id="TerrainEditAnySpecies"/>
+    </Spawn>
+
+    <Spawn Id="DefaultRespawnPlayer">
+        <!-- Full Suit Respawn -->
+        <Spawn Id="DefaultHuman">
+            <Species Id="Human"/>
+            <Difficulty Id="Easy" Compare="EqualOrLess"/>
+        </Spawn>
+        <Spawn Id="DefaultRobot">
+            <Species Id="Robot"/>
+            <Difficulty Id="Easy" Compare="EqualOrLess"/>
+        </Spawn>
+        <Spawn Id="DefaultZrilian">
+            <Species Id="Zrilian"/>
+            <Difficulty Id="Easy" Compare="EqualOrLess"/>
+        </Spawn>
+
+        <!-- Emergency Suit Respawn -->
+        <Spawn Id="EmergencyRespawnHuman">
+            <Species Id="Human"/>
+            <Difficulty Id="Normal" Compare="Equal"/>
+        </Spawn>
+        <Spawn Id="EmergencyRespawnZrilian">
+            <Species Id="Zrilian"/>
+            <Difficulty Id="Normal" Compare="Equal"/>
+        </Spawn>
+        <Spawn Id="EmergencyRespawnHuman">
+            <Species Id="Human"/>
+            <Difficulty Id="Stationeer" Compare="Equal"/>
+        </Spawn>
+        <Spawn Id="EmergencyRespawnZrilian">
+            <Species Id="Zrilian"/>
+            <Difficulty Id="Stationeer" Compare="Equal"/>
+        </Spawn>
+        <!-- No Suit Respawn -->
+        <Spawn Id="EmergencyRespawnRobot">
+            <Species Id="Robot"/>
+            <Difficulty Id="Normal" Compare="Equal"/>
+        </Spawn>
+        <Spawn Id="EmergencyRespawnRobot">
+            <Species Id="Robot"/>
+            <Difficulty Id="Stationeer" Compare="Equal"/>
+        </Spawn>
+    </Spawn>
+    <Spawn Id="HardsuitRespawnPlayer">
+        <!-- Full Suit Respawn -->
+        <Spawn Id="HardsuitHuman">
+            <Species Id="Human"/>
+            <Difficulty Id="Easy" Compare="EqualOrLess"/>
+        </Spawn>
+        <Spawn Id="DefaultRobot">
+            <Species Id="Robot"/>
+            <Difficulty Id="Easy" Compare="EqualOrLess"/>
+        </Spawn>
+        <Spawn Id="HardsuitZrilian">
+            <Species Id="Zrilian"/>
+            <Difficulty Id="Easy" Compare="EqualOrLess"/>
+        </Spawn>
+
+        <!-- Emergency Suit Respawn -->
+        <Spawn Id="EmergencyRespawnHuman">
+            <Species Id="Human"/>
+            <Difficulty Id="Normal" Compare="Equal"/>
+        </Spawn>
+        <Spawn Id="EmergencyRespawnZrilian">
+            <Species Id="Zrilian"/>
+            <Difficulty Id="Normal" Compare="Equal"/>
+        </Spawn>
+        
+        <Spawn Id="EmergencyRespawnRobot">
+            <Species Id="Robot"/>
+            <Difficulty Id="Normal" Compare="Equal"/>
+        </Spawn>
+        <Spawn Id="EmergencyRespawnRobot">
+            <Species Id="Robot"/>
+            <Difficulty Id="Stationeer" Compare="Equal"/>
+        </Spawn>
+        <Spawn Id="EmergencyRespawnHuman">
+            <Species Id="Human"/>
+            <Difficulty Id="Stationeer" Compare="Equal"/>
+        </Spawn>
+        <Spawn Id="EmergencyRespawnZrilian">
+            <Species Id="Zrilian"/>
+            <Difficulty Id="Stationeer" Compare="Equal"/>
+        </Spawn>
+    </Spawn>
+    
+    <Spawn Id="TerrainEditRespawnPlayer">
+        <Spawn Id="TerrainEditAnySpecies"/>
+    </Spawn>
+
+    <Spawn Id="EmergencyRespawnHuman">
+        <Item Id="ItemEmergencySpaceHelmet" SlotId="Helmet"/>
+        <Item Id="ItemEmergencyEvaSuit" SlotId="Suit">
+            <Item Id="ItemGasCanisterEmpty" SlotId="AirTank">
+                <Name Key="SpawnDataOxygenCanister"/>
+                <Color Id="White"/>
+                <Gas Type="Oxygen" Moles="150" Celsius="20"/>
+            </Item>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasCanisterEmpty" SlotId="WasteTank"/>
+            <Item Id="ItemBatteryCell" SlotId="LifeSupport">
+                <Charge State="Full"/>
+            </Item>
+        </Item>
+        <Spawn Id="EmergencyToolbelt"/>
+    </Spawn>
+    <Spawn Id="EmergencyRespawnZrilian">
+        <Item Id="ItemEmergencySpaceHelmet" SlotId="Helmet"/>
+        <Item Id="ItemEmergencyEvaSuit" SlotId="Suit">
+            <Item Id="ItemGasCanisterEmpty" SlotId="AirTank">
+                <Name Key="SpawnDataMethaneCanister"/>
+                <Color Id="Red"/>
+                <Gas Type="Volatiles" Moles="150" Celsius="20"/>
+            </Item>
+            <Item Id="ItemGasFilterNitrousOxide" SlotId="Filter"/>
+            <Item Id="ItemGasCanisterEmpty" SlotId="WasteTank"/>
+            <Item Id="ItemBatteryCell" SlotId="LifeSupport">
+                <Charge State="Full"/>
+            </Item>
+        </Item>
+        <Spawn Id="EmergencyToolbelt"/>
+    </Spawn>
+    <Spawn Id="EmergencyRespawnRobot">
+        <Item Id="ItemBatteryCell" SlotId="Battery">
+            <Charge State="Full"/>
+        </Item>
+    </Spawn>
+
+    <!-- Player Character -->
+
+    <Spawn Id="DefaultHuman">
+        <Spawn Id="DefaultJumpsuit"/>
+        <Item Id="ItemDuctTape" SlotIndex="1"/>
+        <Item Id="ItemSpaceHelmet" SlotId="Helmet"/>
+        <Item Id="ItemEvaSuit" SlotId="Suit">
+            <Item Id="ItemGasCanisterEmpty" SlotId="AirTank">
+                <Name Key="SpawnDataOxygenCanister"/>
+                <Color Id="White"/>
+                <Gas Type="Oxygen" Moles="150" Celsius="20"/>
+            </Item>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasCanisterEmpty" SlotId="WasteTank"/>
+            <Item Id="ItemBatteryCellLarge" SlotId="LifeSupport">
+                <Charge State="Full"/>
+            </Item>
+        </Item>
+        <Spawn Id="DefaultJetpack"/>
+        <Spawn Id="DefaultToolbelt"/>
+    </Spawn>
+    <Spawn Id="DefaultRobot">
+        <Item Id="ItemBatteryCellLarge" SlotId="Battery">
+            <Charge State="Full"/>
+        </Item>
+        <Spawn Id="DefaultJetpack"/>
+        <Spawn Id="DefaultToolbelt"/>
+    </Spawn>
+    <Spawn Id="DefaultZrilian">
+        <Spawn Id="DefaultJumpsuit"/>
+        <Item Id="ItemDuctTape" SlotIndex="1"/>
+        <Item Id="ItemSpaceHelmet" SlotId="Helmet"/>
+        <Item Id="ItemEvaSuit" SlotId="Suit">
+            <Item Id="ItemGasCanisterEmpty" SlotId="AirTank">
+                <Name Key="SpawnDataMethaneCanister"/>
+                <Color Id="Red"/>
+                <Gas Type="Volatiles" Moles="150" Celsius="20"/>
+            </Item>
+            <Item Id="ItemGasFilterNitrousOxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterNitrousOxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterNitrousOxide" SlotId="Filter"/>
+            <Item Id="ItemGasCanisterEmpty" SlotId="WasteTank"/>
+            <Item Id="ItemBatteryCellLarge" SlotId="LifeSupport">
+                <Charge State="Full"/>
+            </Item>
+        </Item>
+        <Spawn Id="DefaultJetpack"/>
+        <Spawn Id="DefaultToolbelt"/>
+    </Spawn>
+
+    <Spawn Id="HardsuitHuman" StartScreenHeader="Human Player">
+        <Spawn Id="DefaultJumpsuit"/>
+        <Item Id="ItemMKIIDuctTape" SlotIndex="1"/>
+        <Item Id="ItemHardsuitHelmet" SlotId="Helmet"/>
+        <Item Id="ItemHardSuit" SlotId="Suit">
+            <Item Id="ItemGasCanisterEmpty" SlotId="AirTank">
+                <Name Key="SpawnDataOxygenCanister"/>
+                <Color Id="White"/>
+                <Gas Type="Oxygen" Moles="150" Celsius="20"/>
+            </Item>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasCanisterEmpty" SlotId="WasteTank"/>
+            <Item Id="ItemBatteryCellLarge" SlotId="LifeSupport">
+                <Charge State="Full"/>
+            </Item>
+        </Item>
+        <Spawn Id="HardsuitToolbelt"/>
+        <Spawn Id="HardsuitJetpack"/>
+    </Spawn>
+    <Spawn Id="HardsuitZrilian" StartScreenHeader="Zrilian Player">
+        <Spawn Id="DefaultJumpsuit"/>
+        <Item Id="ItemMKIIDuctTape" SlotIndex="1"/>
+        <Item Id="ItemHardsuitHelmet" SlotId="Helmet"/>
+        <Item Id="ItemHardSuit" SlotId="Suit">
+            <Item Id="ItemGasCanisterEmpty" SlotId="AirTank">
+                <Name Key="SpawnDataMethaneCanister"/>
+                <Color Id="Red"/>
+                <Gas Type="Volatiles" Moles="150" Celsius="20"/>
+            </Item>
+            <Item Id="ItemGasFilterNitrousOxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterNitrousOxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterNitrousOxide" SlotId="Filter"/>
+            <Item Id="ItemGasCanisterEmpty" SlotId="WasteTank"/>
+            <Item Id="ItemBatteryCellLarge" SlotId="LifeSupport">
+                <Charge State="Full"/>
+            </Item>
+        </Item>
+        <Spawn Id="HardsuitToolbelt"/>
+        <Spawn Id="HardsuitJetpack"/>
+    </Spawn>
+    
+    <Spawn Id="TerrainEditAnySpecies">
+        <Spawn Id="TerrainEditJetpack"/>
+        <Item Id="ItemTerrainEditor" SlotIndex="1"/>
+        <Item Id="ItemDebugHeadlamp" SlotId="Helmet">
+            <Item Id="ItemBatteryCellNuclear" SlotId="Battery">
+                <Charge State="Full"/>
+            </Item>
+        </Item>
+    </Spawn>
+    
+    <!-- Tutorial 1 -->
+
+    <StartCondition Id="Tutorial1StartCondition">
+        <Name Key="Tutorial1StartCondition"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="Tutorial1Player" Event="NewPlayerKit"/>
+        <Spawn Id="Tutorial1Player" Event="RespawnPlayerKit"/>
+    </StartCondition>
+    
+    <Spawn Id="Tutorial1Player">
+        <Item Id="UniformOrangeJumpSuit" SlotId="Uniform"/>
+        <Spawn Id="Tutorial1Backpack"/>
+    </Spawn>
+
+    <Spawn Id="Tutorial1Backpack">
+        <Item Id="ItemHardBackpack" SlotId="Back">
+            <Item Id="ItemToolBelt">
+                <Item Id="ItemWrench" SlotId="Tool"/>
+                <Item Id="ItemCrowbar" SlotId="Tool"/>
+                <Item Id="ItemDrill" SlotId="Tool">
+                    <Item Id="ItemBatteryCellLarge" SlotId="Battery">
+                        <Charge State="Full"/>
+                    </Item>
+                </Item>
+                <Item Id="ItemWireCutters" SlotId="Tool"/>
+                <Item Id="ItemWeldingTorch" SlotId="Tool">
+                    <Item Id="ItemGasCanisterEmpty" SlotId="GasCanister">
+                        <Name Key="SpawnDataFuelCanister"/>
+                        <Color Id="Orange"/>
+                        <Gas Type="Oxygen" Moles="50" Celsius="20"/>
+                        <Gas Type="Volatiles" Moles="100" Celsius="20"/>
+                    </Item>
+                </Item>
+                <Item Id="ItemScrewdriver" SlotId="Tool"/>
+                <Item Id="ItemAngleGrinder" SlotId="Tool">
+                    <Item Id="ItemBatteryCellLarge" SlotId="Battery">
+                        <Charge State="Full"/>
+                    </Item>
+                </Item>
+            </Item>
+        </Item>
+    </Spawn>
+    
+    <!-- Tutorial 3 -->
+    
+    <StartCondition Id="Tutorial3StartCondition">
+        <Name Key="Tutorial3StartCondition"/>
+        <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
+        <Spawn Id="Tutorial3Player" Event="NewPlayerKit"/>
+        <Spawn Id="Tutorial3Player" Event="RespawnPlayerKit"/>
+    </StartCondition>
+
+    <Spawn Id="Tutorial3Player">
+        <Item Id="UniformOrangeJumpSuit" SlotId="Uniform">
+            <Item Id="ItemCerealBar"/>
+            <Item Id="ItemWaterBottle">
+                <Percent Value="100"/>
+            </Item>
+        </Item>
+        <Item Id="ItemHardBackpack" SlotId="Back">
+            <Item Id="ItemTablet">
+                <Item Id="ItemBatteryCellLarge" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="CartridgeAtmosAnalyser"/>
+        </Item>
+        <Item Id="ItemSpaceHelmet" SlotId="Helmet"/>
+        <Item Id="ItemEvaSuit" SlotId="Suit">
+            <Item Id="ItemGasCanisterEmpty" SlotId="AirTank">
+                <Name Key="SpawnDataOxygenCanister"/>
+                <Color Id="White"/>
+                <Gas Type="Oxygen" Moles="20" Celsius="20"/>
+            </Item>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasFilterCarbonDioxide" SlotId="Filter"/>
+            <Item Id="ItemGasCanisterEmpty" SlotId="WasteTank">
+                <Gas Type="CarbonDioxide" Moles="80" Celsius="20"/>
+            </Item>
+            <Item Id="ItemBatteryCellLarge" SlotId="LifeSupport">
+                <Charge State="Full"/>
+            </Item>
+        </Item>
+        <Item Id="ItemToolBelt" SlotId="Belt">
+            <Item Id="ItemWrench" SlotId="Tool"/>
+            <Item Id="ItemCrowbar" SlotId="Tool"/>
+            <Item Id="ItemDrill" SlotId="Tool">
+                <Item Id="ItemBatteryCellLarge" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+            <Item Id="ItemWireCutters" SlotId="Tool"/>
+            <Item Id="ItemWeldingTorch" SlotId="Tool">
+                <Item Id="ItemGasCanisterEmpty" SlotId="GasCanister">
+                    <Name Key="SpawnDataFuelCanister"/>
+                    <Color Id="Orange"/>
+                    <Gas Type="Oxygen" Moles="50" Celsius="20"/>
+                    <Gas Type="Volatiles" Moles="100" Celsius="20"/>
+                </Item>
+            </Item>
+            <Item Id="ItemScrewdriver" SlotId="Tool"/>
+            <Item Id="ItemAngleGrinder" SlotId="Tool">
+                <Item Id="ItemBatteryCellLarge" SlotId="Battery">
+                    <Charge State="Full"/>
+                </Item>
+            </Item>
+        </Item>
+    </Spawn>
+    
+</GameData>

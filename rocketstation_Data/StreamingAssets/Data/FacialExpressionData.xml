@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--cannot have an expression with an Id "list" because it is also a command-->
+<GameData>
+    <Expression Id="Neutral" Happy="0" Angry="0" None="0" Surprised="0" Open="0" Dead="0">
+        <Name Value="ExpressionNeutral"/>
+    </Expression>
+    <Expression Id="Dead" Happy="0" Angry="0.473" None="0" Surprised="0.192" Open="0" Dead="0.281">
+        <Name Value="ExpressionDead"/>
+    </Expression>
+    <Expression Id="Hurt" Happy="0" Angry="0.8" None="0" Surprised="0.2" Open="0" Dead="0">
+        <Name Value="ExpressionHurt"/>
+    </Expression>
+    <Expression Id="Happy" Happy="0.8" Angry="0" None="0" Surprised="0.2" Open="0" Dead="0">
+        <Name Value="ExpressionHappy"/>
+    </Expression>
+</GameData>

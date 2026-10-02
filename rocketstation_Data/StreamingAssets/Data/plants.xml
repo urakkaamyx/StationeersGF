@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+    <!-- ItemPlantSwitchGrass name kept so old prefabs still load -->
+    <CustomPlant Name="ItemPlantSwitchGrass" StackQuantityMax="10" HarvestQuantityMax="15" LifeRequirementsId="LifeRequirementsItemPlantSwitchGrass" AlcoholPerUnit="3">
+        <Mesh Path="Meshes/Plants/Switchgrass/ItemSwitchgrass.obj"/>
+        <Texture Path="Textures/Plants/Switchgrass/ItemSwitchgrass_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Switchgrass/ItemSwitchgrass_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSwitchgrass"/>
+        <Perennial RevertToStage="2"/>
+        <Seed Id="SeedBag_Switchgrass"/>
+        <Fruit Id="ItemCropHay"/>
+        <Stage Length="800">
+            <Mesh Path="Meshes/Plants/Switchgrass/SwitchgrassStage00.obj"/>
+        </Stage>
+        <Stage Length="666">
+            <Mesh Path="Meshes/Plants/Switchgrass/SwitchgrassStage01.obj"/>
+        </Stage>
+        <Stage Length="666">
+            <Mesh Path="Meshes/Plants/Switchgrass/SwitchgrassStage02.obj"/>
+        </Stage>
+        <Stage Length="666">
+            <Mesh Path="Meshes/Plants/Switchgrass/SwitchgrassStage03.obj"/>
+        </Stage>
+        <Stage Length="1332">
+            <Mesh Path="Meshes/Plants/Switchgrass/SwitchgrassStage04.obj"/>
+        </Stage>
+        <Stage Length="666" Mature="true">
+            <Mesh Path="Meshes/Plants/Switchgrass/SwitchgrassStage05.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Switchgrass/SwitchgrassStage05.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Switchgrass/SwitchgrassStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Switchgrass" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Switchgrass/SeedBagSwitchgrass_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Switchgrass/SeedBagSwitchgrass_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemPlantSwitchGrass"/>
+    </CustomSeed>
+    
+    <CustomPlant Name="ItemStrawberry" StackQuantityMax="10" HarvestQuantityMax="3" Nutrition="2" MoodBonus="0.1" AlcoholPerUnit="12">
+        <Mesh Path="Meshes/Plants/Strawberry/ItemStrawberry.obj"/>
+        <Texture Path="Textures/Plants/Strawberry/ItemStrawberry_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Strawberry/ItemStrawberry_Thumb.png"/>
+        <Blueprint Id="BlueprintItemStrawberry"/>
+        <Perennial RevertToStage="2"/>
+        <Seed Id="SeedBag_Strawberry"/>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Strawberry/StrawberryStage00.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Strawberry/StrawberryStage01.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Strawberry/StrawberryStage02.obj"/>
+        </Stage>
+        <Stage Length="3000">
+             <Mesh Path="Meshes/Plants/Strawberry/StrawberryStage03.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Strawberry/StrawberryStage04.obj"/>
+        </Stage>
+        <Stage Length="3000" Mature="true">
+            <Mesh Path="Meshes/Plants/Strawberry/StrawberryStage05.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Strawberry/StrawberryStage05.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Strawberry/StrawberryStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+    
+    <CustomSeed Name="SeedBag_Strawberry" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Strawberry/SeedBagStrawberry_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Strawberry/SeedBagStrawberry_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemStrawberry"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemTomato" StackQuantityMax="20" HarvestQuantityMax="3" Nutrition="15" MicrowaveIngredient="true" LifeRequirementsId="LifeRequirementsItemTomato" AlcoholPerUnit="12">
+        <Mesh Path="Meshes/Plants/Tomato/ItemTomato.obj"/>
+        <Texture Path="Textures/Plants/Tomato/ItemTomato_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Tomato/ItemTomato_Thumb.png"/>
+        <Blueprint Id="BlueprintItemTomato"/>
+        <Perennial RevertToStage="2"/>
+        <Seed Id="SeedBag_Tomato"/>
+        <Stage Length="3600">
+            <Mesh Path="Meshes/Plants/Tomato/TomatoStage00.obj"/>
+        </Stage>
+        <Stage Length="2700">
+            <Mesh Path="Meshes/Plants/Tomato/TomatoStage01.obj"/>
+        </Stage>
+        <Stage Length="2700">
+            <Mesh Path="Meshes/Plants/Tomato/TomatoStage02.obj"/>
+        </Stage>
+        <Stage Length="2700">
+            <Mesh Path="Meshes/Plants/Tomato/TomatoStage03.obj"/>
+        </Stage>
+        <Stage Length="2700" Mature="true">
+            <Mesh Path="Meshes/Plants/Tomato/TomatoStage04.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Tomato/TomatoStage04.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Tomato/TomatoStageDead.obj"/>
+        </Stage>
+        <Reagents Tomato="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Tomato" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Tomato/SeedBagTomato_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Tomato/SeedBagTomato_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemTomato"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemBlueberry" StackQuantityMax="10" HarvestQuantityMax="2" Nutrition="2" MoodBonus="0.1" AlcoholPerUnit="18">
+        <Mesh Path="Meshes/Plants/Blueberry/ItemBlueberry.obj"/>
+        <Texture Path="Textures/Plants/Blueberry/ItemBlueberry_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Blueberry/ItemBlueberry_Thumb.png"/>
+        <Blueprint Id="BlueprintItemBlueberry"/>
+        <Perennial RevertToStage="2"/>
+        <Seed Id="SeedBag_Blueberry"/>
+        <Stage Length="3600">
+            <Mesh Path="Meshes/Plants/Blueberry/BlueberryStage00.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Blueberry/BlueberryStage01.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Blueberry/BlueberryStage02.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Blueberry/BlueberryStage03.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Blueberry/BlueberryStage04.obj"/>
+        </Stage>
+        <Stage Length="3000" Mature="true">
+            <Mesh Path="Meshes/Plants/Blueberry/BlueberryStage05.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Blueberry/BlueberryStage05.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Blueberry/BlueberryStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Blueberry" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Blueberry/SeedBagBlueberry_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Blueberry/SeedBagBlueberry_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemBlueberry"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemWatermelon" StackQuantityMax="10" HarvestQuantityMax="1" Nutrition="5" MoodBonus="0.1" AlcoholPerUnit="40">
+        <Mesh Path="Meshes/Plants/Watermelon/ItemWatermelon.obj"/>
+        <Texture Path="Textures/Plants/Watermelon/ItemWatermelon_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Watermelon/ItemWatermelon_Thumb.png"/>
+        <Blueprint Id="BlueprintItemWatermelon"/>
+        <Perennial RevertToStage="2"/>
+        <Seed Id="SeedBag_Watermelon"/>
+        <Stage Length="3600">
+            <Mesh Path="Meshes/Plants/Watermelon/WatermelonStage00.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Watermelon/WatermelonStage01.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Watermelon/WatermelonStage02.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Watermelon/WatermelonStage03.obj"/>
+        </Stage>
+        <Stage Length="3000">
+            <Mesh Path="Meshes/Plants/Watermelon/WatermelonStage04.obj"/>
+        </Stage>
+        <Stage Length="3000" Mature="true">
+            <Mesh Path="Meshes/Plants/Watermelon/WatermelonStage05.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Watermelon/WatermelonStage05.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Watermelon/WatermelonStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Watermelon" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Watermelon/SeedBagWatermelon_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Watermelon/SeedBagWatermelon_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemWatermelon"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemPotato" StackQuantityMax="20" HarvestQuantityMax="2" Nutrition="10" MoodBonus="-0.5" MicrowaveIngredient="true" LifeRequirementsId="LifeRequirementsItemPotato" AlcoholPerUnit="8">
+        <Mesh Path="Meshes/Plants/Potato/ItemPotato.obj"/>
+        <Texture Path="Textures/Plants/Potato/ItemPotato_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Potato/ItemPotato_Thumb.png"/>
+        <Blueprint Id="BlueprintItemPotato"/>
+        <Seed Id="SeedBag_Potato"/>
+        <Stage Length="1000">
+            <Mesh Path="Meshes/Plants/Potato/PotatoStage00.obj"/>
+        </Stage>
+        <Stage Length="1000">
+            <Mesh Path="Meshes/Plants/Potato/PotatoStage01.obj"/>
+        </Stage>
+        <Stage Length="1000">
+            <Mesh Path="Meshes/Plants/Potato/PotatoStage02.obj"/>
+        </Stage>
+        <Stage Length="1000" Mature="true">
+            <Mesh Path="Meshes/Plants/Potato/PotatoStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Potato/PotatoStage03.obj"/> 
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Potato/PotatoStageDead.obj"/>
+        </Stage>
+        <Reagents Potato="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Potato" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Potato/SeedBagPotato_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Potato/SeedBagPotato_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemPotato"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemCorn" StackQuantityMax="20" HarvestQuantityMax="3" Nutrition="10" MoodBonus="-0.25" MicrowaveIngredient="true" AnimalFood="true" LifeRequirementsId="LifeRequirementsItemCorn" AlcoholPerUnit="40">
+        <Mesh Path="Meshes/Plants/Corn/ItemCorn.obj"/>
+        <Texture Path="Textures/Plants/Corn/ItemCorn_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Corn/ItemCorn_Thumb.png"/>
+        <Blueprint Id="BlueprintItemCorn"/>
+        <Seed Id="SeedBag_Corn"/>
+        <Stage Length="1800">
+            <Mesh Path="Meshes/Plants/Corn/CornStage00.obj"/>
+        </Stage>
+        <Stage Length="1800">
+            <Mesh Path="Meshes/Plants/Corn/CornStage01.obj"/>
+        </Stage>
+        <Stage Length="1800">
+            <Mesh Path="Meshes/Plants/Corn/CornStage02.obj"/>
+        </Stage>
+        <Stage Length="1800">
+            <Mesh Path="Meshes/Plants/Corn/CornStage03.obj"/>
+        </Stage>
+        <Stage Length="1800" Mature="true">
+            <Mesh Path="Meshes/Plants/Corn/CornStage04.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Corn/CornStage04.obj"/> 
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Corn/CornStageDead.obj"/>
+        </Stage>
+        <Reagents Corn="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Corn" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Corn/SeedBagCorn_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Corn/SeedBagCorn_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemCorn"/>
+    </CustomSeed>
+
+    <!-- ItemFilterFern name kept so old prefabs still load -->
+    <CustomPlant Name="ItemFilterFern" StackQuantityMax="10" HarvestQuantityMax="3" LifeRequirementsId="LifeRequirementsItemDargaFern" AlcoholPerUnit="2">
+        <Mesh Path="Meshes/Plants/DargaFern/ItemDargaFern.obj"/>
+        <Texture Path="Textures/Plants/DargaFern/ItemDargaFern_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/DargaFern/ItemDargaFern_Thumb.png"/>
+        <Blueprint Id="BlueprintItemDargaFern"/>
+        <Seed Id="SeedBag_DargaFern"/>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/DargaFern/DargaFernStage00.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/DargaFern/DargaFernStage01.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/DargaFern/DargaFernStage02.obj"/>
+        </Stage>
+        <Stage Length="1200" Mature="true">
+            <Mesh Path="Meshes/Plants/DargaFern/DargaFernStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/DargaFern/DargaFernStage03.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/DargaFern/DargaFernStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_DargaFern" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/DargaFern/SeedBagDargaFern_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/DargaFern/SeedBagDargaFern_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemFilterFern"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemFern" StackQuantityMax="100" HarvestQuantityMax="2" ChemistryIngredient="true" LifeRequirementsId="LifeRequirementsItemFern" AlcoholPerUnit="2">
+        <Mesh Path="Meshes/Plants/Fern/ItemFern.obj"/>
+        <Texture Path="Textures/Plants/Fern/ItemFern_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Fern/ItemFern_Thumb.png"/>
+        <Blueprint Id="BlueprintItemFern"/>
+        <Seed Id="SeedBag_Fern"/>
+        <Stage Length="800">
+            <Mesh Path="Meshes/Plants/Fern/FernStage00.obj"/>
+        </Stage>
+        <Stage Length="800">
+            <Mesh Path="Meshes/Plants/Fern/FernStage01.obj"/>
+        </Stage>
+        <Stage Length="800">
+            <Mesh Path="Meshes/Plants/Fern/FernStage02.obj"/>
+        </Stage>
+        <Stage Length="800" Mature="true">
+            <Mesh Path="Meshes/Plants/Fern/FernStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Fern/FernStage03.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Fern/FernStageDead.obj"/>
+        </Stage>
+        <Reagents Fenoxitone="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Fern" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Fern/SeedBagFern_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Fern/SeedBagFern_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemFern"/>
+    </CustomSeed>
+
+    <!-- ItemCocoaTree name kept so old prefabs still load -->
+    <CustomPlant Name="ItemCocoaTree" StackQuantityMax="20" HarvestQuantityMax="3" Nutrition="10" MicrowaveIngredient="true" LifeRequirementsId="LifeRequirementsItemCocoa" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/Cocoa/ItemCocoa.obj"/>
+        <Texture Path="Textures/Plants/Cocoa/ItemCocoa_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Cocoa/ItemCocoa_Thumb.png"/>
+        <Blueprint Id="BlueprintItemCocoa"/>
+        <Perennial RevertToStage="2"/>
+        <Seed Id="SeedBag_Cocoa"/>
+        <Stage Length="2400">
+            <Mesh Path="Meshes/Plants/Cocoa/CocoaStage00.obj"/>
+        </Stage>
+        <Stage Length="2100">
+            <Mesh Path="Meshes/Plants/Cocoa/CocoaStage01.obj"/>
+        </Stage>
+        <Stage Length="2100">
+            <Mesh Path="Meshes/Plants/Cocoa/CocoaStage02.obj"/>
+        </Stage>
+        <Stage Length="2100">
+            <Mesh Path="Meshes/Plants/Cocoa/CocoaStage03.obj"/>
+        </Stage>
+        <Stage Length="6300">
+            <Mesh Path="Meshes/Plants/Cocoa/CocoaStage04.obj"/>
+        </Stage>
+        <Stage Length="2100" Mature="true">
+            <Mesh Path="Meshes/Plants/Cocoa/CocoaStage05.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Cocoa/CocoaStage05.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Cocoa/CocoaStageDead.obj"/>
+        </Stage>
+        <Reagents Cocoa="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Cocoa" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Cocoa/SeedBagCocoa_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Cocoa/SeedBagCocoa_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemCocoaTree"/>
+    </CustomSeed>
+
+    <!-- ItemSugarCane name kept so old prefabs still load -->
+    <CustomPlant Name="ItemSugarCane" StackQuantityMax="100" HarvestQuantityMax="3" Nutrition="5" MicrowaveIngredient="true" LifeRequirementsId="LifeRequirementsItemSugarcane" AlcoholPerUnit="15">
+        <Mesh Path="Meshes/Plants/Sugarcane/ItemSugarcane.obj"/>
+        <Texture Path="Textures/Plants/Sugarcane/ItemSugarcane_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Sugarcane/ItemSugarcane_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSugarcane"/>
+        <Seed Id="SeedBag_SugarCane"/>
+        <Stage Length="666">
+            <Mesh Path="Meshes/Plants/Sugarcane/SugarcaneStage00.obj"/>
+        </Stage>
+        <Stage Length="666">
+            <Mesh Path="Meshes/Plants/Sugarcane/SugarcaneStage01.obj"/>
+        </Stage>
+        <Stage Length="666">
+            <Mesh Path="Meshes/Plants/Sugarcane/SugarcaneStage02.obj"/>
+        </Stage>
+        <Stage Length="666">
+            <Mesh Path="Meshes/Plants/Sugarcane/SugarcaneStage03.obj"/>
+        </Stage>
+        <Stage Length="666">
+            <Mesh Path="Meshes/Plants/Sugarcane/SugarcaneStage04.obj"/>
+        </Stage>
+        <Stage Length="666" Mature="true">
+            <Mesh Path="Meshes/Plants/Sugarcane/SugarcaneStage05.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Sugarcane/SugarcaneStage05.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Sugarcane/SugarcaneStageDead.obj"/>
+        </Stage>
+        <Reagents Sugar="1"/>
+    </CustomPlant>
+
+    <!-- SeedBag_SugarCane name kept so old prefabs still load -->
+    <CustomSeed Name="SeedBag_SugarCane" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Sugarcane/SeedBagSugarcane_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Sugarcane/SeedBagSugarcane_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemSugarCane"/>
+    </CustomSeed>
+    
+    <CustomPlant Name="ItemWheat" StackQuantityMax="100" HarvestQuantityMax="5" Nutrition="5" AnimalFood="true" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/Wheat/ItemWheat.obj"/>
+        <Texture Path="Textures/Plants/Wheat/ItemWheat_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Wheat/ItemWheat_Thumb.png"/>
+        <Blueprint Id="BlueprintItemWheat"/>
+        <!-- Note old prefab name SeedBag_Wheet -->
+        <Seed Id="SeedBag_Wheet"/>
+        <Stage Length="900">
+            <Mesh Path="Meshes/Plants/Wheat/WheatStage00.obj"/>
+        </Stage>
+        <Stage Length="900">
+            <Mesh Path="Meshes/Plants/Wheat/WheatStage01.obj"/>
+        </Stage>
+        <Stage Length="900">
+            <Mesh Path="Meshes/Plants/Wheat/WheatStage02.obj"/>
+        </Stage>
+        <Stage Length="900" Mature="true">
+            <Mesh Path="Meshes/Plants/Wheat/WheatStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Wheat/WheatStage03.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Wheat/WheatStageDead.obj"/>
+        </Stage>
+        <Reagents Wheat="1"/>
+    </CustomPlant>
+
+    <!-- SeedBag_Wheet name kept so old prefabs still load -->
+    <CustomSeed Name="SeedBag_Wheet" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Wheat/SeedBagWheat_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Wheat/SeedBagWheat_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemWheat"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemSoybean" StackQuantityMax="100" HarvestQuantityMax="3" Nutrition="5" MicrowaveIngredient="true" AnimalFood="true" LifeRequirementsId="LifeRequirementsItemSoybean" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/Soybean/ItemSoybean.obj"/>
+        <Texture Path="Textures/Plants/Soybean/ItemSoybean_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Soybean/ItemSoybean_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSoybean"/>
+        <Seed Id="SeedBag_Soybean"/>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Soybean/SoybeanStage00.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Soybean/SoybeanStage01.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Soybean/SoybeanStage02.obj"/>
+        </Stage>
+        <Stage Length="1200" Mature="true">
+            <Mesh Path="Meshes/Plants/Soybean/SoybeanStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Soybean/SoybeanStage03.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Soybean/SoybeanStageDead.obj"/>
+        </Stage>
+        <Reagents Soy="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Soybean" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Soybean/SeedBagSoybean_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Soybean/SeedBagSoybean_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemSoybean"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemRice" StackQuantityMax="50" HarvestQuantityMax="5" Nutrition="3" MoodBonus="-0.25" MicrowaveIngredient="true" LifeRequirementsId="LifeRequirementsItemRice" AlcoholPerUnit="8">
+        <Mesh Path="Meshes/Plants/Rice/ItemRice.obj"/>
+        <Texture Path="Textures/Plants/Rice/ItemRice_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Rice/ItemRice_Thumb.png"/>
+        <Blueprint Id="BlueprintItemRice"/>
+        <Seed Id="SeedBag_Rice"/>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Rice/RiceStage00.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Rice/RiceStage01.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Rice/RiceStage02.obj"/>
+        </Stage>
+        <Stage Length="1200" Mature="true">
+            <Mesh Path="Meshes/Plants/Rice/RiceStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Rice/RiceStage03.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Rice/RiceStageDead.obj"/>
+        </Stage>
+        <Reagents Rice="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Rice" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Rice/SeedBagRice_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Rice/SeedBagRice_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemRice"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemPumpkin" StackQuantityMax="20" HarvestQuantityMax="3" Nutrition="50" MoodBonus="-0.25" MicrowaveIngredient="true" LifeRequirementsId="LifeRequirementsItemPumpkin" AlcoholPerUnit="18">
+        <Mesh Path="Meshes/Plants/Pumpkin/ItemPumpkin.obj"/>
+        <Texture Path="Textures/Plants/Pumpkin/ItemPumpkin_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Pumpkin/ItemPumpkin_Thumb.png"/>
+        <Blueprint Id="BlueprintItemPumpkin"/>
+        <Seed Id="SeedBag_Pumpkin"/>
+        <Perennial RevertToStage="2"/>
+        <Stage Length="2400">
+            <Mesh Path="Meshes/Plants/Pumpkin/PumpkinStage00.obj"/>
+        </Stage>
+        <Stage Length="2400">
+            <Mesh Path="Meshes/Plants/Pumpkin/PumpkinStage01.obj"/>
+        </Stage>
+        <Stage Length="2400">
+            <Mesh Path="Meshes/Plants/Pumpkin/PumpkinStage02.obj"/>
+        </Stage>
+        <Stage Length="7200">
+            <Mesh Path="Meshes/Plants/Pumpkin/PumpkinStage03.obj"/>
+        </Stage>
+        <Stage Length="2400" Mature="true">
+            <Mesh Path="Meshes/Plants/Pumpkin/PumpkinStage04.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Pumpkin/PumpkinStage04.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Pumpkin/PumpkinStageDead.obj"/>
+        </Stage>
+        <Reagents Pumpkin="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Pumpkin" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Pumpkin/SeedBagPumpkin_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Pumpkin/SeedBagPumpkin_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemPumpkin"/>
+    </CustomSeed>
+
+    <CustomPlant Name="ItemMushroom" StackQuantityMax="20" HarvestQuantityMax="3" Nutrition="10" MoodBonus="-0.25" MicrowaveIngredient="true" LifeRequirementsId="LifeRequirementsItemMushroom" AlcoholPerUnit="2">
+        <Mesh Path="Meshes/Plants/Mushroom/ItemMushroom.obj"/>
+        <Texture Path="Textures/Plants/Mushroom/ItemMushroom_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Mushroom/ItemMushroom_Thumb.png"/>
+        <Blueprint Id="BlueprintItemMushroom"/>
+        <Seed Id="SeedBag_Mushroom"/>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Mushroom/MushroomStage00.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Mushroom/MushroomStage01.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Mushroom/MushroomStage02.obj"/>
+        </Stage>
+        <Stage Length="1200" Mature="true">
+            <Mesh Path="Meshes/Plants/Mushroom/MushroomStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Mushroom/MushroomStage03.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Mushroom/MushroomStageDead.obj"/>
+        </Stage>
+        <Reagents Mushroom="1"/>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_Mushroom" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Mushroom/SeedBagMushroom_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Mushroom/SeedBagMushroom_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemMushroom"/>
+    </CustomSeed>
+
+    <!-- ItemPlantEndothermic_Genepool1 kept so old prefabs still load -->
+    <CustomPlant Name="ItemPlantEndothermic_Genepool1" ThermalEnergy="-90" StackQuantityMax="10" HarvestQuantityMax="2" LifeRequirementsId="LifeRequirementsItemWinterspawnAlpha" AlcoholPerUnit="0">
+        <Mesh Path="Meshes/Plants/Winterspawn/ItemWinterspawn.obj"/>
+        <Texture Path="Textures/Plants/Winterspawn/ItemWinterspawn_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Winterspawn/ItemWinterspawn_Thumb.png"/>
+        <Blueprint Id="BlueprintItemWinterspawn"/>
+        <Seed Id="SeedBag_WinterspawnAlpha"/>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage00.obj"/>
+        </Stage>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage01.obj"/>
+        </Stage>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage02.obj"/>
+        </Stage>
+        <Stage Length="720" Mature="true">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage04.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_WinterspawnAlpha" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Winterspawn/SeedBagWinterspawn_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Winterspawn/SeedBagWinterspawn_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemPlantEndothermic_Genepool1"/>
+    </CustomSeed>
+    
+    <!-- ItemPlantEndothermic_Genepool2 kept so old prefabs still load -->
+    <CustomPlant Name="ItemPlantEndothermic_Genepool2" ThermalEnergy="-150" StackQuantityMax="10" HarvestQuantityMax="2" LifeRequirementsId="LifeRequirementsItemWinterspawnBeta" AlcoholPerUnit="0">
+        <Mesh Path="Meshes/Plants/Winterspawn/ItemWinterspawn.obj"/>
+        <Texture Path="Textures/Plants/Winterspawn/ItemWinterspawn_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Winterspawn/ItemWinterspawn_Thumb.png"/>
+        <Blueprint Id="BlueprintItemWinterspawn"/>
+        <Seed Id="SeedBag_WinterspawnBeta"/>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage00.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage01.obj"/>
+        </Stage>
+        <Stage Length="1200">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage02.obj"/>
+        </Stage>
+        <Stage Length="1200" Mature="true">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStage04.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Winterspawn/WinterspawnStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+    
+    <CustomSeed Name="SeedBag_WinterspawnBeta" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Winterspawn/SeedBagWinterspawn_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Winterspawn/SeedBagWinterspawn_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemPlantEndothermic_Genepool2"/>
+    </CustomSeed>
+    
+    <!-- ItemPlantThermogenic_Genepool1 kept so old prefabs still load -->
+    <CustomPlant Name="ItemPlantThermogenic_Genepool1" ThermalEnergy="100" AddsToWater="true" StackQuantityMax="10" HarvestQuantityMax="3" LifeRequirementsId="LifeRequirementsItemHadesAlpha" AlcoholPerUnit="0">
+        <Mesh Path="Meshes/Plants/Hades/ItemHades.obj"/>
+        <Texture Path="Textures/Plants/Hades/ItemHades_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Hades/ItemHades_Thumb.png"/>
+        <Blueprint Id="BlueprintItemHades"/>
+        <Seed Id="SeedBag_HadesAlpha"/>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage00.obj"/>
+        </Stage>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage01.obj"/>
+        </Stage>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage02.obj"/>
+        </Stage>
+        <Stage Length="720" Mature="true">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage04.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Hades/HadesStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_HadesAlpha" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Hades/SeedBagHades_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Hades/SeedBagHades_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemPlantThermogenic_Genepool1"/>
+    </CustomSeed>
+
+    <!-- ItemPlantThermogenic_Genepool2 kept so old prefabs still load -->
+    <CustomPlant Name="ItemPlantThermogenic_Genepool2" ThermalEnergy="125" AddsToWater="true" StackQuantityMax="10" HarvestQuantityMax="3" LifeRequirementsId="LifeRequirementsItemHadesBeta" AlcoholPerUnit="0">
+        <Mesh Path="Meshes/Plants/Hades/ItemHades.obj"/>
+        <Texture Path="Textures/Plants/Hades/ItemHades_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Hades/ItemHades_Thumb.png"/>
+        <Blueprint Id="BlueprintItemHades"/>
+        <Seed Id="SeedBag_HadesBeta"/>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage00.obj"/>
+        </Stage>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage01.obj"/>
+        </Stage>
+        <Stage Length="720">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage02.obj"/>
+        </Stage>
+        <Stage Length="720" Mature="true">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage03.obj"/>
+        </Stage>
+        <Stage Length="-1" Mature="true" Seeding="true">
+            <Mesh Path="Meshes/Plants/Hades/HadesStage04.obj"/>
+        </Stage>
+        <Stage Length="0" Dead="true">
+            <Mesh Path="Meshes/Plants/Hades/HadesStageDead.obj"/>
+        </Stage>
+    </CustomPlant>
+
+    <CustomSeed Name="SeedBag_HadesBeta" AlcoholPerUnit="6">
+        <Mesh Path="Meshes/Plants/SeedBag.obj"/>
+        <Texture Path="Textures/Plants/Hades/SeedBagHades_Dif.png"/>
+        <Thumbnail Path="Textures/Plants/Hades/SeedBagHades_Thumb.png"/>
+        <Blueprint Id="BlueprintItemSeedBag"/>
+        <Plant Id="ItemPlantThermogenic_Genepool2"/>
+    </CustomSeed>
+    
+</GameData>

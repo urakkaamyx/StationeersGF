@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MinableVisualiser Id="OreCoalVisualiser" Type="Coal">
+		<Mesh Id="OreCoalIcon" Path="Meshes/MinableVisualisers/OreCoalIcon.obj" Scale="0.01"/>
+		<Color32 r="92" g="91" b="91" a="255"/>
+		<TerrainColor32 r="59" g="51" b="86" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreCobaltVisualiser" Type="Cobalt">
+		<Mesh Id="OreCobaltIcon" Path="Meshes/MinableVisualisers/OreCobaltIcon.obj" Scale="0.01"/>
+		<Color32 r="181" g="110" b="255" a="255"/>
+		<TerrainColor32 r="40" g="85" b="140" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreCopperVisualiser" Type="Copper">
+		<Mesh Id="OreCopperIcon" Path="Meshes/MinableVisualisers/OreCopperIcon.obj" Scale="0.01"/>
+		<Color32 r="255" g="197" b="66" a="255"/>
+		<TerrainColor32 r="40" g="140" b="118" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreGoldVisualiser" Type="Gold">
+		<Mesh Id="OreGoldIcon" Path="Meshes/MinableVisualisers/OreGoldIcon.obj" Scale="0.01"/>
+		<Color32 r="255" g="255" b="12" a="255"/>
+		<TerrainColor32 r="140" g="120" b="40" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreIceVisualiser" Type="Ice">
+		<Mesh Id="OreIceIcon" Path="Meshes/MinableVisualisers/OreIceIcon.obj" Scale="0.01"/>
+		<Color32 r="81" g="156" b="216" a="255"/>
+		<TerrainColor32 r="40" g="125" b="140" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreIronVisualiser" Type="Iron">
+		<Mesh Id="OreIronIcon" Path="Meshes/MinableVisualisers/OreIronIcon.obj" Scale="0.01"/>
+		<Color32 r="255" g="14" b="255" a="255"/>
+		<TerrainColor32 r="140" g="94" b="40" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreLeadVisualiser" Type="Lead">
+		<Mesh Id="OreLeadIcon" Path="Meshes/MinableVisualisers/OreLeadIcon.obj" Scale="0.01"/>
+		<Color32 r="185" g="176" b="125" a="255"/>
+		<TerrainColor32 r="140" g="125" b="40" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreNickelVisualiser" Type="Nickel">
+		<Mesh Id="OreNickelIcon" Path="Meshes/MinableVisualisers/OreNickelIcon.obj" Scale="0.01"/>
+		<Color32 r="201" g="110" b="80" a="255"/>
+		<TerrainColor32 r="140" g="64" b="40" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreNitrogenVisualiser" Type="Nitrice">
+		<Mesh Id="OreNitrogenIcon" Path="Meshes/MinableVisualisers/OreNitrogenIcon.obj" Scale="0.01"/>
+		<Color32 r="105" g="255" b="255" a="255"/>
+		<TerrainColor32 r="40" g="140" b="132" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreOxiteVisualiser" Type="Oxite">
+		<Mesh Id="OreOxiteIcon" Path="Meshes/MinableVisualisers/OreOxiteIcon.obj" Scale="0.01"/>
+		<Color32 r="50" g="255" b="255" a="255"/>
+		<TerrainColor32 r="40" g="129" b="140" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreSiliconVisualiser" Type="Silicon">
+		<Mesh Id="OreSiliconIcon" Path="Meshes/MinableVisualisers/OreSiliconIcon.obj" Scale="0.01"/>
+		<Color32 r="240" g="240" b="240" a="245"/>
+		<TerrainColor32 r="40" g="122" b="140" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreSilverVisualiser" Type="Silver">
+		<Mesh Id="OreSilverIcon" Path="Meshes/MinableVisualisers/OreSilverIcon.obj" Scale="0.01"/>
+		<Color32 r="191" g="231" b="238" a="255"/>
+		<TerrainColor32 r="145" g="155" b="160" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreUnknownVisualiser" Type="None">
+		<Mesh Id="OreUnknownIcon" Path="Meshes/MinableVisualisers/OreUnknownIcon.obj" Scale="0.01"/>
+		<Color32 r="255" g="255" b="255" a="255"/>
+		<TerrainColor32 r="40" g="140" b="92" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreUraniumVisualiser" Type="Uranium">
+		<Mesh Id="OreUraniumIcon" Path="Meshes/MinableVisualisers/OreUraniumIcon.obj" Scale="0.01"/>
+		<Color32 r="133" g="255" b="125" a="255"/>
+		<TerrainColor32 r="40" g="140" b="45" a="255"/>
+	</MinableVisualiser>
+	<MinableVisualiser Id="OreVolatilesVisualiser" Type="Volatiles">
+		<Mesh Id="OreVolatilesIcon" Path="Meshes/MinableVisualisers/OreVolatilesIcon.obj" Scale="0.01"/>
+		<Color32 r="255" g="31" b="28" a="255"/>
+		<TerrainColor32 r="140" g="40" b="66" a="255"/>
+	</MinableVisualiser>
+</GameData>

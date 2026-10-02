@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WorldSettings>
+        <World Id="Europa3" Priority="4" Hidden="false">
+            <Name Key="NewWorldAreaEuropa2" />
+            <Description Key="NewWorldEuropaShortDesc" />
+            <ShortDescription Key="EuropaWorldDescriptionShort" />
+            <Rating Key="WorldRatingChallenging" Value="Challenging" Color="Orange" />
+            <PreviewButton Path="Interface/preview_europa.png" Format="RGB24"/>
+            <StartCondition Id="EuropaDefault" IsDefault="true"/>
+            <StartCondition Id="EuropaBrutal"/>
+            <StartCondition Id="EuropaDefaultCommunity"/>
+            <StartCondition Id="EuropaBrutalCommunity"/>
+<!--            <StartCondition Id="TerrainEdit"/>-->
+            <WorldObjective Id="ManufacturingBasicsEuropa"/>
+            <WorldObjective Id="Stations"/>
+            <WorldObjective Id="Trading"/>
+            <WorldObjective Id="Concepts"/>
+            <GlobalAtmosphere>
+                <Temperature>
+                    <Key Time="0" Value="134" InTangent="0" OutTangent="0" InWeight="0.75" OutWeight="0.75" WeightedMode="Both" />
+                    <Key Time="108" Value="124" InTangent="0" OutTangent="0" InWeight="0.333" OutWeight="0.333" WeightedMode="None" />
+                    <Key Time="180" Value="124" InTangent="0" OutTangent="0" InWeight="0.333" OutWeight="0.333" WeightedMode="None" />
+                </Temperature>
+                <Gas>
+                    <Gas Type="Oxygen" Quantity="340" />
+                </Gas>
+            </GlobalAtmosphere>
+            <SkyBoxMaterialName>EuropaSky</SkyBoxMaterialName>
+            <SunPrefabName>MimasSun</SunPrefabName>
+            <MaxSunIntensity>1</MaxSunIntensity>
+            <CelestialConstants BodyScale="4.5">
+                <TimeOffset Minutes="6" Seconds="0" />
+            </CelestialConstants>
+            <PlayableBody Id="Europa" Latitude="36.1" Longitude="-159.1" />
+            <CelestialBodies>
+                <Sprite Id="Mercury" Magnitude="2" />
+                <Sprite Id="Venus" Magnitude="1.7" />
+                <Sprite Id="Earth" Magnitude="1" />
+                <Sprite Id="Mars" Magnitude="1" />
+                <AtmosphericBody Id="Jupiter" RadiusKm="71492">
+                    <Name Key="CelestialBodyJupiter"/>
+                    <Texture Path="Textures/jupiter_diffuse.png" Format="DXT1" LoadType="OnRequest"/>
+                    <Cloud Path="Textures/atmosphere_mask.png" Format="DXT1" Opacity="1" Speed="0.33" LoadType="OnRequest">
+                        <Distortion Value="0.043" />
+                        <Shadow Opacity="1" Parallax="0.0524" />
+                        <Tiling x="50" y="5" />
+                    </Cloud>
+                    <Fresnel r="1" g="0.9764709" b="0.808176" Power="2.5" />
+                    <FixedRotation x="0.0553" y="0.9985" z="0" Speed="9.925" />
+                    <Rotation x="-90" y="287" z="0" />
+                </AtmosphericBody>
+                <RockyBody Id="Europa" Parent="Jupiter" RadiusKm="1560">
+                    <TidalLocking x="0.0017" y="1" z="0" />
+                    <!--					<SynodicRotation x="0.0017" y="1" z="0" Days="3.551"  />-->
+
+                </RockyBody>
+                <RockyBody Id="Io" Parent="Jupiter" RadiusKm="1821" CanOccult="false">
+                    <Emissive Value="1" />
+                    <Texture Path="Textures/io_diffuse.jpg" Format="DXT1" LoadType="OnRequest"/>
+                    <Normal Path="Textures/io_normal.png" LoadType="OnRequest"/>
+                </RockyBody>
+                <RockyBody Id="Ganymede" Parent="Jupiter" RadiusKm="2634" CanOccult="false">
+                    <Emissive Value="1" />
+                    <Texture Path="Textures/ganymede_diffuse.jpg" Format="DXT1" LoadType="OnRequest"/>
+                    <Normal Path="Textures/ganymede_normal.png" LoadType="OnRequest"/>
+                </RockyBody>
+                <RockyBody Id="Callisto" Parent="Jupiter" RadiusKm="2410" CanOccult="false">
+                    <Emissive Value="1" />
+                    <Texture Path="Textures/callisto_diffuse.png" Format="DXT1" LoadType="OnRequest"/>
+                </RockyBody>
+                <Sprite Id="Himalia" Parent="Jupiter" Magnitude="1" />
+                <Sprite Id="Saturn" Magnitude="1.10" />
+                <Sprite Id="Uranus" Magnitude="1.60" />
+                <Sprite Id="Neptune" Magnitude="1.70" />
+                <Sprite Id="Pluto" Magnitude="1.80" />
+                <Sprite Id="Eris" Magnitude="2.20" />
+                <Sprite Id="Haumea" Magnitude="2.20" />
+            </CelestialBodies>
+            <SpaceMap Id="EuropaSpaceMap"/>
+            <Planets />
+            <Skybox />
+            <PreviewScene fov="19.3">
+                <CameraPosition>
+                    <x>-6</x>
+                    <y>-344</y>
+                    <z>507</z>
+                </CameraPosition>
+                <CameraRotation>
+                    <x>327.15</x>
+                    <y>180.42</y>
+                    <z>358.823</z>
+                </CameraRotation>
+                <SunRotation>
+                    <x>1.452</x>
+                    <y>72.321</y>
+                    <z>271.319</z>
+                </SunRotation>
+                <SunPrefab>MimasSun</SunPrefab>
+                <AtmosphericScattering>false</AtmosphericScattering>
+                <LensFlare>true</LensFlare>
+                <LensFlareIntensity>0</LensFlareIntensity>
+                <SkyBoxMaterial>SceneSkyEuropa</SkyBoxMaterial>
+                <Prefabs>
+                    <Prefab>
+                        <Name>UIJupiter</Name>
+                        <Position>
+                            <x>153.2773</x>
+                            <y>459.3017</y>
+                            <z>-722.2085</z>
+                        </Position>
+                        <Rotation>
+                            <x>22.49</x>
+                            <y>335.6</y>
+                            <z>0</z>
+                        </Rotation>
+                        <Scale>
+                            <x>405.9102</x>
+                            <y>405.9102</y>
+                            <z>405.9102</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIEuropa</Name>
+                        <Position>
+                            <x>-128.1227</x>
+                            <y>177.5017</y>
+                            <z>-380.0085</z>
+                        </Position>
+                        <Rotation>
+                            <x>71</x>
+                            <y>130</y>
+                            <z>54.858</z>
+                        </Rotation>
+                        <Scale>
+                            <x>1.905</x>
+                            <y>1.905</y>
+                            <z>1.905</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIRocketCommandModule</Name>
+                        <Position>
+                            <x>7.7</x>
+                            <y>-6.2</y>
+                            <z>-170.8</z>
+                        </Position>
+                        <Rotation>
+                            <x>-75.134</x>
+                            <y>-225.821</y>
+                            <z>18.895</z>
+                        </Rotation>
+                        <Scale>
+                            <x>41.30346</x>
+                            <y>41.30346</y>
+                            <z>41.30346</z>
+                        </Scale>
+                    </Prefab>
+                </Prefabs>
+            </PreviewScene>
+            <Gravity>-1.3</Gravity>
+            <StartingCondition>Default</StartingCondition>
+            <AtmosphericScattering>true</AtmosphericScattering>
+            <AtmosphericScatteringData>
+                <RayleighColorRampColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.718</r>
+                            <g>0.843</g>
+                            <b>0.859</b>
+                            <a>1</a>
+                        </color>
+                        <time>0</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.168</r>
+                            <g>0.263</g>
+                            <b>0.451</b>
+                            <a>1</a>
+                        </color>
+                        <time>1</time>
+                    </GradientColorKey>
+                </RayleighColorRampColorKey>
+                <RayleighColorRampAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>0</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>0.9323568</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>1</time>
+                    </GradientAlphaKey>
+                </RayleighColorRampAlphaKey>
+                <RayleighColorRampMode>Blend</RayleighColorRampMode>
+                <WorldRayleighColorIntensity>0</WorldRayleighColorIntensity>
+                <WorldRayleighDensity>15</WorldRayleighDensity>
+                <WorldRayleighExtinctionFactor>0.9</WorldRayleighExtinctionFactor>
+                <WorldRayleighIndirectScatter>1</WorldRayleighIndirectScatter>
+                <WorldMieColorIntensity>0</WorldMieColorIntensity>
+                <MieColorRampColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.86150676</r>
+                            <g>0.156862736</g>
+                            <b>0.9764706</b>
+                            <a>1</a>
+                        </color>
+                        <time>0</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.9764706</r>
+                            <g>0.156862736</g>
+                            <b>0.4907703</b>
+                            <a>1</a>
+                        </color>
+                        <time>1</time>
+                    </GradientColorKey>
+                </MieColorRampColorKey>
+                <MieColorRampAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>0</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>1</time>
+                    </GradientAlphaKey>
+                </MieColorRampAlphaKey>
+                <MieColorRampMode>Blend</MieColorRampMode>
+                <WorldMieDensity>1</WorldMieDensity>
+                <WorldMieExtinctionFactor>1</WorldMieExtinctionFactor>
+                <WorldMiePhaseAnisotropy>0.5</WorldMiePhaseAnisotropy>
+                <WorldNearScatterPush>41.1</WorldNearScatterPush>
+                <WorldNormalDistance>1</WorldNormalDistance>
+                <HeightRayleighColor>
+                    <r>0.482</r>
+                    <g>0.749</g>
+                    <b>0.984</b>
+                    <a>1</a>
+                </HeightRayleighColor>
+                <HeightRayleighIntensity>0.6</HeightRayleighIntensity>
+                <HeightRayleighDensity>10</HeightRayleighDensity>
+                <HeightMieDensity>1</HeightMieDensity>
+                <HeightExtinctionFactor>5</HeightExtinctionFactor>
+                <HeightSeaLevel>100</HeightSeaLevel>
+                <HeightDistance>200</HeightDistance>
+                <HeightPlaneShift>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </HeightPlaneShift>
+                <HeightNearScatterPush>201</HeightNearScatterPush>
+                <HeightNormalDistance>1</HeightNormalDistance>
+                <UseOcclusion>false</UseOcclusion>
+                <OcclusionBias>0</OcclusionBias>
+                <OcclusionBiasIndirect>0.8</OcclusionBiasIndirect>
+                <OcclusionBiasClouds>0.1</OcclusionBiasClouds>
+                <OcclusionDownscale>x2</OcclusionDownscale>
+                <OcclusionSamples>x64</OcclusionSamples>
+                <OcclusionDepthFixup>true</OcclusionDepthFixup>
+                <OcclusionDepthThreshold>25</OcclusionDepthThreshold>
+                <OcclusionFullSky>false</OcclusionFullSky>
+                <OcclusionBiasSkyRayleigh>0.2</OcclusionBiasSkyRayleigh>
+                <OcclusionBiasSkyMie>0.4</OcclusionBiasSkyMie>
+                <WorldScaleExponent>1</WorldScaleExponent>
+                <ForcePerPixel>false</ForcePerPixel>
+                <ForcePostEffect>false</ForcePostEffect>
+            </AtmosphericScatteringData>
+            <AmbientLightMin>0</AmbientLightMin>
+            <AmbientLightMax>0.7</AmbientLightMax>
+            <AmbientLighting>
+                <Sky r="0.1419766" g="0.1606386" b="0.1911765" />
+                <Equator r="0.08953287" g="0.1199499" b="0.1323529" />
+                <Ground r="0.02941179" g="0.02941179" b="0.02941179" />
+            </AmbientLighting>
+            <SetSunInSkybox>true</SetSunInSkybox>
+            <Stars>
+                <Star FadeHeight="700" />
+                <Star FadeHeight="700" />
+            </Stars>
+            
+            <PlayableArea Id="EuropaWarningArea" Rule="Warning">
+                <Region Id="EuropaLeavingArea"/>
+            </PlayableArea>
+            <PlayableArea Id="EuropaInvalidArea" Rule="Invalid">
+                <Region Id="EuropaOutOfBounds"/>
+            </PlayableArea>
+            
+            <AmbienceSound>Europa2</AmbienceSound>
+            <WeatherEvent Id="EuropaSnowStorm"/>
+
+            <Minables Id="DefaultMinablesSurface" OreDensity="0.6">
+                <Surface Value="true"/>
+            </Minables>
+            <Minables Id="DefaultMinables" OreDensity="1">
+                <Surface Value="false"/>
+            </Minables>
+
+            <StartLocation Id="EuropaSpawnIcyBasin">
+                <Name Key="EuropaSpawnIcyBasinName"/>
+                <Description Key="EuropaSpawnIcyBasinDescription"/>
+                <Position x="145" y="-503"/>
+                <SpawnRadius Value="20"/>
+            </StartLocation>
+            <StartLocation Id="EuropaSpawnGlacialChannel">
+                <Name Key="EuropaSpawnGlacialChannelName"/>
+                <Description Key="EuropaSpawnGlacialChannelDescription"/>
+                <Position x="1358" y="-601"/>
+                <SpawnRadius Value="14"/>
+            </StartLocation>
+            <StartLocation Id="EuropaSpawnBalgatanPass">
+                <Name Key="EuropaSpawnBalgatanPassName"/>
+                <Description Key="EuropaSpawnBalgatanPassDescription"/>
+                <Position x="-1076" y="445"/>
+                <SpawnRadius Value="16"/>
+            </StartLocation>
+            <StartLocation Id="EuropaSpawnFrigidHighlands">
+                <Name Key="EuropaSpawnFrigidHighlandsName"/>
+                <Description Key="EuropaSpawnFrigidHighlandsDescription"/>
+                <Position x="-1424" y="-602"/>
+                <SpawnRadius Value="13"/>
+            </StartLocation>
+            <StartLocation Id="EuropaSpawnTyreValley">
+                <Name Key="EuropaSpawnTyreValleyName"/>
+                <Description Key="EuropaSpawnTyreValleyDescription"/>
+                <Position x="1197" y="999"/>
+                <SpawnRadius Value="9"/>
+            </StartLocation>
+
+            <RandomStartLocation Id="EuropaSpawnRoundRobin">
+                <Name Key="SpawnRoundRobin"/>
+                <Description Key="SpawnRoundRobinDescription"/>
+                <SpawnRadius Value="6"/>
+                <StartLocation Id="EuropaSpawnIcyBasin"/>
+                <StartLocation Id="EuropaSpawnGlacialChannel"/>
+                <StartLocation Id="EuropaSpawnBalgatanPass"/>
+                <StartLocation Id="EuropaSpawnFrigidHighlands"/>
+                <StartLocation Id="EuropaSpawnTyreValley"/>
+            </RandomStartLocation>
+
+            <RegionSet Id="EuropaPlayableBounds">
+                <Texture Path="Worlds/SharedTextures/4KMissionArea.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="EuropaValidPlayArea" R="0" G="255" B="0"/>
+                <Region Id="EuropaOutOfBounds" R="255" G="0" B="0"/>
+                <Region Id="EuropaLeavingArea" R="0" G="0" B="255"/>
+            </RegionSet>
+            
+            <RegionSet Id="EuropaNamedRegions">
+                <Texture Path="Worlds/Europa/Textures/europa_named_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="EuropaNamedRegionTyreSlope" R="214" G="162" B="219">
+                    <Name Key="EuropaNamedRegionTyreSlopeName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionIceDesert" R="217" G="114" B="106">
+                    <Name Key="EuropaNamedRegionIceDesertName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionNorthEastRange" R="210" G="128" B="219">
+                    <Name Key="EuropaNamedRegionNorthEastRangeName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionNorthernTrough" R="255" G="83" B="68">
+                    <Name Key="EuropaNamedRegionNorthernTroughName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionNorthRange" R="198" G="68" B="212">
+                    <Name Key="EuropaNamedRegionNorthRangeName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionNorthWestRange" R="237" G="71" B="255">
+                    <Name Key="EuropaNamedRegionNorthWestRangeName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionTheDitch" R="65" G="117" B="177">
+                    <Name Key="EuropaNamedRegionTheDitchName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionBasinView" R="0" G="106" B="167">
+                    <Name Key="EuropaNamedRegionBasinViewName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionSouthernRanges" R="97" G="65" B="158">
+                    <Name Key="EuropaNamedRegionSouthernRangesName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionRupertsRest" R="135" G="105" B="188">
+                    <Name Key="EuropaNamedRegionRupertsRestName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionPerpetuity" R="152" G="95" B="172">
+                    <Name Key="EuropaNamedRegionPerpetuityName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionRupertsRange" R="198" G="87" B="238">
+                    <Name Key="EuropaNamedRegionRupertsRangeName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionRupertsValley" R="123" G="62" B="145">
+                    <Name Key="EuropaNamedRegionRupertsValleyName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionGlacialFingerWest" R="0" G="117" B="70">
+                    <Name Key="EuropaNamedRegionGlacialFingerWestName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionGlacialFingerEast" R="0" G="139" B="13">
+                    <Name Key="EuropaNamedRegionGlacialFingerEastName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionGlacialFingerSouth" R="0" G="89" B="31">
+                    <Name Key="EuropaNamedRegionGlacialFingerSouthName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionGlacialFingerNorth" R="17" G="255" B="0">
+                    <Name Key="EuropaNamedRegionGlacialFingerNorthName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionGrandBasinWest" R="255" G="0" B="0">
+                    <Name Key="EuropaNamedRegionGrandBasinWestName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionGrandBasinSouth" R="200" G="45" B="45">
+                    <Name Key="EuropaNamedRegionGrandBasinSouthName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionGrandBasinEast" R="182" G="0" B="0">
+                    <Name Key="EuropaNamedRegionGrandBasinEastName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionGrandBasinNorth" R="229" G="54" B="92">
+                    <Name Key="EuropaNamedRegionGrandBasinNorthName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionEastBalgatanRange" R="57" G="121" B="209">
+                    <Name Key="EuropaNamedRegionEastBalgatanRangeName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionWestBalgatanRange" R="101" G="145" B="255">
+                    <Name Key="EuropaNamedRegionWestBalgatanRangeName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionTyreValley" R="255" G="121" B="68">
+                    <Name Key="EuropaNamedRegionTyreValleyName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionMorensCrossing" R="53" G="132" B="249">
+                    <Name Key="EuropaNamedRegionMorensCrossingName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionWesternIceFlats" R="0" G="72" B="255">
+                    <Name Key="EuropaNamedRegionWesternIceFlatsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionEasternIceFlats" R="35" G="171" B="255">
+                    <Name Key="EuropaNamedRegionEasternIceFlatsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionTheWall" R="255" G="0" B="217">
+                    <Name Key="EuropaNamedRegionTheWallName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionCrescentValley" R="212" G="233" B="94">
+                    <Name Key="EuropaNamedRegionCrescentValleyName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionSouthEastHighlands" R="255" G="234" B="0">
+                    <Name Key="EuropaNamedRegionSouthEastHighlandsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionNorthEastHighlands" R="213" G="255" B="1">
+                    <Name Key="EuropaNamedRegionNorthEastHighlandsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionSouthWestHighlands" R="128" G="154" B="0">
+                    <Name Key="EuropaNamedRegionSouthWestHighlandsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionNorthWestHighlands" R="154" G="141" B="0">
+                    <Name Key="EuropaNamedRegionNorthWestHighlandsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionHeavensVault" R="150" G="156" B="28">
+                    <Name Key="EuropaNamedRegionHeavensVaultName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionBalgatanPass" R="72" G="0" B="255">
+                    <Name Key="EuropaNamedRegionBalgatanPassName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionPilgrimsPath" R="203" G="130" B="211">
+                    <Name Key="EuropaNamedRegionPilgrimsPathName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionNorthWestOutlands" R="175" G="74" B="212">
+                    <Name Key="EuropaNamedRegionNorthWestOutlandsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionSouthWestOutlands" R="191" G="0" B="255">
+                    <Name Key="EuropaNamedRegionSouthWestOutlandsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionSouthEastOutlands" R="107" G="31" B="135">
+                    <Name Key="EuropaNamedRegionSouthEastOutlandsName"/>
+                </Region>
+                <Region Id="EuropaNamedRegionSouthOutlands" R="144" G="33" B="184">
+                    <Name Key="EuropaNamedRegionSouthOutlandsName"/>
+                </Region>
+            </RegionSet>
+
+            <RegionSet Id="EuropaPoiRegions">
+                <Texture Path="Worlds/Europa/Textures/europa_poi_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="EuropaPoiRegionCallanishPeak" R="0" G="250" B="0"/>
+                <Region Id="EuropaPoiRegionFalgasDescent" R="125" G="0" B="125"/>
+                <Region Id="EuropaPoiRegionBalgatanRidge" R="0" G="125" B="250"/>
+                <Region Id="EuropaPoiRegionSouthCallanishPass" R="125" G="125" B="0"/>
+                <Region Id="EuropaPoiRegionSidonGully" R="125" G="125" B="250"/>
+                <Region Id="EuropaPoiRegionMorensFell" R="0" G="0" B="125"/>
+                <Region Id="EuropaPoiRegionBluePeak" R="0" G="0" B="250"/>
+                <Region Id="EuropaPoiRegionAncientLake" R="0" G="125" B="0"/>
+                <Region Id="EuropaPoiRegionSnowDuneValley" R="0" G="125" B="125"/>
+                <Region Id="EuropaPoiRegionHighMountain" R="0" G="250" B="125"/>
+                <Region Id="EuropaPoiRegionErodedChasm" R="0" G="250" B="250"/>
+                <Region Id="EuropaPoiRegionNeedlePeak" R="125" G="0" B="0"/>
+                <Region Id="EuropaPoiRegionGlacialTrack" R="125" G="0" B="250"/>
+                <Region Id="EuropaPoiRegionPlainsSentinel" R="125" G="125" B="125"/>
+                <Region Id="EuropaPoiRegionSharpOverlook" R="125" G="250" B="0"/>
+                <Region Id="EuropaPoiRegionDuneField" R="125" G="250" B="125"/>
+            </RegionSet>
+
+            <RegionSet Id="EuropaDeepMiningRegions">
+                <Texture Path="Worlds/Europa/Textures/europa_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="EuropaDeepMiningRegionCoal" R="255" G="0" B="239"/>
+                <Region Id="EuropaDeepMiningRegionNickel" R="184" G="0" B="255"/>
+                <Region Id="EuropaDeepMiningRegionGold" R="0" G="66" B="255"/>
+                <Region Id="EuropaDeepMiningRegionSilver" R="0" G="153" B="255"/>
+                <Region Id="EuropaDeepMiningRegionLead" R="0" G="237" B="255"/>
+                <Region Id="EuropaDeepMiningRegionIronCopperSilicon" R="0" G="255" B="180"/>
+                <Region Id="EuropaDeepMiningRegionCobalt" R="119" G="255" B="0"/>
+                <Region Id="EuropaDeepMiningRegionGoldSilver" R="255" G="255" B="0"/>
+                <Region Id="EuropaDeepMiningRegionSilverLeadNickel" R="255" G="194" B="0"/>
+                <Region Id="EuropaDeepMiningRegionIron" R="255" G="129" B="0"/>
+                <Region Id="EuropaDeepMiningRegionSilicon" R="255" G="8" B="0"/>
+            </RegionSet>
+
+            <DeepMinables Id="DeepMinableProfileIron">
+                <Region Id="EuropaDeepMiningRegionIron"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilicon">
+                <Region Id="EuropaDeepMiningRegionSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
+                <Region Id="EuropaDeepMiningRegionIronCopperSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
+                <Region Id="EuropaDeepMiningRegionSilverLeadNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGoldSilver">
+                <Region Id="EuropaDeepMiningRegionGoldSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilver">
+                <Region Id="EuropaDeepMiningRegionSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileLead">
+                <Region Id="EuropaDeepMiningRegionLead"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileNickel">
+                <Region Id="EuropaDeepMiningRegionNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCoal">
+                <Region Id="EuropaDeepMiningRegionCoal"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCobalt">
+                <Region Id="EuropaDeepMiningRegionCobalt"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGold">
+                <Region Id="EuropaDeepMiningRegionGold"/>
+            </DeepMinables>
+
+            <DeepMinablesRegionData>
+                <RegionSet Id="EuropaDeepMiningRegions"/>
+            </DeepMinablesRegionData>
+            
+            <PointOfInterest Id="EuropaPoiCallanishPeak">
+                <Region Id="EuropaPoiRegionCallanishPeak"/>
+                <Name Key="EuropaPoiCallanishPeakName"/>
+                <Description Key="EuropaPoiCallanishPeakDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiFalgasDescent">
+                <Region Id="EuropaPoiRegionFalgasDescent"/>
+                <Name Key="EuropaPoiFalgasDescentName"/>
+                <Description Key="EuropaPoiFalgasDescentDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiBalgatanRidge">
+                <Region Id="EuropaPoiRegionBalgatanRidge"/>
+                <Name Key="EuropaPoiBalgatanRidgeName"/>
+                <Description Key="EuropaPoiBalgatanRidgeDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiSouthCallanishPass">
+                <Region Id="EuropaPoiRegionSouthCallanishPass"/>
+                <Name Key="EuropaPoiSouthCallanishPassName"/>
+                <Description Key="EuropaPoiSouthCallanishPassDescription"/>
+            </PointOfInterest>
+            
+            <PointOfInterest Id="EuropaPoiSidonGully">
+                <Region Id="EuropaPoiRegionSidonGully"/>
+                <Name Key="EuropaPoiSidonGullyName"/>
+                <Description Key="EuropaPoiSidonGullyDescription"/>
+            </PointOfInterest>
+            
+            <PointOfInterest Id="EuropaPoiMorensFell">
+                <Region Id="EuropaPoiRegionMorensFell"/>
+                <Name Key="EuropaPoiMorensFellName"/>
+                <Description Key="EuropaPoiMorensFellDescription"/>
+            </PointOfInterest>
+            
+            <PointOfInterest Id="EuropaPoiRegionBluePeak">
+                <Region Id="EuropaPoiRegionBluePeak"/>
+                <Name Key="EuropaPoiRegionBluePeakName"/>
+                <Description Key="EuropaPoiRegionBluePeakDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionAncientLake">
+                <Region Id="EuropaPoiRegionAncientLake"/>
+                <Name Key="EuropaPoiRegionAncientLakeName"/>
+                <Description Key="EuropaPoiRegionAncientLakeDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionSnowDuneValley">
+                <Region Id="EuropaPoiRegionSnowDuneValley"/>
+                <Name Key="EuropaPoiRegionSnowDuneValleyName"/>
+                <Description Key="EuropaPoiRegionSnowDuneValleyDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionHighMountain">
+                <Region Id="EuropaPoiRegionHighMountain"/>
+                <Name Key="EuropaPoiRegionHighMountainName"/>
+                <Description Key="EuropaPoiRegionHighMountainDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionErodedChasm">
+                <Region Id="EuropaPoiRegionErodedChasm"/>
+                <Name Key="EuropaPoiRegionErodedChasmName"/>
+                <Description Key="EuropaPoiRegionErodedChasmDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionNeedlePeak">
+                <Region Id="EuropaPoiRegionNeedlePeak"/>
+                <Name Key="EuropaPoiRegionNeedlePeakName"/>
+                <Description Key="EuropaPoiRegionNeedlePeakDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionGlacialTrack">
+                <Region Id="EuropaPoiRegionGlacialTrack"/>
+                <Name Key="EuropaPoiRegionGlacialTrackName"/>
+                <Description Key="EuropaPoiRegionGlacialTrackDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionPlainsSentinel">
+                <Region Id="EuropaPoiRegionPlainsSentinel"/>
+                <Name Key="EuropaPoiRegionPlainsSentinelName"/>
+                <Description Key="EuropaPoiRegionPlainsSentinelDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionSharpOverlook">
+                <Region Id="EuropaPoiRegionSharpOverlook"/>
+                <Name Key="EuropaPoiRegionSharpOverlookName"/>
+                <Description Key="EuropaPoiRegionSharpOverlookDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="EuropaPoiRegionDuneField">
+                <Region Id="EuropaPoiRegionDuneField"/>
+                <Name Key="EuropaPoiRegionDuneFieldName"/>
+                <Description Key="EuropaPoiRegionDuneFieldDescription"/>
+            </PointOfInterest>
+
+
+            <AchievementSurvival Id="AchievementJovianWinter" DaysLived="365" Difficulty="Stationeer"/>
+			
+			<AchievementChain Id="AchievementEuropaUniversalis">
+				<PointOfInterest Id="EuropaPoiRegionCallanishPeak"/>
+				<PointOfInterest Id="EuropaPoiRegionFalgasDescent"/>
+				<PointOfInterest Id="EuropaPoiRegionBalgatanRidge"/>
+				<PointOfInterest Id="EuropaPoiRegionSouthCallanishPass"/>
+				<PointOfInterest Id="EuropaPoiRegionSidonGully"/>
+				<PointOfInterest Id="EuropaPoiRegionMorensFell"/>
+			</AchievementChain>
+            
+            <GeographicRegionData>
+                <DefaultRegionName Value="Europa"/>
+                <RegionSet Id="EuropaNamedRegions"/>
+            </GeographicRegionData>
+             
+            <TerrainSettings Path="Worlds/Europa/Terrain" WorldSize="4096">
+                <Curvature Value="0.25"/>
+                <MiniMap Path="Worlds/Europa/Textures/europa_minimap.png" Format="DXT1" LoadType="OnRequest"/>
+                <MaterialSettings>
+                    <Macro>
+                        <MacroTextureBlend Value="0.2"/>
+                        <Albedo Path="Worlds/Europa/Textures/Europa_Colormap.png" Format="BC7" LoadType="OnRequest"/>
+                        <Normal Path="Worlds/Europa/Textures/Europa_Normal Map.png" LoadType="OnRequest" Value="1"/>
+                    </Macro>
+                    <Detail
+                            UVScale="1"
+                            DetailFadeStart="75"
+                            DetailFadeEnd="150"
+                            FractalDepthScale="0.5"
+                            LodMin="2"
+                            MipmapBias="-0.1"
+                            BlendSharpness="500">
+                        <GroupOne>
+                            <Albedo Path="Worlds/Europa/Textures/ChunkyRock_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Europa/Textures/ChunkyRock_normal.png" LoadType="OnRequest" Value="0.5"/>
+                            <Roughness Path="Worlds/Europa/Textures/ChunkyRock_roughness.png" LoadType="OnRequest" Value="0.36"/>
+                            <Displacement Path="Worlds/Europa/Textures/ChunkyRock_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
+                        </GroupOne>
+                        <GroupTwo>
+                            <Albedo Path="Worlds/Europa/Textures/Snow2_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Europa/Textures/Snow2_normal.png" LoadType="OnRequest" Value="0.5"/>
+                            <Roughness Path="Worlds/Europa/Textures/Snow2_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.566"/>
+                            <Displacement Path="Worlds/Europa/Textures/Snow2_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
+                        </GroupTwo>
+                    </Detail>
+                </MaterialSettings>
+            </TerrainSettings>
+        </World>
+    </WorldSettings>
+</GameData>

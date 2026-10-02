@@ -1,0 +1,2631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!-- Note: Order of contact slots will effect the value of ContactSlotIndex logic variable so any new slots should be added after these otherwise they will break automated trading scripts -->
+	<ContactSlot Id="UtilityTrader">
+		<Icon Path="Images/TradingItemThumbnails/icon_satellite_i.png"/>
+		<MinimumWattsVisible Value="0"/>
+		<WattsToResolve Value="10"/>
+		<MinimumWattsToContact Min="25" Max="30"/>
+		<SecondsToContact Min="20" Max="30"/>
+		<LifeTime Min="1200" Max="1260"/>
+		<DownTime Min="300" Max="600"/>
+		<Bulk Value=".5"/>
+		<Select>
+			<Conditions Weight="1000">
+				<Shuttle Type="Small"/>
+			</Conditions>
+		</Select>
+	</ContactSlot>
+	<ContactSlot Id="BasicTrader">
+		<Icon Path="Images/TradingItemThumbnails/icon_satellite_i.png"/>
+		<MinimumWattsVisible Value="0"/>
+		<WattsToResolve Value="10"/>
+		<MinimumWattsToContact Min="25" Max="30"/>
+		<SecondsToContact Min="20" Max="30"/>
+		<LifeTime Min="1200" Max="1260"/>
+		<DownTime Min="30" Max="30"/>
+		<Bulk Value=".5"/>
+		<Select>
+			<Conditions Weight="1000">
+				<Shuttle Type="Small"/>
+			</Conditions>
+		</Select>
+	</ContactSlot>
+	<ContactSlot Id="MediumTrader">
+		<Icon Path="Images/TradingItemThumbnails/icon_satellite_ii.png"/>
+		<MinimumWattsVisible Value="20"/>
+		<WattsToResolve Value="100"/>
+		<MinimumWattsToContact Min="180" Max="200"/>
+		<SecondsToContact Min="60" Max="120"/>
+		<LifeTime Min="1200" Max="1260"/>
+		<DownTime Min="30" Max="60"/>
+		<Bulk Value="1.0"/>
+		<Select>
+			<Conditions Weight="1000">
+				<Shuttle Type="Medium"/>
+			</Conditions>
+			<Conditions Weight="1000">
+				<Plane Type="MediumPlane"/>
+			</Conditions>
+		</Select>
+	</ContactSlot>
+	<ContactSlot Id="LargeTrader">
+		<Icon Path="Images/TradingItemThumbnails/icon_satellite_iii.png"/>
+		<MinimumWattsVisible Value="250"/>
+		<WattsToResolve Value="5000"/>
+		<MinimumWattsToContact Min="6000" Max="8000"/>
+		<SecondsToContact Min="400" Max="600"/>
+		<LifeTime Min="2400" Max="2460"/>
+		<DownTime Min="60" Max="120"/>
+		<Bulk Value="2"/>
+		<Select>
+			<Conditions Weight="1000">
+				<Shuttle Type="Large"/>
+			</Conditions>
+			<Conditions Weight="1000">
+				<Plane Type="LargePlane"/>
+			</Conditions>
+		</Select>
+	</ContactSlot>
+	
+	<ContactSlot Id="ExoticsTrader">
+		<Icon Path="Images/TradingItemThumbnails/icon_exotics_trader.png"/>
+		<MinimumWattsVisible Value="100"/>
+		<WattsToResolve Value="5000"/>
+		<MinimumWattsToContact Min="6000" Max="8000"/>
+		<SecondsToContact Min="400" Max="600"/>
+		<LifeTime Min="2400" Max="2460"/>
+		<DownTime Min="1200" Max="2400"/>
+		<Bulk Value="0.5"/>
+		<Select>
+			<Conditions Weight="1000">
+				<Shuttle Type="Small"/>
+				<Environment Type="Human"/>
+			</Conditions>
+		</Select>
+	</ContactSlot>
+	
+	<Buy Id="PackageCannedEdamame" Value="200" DebugID="Box of Canned Edamame">
+		<Name Key="BuyDataBoxOfCannedEdamame"/>
+		<Chance Value=".25"/>
+		<Required Min="1" Max="2"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemCannedEdamame">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCannedEdamame">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCannedEdamame">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCannedEdamame">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCannedEdamame">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Buy Id="PackageRicePudding" Value="120" DebugID="Box of Rice Pudding">
+		<Name Key="BuyDataBoxOfRicePudding"/>
+		<Chance Value=".25"/>
+		<Required Min="1" Max="2"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemCannedRicePudding">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCannedRicePudding">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCannedRicePudding">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCannedRicePudding">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCannedRicePudding">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Buy Id="PackageTomatoSoup" Value="200" DebugID="Box of Tomato Soup">
+		<Name Key="BuyDataBoxOfTomatoSoup"/>
+		<Chance Value=".25"/>
+		<Required Min="1" Max="2"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemTomatoSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemTomatoSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemTomatoSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemTomatoSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemTomatoSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+	
+	<Buy Value="350" Id="BurgerPackage">
+		<Name Key="BuyDataBurgerPackage"/>
+		<Required Value="1"/>
+		<Chance Value=".25"/>
+		<Item Id="ItemBurgerBox">
+			<Item Id="ItemBurger">
+				<Percent Value="100" Compare="Equal"/>
+				<Decay Value="50" Compare="Less"/>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Buy Id="BirthdayCake" Value="350" DebugID="ChocolateCakeInBox">
+		<Name Key="BuyDataChocolateCakeInBox"/>
+		<Chance Value=".1"/>
+		<Required Value ="1"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemChocolateCake">
+				<Percent Value="100" Compare="Equal"/>
+				<Decay Value="50" Compare="Less"/>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Buy Id="Cake" Value="200" DebugID="Cake">
+		<Chance Value=".2"/>
+		<Required Value ="1"/>
+		<Item Id="ItemPlainCake">
+			<Percent Value="100" Compare="Equal"/>
+			<Decay Value="50" Compare="Less"/>
+		</Item>
+	</Buy>
+	
+	<Buy Id="BoxOfChocolates" Value="300" DebugID="Box of Chocolates">
+		<Name Key="BuyDataBoxOfChocolates"/>
+		<Chance Value=".25"/>
+		<Required Value ="1"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemChocolateBar">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemChocolateBar">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemChocolateBar">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemChocolateBar">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemChocolateBar">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Buy Id="PackagePumpkinSoup" Value="250" DebugID="Box of Pumpkin Soup">
+		<Name Key="BuyDataBoxOfPumpkinSoup"/>
+		<Chance Value=".25"/>
+		<Required Min="1" Max="2"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemPumpkinSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemPumpkinSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemPumpkinSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemPumpkinSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemPumpkinSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Buy Id="PackageCornSoup" Value="200" DebugID="Box of Corn Soup">
+		<Name Key="BuyDataBoxOfCornSoup"/>
+		<Chance Value=".25"/>
+		<Required Min="1" Max="2"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemCornSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCornSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCornSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCornSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCornSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Buy Id="PackageMuffins" Value="250" DebugID="Box of Muffins">
+		<Name Key="BuyDataBoxOfMuffins"/>
+		<Chance Value=".1"/>
+		<Required Min="1" Max="1"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemMuffin">
+				<Decay Value="50" Compare="Less"/>
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemMuffin">
+				<Decay Value="50" Compare="Less"/>
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemMuffin">
+				<Decay Value="50" Compare="Less"/>
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemMuffin">
+				<Decay Value="50" Compare="Less"/>
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemMuffin">
+				<Decay Value="50" Compare="Less"/>
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Buy Value="15" Id="ShipOxygen">
+		<Thumbnail Value="icon-oxygen"/>
+		<Name Key="BuyDataOxygenReplenishment"/>
+		<Required Min="20" Max="40" Bulk="true"/>
+		<Chance Value="0.2"/>
+		<Moles Value="100" />
+		<Gas Type="Oxygen" Percent="100" Compare="Equal"/>
+		<TemperatureRange Unit="Celsius" Min="10" Max="30"/>
+	</Buy>
+	<Buy Value="75.0" Id="ShipWater">
+		<Thumbnail Value="icon-water"/>
+		<Name Key="BuyDataWaterReplenishment"/>
+		<Required Min="3" Max="8" Bulk="true"/>
+		<Chance Value="0.2"/>
+		<Moles Value="250" />
+		<Gas Type="Water" Percent="100" Compare="Equal"/>
+		<TemperatureRange Unit="Celsius" Min="10" Max="25"/>
+	</Buy>
+	<Buy Value="30.0" Id="ShipFuel">
+		<Thumbnail Value="icon-randomGas"/>
+		<Name Key="BuyDataShipRefuel"/>
+		<Required Min="5" Max="10" Bulk="true"/>
+		<Chance Value="0.5"/>
+		<Moles Value="100"/>
+		<Gas Type="Oxygen" Percent="32" Compare="EqualOrGreater"/>
+		<Gas Type="Volatiles" Percent="65" Compare="EqualOrGreater"/>
+	</Buy>
+	<Buy Value="300" Id="ShipFoodPackage">
+		<Name Key="BuyDataFoodPackage"/>
+		<Chance Value="0.2"/>
+		<Required Min="1" Max="2"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemTomatoSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCornSoup">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemBreadLoaf">
+				<Decay Value="50" Compare="Less"/>
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemBreadLoaf">
+				<Decay Value="50" Compare="Less"/>
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemMuffin">
+				<Decay Value="50" Compare="Less"/>
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemWaterBottle">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+	<Buy Value="100" Id="ShipConsumablesPackage">
+		<Name Key="BuyDataConsumablesPackage"/>
+		<Chance Value="0.2"/>
+		<Required Value="1"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemDuctTape">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemDuctTape">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemGasFilterCarbonDioxide">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemGasFilterCarbonDioxide">
+				<Percent Value="100" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemPlasticSheets">
+				<Quantity Value="10" Compare="Equal"/>
+			</Item>
+			<Item Id="ItemCableCoil">
+				<Quantity Value="10" Compare="Equal"/>
+			</Item>
+		</Item>
+	</Buy>
+	<Buy Value="150" Id="MarineClothingPackage">
+		<Name Key="BuyDataMarineClothingPackage"/>
+		<Chance Value="0.2"/>
+		<Required Value="1"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemMarineHelmet"/>
+			<Item Id="ItemMarineHelmet"/>
+			<Item Id="ItemMarineBodyArmor"/>
+			<Item Id="ItemMarineBodyArmor"/>
+			<Item Id="UniformMarine"/>
+			<Item Id="UniformMarine"/>
+		</Item>
+	</Buy>
+
+	<Buy Value="250" Id="ShipRepairPackage">
+		<Name Key="BuyDataShipRepairPackage"/>
+		<Required Value="1"/>
+		<Chance Value=".10"/>
+		<Item Id="CardboardBox">
+			<Conditions Operator="All">
+				<Item Id="ItemSteelFrames">
+					<Quantity Value="10"/>
+				</Item>
+				<Item Id="ItemSteelSheets">
+					<Quantity Value="20"/>
+				</Item>
+				<Item Id="ItemPlasticSheets">
+					<Quantity Value="20"/>
+				</Item>
+				<Item Id="ItemCableCoil">
+					<Quantity Value="15"/>
+				</Item>
+				<Item Id="ItemKitPipe">
+					<Quantity Value="10"/>
+				</Item>
+			</Conditions>
+			<Conditions Operator="Any">
+				<Item Id="ItemWeldingTorch">
+					<Item Id="ItemGasCanisterEmpty" SlotId="GasCanister">
+						<Moles Value="100" Compare="EqualOrGreater"/>
+						<Gas Type="Volatiles" Percent="65" Compare="EqualOrGreater"/>
+						<Gas Type="Oxygen" Percent="32" Compare="EqualOrGreater"/>
+					</Item>
+				</Item>
+				<Item Id="ItemArcWelder">
+					<Item Id="ItemBatteryCell" SlotId="Battery">
+						<Charge Percent="99" Compare="EqualOrGreater"/>
+					</Item>
+				</Item>
+			</Conditions>
+		</Item>
+	</Buy>
+
+	<Buy Value="550" Id="HardsuitPackage">
+		<Name Key="BuyDataHardsuitPackage"/>
+		<Required Value="1"/>
+		<Chance Value=".10"/>
+		<Item Id="CardboardBox">
+			<Item Id="ItemHardsuitHelmet" />
+			<Item Id="ItemHardSuit">
+				<Conditions Operator="All">
+					<Item Id="ItemGasCanisterEmpty" SlotId="AirTank">
+						<Gas Type="Oxygen" Percent="100" Compare="Equal"/>
+						<TemperatureRange Unit="Celsius" Min="0" Max="40"/>
+						<Moles Value="100" Compare="EqualOrGreater"/>
+					</Item>
+					<Item Id="ItemGasCanisterEmpty" SlotId="WasteTank">
+						<Moles Value="0" Compare="Equal"/>
+					</Item>
+					<Item Id="ItemBatteryCellLarge" SlotId="LifeSupport">
+						<Charge Percent="99" Compare="EqualOrGreater"/>
+					</Item>
+				</Conditions>
+				<Conditions Operator="Any">
+					<Item Id="ItemGasFilterCarbonDioxide">
+						<Percent Value="100" Compare="Equal"/>
+					</Item>
+					<Item Id="ItemGasFilterCarbonDioxideM">
+						<Percent Value="100" Compare="Equal"/>
+					</Item>
+					<Item Id="ItemGasFilterCarbonDioxideL">
+						<Percent Value="100" Compare="Equal"/>
+					</Item>
+				</Conditions>
+			</Item>
+		</Item>
+	</Buy>
+
+	<Sell Value="-4" Id="ShipRubbish">
+		<Name Key="SellDataRubbishCollection"/>
+		<Stock Min="5" Max="15"/>
+		<Chance Value="0.5"/>
+		<Item Id="DecayedFood">
+			<Quantity Value="25"/>
+		</Item>
+	</Sell>
+	
+	<Trader Id="OreTrader">
+		<Type Value="BasicTrader"/>
+		<Type Value="MediumTrader"/>
+		<Type Value="LargeTrader"/>
+		<Name Key="TraderMoreOreLess"/>
+		<Name Key="TraderAsteroidAssayers"/>
+		<Name Key="TraderCosmicCrush"/>
+		<Name Key="TraderGalacticGravels"/>
+		<Name Key="TraderNebulaNuggets"/>
+		<Name Key="TraderOrbitOreOasis"/>
+		<Name Key="TraderStellarStoneSupply"/>
+		<Name Key="TraderInterstellarExcavators"/>
+		<Name Key="TraderVoidVeinVendors"/>
+		<Name Key="TraderPlanetaryPebbles"/>
+
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipFoodPackage"/>
+		<Buy Id="ShipConsumablesPackage"/>
+		<Buy Id="ShipRepairPackage"/>
+		<Buy Id="Cake"/>
+		<Buy Id="BirthdayCake"/>
+		<Buy Id="BurgerPackage"/>
+		<Buy Id="BoxOfChocolates"/>
+
+		<!-- Basic Ores-->
+		<Sell Value="1" DebugID="Iron Ore">
+			<Stock Min="800" Max="800" Bulk="true"/>
+			<Item Id="ItemIronOre"/>
+		</Sell>
+		<Sell Value="1.2" DebugID="Copper Ore">
+			<Stock Min="400" Max="400" Bulk="true"/>
+			<Item Id="ItemCopperOre"/>
+		</Sell>
+		<Sell Value="1.4" DebugID="Silicon Ore">
+			<Stock Min="400" Max="400" Bulk="true"/>
+			<Item Id="ItemSiliconOre"/>
+		</Sell>
+		<Sell Value="1.8" DebugID="Gold Ore">
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemGoldOre"/>
+		</Sell>
+		<Sell Value="1.2" DebugID="Coal Ore">
+			<Stock Min="400" Max="400" Bulk="true"/>
+			<Item Id="ItemCoalOre"/>
+		</Sell>
+		<Sell Value="2.5" DebugID="Lead Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemLeadOre"/>
+		</Sell>
+		<Sell Value="4" DebugID="Nickel Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemNickelOre"/>
+		</Sell>
+		<Sell Value="3" DebugID="Silver Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemSilverOre"/>
+		</Sell>
+		<Sell Value="4" DebugID="Cobalt Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemCobaltOre"/>
+		</Sell>
+		<Sell Value=".5" DebugID="Oxite">
+			<Stock Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemOxite"/>
+		</Sell>
+		<Sell Value=".75" DebugID="Volatiles">
+			<Stock Min="150" Max="150" Bulk="true"/>
+			<Item Id="ItemVolatiles"/>
+		</Sell>
+		<Sell Value="4" DebugID="Salt">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="150" Max="150" Bulk="true"/>
+			<Item Id="ItemPureIceLiquidSodiumChloride"/>
+		</Sell>
+		<Sell Value=".2" DebugID="Unprocessed Ore" CustomToolTipKey="TradingToolTipNoInfo">
+			<Name Key="SellDataUnprocessedOre"/>
+			<Stock Min="800" Max="800" Bulk="true"/>
+			<Select>
+				<Item Id="ItemReagentMix">
+					<Reagents Iron="0.2" Gold="0.05" Copper="0.1" Lead="0.1"/>
+				</Item>
+				<Item Id="ItemReagentMix">
+					<Reagents Iron="0.2" Copper="0.1"/>
+				</Item>
+				<Item Id="ItemReagentMix">
+					<Reagents Gold="0.1" Silver="0.1" Lead="0.2"/>
+				</Item>
+				<Item Id="ItemReagentMix">
+					<Reagents Copper="0.3" Nickel="0.1"/>
+				</Item>
+				<Item Id="ItemReagentMix">
+					<Reagents Silicon="0.2" Cobalt="0.2"/>
+				</Item>
+			</Select>
+		</Sell>
+		<Sell Value="0" DebugID="Junk Ore" CustomToolTipKey="TradingToolTipNoInfo">
+			<Name Key="SellDataJunkOre"/>
+			<Chance Value="0.3"/>
+			<Stock Min="800" Max="800" Bulk="true"/>
+			<Select>
+				<Item Id="ItemReagentMix">
+					<Reagents Iron="0.1"/>
+				</Item>
+				<Item Id="ItemReagentMix">
+					<Reagents Copper="0.1"/>
+				</Item>
+				<Item Id="ItemReagentMix">
+					<Reagents Silicon="0.1"/>
+				</Item>
+			</Select>
+		</Sell>
+		<!-- Buys canned food-->
+		<Buy Id="PackageCannedEdamame" />
+		<Buy Id="PackageRicePudding" />
+		<Buy Id="PackageTomatoSoup" />
+		<Buy Id="PackagePumpkinSoup" />
+		<Buy Id="PackageCornSoup" />
+		<Buy Id="PackageMuffins" />
+
+		<!-- Buys miner gear sometimes-->
+		<Buy Value="50" DebugId="Mining Drill">
+			<Chance Value=".5"/>
+			<Required Min="1" Max="3"/>
+			<RandomPool Index="1" Weight="1000"/>
+			<Item Id="ItemMiningDrill">
+				<Item Id="ItemBatteryCell" SlotId="Battery">
+					<Charge Percent="99" Compare="EqualOrGreater"/>
+				</Item>
+			</Item>
+		</Buy>
+		<Buy Value="250" DebugId="Heavy Mining Drill">
+			<Chance Value=".25"/>
+			<Required Min="1" Max="3"/>
+			<RandomPool Index="1" Weight="1000"/>
+			<Item Id="ItemMiningDrillHeavy">
+				<Item Id="ItemBatteryCellLarge" SlotId="Battery">
+					<Charge Percent="99" Compare="EqualOrGreater"/>
+				</Item>
+			</Item>
+		</Buy>
+		<Buy Value="100" DebugID="Hard Mining Backpack">
+			<Chance Value=".5"/>
+			<Required Value="1"/>
+			<RandomPool Index="1" Weight="500"/>
+			<Item Id="ItemHardMiningBackPack"/>
+		</Buy>
+		<Buy Value="100">
+			<Chance Value=".33"/>
+			<Required Value="1"/>
+			<RandomPool Index="1" Weight="500"/>
+			<Item Id="ItemMiningBeltMKII"/>
+		</Buy>
+	</Trader>
+	<Trader Id="AlloyTrader">
+		<Type Value="BasicTrader"/>
+		<Type Value="MediumTrader"/>
+		<Type Value="LargeTrader"/>
+		<Name Key="TraderAllAlloys"/>
+		<Name Key="TraderMetalMavens"/>
+		<Name Key="TraderAstroAlloyEmporium"/>
+		<Name Key="TraderCosmicForge"/>
+		<Name Key="TraderGalacticMetallurgy"/>
+		<Name Key="TraderOrbitOreOutfitters"/>
+		<Name Key="TraderStellarSmelter"/>
+		<Name Key="TraderInterstellarIngots"/>
+		<Name Key="TraderNebulaNucleus"/>
+		<Name Key="TraderSpaceAlloySpecialists"/>
+		<Name Key="TraderStarSmelter"/>
+
+		<Buy Id="PackageMuffins" />
+		<Buy Id="ShipRepairPackage"/>
+		<Buy Id="Cake"/>
+		<Buy Id="BurgerPackage"/>
+		<Buy Id="BirthdayCake"/>
+		<Buy Id="BoxOfChocolates"/>
+
+		<Sell Value="1.5" DebugID="Steel">
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemSteelIngot"/>
+		</Sell>
+		<Sell Value="2.5" DebugID="Solder">
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemSolderIngot"/>
+		</Sell>
+		<Sell Value="3" DebugID="Constantan">
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemConstantanIngot"/>
+		</Sell>
+		<Sell Value="4" DebugID="Electrum">
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemElectrumIngot"/>
+		</Sell>
+		<Sell Value="5" DebugID="Invar">
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemInvarIngot"/>
+		</Sell>
+		<Sell Value="11" DebugID="Astroloy">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemAstroloyIngot"/>
+		</Sell>
+		<Sell Value="15" DebugID="Waspaloy">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemWaspaloyIngot"/>
+		</Sell>
+		<Sell Value="15" DebugID="Hastelloy">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemHastelloyIngot"/>
+		</Sell>
+		<Sell Value="12" DebugID="Inconel">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemInconelIngot"/>
+		</Sell>
+		<Sell Value="12" DebugID="Stellite">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemStelliteIngot"/>
+		</Sell>
+		<Sell Value="1" >
+			<Type Value="LargeTrader"/>
+			<Stock Min="500" Max="1000" Bulk="true"/>
+			<Item Id="ItemSolidFuel"/>
+		</Sell>
+		<Buy Value="1" DebugID="Iron Ore">
+			<Required Min="600" Max="600" Bulk="true"/>
+			<Item Id="ItemIronOre"/>
+		</Buy>
+		<Buy Value="1.2" DebugID="Copper Ore">
+			<Required Min="600" Max="600" Bulk="true"/>
+			<Item Id="ItemCopperOre"/>
+		</Buy>
+		<Buy Value="1.4" DebugID="Silicon Ore">
+			<Required Min="400" Max="400" Bulk="true"/>
+			<Item Id="ItemSiliconOre"/>
+		</Buy>
+		<Buy Value="1.8" DebugID="Gold Ore">
+			<Required Min="400" Max="400" Bulk="true"/>
+			<Item Id="ItemGoldOre"/>
+		</Buy>
+		<Buy Value="1.2" DebugID="Coal Ore">
+			<Required Min="400" Max="400" Bulk="true"/>
+			<Item Id="ItemCoalOre"/>
+		</Buy>
+		<Buy Value="2.5" DebugID="Lead Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemLeadOre"/>
+		</Buy>
+		<Buy Value="2" DebugID="Nickel Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemNickelOre"/>
+			<Worlds Operator="None">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+		<Buy Value="1.3" DebugID="Nickel Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemNickelOre"/>
+			<Worlds Operator="Any">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+		<Buy Value="3" DebugID="Silver Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemSilverOre"/>
+			<Worlds Operator="None">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+		<Buy Value="1.5" DebugID="Silver Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemSilverOre"/>
+			<Worlds Operator="Any">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+		<Buy Value="3" DebugID="Cobalt Ore">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemCobaltOre"/>
+		</Buy>
+		<Buy Value="25.0" DebugID="NoS Fuel">
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-nitrousoxide"/>
+			<Name Key="BuyDataNitrousOxideFuelMix"/>
+			<Required Min="5" Max="10" Bulk="true"/>
+			<Moles Value="100"/>
+			<Gas Type="Volatiles" Percent="49" Compare="EqualOrGreater"/>
+			<Gas Type="NitrousOxide" Percent="49" Compare="EqualOrGreater"/>
+		</Buy>
+		<Buy Value="10.0" DebugID="Regular Fuel Mix">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-randomGas"/>
+			<Name Key="BuyDataRegularFuelMix"/>
+			<Required Min="5" Max="10" Bulk="true"/>
+			<Moles Value="100"/>
+			<Gas Type="Oxygen" Percent="32" Compare="EqualOrGreater"/>
+			<Gas Type="Volatiles" Percent="65" Compare="EqualOrGreater"/>
+		</Buy>
+	</Trader>
+	<Trader Id="HydroponicsTrader">
+		<Type Value="BasicTrader"/>
+		<Type Value="MediumTrader"/>
+		
+		<Name Key="TraderGreenFutures"/>
+		<Name Key="TraderAstroAgronomics"/>
+		<Name Key="TraderStellarSprouts"/>
+		<Name Key="TraderHydroHarvestHaven"/>
+		<Name Key="TraderOrbitingOrchards"/>
+		<Name Key="TraderGalacticGrowers"/>
+		<Name Key="TraderCosmoCropConnect"/>
+		<Name Key="TraderSpaceSproutSuppliers"/>
+		<Name Key="TraderNebulaNurturers"/>
+		<Name Key="TraderStarSeedlings"/>
+		<Name Key="TraderEcoSphereEssentials"/>
+		<Name Key="TraderInterstellarIrrigation"/>
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipFoodPackage"/>
+		<Buy Id="ShipConsumablesPackage"/>
+		<Buy Id="PackageMuffins" />
+		<Buy Id="ShipRepairPackage"/>
+		<Buy Id="Cake"/>
+		<Buy Id="BurgerPackage"/>
+		<Buy Id="BirthdayCake"/>
+		<Buy Id="BoxOfChocolates"/>
+
+		<!-- Basic Seeds -->
+		<Sell Value="100" DebugId="Fern Seed Pack">
+			<Name Key="SellDataFernSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Fern">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="300" DebugId="Mushroom Seed Pack">
+			<Name Key="SellDataMushroomSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Mushroom">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="300" DebugId="Corn Seed Pack">
+			<Name Key="SellDataCornSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Corn">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="50" DebugId="Potato Seed Pack">
+			<Name Key="SellDataPotatoSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Potato">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="400" DebugId="Pumpkin Seed Pack">
+			<Name Key="SellDataPumpkinSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Pumpkin">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="200" DebugId="Rice Seed Pack">
+			<Name Key="SellDataRiceSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Rice">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="200" DebugId="Soybean Seed Pack">
+			<Name Key="SellDataSoybeanSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Soybean">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="200" DebugId="Switchgrass Seed Pack">
+			<Name Key="SellDataSwitchgrassSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Switchgrass">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="50" DebugId="Tomato Seed Pack">
+			<Name Key="SellDataTomatoSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Tomato">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="50" DebugId="Wheat Seed Pack">
+			<Name Key="SellDataWheatSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Wheet">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="100" DebugId="Sugarcane Seed Pack">
+			<Name Key="SellDataSugarcaneSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_SugarCane">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="250" DebugId="Cocoa Seed Pack">
+			<Name Key="SellDataCocoaSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Cocoa">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="250" DebugId="Watermelon Seed Pack">
+			<Chance Value="0.5"/>
+			<Name Key="SellDataWatermelonSeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Watermelon">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="250" DebugId="Blueberry Seed Pack">
+			<Chance Value="0.5"/>
+			<Name Key="SellDataBlueberrySeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Blueberry">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+		<Sell Value="250" DebugId="Strawberry Seed Pack">
+			<Chance Value="0.5"/>
+			<Name Key="SellDataStrawberrySeedPack"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="SeedBag_Strawberry">
+				<Quantity Value="3"/>
+			</Item>
+		</Sell>
+
+		<!-- Gas Buys -->
+		<Buy Value="10.0" DebugId="Bulk Carbon Dioxide">
+			<Thumbnail Value="icon-carbondioxide"/>
+			<Name Key="BuyDataBulkCarbonDioxide"/>
+			<Required Min="20" Max="20" Bulk="true"/>
+			<Moles Value="100"/>
+			<Gas Type="CarbonDioxide" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="0" Max="40"/>
+		</Buy>
+		<Buy Value="15" DebugId="Bulk Water">
+			<Thumbnail Value="icon-LiquidWater"/>
+			<Name Key="BuyDataBulkWater"/>
+			<Required Min="50" Max="200" Bulk="true"/>
+			<Moles Value="100" />
+			<Gas Type="Water" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="10" Max="35"/>
+		</Buy>
+		<Buy Value="25" DebugId="Planter">
+			<Chance Value=".25"/>
+			<Required Min="1" Max="3"/>
+			<Item Id="ItemKitPlanter"/>
+		</Buy>
+		<Buy Value="15" DebugId="Hydroponics Tray">
+			<Chance Value=".25"/>
+			<Required Min="1" Max="10"/>
+			<Item Id="ItemHydroponicTray"/>
+		</Buy>
+		<Buy Value="1.5" DebugId="Liquid Pipe">
+			<Chance Value=".25"/>
+			<Required Min="10" Max="40"/>
+			<Item Id="ItemKitPipeLiquid"/>
+		</Buy>
+		<Buy Value="15" DebugId="Liquid Pipe Utility Kit">
+			<Chance Value=".25"/>
+			<Required Min="1" Max="10"/>
+			<Item Id="ItemKitPipeUtilityLiquid"/>
+		</Buy>
+	</Trader>
+	<Trader Id="GasTrader" ShuttleVariant="Gas">
+		<Type Value="BasicTrader"/>
+		<Type Value="MediumTrader"/>
+		<Type Value="LargeTrader"/>
+		
+		<Name Key="TraderGasForLess"/>
+		<Name Key="TraderAstroAether"/>
+		<Name Key="TraderCosmicClouds"/>
+		<Name Key="TraderNebulaNectars"/>
+		<Name Key="TraderOrbitingOxygens"/>
+		<Name Key="TraderGalacticGases"/>
+		<Name Key="TraderStellarSteam"/>
+		<Name Key="TraderInterstellarInhalants"/>
+		<Name Key="TraderVoidVapors"/>
+		<Name Key="TraderSpaceGasStation"/>
+
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipFoodPackage"/>
+		<Buy Id="ShipConsumablesPackage"/>
+		<Buy Id="PackageMuffins" />
+		<Buy Id="ShipRepairPackage"/>
+		<Buy Id="Cake"/>
+		<Buy Id="BurgerPackage"/>
+		<Buy Id="BirthdayCake"/>
+		<Buy Id="BoxOfChocolates"/>
+
+		<!-- Clean Filtered Gasses-->
+		<Sell Value="5.00" DebugId="Bulk Oxygen">
+			<Name Key="SellDataBulkOxygen"/>
+			<Thumbnail Value="icon-oxygen"/>
+			<Stock Min="50" Max="70" Bulk="true"/>
+			<Gas Type="Oxygen" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="3.00" DebugId="Bulk Nitrogen">
+			<Thumbnail Value="icon-nitrogen"/>
+			<Name Key="SellDataBulkNitrogen"/>
+			<Stock Min="30" Max="50" Bulk="true"/>
+			<Gas Type="Nitrogen" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="8">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-Helium"/>
+			<Name Key="SellDataBulkHelium"/>
+			<Stock Min="20" Max="40" Bulk="true"/>
+			<Gas Type="Helium" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="7.5" DebugId="Bulk Carbon Dioxide">
+			<Thumbnail Value="icon-carbondioxide"/>
+			<Name Key="SellDataBulkCarbonDioxide"/>
+			<Stock Min="20" Max="30" Bulk="true"/>
+			<Gas Type="CarbonDioxide" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="7.5" DebugId="Bulk Volatiles">
+			<Thumbnail Value="icon-Methane"/>
+			<Name Key="SellDataBulkVolatiles"/>
+			<Stock Min="50" Max="70" Bulk="true"/>
+			<Gas Type="Volatiles" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="10" >
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-Hydrogen"/>
+			<Name Key="SellDataBulkHydrogen"/>
+			<Stock Min="30" Max="50" Bulk="true"/>
+			<Gas Type="Hydrogen" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="50" >
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-Silanol"/>
+			<Name Key="SellDataBulkSilanol"/>
+			<Stock Min="10" Max="15" Bulk="true"/>
+			<Gas Type="Silanol" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="-1.00" DebugId="Bulk Pollutants">
+			<Thumbnail Value="icon-pollutant"/>
+			<Name Key="SellDataBulkPollutants"/>
+			<Stock Min="30" Max="40" Bulk="true"/>
+			<Gas Type="Pollutant" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="18" DebugId="Bulk Water">
+			<Thumbnail Value="icon-LiquidWater"/>
+			<Name Key="SellDataBulkWater"/>
+			<Stock Min="50" Max="80" Bulk="true"/>
+			<Gas Type="Water" Litres="1" Celsius="20"/>
+		</Sell>
+		<Sell Value="30" DebugId="Bulk Nitrous Oxide">
+			<Thumbnail Value="icon-nitrousoxide"/>
+			<Name Key="SellDataBulkNitrousOxide"/>
+			<Stock Min="10" Max="40" Bulk="true"/>
+			<Gas Type="NitrousOxide" Moles="100" Celsius="20"/>
+		</Sell>
+		<Sell Value="40">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-Ozone"/>
+			<Name Key="SellDataBulkOzone"/>
+			<Stock Min="10" Max="40" Bulk="true"/>
+			<Gas Type="Ozone" Moles="100" Celsius="40"/>
+		</Sell>
+		<!-- Dirty Gas Mixtures-->
+		<Sell Value="2.0" DebugId="Bulk Dirty Volatiles">
+			<Thumbnail Value="icon-Methane"/>
+			<Name Key="SellDataBulkDirtyVolatiles"/>
+			<Stock Min="50" Max="100" Bulk="true"/>
+			<Gas Type="Volatiles" Moles="65.0" Celsius="500"/>
+			<Gas Type="CarbonDioxide" Moles="30.0" Celsius="500"/>
+			<Gas Type="HydrochloricAcid" Moles="5.0" Celsius="500"/>
+		</Sell>
+		<Sell Value="10" DebugId="Steam">
+			<Thumbnail Value="icon-water"/>
+			<Name Key="SellDataSteam"/>
+			<Stock Min="50" Max="100" Bulk="true"/>
+			<Gas Type="Steam" Moles="100" Celsius="800"/>
+		</Sell>
+		<!-- Gas In Canisters -->
+		<Sell Value="10" DebugID="Oxygen Canister">
+			<Name Key="SellDataOxygenCanister"/>
+			<Stock Min="5" Max="5"/>
+			<Item Id="ItemGasCanisterEmpty">
+				<Name Key="SellDataOxygenCanister"/>
+				<Color Id="White"/>
+				<Gas Type="Oxygen" Moles="150" Celsius="20"/>
+			</Item>
+		</Sell>
+		<Sell Value="20" DebugID="Fuel Canister">
+			<Name Key="SellDataFuelCanister"/>
+			<Stock Min="5" Max="5"/>
+			<Item Id="ItemGasCanisterEmpty">
+				<Name Key="SellDataFuelCanister"/>
+				<Color Id="Orange"/>
+				<Gas Type="Volatiles" Moles="100" Celsius="-20"/>
+				<Gas Type="Oxygen" Moles="50" Celsius="-20"/>
+			</Item>
+		</Sell>
+		<Sell Value="150">
+			<Name Key="SellDataHydrazineCanister"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemLiquidCanisterEmpty">
+				<Name Key="SellDataLiquidHydrazineCanister"/>
+				<Color Id="Orange"/>
+				<Gas Type="LiquidHydrazine" Litres="12" Celsius="20"/>
+			</Item>
+		</Sell>
+		<Sell Value="250" DebugID="Water Canister">
+			<Name Key="SellDataWaterCanister"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemLiquidCanisterEmpty">
+				<Name Key="SellDataWaterCanister"/>
+				<Color Id="Blue"/>
+				<Gas Type="Water" Litres="12" Celsius="20"/>
+			</Item>
+		</Sell>
+		<Sell Value="10" DebugId="Nitrogen Canister">
+			<Name Key="SellDataNitrogenCanister"/>
+			<Stock Min="5" Max="5"/>
+			<Item Id="ItemGasCanisterEmpty">
+				<Name Key="SellDataNitrogenCanister"/>
+				<Color Id="Green"/>
+				<Gas Type="Nitrogen" Moles="150" Celsius="20"/>
+			</Item>
+		</Sell>
+		<!-- Filled Water Bottles -->
+		<Sell Id="EmergencyWater" Value="25">
+			<Name Key="SellDataEmergencyWater"/>
+			<Stock Min="5" Max="5"/>
+			<Item Id="ItemWaterPacket">
+				<Percent Value="100"/>
+			</Item>
+		</Sell>
+		<!-- Ices -->
+		<Buy Value=".5">
+			<Required Min="300" Max="600" Bulk="true"/>
+			<Item Id="ItemOxite"/>
+			<Worlds Operator="None">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+		<Buy Value="1">
+			<Required Min="300" Max="600" Bulk="true"/>
+			<Item Id="ItemNitrice"/>
+			<Worlds Operator="None">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+		<Buy Value="1.5">
+			<Required Min="300" Max="600" Bulk="true"/>
+			<Item Id="ItemIce"/>
+			<Worlds Operator="None">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+		<Buy Value=".8">
+			<Required Min="300" Max="600" Bulk="true"/>
+			<Item Id="ItemVolatiles"/>
+			<Worlds Operator="None">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+		<!-- World Atmosphere -->
+		<Buy Value="2">
+			<Thumbnail Value="icon-methane"/>
+			<Name Key="BuyDataBulkVolatiles"/>
+			<Required Min="100" Max="200" Bulk="true"/>
+			<World Id="Vulcan2"/>
+			<Moles Value="100" />
+			<Gas Type="Volatiles" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="0" Max="140"/>
+		</Buy>
+		<Buy Value="2.5">
+			<Thumbnail Value="icon-hydrogen"/>
+			<Name Key="BuyDataBulkHydrogen"/>
+			<Required Min="50" Max="100" Bulk="true"/>
+			<World Id="Vulcan2"/>
+			<Moles Value="100" />
+			<Gas Type="Hydrogen" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="0" Max="140"/>
+		</Buy>
+		<Buy Value="2" DebugId="Bulk Oxygen">
+			<Thumbnail Value="icon-oxygen"/>
+			<Name Key="BuyDataBulkOxygen"/>
+			<Required Min="100" Max="200" Bulk="true"/>
+			<World Id="Europa3"/>
+			<Moles Value="100" />
+			<Gas Type="Oxygen" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="-100" Max="30"/>
+		</Buy>
+		<Buy Value="1.5" DebugId="Bulk Carbon Dioxide">
+			<Thumbnail Value="icon-carbondioxide"/>
+			<Name Key="BuyDataBulkCarbonDioxideVenus"/>
+			<Required Min="50" Max="100" Bulk="true"/>
+			<World Id="Venus"/>
+			<Moles Value="100" />
+			<Gas Type="CarbonDioxide" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="0" Max="500"/>
+		</Buy>
+		<Buy Value="3" DebugId="Bulk Carbon Dioxide">
+			<Thumbnail Value="icon-carbondioxide"/>
+			<Name Key="BuyDataBulkCarbonDioxideMars"/>
+			<Required Min="50" Max="100" Bulk="true"/>
+			<World Id="Mars2"/>
+			<Moles Value="100" />
+			<Gas Type="CarbonDioxide" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="0" Max="30"/>
+		</Buy>
+		<!-- Misc buys -->
+		<Buy Value="7.5" DebugId="Empty Gas Canister">
+			<Name Key="BuyDataEmptyGasCanister"/>
+			<Chance Value="0.25"/>
+			<Required Min="10" Max="20"/>
+			<Item Id="ItemGasCanisterEmpty">
+				<Moles Value="0" Compare="Equal"/>
+			</Item>
+		</Buy>
+		<Buy Value="30">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="1" Max="3"/>
+			<Select>
+				<Item Id="ItemGasFilterNitrogenL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterOxygenL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterPollutantsL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterVolatilesL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterNitrousOxideL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterCarbonDioxideL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+			</Select>
+			<Chance Value="0.5"/>
+		</Buy>
+		<Buy Value="200">
+			<Required Min="1" Max="3"/>
+			<Item Id="ItemPumpkinPie"/>
+			<Chance Value="0.3"/>
+		</Buy>
+	</Trader>
+	<Trader Id="Construction Trader">
+		<Type Value="BasicTrader"/>
+		<Type Value="MediumTrader"/>
+		<Type Value="LargeTrader"/>
+		
+		<Name Key="TraderBuildINC"/>
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipFoodPackage"/>
+		<Buy Id="ShipRepairPackage"/>
+		<Buy Id="Cake"/>
+		<Buy Id="BurgerPackage"/>
+		<Buy Id="BirthdayCake"/>
+		<Buy Id="BoxOfChocolates"/>
+		<Sell Value="3">
+			<Stock Min="150" Max="150" Bulk="true"/>
+			<Item Id="ItemSteelFrames"/>
+		</Sell>
+		<Sell Value="1.5">
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemKitWall"/>
+		</Sell>
+		<Sell Value=".75">
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemSteelSheets"/>
+		</Sell>
+		<Sell Value=".75">
+			<Stock Min="100" Max="100" Bulk="true"/>
+			<Item Id="ItemPlasticSheets"/>
+		</Sell>
+		<Sell Value="3">
+			<Stock Min="50" Max="50" Bulk="true"/>
+			<Item Id="ItemGlassSheets"/>
+		</Sell>
+		<Sell Value=".75">
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemCableCoil"/>
+		</Sell>
+		<Sell Value=".5">
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemKitPipe"/>
+		</Sell>
+		<Sell Value="1">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemCableCoilHeavy"/>
+		</Sell>
+		<Sell Value="2">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Stock Min="200" Max="200" Bulk="true"/>
+			<Item Id="ItemCableCoilSuperHeavy"/>
+		</Sell>
+		<Buy Value="1.25" DebugID="Steel Ingot">
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemSteelIngot"/>
+		</Buy>
+		<Buy Value="2" DebugID="Solder Ingot">
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemSolderIngot"/>
+		</Buy>
+		<Buy Value="2.5" DebugID="Constantan Ingot">
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemConstantanIngot"/>
+		</Buy>
+		<Buy Value="3" DebugID="Electrum Ingot">
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemElectrumIngot"/>
+		</Buy>
+		<Buy Value="3" DebugID="Invar Ingot">
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemInvarIngot"/>
+		</Buy>
+		<Buy Value="11" DebugID="Astroloy Ingot">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemAstroloyIngot"/>
+		</Buy>
+		<Buy Value="14" DebugID="Waspaloy Ingot">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemWaspaloyIngot"/>
+		</Buy>
+		<Buy Value="15" DebugID="Hastelloy Ingot">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemHastelloyIngot"/>
+		</Buy>
+		<Buy Value="12" DebugID="Inconel Ingot">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemInconelIngot"/>
+		</Buy>
+		<Buy Value="12" DebugID="Stellite Ingot">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="300" Max="300" Bulk="true"/>
+			<Item Id="ItemStelliteIngot"/>
+		</Buy>
+		<Buy Value="200" DebugID="autolathe mod">
+			<Required Min="1" Max="1"/>
+			<Chance Value=".25"/>
+			<Item Id="AutolathePrinterMod"/>
+		</Buy>
+	</Trader>
+	<Trader Id="LiquidTrader" ShuttleVariant="Gas">
+		<Type Value="MediumTrader"/>
+		<Type Value="LargeTrader"/>
+		
+		<Name Key="TraderPaylessLiquids"/>
+		<Name Key="TraderFrostyBarrels"/>
+		<Name Key="TraderCosmicConcoctions"/>
+		<Name Key="TraderGalacticGush"/>
+		<Name Key="TraderNebulaNectars"/>
+		<Name Key="TraderOrbitalOceans"/>
+		<Name Key="TraderStellarStreams"/>
+		<Name Key="TraderInterstellarIcicles"/>
+		<Name Key="TraderVoidVessels"/>
+		<Name Key="TraderSpaceSprings"/>
+		<Name Key="TraderStarSippers"/>
+
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipFoodPackage"/>
+		<Buy Id="ShipConsumablesPackage"/>
+		<Buy Id="PackageMuffins" />
+		<Buy Id="ShipRepairPackage"/>
+		<Buy Id="Cake"/>
+		<Buy Id="BurgerPackage"/>
+		<Buy Id="BirthdayCake"/>
+		<Buy Id="BoxOfChocolates"/>
+		<!-- Bulk Gases -->
+		<!-- assuming 20 dollars per 100 moles
+    Water Molar volume is 0.018
+    how much will it cost per litre?
+      0.018 * 20 / 100 = 0.0036 dollars per litre
+      -->
+		<Sell Value="12" DebugId="Bulk Water">
+			<Thumbnail Value="icon-LiquidWater"/>
+			<Name Key="SellDataBulkWater"/>
+			<Stock Min="100" Max="300" Bulk="true"/>
+			<Gas Type="Water" Litres="1" Celsius="20"/>
+		</Sell>
+		<Sell Value="5.75" DebugId="Bulk Liquid Nitrogen">
+			<Thumbnail Value="icon-liquidnitrogen"/>
+			<Name Key="SellDataBulkLiquidNitrogen"/>
+			<Stock Min="100" Max="300" Bulk="true"/>
+			<Gas Type="LiquidNitrogen" Litres="1" Celsius="-220"/>
+		</Sell>
+		<Sell Value="7" DebugId="Bulk Liquid Oxygen">
+			<Thumbnail Value="icon-liquidoxygen"/>
+			<Name Key="SellDataBulkLiquidOxygen"/>
+			<Stock Min="100" Max="300" Bulk="true"/>
+			<Gas Type="LiquidOxygen" Litres="1" Celsius="-200"/>
+		</Sell>
+		<Sell Value="15" DebugId="Bulk Liquid Volatiles">
+			<Thumbnail Value="icon-LiquidMethane"/>
+			<Name Key="SellDataBulkLiquidVolatiles"/>
+			<Stock Min="100" Max="300" Bulk="true"/>
+			<Gas Type="LiquidVolatiles" Litres="1" Celsius="-180"/>
+		</Sell>
+		<Sell Value="25">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-LiquidHydrogen"/>
+			<Name Key="SellDataBulkLiquidHydrogen"/>
+			<Stock Min="100" Max="200" Bulk="true"/>
+			<Gas Type="LiquidHydrogen" Litres="1" Celsius="-230"/>
+		</Sell>
+		<Sell Value="40">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-LiquidHydrazine"/>
+			<Name Key="SellDataBulkLiquidHydrazine"/>
+			<Stock Min="100" Max="200" Bulk="true"/>
+			<Gas Type="LiquidHydrazine" Litres="1" Celsius="20"/>
+		</Sell>
+		<Sell Value="25">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-LiquidOzone"/>
+			<Name Key="SellDataBulkLiquidOzone"/>
+			<Stock Min="100" Max="200" Bulk="true"/>
+			<Gas Type="LiquidOzone" Litres="1" Celsius="-180"/>
+		</Sell>
+		<Sell Value="10">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Thumbnail Value="icon-LiquidHydrochloricAcid"/>
+			<Name Key="SellDataBulkLiquidHydrochloricAcid"/>
+			<Stock Min="100" Max="200" Bulk="true"/>
+			<Gas Type="LiquidHydrochloricAcid" Litres="1" Celsius="20"/>
+		</Sell>
+		<!-- Canister Gases -->
+		<!--  
+    Water Molar volume is 0.018
+     we want to sell 12 litres, when 20 dollars per 100 moles                  
+        12 / 0.018 = 666.66666666666666666666666666667 moles
+        666 * 20 / 100 = 133.33333333333333333333333333333 dollars
+        how much does it cost per litre?
+          133.33333333333333333333333333333 / 12 = 11.1
+     -->
+		<Sell Value="200" DebugId="Water Canister">
+			<Name Key="SellDataWaterCanister"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemLiquidCanisterEmpty">
+				<Name Key="SellDataWaterCanister"/>
+				<Color Id="Blue"/>
+				<Gas Type="Water" Litres="12" Celsius="20"/>
+			</Item>
+		</Sell>
+		<!--
+    Nitrogen Molar volume is 0.0348
+       we want to sell 12 litres, when 20 dollars per 100 moles                  
+           12 / 0.0348 = 344.82758620689655172413793103448 moles
+           344 * 20 / 100 = 68.965517241379310344827586206897 dollars
+              how much does it cost per litre?
+              68.965517241379310344827586206897 / 12 = 5.75
+     -->
+		<Sell Value="100" DebugId="Liquid Nitrogen Canister">
+			<Name Key="SellDataLiquidNitrogenCanister"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemLiquidCanisterEmpty">
+				<Name Key="SellDataLiquidNitrogenCanister"/>
+				<Color Id="Green"/>
+				<Gas Type="LiquidNitrogen" Litres="12" Celsius="-220"/>
+			</Item>
+		</Sell>
+		<!--
+    Oxygen molar volume is 0.03
+          we want to sell 12 litres, when 20 dollars per 100 moles                  
+              12 / 0.03 = 400 moles
+              400 * 20 / 100 = 80 dollars
+              how much does it cost per litre?
+              80 / 12 = 6.666 dollars per litre
+      -->
+		<Sell Value="135" DebugId="Liquid Oxygen Canister">
+			<Name Key="SellDataLiquidOxygenCanister"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemLiquidCanisterEmpty">
+				<Name Key="SellDataLiquidOxygenCanister"/>
+				<Color Id="White"/>
+				<Gas Type="LiquidOxygen" Litres="12" Celsius="-200"/>
+			</Item>
+		</Sell>
+		<!--
+      Volatiles molar volume is 0.04
+      we want to sell 12 litres, when 20 dollars per 100 moles                  
+          12 / 0.04 = 300 moles
+          300 * 20 / 100 = 60 dollars
+          how much does it cost per litre?
+          60 / 12 = 5 dollars per litre
+    -->
+		<Sell Value="95" DebugId="Liquid Volatiles Canister">
+			<Name Key="SellDataLiquidVolatilesCanister"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemLiquidCanisterEmpty">
+				<Name Key="SellDataLiquidVolatilesCanister"/>
+				<Color Id="Red"/>
+				<Gas Type="LiquidVolatiles" Litres="12" Celsius="-220"/>
+			</Item>
+		</Sell>
+		<!-- Misc Items -->
+		<Sell Id="EmergencyWater"/>
+		<!-- Misc buys -->
+		<Buy Value="7.5" DebugId="Empty Liquid Canister">
+			<Name Key="BuyDataEmptyLiquidCanister"/>
+			<Chance Value="0.25"/>
+			<Required Min="10" Max="20"/>
+			<Item Id="ItemLiquidCanisterEmpty">
+				<Moles Value="0" Compare="Equal"/>
+			</Item>
+		</Buy>
+		<Buy Value="30">
+			<Type Value="MediumTrader"/>
+			<Type Value="LargeTrader"/>
+			<Required Min="1" Max="3"/>
+			<Select>
+				<Item Id="ItemGasFilterNitrogenL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterOxygenL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterPollutantsL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterVolatilesL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterNitrousOxideL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+				<Item Id="ItemGasFilterCarbonDioxideL">
+					<Percent Value="100" Compare="Equal"/>
+				</Item>
+			</Select>
+			<Chance Value="0.5"/>
+		</Buy>
+		<Buy Value="1.5">
+			<Required Min="300" Max="600" Bulk="true"/>
+			<Item Id="ItemIce"/>
+			<Worlds Operator="None">
+				<World Id="Vulcan2"/>
+				<World Id="Venus"/>
+			</Worlds>
+		</Buy>
+	</Trader>
+	
+	<Trader Id="FoodTrader">
+		<Type Value="UtilityTrader"/>
+		<Name Key="TraderStarlightSuppers"/>
+		<Name Key="TraderGalacticGroceries"/>
+		<Name Key="TraderOrbitingOrganics"/>
+		<Name Key="TraderCosmicCuisine"/>
+		<Name Key="TraderAsteroidEats"/>
+		<Name Key="TraderNebulaNibbles"/>
+		<Name Key="TraderStellarSnacks"/>
+		<Name Key="TraderInterstellarIngredients"/>
+		<Name Key="TraderSpaceSpices"/>
+		<Name Key="TraderVoidVegetables"/>
+		<Name Key="TraderPlanetaryProduce"/>
+
+		<Sell Id="ShipRubbish" />
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipConsumablesPackage"/>
+		<Buy Id="ShipRepairPackage"/>
+
+		<Sell Value="30">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemChocolateBar"/>
+		</Sell>
+		<Sell Value="100">
+			<Stock Value="1"/>
+			<Item Id="ItemChocolateCake"/>
+		</Sell>
+		<Sell Value="100">
+			<Stock Value="1"/>
+			<Item Id="ItemPlainCake"/>
+		</Sell>
+		<!-- Ingredients -->
+		<Sell Value="20">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemMilk"/>
+		</Sell>
+		<Sell Value="40">
+			<Stock Min="1" Max="2"/>
+			<Item Id="ItemCheeseWedge"/>
+		</Sell>
+		<Sell Value="25">
+			<Stock Min="1" Max="2"/>
+			<Item Id="ItemSoyOil">
+				<Quantity Value="50"/>
+			</Item>
+		</Sell>
+		<Sell Value="35">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemEggCarton">
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+			</Item>>
+		</Sell>
+		<Sell Value="40">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemFlour">
+				<Quantity Value="200"/>
+			</Item>
+		</Sell>
+		<Sell Value="50">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemSugar">
+				<Quantity Value="200"/>
+			</Item>
+		</Sell>
+		<Sell Value="75">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemCocoaPowder">
+				<Quantity Value="10"/>
+			</Item>
+		</Sell>
+
+		<!-- Canned Food -->
+		<Sell Value="40">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemCannedCondensedMilk"/> <!-- nutrition 200 -->
+		</Sell>
+		<Sell Value="20">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemCannedEdamame"/>	<!-- nutrition 100 -->
+		</Sell>
+		<Sell Value="25">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemCannedMushroom"/>	<!-- nutrition 120 -->
+		</Sell>
+		<Sell Value="20">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="2"/>
+			<Item Id="ItemCannedPowderedEggs"/>	<!-- nutrition 100 -->
+		</Sell>
+		<Sell Value="20">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemCannedRicePudding"/>	<!-- nutrition 100 -->
+		</Sell>
+		<Sell Value="30">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemCornSoup"/>	<!-- nutrition 150 -->
+		</Sell>
+		<Sell Value="40">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemPumpkinSoup"/>	<!-- nutrition 160 -->
+		</Sell>
+		<Sell Value="30">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemTomatoSoup"/>	<!-- nutrition 125 -->
+		</Sell>
+
+		<!-- Equipment Buys -->
+		<Buy Value="0.6">
+			<Required Min="10" Max="50"/>
+			<Item Id="ItemEmptyCan"/> <!-- 1.25 per steel, not profitable but recycling -->
+		</Buy>
+		<Buy Value="0.3">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30"/>
+			<Item Id="CardboardBox"/>
+		</Buy>
+
+		<!-- Produce Buys -->
+		<Buy Value="3">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="50" />
+			<Item Id="ItemPotato"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="3">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemWheat"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="6">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemRice"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="12">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemCorn"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="6">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemSoybean"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="8">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemMushroom"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="6">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemTomato"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="12">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemPumpkin"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="10">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemCocoaTree"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+		<Buy Value="6">
+			<Chance Value="0.33"/>
+			<Required Min="10" Max="30" />
+			<Item Id="ItemSugarCane"/>
+			<Decay Value="50" Compare="Less"/>
+		</Buy>
+	</Trader>
+	<Trader Id="HardwareTrader">
+		<Type Value="UtilityTrader"/>
+		<Name Key="TraderCosmicToolsAndMore"/>
+		<Name Key="TraderGalacticGearworks"/>
+		<Name Key="TraderStellarSupplies"/>
+		<Name Key="TraderOrbitOpsHardware"/>
+		<Name Key="TraderInterstellarImplements"/>
+		<Name Key="TraderVoidVentures"/>
+		<Name Key="TraderAsteroidArtisans"/>
+		<Name Key="TraderSpaceSpanners"/>
+		<Name Key="TraderMeteorMechanics"/>
+
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipFoodPackage"/>
+		<Buy Id="PackageMuffins" />
+		<Buy Id="Cake"/>
+		<Buy Id="BurgerPackage"/>
+		<Buy Id="BirthdayCake"/>
+		<Buy Id="BoxOfChocolates"/>
+
+		<Sell Value="6" DebugId="Box of Spray Cans">
+			<Name Key="SellDataBoxofSprayCans"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="CardboardBox">
+				<Item Id="ItemSprayCanRed"/>
+				<Item Id="ItemSprayCanBlue"/>
+				<Item Id="ItemSprayCanGreen"/>
+				<Item Id="ItemSprayCanYellow"/>
+				<Item Id="ItemSprayCanBlack"/>
+				<Item Id="ItemSprayCanWhite"/>
+			</Item>
+		</Sell>
+
+		<Sell Value="40" DebugId="Box of Battery Cells">
+			<Name Key="SellDataBoxOfBatteryCells"/>
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="CardboardBox">
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full"/>
+				</Item>
+			</Item>
+		</Sell>
+
+		<Sell Value="300" DebugId="Box of Battery Cells (Large)">
+			<Name Key="SellDataBoxOfBatteryCellsLarge"/>
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="CardboardBox">
+				<Item Id="ItemBatteryCellLarge">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellLarge">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellLarge">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellLarge">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellLarge">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellLarge">
+					<Charge State="Full"/>
+				</Item>
+			</Item>
+		</Sell>
+
+		<Sell Value="15" DebugID="Hard Hat">
+			<Chance Value=".5"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemHardHat" />
+		</Sell>
+		<!-- Power Tools -->
+		<Sell Value="15" DebugID="Angle Grinder">			
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemAngleGrinder">
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full" />
+				</Item>
+			</Item>
+		</Sell>
+		<Sell Value="15" DebugID="Drill">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemDrill">
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full" />
+				</Item>
+			</Item>
+		</Sell>
+		<Sell Value="15" DebugID="Labeller">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemLabeller">
+				<Item Id="ItemBatteryCell">
+					<Charge State="Full" />
+				</Item>
+			</Item>
+		</Sell>
+		<Sell Value="5" DebugID="Explosives">
+			<Chance Value=".5"/>
+			<Stock Min="12" Max="30"/>
+			<Item Id="ItemMiningCharge" />
+		</Sell>
+
+		<!-- Welding -->
+		<Sell Value="15" DebugID="Welder">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemWeldingTorch"/>
+		</Sell>
+		<Sell Value="20" DebugId="Welding Fuel">
+			<Name Key="SellDataWeldingFuel"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemGasCanisterEmpty">
+				<Name Key="SellDataWeldingFuel"/>
+				<Color Id="Orange"/>
+				<Gas Type="Volatiles" Moles="100" Celsius="-20"/>
+				<Gas Type="Oxygen" Moles="50" Celsius="-20"/>
+			</Item>
+		</Sell>
+
+		<!-- Tools -->
+		<Sell Value="6" DebugID="Wire Cutters">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemWireCutters"/>
+		</Sell>
+		<Sell Value="6" DebugID="Screwdriver">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemScrewdriver"/>
+		</Sell>
+		<Sell Value="6" DebugID="Crowbar">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemCrowbar"/>
+		</Sell>
+		<Sell Value="200" DebugID="Fire Extinguisher">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemReusableFireExtinguisher">
+				<Item Id="ItemLiquidCanisterEmpty">
+					<Gas Type="Water" Litres="12" Celsius="20"/>
+				</Item>
+			</Item>
+		</Sell>
+
+		<!-- Resources -->
+		<Sell Value="1">
+			<Stock Min="20" Max="50"/>
+			<Item Id="ItemSteelSheets"/>
+		</Sell>
+		<Sell Value="1">
+			<Stock Min="20" Max="50"/>
+			<Item Id="ItemPlasticSheets"/>
+		</Sell>
+		<Sell Value="3">
+			<Stock Min="20" Max="50"/>
+			<Item Id="ItemGlassSheets"/>
+		</Sell>
+		<Sell Value=".75">
+			<Stock Min="40" Max="80"/>
+			<Item Id="ItemCableCoil"/>
+		</Sell>
+		<Sell Value="1">
+			<Stock Min="10" Max="60"/>
+			<Item Id="ItemKitPipe"/>
+		</Sell>
+		<Sell Value="2">
+			<Stock Min="20" Max="50"/>
+			<Item Id="ItemCableCoilHeavy"/>
+		</Sell>
+	</Trader>
+	<Trader Id="ConsumablesTrader">
+		<Type Value="UtilityTrader"/>
+		<Name Key="TraderAstroMart"/>
+		<Name Key="TraderCosmosConvenience"/>
+		<Name Key="TraderStarStop"/>
+		<Name Key="TraderNebulaNecessities"/>
+		<Name Key="TraderInterstellarEssentials"/>
+		<Name Key="TraderVoidVending"/>
+		<Name Key="TraderMeteorMunchies"/>
+
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipRepairPackage"/>
+
+		<Sell Value="50">
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemChocolateBar"/>
+		</Sell>
+
+		<Sell Value="40">
+			<Stock Min="1" Max="2"/>
+			<Item Id="ItemMilk"/>
+		</Sell>
+		<Sell Value="60">
+			<Stock Min="1" Max="2"/>
+			<Item Id="ItemCheeseWedge"/>
+		</Sell>
+		<Sell Value="50">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemSoyOil">
+				<Quantity Value="50"/>
+			</Item>
+		</Sell>
+		<Sell Value="50">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemEggCarton">
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+				<Item Id="ItemEgg" />
+			</Item>>
+		</Sell>
+		<Sell Value="60">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemFlour">
+				<Quantity Value="200"/>
+			</Item>
+		</Sell>
+		<Sell Value="100">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemCocoaPowder">
+				<Quantity Value="10"/>
+			</Item>
+		</Sell>
+		<Sell Value="75">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemSugar">
+				<Quantity Value="200"/>
+			</Item>
+		</Sell>
+		<Sell Value="15" DebugId="Duct Tape">
+			<Stock Min="3" Max="5"/>
+			<Item Id="ItemDuctTape"/>
+		</Sell>
+		<Sell Value="15" DebugId="Battery Cell">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemBatteryCell">
+				<Charge State="Full"/>
+			</Item>
+		</Sell>
+		<Sell Value="15" DebugId="Cereal Bar">
+			<Stock Min="2" Max="6"/>
+			<Item Id="ItemCerealBar"/>
+		</Sell>
+		<Sell Value="10" DebugId="Water Packet">
+			<Stock Min="2" Max="5"/>
+			<Item Id="ItemWaterPacket">
+				<Percent Value="100"/>
+			</Item>
+		</Sell>
+		<Sell Value="20" DebugId="Gas Filter (CO2)">
+			<Stock Min="5" Max="5"/>
+			<Item Id="ItemGasFilterCarbonDioxide"/>
+		</Sell>
+		<Sell Value="10" DebugId="Road Flares x 5">
+			<Name Key="SellDataSetofRoadFlares"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemRoadFlare">
+				<Quantity Value="5"/>
+			</Item>
+		</Sell>
+		<Sell Value="15" DebugId="Box of Chemlights">
+			<Name Key="SellDataBoxofChemlights"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="CardboardBox">
+				<Item Id="ItemChemLightBlue">
+					<Quantity Value="5"/>
+				</Item>
+				<Item Id="ItemChemLightRed">
+					<Quantity Value="5"/>
+				</Item>
+				<Item Id="ItemChemLightGreen">
+					<Quantity Value="5"/>
+				</Item>
+				<Item Id="ItemChemLightYellow">
+					<Quantity Value="5"/>
+				</Item>
+				<Item Id="ItemChemLightWhite">
+					<Quantity Value="5"/>
+				</Item>
+			</Item>
+		</Sell>
+
+		<Sell Value="15" DebugId="Box of Spray Cans">
+			<Name Key="SellDataBoxofSprayCans"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="CardboardBox">
+				<Item Id="ItemSprayCanRed"/>
+				<Item Id="ItemSprayCanBlue"/>
+				<Item Id="ItemSprayCanGreen"/>
+				<Item Id="ItemSprayCanYellow"/>
+				<Item Id="ItemSprayCanBlack"/>
+				<Item Id="ItemSprayCanWhite"/>
+			</Item>
+		</Sell>
+		<Sell Value="200" DebugId="Droid Repair Kit">
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemHEMDroidRepairKit"/>
+		</Sell>
+		<Sell Value="200" DebugId="Heal Pill">
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemPillHeal"/>
+		</Sell>
+		<Sell Value="20" DebugId="Sanitizer">
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemHandSanitizer"/>
+		</Sell>
+		<Sell Value="350" DebugId="Stun Injector">
+			<Chance Value="0.2"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemInjectorStun"/>
+		</Sell>
+		<Sell Value="350" DebugId="Epi Injector">
+			<Chance Value="0.2"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemInjectorEpi"/>
+		</Sell>
+	</Trader>
+	<Trader Id="MedicalTrader">
+		<Type Value="UtilityTrader"/>
+		<Name Key="TraderCosmicCare"/>
+		<Name Key="TraderStellarMedical"/>
+		<Name Key="TraderOrbitalApothecary"/>
+		<Name Key="TraderVoidVitals"/>
+		<Name Key="TraderNebulaNursing"/>
+		<Name Key="TraderAsteroidAidStation"/>
+		<Name Key="TraderInterstellarInfirmary"/>
+		<Name Key="TraderGalacticGauze"/>
+
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipFoodPackage"/>
+		<Buy Id="ShipConsumablesPackage"/>
+		<Buy Id="ShipRepairPackage"/>
+
+		<Buy Value="300" DebugId="Cryogenics Supply Crate">
+			<Name Key="BuyDataCryogenicsSupplyCrate"/>
+			<Chance Value="0.5"/>
+			<Required Value="1"/>
+			<Item Id="CardboardBox">
+				<Conditions Operator="All">
+					<Item Id="ItemKitCryoTube">
+						<Quantity Value="1"/>
+					</Item>
+					<Item Id="ItemKitInsulatedPipe">
+						<Quantity Value="10"/>
+					</Item>
+					<Item Id="ItemGlassSheets">
+						<Quantity Value="4"/>
+					</Item>
+					<Item Id="ItemCableCoil">
+						<Quantity Value="5"/>
+					</Item>
+				</Conditions>
+			</Item>
+		</Buy>
+
+		<!-- Sanitation -->
+		<Sell Value="20" DebugId="Hand Sanitizer">
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemHandSanitizer"/>
+		</Sell>
+		<Sell Value="15" DebugId="Sanitation Bag">
+			<Stock Min="3" Max="8"/>
+			<Item Id="ItemWasteBagEmpty"/>
+		</Sell>
+
+		<!-- Pills -->
+		<Sell Value="200" DebugId="Heal Pill">
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemPillHeal"/>
+		</Sell>
+		<Sell Value="150" DebugId="Stun Pill">
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemPillStun"/>
+		</Sell>
+
+		<!-- Medical Injectors (limited) -->
+		<Sell Value="1200" DebugId="Health Injector">
+			<Chance Value="0.33"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemInjectorHealth"/>
+		</Sell>
+		<Sell Value="500" DebugId="Stim Injector">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="2"/>
+			<Item Id="ItemInjectorEpi"/>
+		</Sell>
+	</Trader>
+	<Trader Id="ApplianceTrader">
+		<Type Value="UtilityTrader"/>
+		<Name Key="TraderGalacticGadgets"/>
+		<Name Key="TraderOrbitronAppliances"/>
+		<Name Key="TraderStellarSystemsStore"/>
+		<Name Key="TraderSpaceSavvySolutions"/>
+		<Name Key="TraderInterstellarInnovations"/>
+		<Name Key="TraderVoidVisions"/>
+		<Name Key="TraderAsteroidAppliances"/>
+		<Name Key="TraderMeteorMechanics"/>
+
+		<Buy Id="HardsuitPackage"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFoodPackage"/>
+		<Buy Id="ShipConsumablesPackage"/>
+		<Buy Id="PackageMuffins" />
+		<Buy Id="ShipRepairPackage"/>
+
+		<Sell Value="25">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ApplianceMicrowave"/>
+		</Sell>
+		<Sell Value="75">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ApplianceReagentProcessor"/>
+		</Sell>
+		<Sell Value="75">
+			<Chance Value=".3"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="AppliancePackagingMachine"/>
+		</Sell>
+		<Sell Value="35">
+			<Chance Value=".3"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ApplianceTabletDock"/>
+		</Sell>
+		<Sell Value="45">
+			<Chance Value=".5"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ApplianceDeskLampLeft"/>
+		</Sell>
+		<Sell Value="75">
+			<Chance Value=".3"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ApplianceChemistryStation"/>
+		</Sell>
+		<Sell Value="50">
+			<Chance Value=".3"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemLaptop"/>
+		</Sell>
+		<Sell Value="175">
+			<Chance Value=".5"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemDynamicAirCon"/>
+		</Sell>
+		<Sell Value="245">
+			<Chance Value=".25"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemKitWeatherStation"/>
+		</Sell>
+		<Sell Value="195">
+			<Chance Value=".5"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemKitDynamicGenerator"/>
+		</Sell>
+		<Sell Value="195">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemDynamicScrubber"/>
+		</Sell>
+		<Sell Value="100" DebugId="Autolathe Construction Kit">
+			<Name Key="SellDataAutolatheConstructionKit"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="CardboardBox">
+				<Item Id="ItemKitAutolathe"/>
+				<Item Id="ItemIronSheets">
+					<Quantity Value="2"/>
+				</Item>
+				<Item Id="ItemCableCoil">
+					<Quantity Value="2"/>
+				</Item>
+				<Item Id="ItemPlasticSheets">
+					<Quantity Value="2"/>
+				</Item>
+				<Item Id="ItemScrewdriver"/>
+			</Item>
+		</Sell>
+
+		<Buy Value="0.4">
+			<Required Min="50" Max="150"/>
+			<Item Id="ItemCableCoil"/>
+		</Buy>
+		<Buy Value="1">
+			<Required Min="5" Max="30"/>
+			<Item Id="ItemElectronicParts"/>
+		</Buy>
+		<Buy Value="25">
+			<Chance Value=".15"/>
+			<Required Min="1" Max="10"/>
+			<Item Id="ItemIntegratedCircuit10"/>
+		</Buy>
+		<Buy Value="2" DebugID="Gold Ingot">
+			<Chance Value=".5"/>
+			<Required Min="50" Max="100"/>
+			<Item Id="ItemGoldIngot"/>
+		</Buy>
+		<Buy Value="1" DebugID="Silver Ingot">
+			<Chance Value=".5"/>
+			<Required Min="50" Max="100"/>
+			<Item Id="ItemSilverIngot"/>
+		</Buy>
+		<Buy Value="3" DebugID="Electrum Ingot">
+			<Required Min="50" Max="100"/>
+			<Item Id="ItemElectrumIngot"/>
+		</Buy>
+	</Trader>
+
+	<Trader Id="GeneticsTrader">
+		<Type Value="ExoticsTrader"/>
+		
+		<Name Key="TraderGenetics"/>
+		
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipFoodPackage"/>
+
+		<!-- Thermal Plants -->
+		<Sell Value="400">
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemPlantEndothermic_Genepool1"/>.
+		</Sell>
+		<Sell Value="800">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemPlantEndothermic_Genepool2"/>
+		</Sell>
+		<Sell Value="400">
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemPlantThermogenic_Genepool1"/>
+		</Sell>
+		<Sell Value="800">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemPlantThermogenic_Genepool2"/>
+		</Sell>
+		<Sell Value="500">
+			<Stock Min="1" Max="2"/>
+			<Item Id="ItemFilterFern"/>
+		</Sell>
+		<Sell Value="1000">
+			<Stock Min="1" Max="1"/>
+			<Item Id="ItemAlienMushroom"/>
+		</Sell>
+		<Sell Value="100">
+			<Stock Min="1" Max="5"/>
+			<Item Id="ItemTropicalPlant"/>
+		</Sell>
+		
+		<!-- Medical Injectors -->
+		<Sell Value="1200">
+			<Chance Value="0.33"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemInjectorHealth"/>
+		</Sell>
+		<Sell Value="500">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemInjectorEpi"/>
+		</Sell>
+		<Sell Value="250">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemInjectorStun"/>
+		</Sell>
+
+		<!-- Rare Seeds -->
+		<Sell Value="600" DebugId="Fast Growing Potato">
+			<Stock Value="1"/>
+			<Item Id="ItemPotato">
+				<Name Key="SellDataFastGrowingPotato"/>
+				<Gene Id="GrowthTimeMultiplier" Value=".8"/>
+			</Item>
+		</Sell>
+		<Sell Value="600">
+			<Stock Value="1"/>
+			<Item Id="ItemCorn">
+				<Name Key="SellDataSuperCorn"/>
+				<Gene Id="DarkPerDay" Value="-0.9"/>
+				<Gene Id="WaterUsage" Value="-0.5"/>
+				<Gene Id="GrowthTimeMultiplier" Value="0.5"/>
+			</Item>
+		</Sell>
+		<Sell Value="600">
+			<Name Key="SellDataResilientFern"/>
+			<Stock Value="1"/>
+			<Item Id="ItemFern">
+				<Name Key="SellDataResilientFern"/>
+				<Gene Id="DroughtTolerance" Value="0.9"/>
+				<Gene Id="WaterUsage" Value="-0.5"/>
+				<Gene Id="GasProduction" Value="0.5"/>
+				<Gene Id="LowPressureResistance" Value="0.8"/>
+				<Gene Id="LowTemperatureResistance" Value="0.8"/>
+				<Gene Id="HighPressureResistance" Value="0.8"/>
+				<Gene Id="HighTemperatureResistance" Value="0.8"/>
+				<Gene Id="LightTolerance" Value="0.8"/>
+				<Gene Id="DarknessTolerance" Value="0.8"/>
+			</Item>
+		</Sell>
+		<Sell Value="250">
+			<Stock Value="2"/>
+			<Item Id="ItemFertilizedEgg"/>
+		</Sell>
+
+		<!-- Gas Buys -->
+		<Buy Value="10.0" DebugId="Bulk Carbon Dioxide">
+			<Thumbnail Value="icon-carbondioxide"/>
+			<Name Key="BuyDataBulkCarbonDioxide"/>
+			<Required Min="20" Max="20" Bulk="true"/>
+			<Moles Value="100"/>
+			<Gas Type="CarbonDioxide" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="0" Max="40"/>
+		</Buy>
+		<Buy Value="15" DebugId="Bulk Water">
+			<Thumbnail Value="icon-LiquidWater"/>
+			<Name Key="BuyDataBulkWater"/>
+			<Required Min="50" Max="200" Bulk="true"/>
+			<Moles Value="100" />
+			<Gas Type="Water" Percent="100" Compare="Equal"/>
+			<TemperatureRange Unit="Celsius" Min="10" Max="35"/>
+		</Buy>
+		<Buy Value="200">
+			<Chance Value=".4"/>
+			<Required Min="1" Max="1"/>
+			<Item Id="AppliancePlantGeneticSplicer"/>
+		</Buy>
+		<Buy Value="200">
+			<Chance Value=".4"/>
+			<Required Min="1" Max="1"/>
+			<Item Id="AppliancePlantGeneticStabilizer"/>
+		</Buy>
+		<Buy Value="40">
+			<Chance Value=".5"/>
+			<Required Min="1" Max="1"/>
+			<Item Id="AppliancePlantGeneticAnalyzer"/>
+		</Buy>
+		<Buy Value="50" DebugId="Plant Sampler">
+			<Chance Value=".25"/>
+			<Required Min="1" Max="1"/>
+			<Item Id="ItemPlantSampler">
+				<Item Id="ItemBatteryCell" SlotId="Battery">
+					<Charge Percent="99" Compare="EqualOrGreater"/>
+				</Item>
+			</Item>
+		</Buy>
+	</Trader>
+	<Trader Id="RareItemsTrader">
+		<Type Value="ExoticsTrader"/>
+		<Name Key="TraderRareItems"/>
+		<Buy Id="ShipOxygen"/>
+		<Buy Id="ShipWater"/>
+		<Buy Id="ShipFuel"/>
+		<Buy Id="ShipFoodPackage"/>
+
+		<Sell Value="1000">
+			<Stock Value="1"/>
+			<Item Id="ItemKitPressureFedGasEngineHeavy"/>.
+		</Sell>
+		<Sell Value="1000">
+			<Stock Value="1"/>
+			<Item Id="ItemKitPressureFedLiquidEngineHeavy"/>.
+		</Sell>
+		
+		<Sell Value="40">
+			<Stock Min="3" Max="6"/>
+			<Item Id="ItemKitFuselageTypeA"/>
+		</Sell>
+
+		<Sell Value="40">
+			<Stock Min="3" Max="6"/>
+			<Item Id="ItemKitFuselageTypeB"/>
+		</Sell>
+
+		<Sell Value="40">
+			<Stock Min="3" Max="6"/>
+			<Item Id="ItemKitFuselageTypeC"/>
+		</Sell>
+
+		<Sell Value="40">
+			<Stock Min="3" Max="6"/>
+			<Item Id="ItemKitFuselageTypeD"/>
+		</Sell>
+		
+		<Sell Value="60">
+			<Stock Min="3" Max="6"/>
+			<Item Id="ItemKitFuselageTypeE"/>
+		</Sell>
+
+		<!-- Medical Injectors -->
+		<Sell Value="1200">
+			<Chance Value="0.33"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemInjectorHealth"/>
+		</Sell>
+		
+		<Sell Value="500">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemInjectorEpi"/>
+		</Sell>
+		
+		<Sell Value="250">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="3"/>
+			<Item Id="ItemInjectorStun"/>
+		</Sell>
+		
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterCarbonDioxideInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterAlcoholInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterHClInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterHeliumInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterHydrazineInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterHydrogenInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterOzoneInfinite"/>
+		</Sell>
+		
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterPollutedWaterInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterSaltInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterSilanolInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterNitrogenInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterNitrousOxideInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterOxygenInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterPollutantsInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterVolatilesInfinite"/>
+		</Sell>
+
+		<Sell Value="100">
+			<Chance Value="0.5"/>
+			<Stock Min="1" Max="4"/>
+			<Item Id="ItemGasFilterWaterInfinite"/>
+		</Sell>
+
+		<Sell Value="400">
+			<Name Key="SellDataBoxOfNuclearBatteryCells"/>
+			<Stock Min="1" Max="1"/>
+			<Item Id="CardboardBox">
+				<Item Id="ItemBatteryCellNuclear">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellNuclear">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellNuclear">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellNuclear">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellNuclear">
+					<Charge State="Full"/>
+				</Item>
+				<Item Id="ItemBatteryCellNuclear">
+					<Charge State="Full"/>
+				</Item>
+			</Item>
+		</Sell>
+		
+	</Trader>
+</GameData>

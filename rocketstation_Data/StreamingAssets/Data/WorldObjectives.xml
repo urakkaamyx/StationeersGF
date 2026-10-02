@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Default -->
+  <WorldObjective Id="ManufacturingBasics">
+    <Name Value="Manufacturing and Resources" />
+    <Objective Id="BasicPowerSetup" />
+    <Objective Id="BuildAndPowerAutolathe" />
+    <Objective Id="SmeltIron" />
+    <Objective Id="FullManufacturing" />
+    <Objective Id="BuildStacker" />
+    <Objective Id="SmeltSteel" />
+    <Objective Id="TierTwoMachines" />
+    <Objective Id="TierTwoMachinesPart2" />
+    <Objective Id="BuildAdvancedFurnace" />
+    <Objective Id="RecyclerAndCentrifuge" />
+    <Objective Id="AdvancedMining" />
+  </WorldObjective>
+  <WorldObjective Id="Stations">
+    <Name Value="Stations" />
+    <Objective Id="BuildPlatform"/>
+    <Objective Id="BuildRoomWithDoor" />
+    <Objective Id="FillRoomWithOxygen" />
+    <Objective Id="GrowPlantsForOxygenAndFood" />
+    <Objective Id="BuildWaterBottleFiller" />
+    <Objective Id="PlantsNeedLight" />
+    <Objective Id="PlantsNeedDarkness" />
+    <Objective Id="MicrowaveAPotato" />
+    <Objective Id="BuildASleeper" />
+    <Objective Id="BuildFiltrationMachine" />
+    <Objective Id="TemperatureControl" />
+  </WorldObjective>
+  <WorldObjective Id="Concepts">
+    <Name Value="Atmospherics" />
+    <Objective Id="RefillOxygen" />
+    <Objective Id="CablesBurn" />
+    <Objective Id="SmeltIce" />
+  </WorldObjective>
+  <WorldObjective Id="Trading">
+    <!--Invar-->
+    <Name Value="Trading" />
+    <Objective Id="BuildAndPowerALandingPad" />
+    <Objective Id="BuildAComputerVendingMachine" />
+    <Objective Id="BuildAndPointDish" />
+    <Objective Id="CallDownATrader" />
+  </WorldObjective>
+<!-- Vulcan -->
+  <WorldObjective Id="ManufacturingBasicsVulcan">
+    <Name Value="Manufacturing and Resources" />
+    <Objective Id="BasicPowerSetupVulcan" />
+    <Objective Id="BuildAndPowerAutolathe" />
+    <Objective Id="SmeltIron" />
+    <Objective Id="FullManufacturing" />
+    <Objective Id="BuildStacker" />
+    <Objective Id="SmeltSteelVulcan" />
+    <Objective Id="TierTwoMachines" />
+    <Objective Id="TierTwoMachinesPart2" />
+    <Objective Id="BuildAdvancedFurnace" />
+    <Objective Id="RecyclerAndCentrifuge" />
+    <Objective Id="AdvancedMining" />
+  </WorldObjective>
+  <WorldObjective Id="StationsVulcan">
+    <Name Value="Stations" />
+    <Objective Id="BuildRoomWithDoor" />
+    <Objective Id="VacuumOutRoom" />
+    <Objective Id="FillRoomWithOxygenVulcan" />
+    <Objective Id="GrowPlantsForOxygenAndFood" />
+    <Objective Id="BuildWaterBottleFiller" />
+    <Objective Id="PlantsNeedLight" />
+    <Objective Id="PlantsNeedDarkness" />
+    <Objective Id="MicrowaveAPotato" />
+    <Objective Id="BuildASleeper" />
+    <Objective Id="BuildFiltrationMachine" />
+    <Objective Id="TemperatureControl" />
+  </WorldObjective>
+  <WorldObjective Id="ConceptsVulcan">
+    <Name Value="Atmospherics" />
+    <Objective Id="AtmosphericCombustion" />
+    <Objective Id="RefillOxygen" />
+    <Objective Id="CablesBurn" />
+    <Objective Id="SmeltIce" />
+  </WorldObjective>
+  <WorldObjective Id="TradingVulcan">
+    <Name Value="Trading" />
+    <Objective Id="BuildAndPowerALandingPadVulcan" />
+    <Objective Id="BuildAComputerVendingMachine" />
+    <Objective Id="BuildAndPointDish" />
+    <Objective Id="CallDownATrader" />
+  </WorldObjective>
+  
+  <!-- Europa -->
+  <WorldObjective Id="ManufacturingBasicsEuropa">
+    <Name Value="Manufacturing and Resources" />
+    <Objective Id="BasicPowerSetupEuropa" />
+    <Objective Id="BuildAndPowerAutolathe" />
+    <Objective Id="SmeltIron" />
+    <Objective Id="FullManufacturing" />
+    <Objective Id="BuildStacker" />
+    <Objective Id="SmeltSteel" />
+    <Objective Id="TierTwoMachines" />
+    <Objective Id="TierTwoMachinesPart2" />
+    <Objective Id="BuildAdvancedFurnace" />
+    <Objective Id="RecyclerAndCentrifuge" />
+    <Objective Id="AdvancedMining" />
+  </WorldObjective>
+  
+  <!-- ManufacturingBasics -->
+  <Objective Id="BuildPlatform">
+    <Name Key="WorldObjectiveBuildFramePlatform"/>
+    <Notice Key="WorldObjectiveBuild6Frames"/>
+    <Notice Key="WorldObjectiveWeldFrames"/>
+    <ThingCount Id="StructureFrameIron" Count="6" Compare="EqualOrGreater" Hidden="true">
+      <BuildState BlockGravity="true"/>
+    </ThingCount>
+  </Objective>
+  
+  <Objective Id="BasicPowerSetup">
+    <Name Key="WorldObjectiveBuildPower"/>
+    <Info Key="WorldObjectiveBuildPowerInfo"/>
+    <Trigger>
+      <ObjectiveComplete Id="BuildPlatform" />
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureAreaPowerControl">
+        <Interactable Action="OnOff" State="1" />
+        <Conditions Operator="Any">
+          <Item Id="ItemBatteryCell" Hidden="true" />
+          <Item Id="ItemBatteryCellLarge" SlotId="Battery"/>
+        </Conditions>
+      </Prefab>
+      <Prefab Id="StructureAreaPowerControlReversed" Hidden="true">
+        <Interactable Action="OnOff" State="1" />
+        <Conditions Operator="Any">
+          <Item Id="ItemBatteryCell" />
+          <Item Id="ItemBatteryCellLarge" />
+        </Conditions>
+      </Prefab>
+    </Conditions>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureSolarPanelFlat">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureSolarPanel45" Hidden="true">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+    </Conditions>
+    <Prefab Id="StructureSolidFuelGenerator" />
+  </Objective>
+  <Objective Id="BuildAndPowerAutolathe">
+    <Name Key="WorldObjectiveBuildArcFurnace" />
+    <Trigger>
+      <ObjectiveComplete Id="BuildPlatform" />
+    </Trigger>
+    <Prefab Id="StructureAutolathe">
+      <Interactable Action="Powered" State="1" />
+      <BuildState IsCompleted="true" />
+    </Prefab>
+    <Prefab Id="StructureArcFurnace">
+      <Interactable Action="Powered" State="1" />
+    </Prefab>
+  </Objective>
+  <Objective Id="SmeltIron">
+    <Name Key="WorldObjectiveSmeltIron" />
+    <Trigger>
+      <Prefab Id="StructureArcFurnace">
+        <Interactable Action="Powered" State="1" />
+      </Prefab>
+    </Trigger>
+    <Prefab Id="ItemIronIngot">
+      <Quantity Value="1" Compare="EqualOrGreater" />
+    </Prefab>
+  </Objective>
+  <Objective Id="FullManufacturing">
+    <Name Key="WorldObjectiveBuildPrinters" />
+    <Trigger>
+      <Prefab Id="StructureAutolathe">
+        <Interactable Action="Powered" State="1" />
+        <Reagents Total="1" Compare="EqualOrGreater" />
+      </Prefab>
+    </Trigger>
+    <Prefab Id="StructureElectronicsPrinter">
+      <BuildState IsCompleted="true" />
+    </Prefab>
+    <Prefab Id="StructureHydraulicPipeBender">
+      <BuildState IsCompleted="true" />
+    </Prefab>
+    <Prefab Id="StructureToolManufactory">
+      <BuildState IsCompleted="true" />
+    </Prefab>
+  </Objective>
+  <Objective Id="BuildStacker">
+    <Name Key="WorldObjectiveBuildStacker" />
+    <Info Key="WorldObjectiveBuildStackerInfo"/>
+    <Trigger>
+      <Prefab Id="StructureAutolathe">
+        <LogicType Type="ExportCount" Value="1" Compare="EqualOrGreater" />
+      </Prefab>
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureStacker" />
+      <Prefab Id="StructureStackerReverse" Hidden="true"/>
+    </Conditions>
+  </Objective>
+  <Objective Id="SmeltSteel">
+    <Name Key="WorldObjectiveSmeltSteel" />
+    <Trigger Operator="All">
+      <Prefab Id="StructureAutolathe">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureElectronicsPrinter">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureHydraulicPipeBender">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+    </Trigger>
+    <Prefab Id="StructureFurnace">
+      <BuildState IsCompleted="true" />
+    </Prefab>
+    <Prefab Id="ItemSteelIngot">
+      <Quantity Value="100" Compare="EqualOrGreater" />
+    </Prefab>
+  </Objective>
+  <Objective Id="TierTwoMachines">
+    <Name Key="WorldObjectiveUpgradeElectronicsPrinter" />
+    <Trigger>
+      <Prefab Id="ItemSteelIngot">
+        <Quantity Value="1" Compare="EqualOrGreater" />
+      </Prefab>
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="ElectronicPrinterMod" />
+      <Prefab Id="StructureElectronicsPrinter" Hidden="true">
+        <BuildState MachineTier="TierTwo" />
+      </Prefab>
+    </Conditions>
+    
+  </Objective>
+  <Objective Id="TierTwoMachinesPart2">
+    <Name Key="WorldObjectiveUpgradeManufacturing" />
+    <Trigger>
+      <ObjectiveComplete Id="TierTwoMachines" />
+    </Trigger>
+    <Conditions Operator="Any">
+      <Conditions Operator="All">
+        <Prefab Id="PipeBenderMod" />
+        <Prefab Id="AutolathePrinterMod" />
+        <Prefab Id="ToolPrinterMod" />
+      </Conditions>
+      <Conditions Operator="All" Hidden="true">
+        <Prefab Id="StructureAutolathe">
+          <BuildState MachineTier="TierTwo" />
+        </Prefab>
+        <Prefab Id="StructureHydraulicPipeBender">
+          <BuildState MachineTier="TierTwo" />
+        </Prefab>
+        <Prefab Id="StructureToolManufactory">
+          <BuildState MachineTier="TierTwo" />
+        </Prefab>
+      </Conditions>
+    </Conditions>
+
+  </Objective>
+  <Objective Id="BuildAdvancedFurnace">
+    <Name Key="WorldObjectiveBuildFurnace" />
+    <Info Key="WorldObjectiveBuildFurnaceInfo"/>
+    <Trigger>
+      <Prefab Id="StructureHydraulicPipeBender">
+        <BuildState MachineTier="TierTwo" />
+      </Prefab>
+    </Trigger>
+    <Prefab Id="StructureAdvancedFurnace">
+      <BuildState IsCompleted="true" />
+    </Prefab>
+  </Objective>
+  <Objective Id="RecyclerAndCentrifuge">
+    <Name Key="WorldObjectiveBuildCentrifuge" />
+    <Trigger Operator="Any">
+      <Prefab Id="ItemReagentMix" />
+      <Prefab Id="StructureDeepMiner">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+    </Trigger>
+    <Prefab Id="StructureRecycler"/>
+    <Prefab Id="StructureCentrifuge">
+      <BuildState IsCompleted="true" />
+    </Prefab>
+  </Objective>
+  <Objective Id="AdvancedMining">
+    <Name Key="WorldObjectiveDeepMiners" />
+    <Info Key="WorldObjectiveDeepMinersInfo"/>
+    <Trigger>
+      <Prefab Id="ItemSteelIngot">
+        <Quantity Value="200" Compare="EqualOrGreater" />
+      </Prefab>
+      <Prefab Id="StructureAutolathe">
+        <BuildState MachineTier="TierTwo" />
+      </Prefab>
+    </Trigger>
+    <Notice Key="WorldObjectiveAcknowledgeAndDismiss"/>
+  </Objective>
+
+  <!-- ManufacturingBasicsEuropa -->
+
+  <Objective Id="BasicPowerSetupEuropa">
+    <Name Key="WorldObjectiveBuildPower"/>
+    <Info Key="WorldObjectiveBuildPowerInfo"/>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureAreaPowerControl">
+        <Interactable Action="OnOff" State="1" />
+        <Conditions Operator="Any">
+          <Item Id="ItemBatteryCell" Hidden="true" />
+          <Item Id="ItemBatteryCellLarge" SlotId="Battery"/>
+        </Conditions>
+      </Prefab>
+      <Prefab Id="StructureAreaPowerControlReversed" Hidden="true">
+        <Interactable Action="OnOff" State="1" />
+        <Conditions Operator="Any">
+          <Item Id="ItemBatteryCell" />
+          <Item Id="ItemBatteryCellLarge" />
+        </Conditions>
+      </Prefab>
+    </Conditions>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureUprightWindTurbine"/>
+    </Conditions>
+  </Objective>
+  
+  <!-- ManufacturingBasicsVulcan -->
+  <Objective Id="BasicPowerSetupVulcan">
+    <Name Key="WorldObjectiveBuildPower"/>
+    <Info Key="WorldObjectiveBuildPowerInfo"/>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureAreaPowerControl">
+        <Interactable Action="OnOff" State="1" />
+        <Conditions Operator="Any">
+          <Item Id="ItemBatteryCell" Hidden="true" />
+          <Item Id="ItemBatteryCellLarge" SlotId="Battery"/>
+        </Conditions>
+      </Prefab>
+      <Prefab Id="StructureAreaPowerControlReversed" Hidden="true">
+        <Interactable Action="OnOff" State="1" />
+        <Conditions Operator="Any">
+          <Item Id="ItemBatteryCell" />
+          <Item Id="ItemBatteryCellLarge" />
+        </Conditions>
+      </Prefab>
+    </Conditions>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureSolarPanelFlat">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureSolarPanel45" Hidden="true">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureUprightWindTurbine"/>
+    </Conditions>
+  </Objective>
+
+  <Objective Id="SmeltSteelVulcan">
+    <Name Key="WorldObjectiveSmeltSteel" />
+    <Info Key="SmeltSteelVulcanInfo"/>
+    <Trigger Operator="All">
+      <Prefab Id="StructureAutolathe">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureElectronicsPrinter">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureHydraulicPipeBender">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+    </Trigger>
+    <Prefab Id="StructureFurnace">
+      <BuildState IsCompleted="true" />
+    </Prefab>
+    <Prefab Id="ItemSteelIngot">
+      <Quantity Value="100" Compare="EqualOrGreater" />
+    </Prefab>
+  </Objective>
+  
+  <!-- Stations -->
+  <Objective Id="BuildRoomWithDoor">
+    <Name Key="WorldObjectiveBuildRoom" />
+    <Trigger>
+      <ObjectiveComplete Id="BuildPlatform" />
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureGlassDoor">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureCompositeDoor">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureManualHatch">
+        <BuildState IsCompleted="true" />
+      </Prefab>
+    </Conditions>
+    <Room MinSize="6"/>
+  </Objective>
+  <Objective Id="FillRoomWithOxygen">
+    <Name Key="WorldObjectiveFillOxygen" />
+    <Trigger>
+      <ObjectiveComplete Id="BuildRoomWithDoor" />
+    </Trigger>
+    <Room>
+      <Gas Type="Oxygen" PartialPressure="16" Compare="EqualOrGreater" />
+      <Pressure kPa="75" Compare="EqualOrGreater" />
+    </Room>
+  </Objective>
+  <Objective Id="GrowPlantsForOxygenAndFood">
+    <Name Key="WorldObjectiveGrowFood" />
+    <Trigger>
+      <ObjectiveComplete Id="FillRoomWithOxygen" />
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureHydroponicsTray">
+        <Gas Type="Water" Moles="1" Compare="EqualOrGreater" />
+        <Conditions Operator="Any">
+          <Item Id="ItemPotato" />
+          <Item Id="ItemWheat" />
+          <Item Id="ItemSoybean" />
+        </Conditions>
+      </Prefab>
+      <Prefab Id="StructureHydroponicsTrayData" Hidden="true">
+        <Gas Type="Water" Moles="1" Compare="EqualOrGreater" />
+        <Conditions Operator="Any">
+          <Item Id="ItemPotato" />
+          <Item Id="ItemWheat" />
+          <Item Id="ItemSoybean" />
+        </Conditions>
+      </Prefab>
+    </Conditions>
+  </Objective>
+  <Objective Id="BuildWaterBottleFiller">
+    <Name Key="WorldObjectiveRefillBottle" />
+    <Trigger>
+      <Prefab Id="ItemWaterBottle">
+        <Quantity Value="0" Compare="EqualOrLess" />
+      </Prefab>
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureWaterBottleFillerPowered" />
+      <Prefab Id="StructureWaterBottleFillerPoweredBottom" Hidden="true"/>
+    </Conditions>
+  </Objective>
+  <Objective Id="PlantsNeedLight">
+    <Name Key="WorldObjectivePlantsLight" />
+    <Trigger Operator="Any">
+      <Prefab Id="ItemPotato">
+        <PlantRecord Status="Lit" Value="0" Compare="EqualOrLess" />
+      </Prefab>
+      <Prefab Id="ItemWheat">
+        <PlantRecord Status="Lit" Value="0" Compare="EqualOrLess" />
+      </Prefab>
+      <Prefab Id="ItemSoybean">
+        <PlantRecord Status="Lit" Value="0" Compare="EqualOrLess" />
+      </Prefab>
+    </Trigger>
+    <Prefab Id="StructureGrowLight">
+      <Interactable Action="Powered" State="1" />
+      <Interactable Action="OnOff" State="1" />
+    </Prefab>
+  </Objective>
+  <Objective Id="PlantsNeedDarkness">
+    <Name Key="WorldObjectivePlantsDarkness" />
+    <Trigger Operator="Any">
+      <Prefab Id="ItemPotato">
+        <PlantRecord Status="Darkness" Value="0" Compare="EqualOrLess" />
+      </Prefab>
+      <Prefab Id="ItemWheat">
+        <PlantRecord Status="Darkness" Value="0" Compare="EqualOrLess" />
+      </Prefab>
+      <Prefab Id="ItemSoybean">
+        <PlantRecord Status="Darkness" Value="0" Compare="EqualOrLess" />
+      </Prefab>
+    </Trigger>
+    <Notice Key="WorldObjectiveSwitchOffYourGrowLight"/>
+    <Prefab Id="StructureGrowLight" Hidden="true">
+      <Interactable Action="OnOff" State="0" />
+    </Prefab>
+  </Objective>
+  <Objective Id="MicrowaveAPotato">
+    <Name Key="WorldObjectiveCookPotato" />
+    <Trigger>
+      <Prefab Id="ItemPotato">
+        <GrowthState Value="0" Compare="Equal" IsPlanted="false"/>
+      </Prefab>
+    </Trigger>
+    <Prefab Id="StructureBench">
+      <Interactable Action="Powered" State="1" />
+      <Item Id="ApplianceMicrowave" />
+    </Prefab>
+    <Prefab Id="ItemPotatoBaked" />
+  </Objective>
+  <Objective Id="BuildASleeper">
+    <Name Key="WorldObjectiveOfflinePlayers" />
+    <Info Key="WorldObjectiveOfflinePlayersInfo"/>
+    <Trigger>
+      <Player>
+        <IsOnline Value="false" />
+      </Player>
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureSleeperVertical">
+        <Interactable Action="Powered" State="1" />
+        <Gas Type="Oxygen" PartialPressure="16" Compare="EqualOrGreater" />
+      </Prefab>
+      <Prefab Id="StructureSleeperLeft" Hidden="true">
+        <Interactable Action="Powered" State="1" />
+        <Gas Type="Oxygen" PartialPressure="16" Compare="EqualOrGreater" />
+      </Prefab>
+      <Prefab Id="StructureSleeperRight" Hidden="true">
+        <Interactable Action="Powered" State="1" />
+        <Gas Type="Oxygen" PartialPressure="16" Compare="EqualOrGreater" />
+      </Prefab>
+    </Conditions>
+  </Objective>
+  <Objective Id="BuildFiltrationMachine">
+    <Name Key="WorldObjectiveFiltration" />
+    <Trigger>
+      <Room>
+        <Conditions Operator="Any">
+          <Gas Type="Volatiles" PartialPressure="0.5" Compare="EqualOrGreater" />
+          <Gas Type="Pollutant" PartialPressure="0.5" Compare="EqualOrGreater" />
+        </Conditions>
+      </Room>
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="StructureFiltration" />
+      <Prefab Id="DynamicScrubber" />
+    </Conditions>
+  </Objective>
+  <Objective Id="TemperatureControl">
+    <Name Key="WorldObjectiveManageTemperature" />
+    <Trigger>
+      <Room>
+        <Pressure kPa="50" Compare="EqualOrGreater" />
+        <Conditions Operator="Any">
+          <Temperature Celsius="-10" Compare="Less" />
+          <Temperature Celsius="50" Compare="Greater" />
+        </Conditions>
+      </Room>
+    </Trigger>
+    <Conditions Operator="Any">
+      <Prefab Id="DynamicAirConditioner" />
+      <Prefab Id="StructureAirConditioner" />
+      <Prefab Id="StructureWallHeater" />
+    </Conditions>
+  </Objective>
+  <!-- Stations Vulcan -->
+  <Objective Id="VacuumOutRoom">
+    <Name Key="WorldObjectiveVacuumRoom" />
+    <Info Key="WorldObjectiveVacuumRoomInfo"/>
+    <Trigger>
+      <ObjectiveComplete Id="BuildRoomWithDoor"/>
+    </Trigger>
+    <Room>
+      <Pressure kPa="0.001" Compare="EqualOrLess" />
+    </Room>
+  </Objective>
+
+  <Objective Id="FillRoomWithOxygenVulcan">
+    <Name Key="WorldObjectiveFillOxygen" />
+    <Trigger>
+      <ObjectiveComplete Id="VacuumOutRoom" />
+    </Trigger>
+    <Room>
+      <Gas Type="Oxygen" PartialPressure="16" Compare="EqualOrGreater" />
+      <Pressure kPa="75" Compare="EqualOrGreater" />
+    </Room>
+  </Objective>
+  
+  <!-- Trading -->
+  <Objective Id="BuildAndPowerALandingPad">
+    <Name Key="WorldObjectiveBuildPad" />
+    <Trigger>
+      <Prefab Id="StructureAutolathe">
+        <Reagents Steel="50" Compare="EqualOrGreater" />
+      </Prefab>
+      <Prefab Id="StructureElectronicsPrinter">
+        <Reagents Electrum="50" Compare="EqualOrGreater" />
+        <Reagents Solder="10" Compare="EqualOrGreater" />
+      </Prefab>
+    </Trigger>
+    <Network Type="LandingPad">
+      <Size X="3" Y="3" Compare="EqualOrGreater" />
+      <Prefab Id="Landingpad_CenterPiece01">
+        <Interactable Action="Error" State="0" />
+      </Prefab>
+      <Prefab Id="Landingpad_DataConnectionPiece">
+        <Interactable Action="OnOff" State="1" />
+        <Interactable Action="Powered" State="1" />
+      </Prefab>
+    </Network>
+  </Objective>
+  <Objective Id="BuildAComputerVendingMachine">
+    <Name Key="WorldObjectiveConnectPad" />
+    <Trigger>
+      <Conditions Operator="Any">
+        <ObjectiveComplete Id="BuildAndPowerALandingPad" />
+        <ObjectiveComplete Id="BuildAndPowerALandingPadVulcan" />
+      </Conditions>
+    </Trigger>
+    <Network Type="Cable">
+      <Prefab Id="StructureComputer">
+        <Item Id="MotherboardComms" SlotId="Motherboard"/>
+      </Prefab>
+      <Prefab Id="StructureVendingMachine" />
+      <Prefab Id="Landingpad_DataConnectionPiece" />
+    </Network>
+  </Objective>
+  <Objective Id="BuildAndPointDish">
+    <Name Key="WorldObjectiveResolveContact" />
+    <Trigger>
+      <ObjectiveComplete Id="BuildAComputerVendingMachine" />
+    </Trigger>
+    <Network Type="Cable">
+      <Conditions Operator="Any">
+        <Prefab Id="StructureSmallSatelliteDish">
+          <Contact IsResolved="true" />
+        </Prefab>
+        <Prefab Id="StructureSatelliteDish">
+          <Contact IsResolved="true" />
+        </Prefab>
+      </Conditions>
+      <Prefab Id="StructureComputer">
+        <Interactable Action="Powered" State="1" />
+        <Item Id="MotherboardComms" SlotId="Motherboard"/>
+      </Prefab>
+    </Network>
+  </Objective>
+  <Objective Id="CallDownATrader">
+    <Name Key="WorldObjectiveContactLand" />
+    <Trigger>
+      <ObjectiveComplete Id="BuildAndPointDish" />
+    </Trigger>
+    <Contact IsContacted="true" IsLanded="true" />
+  </Objective>
+
+  <!-- Trading Vulcan -->
+  <Objective Id="BuildAndPowerALandingPadVulcan">
+    <Name Key="WorldObjectiveBuildPad" />
+    <Network Type="LandingPad">
+      <Size X="3" Y="3" Compare="EqualOrGreater" />
+      <Prefab Id="Landingpad_CenterPiece01">
+        <Interactable Action="Error" State="0" />
+      </Prefab>
+      <Prefab Id="Landingpad_DataConnectionPiece">
+        <Interactable Action="OnOff" State="1" />
+        <Interactable Action="Powered" State="1" />
+      </Prefab>
+    </Network>
+  </Objective>
+  
+  <!-- Concepts -->
+  <Objective Id="RefillOxygen">
+    <Name Key="WorldObjectiveCanisters"/>
+    <Info Key="WorldObjectiveCanistersInfo"/>
+    <Notice Key="WorldObjectiveAcknowledgeAndDismiss"/>
+    <Trigger>
+      <Prefab Id="ItemGasCanisterEmpty">
+        <CustomName Value="Oxygen Canister"/>
+        <Pressure kPa="1000" Compare="Less"/>
+      </Prefab>
+    </Trigger>
+  </Objective>
+  <Objective Id="CablesBurn">
+    <Name Key="WorldObjectiveCablesBurn"/>
+    <Info Key="WorldObjectiveCablesBurnInfo"/>
+    <Notice Key="WorldObjectiveAcknowledgeAndDismiss"/>
+    <Trigger Operator="Any">
+      <Prefab Id="StructureCableCorner3Burnt"/>
+      <Prefab Id="StructureCableCorner3HBurnt"/>
+      <Prefab Id="StructureCableCorner4Burnt"/>
+      <Prefab Id="StructureCableCorner4HBurnt"/>
+      <Prefab Id="StructureCableCornerBurnt"/>
+      <Prefab Id="StructureCableCornerHBurnt"/>
+      <Prefab Id="StructureCableJunction4Burnt"/>
+      <Prefab Id="StructureCableJunction4HBurnt"/>
+      <Prefab Id="StructureCableJunction5Burnt"/>
+      <Prefab Id="StructureCableJunction6Burnt"/>
+      <Prefab Id="StructureCableJunction6HBurnt"/>
+      <Prefab Id="StructureCableJunctionBurnt"/>
+      <Prefab Id="StructureCableJunctionH5Burnt"/>
+      <Prefab Id="StructureCableStraightBurnt"/>
+      <Prefab Id="StructureCableStraightHBurnt"/>
+    </Trigger>
+  </Objective>
+  <Objective Id="SmeltIce">
+    <Name Key="WorldObjectiveSmeltIce"/>
+    <Info Key="WorldObjectiveSmeltIceInfo"/>
+    <Notice Key="WorldObjectiveAcknowledgeAndDismiss"/>
+    <Trigger Operator="Any">
+      <Prefab Id="ItemIce"/>
+      <Prefab Id="ItemOxite"/>
+      <Prefab Id="ItemVolatiles"/>
+      <Prefab Id="ItemNitrice"/>
+    </Trigger>
+  </Objective>
+  
+  <!-- Concepts Vulcan -->
+  <Objective Id="AtmosphericCombustion">
+    <Name Key="WorldObjectiveCombustion"/>
+    <Notice Key="WorldObjectiveAcknowledgeAndDismiss"/>
+    <Info Key="WorldObjectiveCombustionInfo"/>
+  </Objective>
+
+  <!-- Tutorial 1 -->
+
+  <WorldObjective Id="Tutorial1Objectives">
+    <Name Value="Tutorial1" />
+    <Objective Id="Tutorial1EquipToolBelt"/>
+    <Objective Id="Tutorial1PlaceWall"/>
+    <Objective Id="Tutorial1CompleteWall"/>
+    <Objective Id="Tutorial1CompleteFrame"/>
+    <Objective Id="Tutorial1PlaceDoor"/>
+    <Objective Id="Tutorial1CompleteDoor"/>
+    <Objective Id="Tutorial1FinishRoom"/>
+  </WorldObjective>
+
+  <Objective Id="Tutorial1EquipToolBelt" Expand="true">
+    <Name Key="Tutorial1EquipToolBeltHeading" />
+    <Notice Key="Tut1OpenBackpack"/>
+    <Notice Key="Tut1EquipToolBelt"/>
+    <Player Hidden="true">
+      <Item Id="ItemToolBelt" SlotId="Belt"/>
+    </Player>
+  </Objective>
+
+  <Objective Id="Tutorial1PlaceWall" Expand="true">
+    <Name Key="Tutorial1PlaceWallHeading" />
+    <Trigger>
+      <ObjectiveComplete Id="Tutorial1EquipToolBelt"/>
+    </Trigger>
+    <Notice Key="Tut1WallKitsInLocker"/>
+    <Notice Key="Tut1SwapHands"/>
+    <Notice Key="Tut1DropItems"/>
+    <Notice Key="Tut1PlaceWall"/>
+    <Conditions Operator="Any" Hidden="true">
+      <Prefab Id="StructureWallIron" Hidden="true">
+        <PreSpawned Value="false"/>
+      </Prefab>
+      <Prefab Id="StructureWallIron02" Hidden="true">
+        <PreSpawned Value="false"/>
+      </Prefab>
+      <Prefab Id="StructureWallIron03" Hidden="true">
+        <PreSpawned Value="false"/>
+      </Prefab>
+      <Prefab Id="StructureWallIron04" Hidden="true">
+        <PreSpawned Value="false"/>
+      </Prefab>
+    </Conditions>
+  </Objective>
+
+  <Objective Id="Tutorial1CompleteWall" Expand="true">
+    <Name Key="Tutorial1CompleteWallHeading"/>
+    <Trigger>
+      <ObjectiveComplete Id="Tutorial1PlaceWall"/>
+    </Trigger>
+    <Notice Key="Tut1GrabIronSheets"/>
+    <Notice Key="Tut1CompleteWall"/>
+    <Conditions Operator="Any" Hidden="true">
+      <Prefab Id="StructureWallIron" Hidden="true">
+        <PreSpawned Value="false"/>
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureWallIron02" Hidden="true">
+        <PreSpawned Value="false"/>
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureWallIron03" Hidden="true">
+        <PreSpawned Value="false"/>
+        <BuildState IsCompleted="true" />
+      </Prefab>
+      <Prefab Id="StructureWallIron04" Hidden="true">
+        <PreSpawned Value="false"/>
+        <BuildState IsCompleted="true" />
+      </Prefab>
+    </Conditions>
+  </Objective>
+
+  <Objective Id="Tutorial1CompleteFrame" Expand="true">
+    <Name Key="Tutorial1CompleteFrameHeading"/>
+    <Trigger>
+      <ObjectiveComplete Id="Tutorial1CompleteWall"/>
+    </Trigger>
+    <Notice Key="Tut1IntroFrame"/>
+    <Notice Key="Tut1PlaceFrame"/>
+    <Notice Key="Tut1CompleteFrame"/>
+    <Notice Key="Tut1UseWeldingTorch"/>
+    <Prefab Id="StructureFrameIron" Hidden="true">
+      <PreSpawned Value="false"/>
+      <BuildState IsCompleted="true" />
+    </Prefab>
+  </Objective>
+
+  <Objective Id="Tutorial1PlaceDoor" Expand="true">
+    <Name Key="Tutorial1PlaceDoorHeading" />
+    <Trigger>
+      <ObjectiveComplete Id="Tutorial1CompleteFrame"/>
+    </Trigger>
+    <Notice Key="Tut1GetDoorKit"/>
+    <Notice Key="Tut1PlaceDoor"/>
+    <Conditions Operator="Any" Hidden="true">
+      <Network Type="Cable">
+        <Prefab Id="StructureGlassDoor">
+          <PreSpawned Value="false"/>
+        </Prefab>
+      </Network>
+      <Network Type="Cable">
+        <Prefab Id="StructureCompositeDoor">
+          <PreSpawned Value="false"/>
+        </Prefab>
+      </Network>
+    </Conditions>
+  </Objective>
+  
+  <Objective Id="Tutorial1CompleteDoor" Expand="true">
+    <Name Key="Tutorial1CompleteDoorHeading" />
+    <Trigger>
+      <ObjectiveComplete Id="Tutorial1PlaceDoor"/>
+    </Trigger>
+    <Notice Key="Tut1MaterialRequirements"/>
+    <Notice Key="Tut1RequirementTooltips"/>
+    <Notice Key="Tut1FinishDoor"/>
+    <Conditions Operator="Any" Hidden="true">
+      <Prefab Id="StructureGlassDoor">
+        <Interactable Action="OnOff" State="1" />
+        <Interactable Action="Powered" State="1" />
+        <BuildState IsCompleted="true" />
+        <PreSpawned Value="false"/>
+      </Prefab>      
+      <Prefab Id="StructureCompositeDoor">
+        <Interactable Action="OnOff" State="1" />
+        <Interactable Action="Powered" State="1" />
+        <BuildState IsCompleted="true" />
+        <PreSpawned Value="false"/>
+      </Prefab>
+    </Conditions>
+  </Objective>
+  
+  <Objective Id="Tutorial1FinishRoom" Expand="true">
+    <Name Key="Tutorial1FinishRoomHeading" />
+    <Trigger>
+      <ObjectiveComplete Id="Tutorial1CompleteDoor"/>
+    </Trigger>
+    <Notice Key="Tut1RoomCreation"/>
+    <Notice Key="Tut1FinishRoom"/>
+    <Room MinSize="12" MaxSize="21" Hidden="true"/>
+    <CompleteTutorialPopup Delay="5">
+      <Title Key="TutorialComplete"/>
+      <Text Key="TutorialCompleteMessage"/>
+    </CompleteTutorialPopup>
+  </Objective>
+  
+  <!-- Tutorial 2 -->
+  
+</GameData>

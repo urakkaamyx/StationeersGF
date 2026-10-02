@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ThingMods>
+    <ThingModData xsi:type="JetPackModData">
+      <PrefabName>ItemJetpackBasic</PrefabName>
+      <MaxSpeed>3</MaxSpeed>
+    </ThingModData>    
+    <ThingModData xsi:type="JetPackModData">
+      <PrefabName>ItemSpacepack</PrefabName>
+      <MaxSpeed>5</MaxSpeed>
+    </ThingModData>    
+    <ThingModData xsi:type="JetPackModData">
+      <PrefabName>ItemHardJetpack</PrefabName>
+      <MaxSpeed>8</MaxSpeed>
+    </ThingModData>    
+  </ThingMods>
+</GameData>

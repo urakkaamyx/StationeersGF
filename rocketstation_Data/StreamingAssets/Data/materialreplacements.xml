@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--
+		Construction material replacements. The Substitute item is accepted (and consumed 1:1) anywhere
+		the Replaces item is required as a construction, repair or upgrade material. Deconstruction always
+		returns the originally required item, regardless of what was used to build.
+
+		Rules:
+		- One entry per Substitute (one-to-one, single hop: chains do not cascade).
+		- A later entry for the same Substitute (e.g. from a mod's GameData folder) overrides the earlier one.
+		- Pairs that reference unknown prefabs, replace themselves, or would create a loop are skipped with an error.
+
+		Tool replacements (MKII/Emergency variants) live in toolreplacements.xml using the same element.
+	-->
+	<ItemReplacements>
+		<ItemReplacement Substitute="ItemSteelSheets" Replaces="ItemIronSheets" />
+		<ItemReplacement Substitute="ItemCableCoilHeavy" Replaces="ItemCableCoil" />
+		<ItemReplacement Substitute="ItemKitInsulatedPipe" Replaces="ItemKitPipe" />
+		<ItemReplacement Substitute="ItemKitInsulatedLiquidPipe" Replaces="ItemKitPipeLiquid" />
+	</ItemReplacements>
+</GameData>

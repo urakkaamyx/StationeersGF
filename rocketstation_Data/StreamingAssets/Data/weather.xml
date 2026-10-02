@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    
+   <WeatherEvent Id="MarsDustStorm" WindSound="true">
+      <Name Key="DustStorm"/>
+      <CoolDown Min="3" Max="12"/> <!-- Days -->
+      <StartDelay Min="120" Max="900"/>
+      <Duration Min="120" Max="600"/>
+      <StormEffect Speed="2" Size="12">
+         <TextureId Value="0"/>
+         <RayMarch Size="0.2" Growth="0.3" Density="1.4"/>
+         <Layer1 Power="0.8" Multiplier="1"/>
+         <Layer2 Threshold="0.22" Power="0.84" Multiplier="1" MaskMultiplier="1"/>
+         <Layer3 Threshold="0.12" Power="1.53" Multiplier="0.5"/>
+         <Color1 r="91" g="69" b="61" a="255"/>
+         <Color2 r="212" g="153" b="113" a="255"/>
+         <MaskColor r="0" g="0" b="0" a="255"/>
+      </StormEffect>
+      <Fog>
+         <Color r="0.6415094" g="0.4853544" b="0.4145603" a="1"/>
+      </Fog>
+      <TemperatureOffset>
+         <Day Value="-20"/>
+         <Night Value="30"/>
+      </TemperatureOffset>
+      <SolarRatio Value="0.3"/>
+      <WindStrength Value="15"/>
+      <MovementSpeedMultiplier Value ="0.1"/>
+      <DamageMultiplier Value="1"/>
+   </WeatherEvent>
+    
+   <WeatherEvent Id="EuropaSnowStorm" WindSound="true">
+      <Name Key="SnowStorm"/>
+      <CoolDown Min="3" Max="12"/> <!-- Days -->
+      <StartDelay Min="120" Max="900"/>
+      <Duration Min="120" Max="600"/>
+      <StormEffect Speed="1.5" Size="12">
+         <RayMarch Size="0.2" Growth="0.3" Density="1.5"/>
+         <Layer1 Power="1" Multiplier="1"/>
+         <Layer2 Threshold="0.25" Power="0.75" Multiplier="1" MaskMultiplier="1"/>
+         <Layer3 Threshold="0.09" Power="0.82" Multiplier="0.3"/>
+         <Color1 r="138" g="159" b="166" a="255"/>
+         <Color2 r="237" g="252" b="255" a="255"/>
+         <MaskColor r="0" g="0" b="0" a="255"/>
+      </StormEffect>
+      <Fog>
+         <Color32 r="177" g="205" b="214" a="255"/>
+      </Fog>
+      <TemperatureOffset>
+         <Day Value="-29"/>
+         <Night Value="-24"/>
+      </TemperatureOffset>
+      <SolarRatio Value="0.3"/>
+      <WindStrength Value="15"/>
+      <MovementSpeedMultiplier Value ="0.1"/>
+      <DamageMultiplier Value="1"/>
+   </WeatherEvent>
+    
+   <WeatherEvent Id="VulcanAshStorm" WindSound="true">
+      <Name Key="AshStorm"/>
+      <CoolDown Min="3" Max="12"/> <!-- Days -->
+      <StartDelay Min="120" Max="900"/>
+      <Duration Min="120" Max="600"/>
+      <StormEffect Speed="1" Size="12">
+         <TextureId Value="0"/>
+         <RayMarch Size="0.2" Growth="0.3" Density="1.5"/>
+         <Layer1 Power="0.69" Multiplier="1"/>
+         <Layer2 Threshold="0.41" Power="2.3" Multiplier="13" MaskMultiplier="30"/>
+         <Layer3 Threshold="0.09" Power="1.17" Multiplier="0.8"/>
+         <Color1 r="10" g="4" b="4" a="255"/>
+         <Color2 r="89" g="89" b="89" a="255"/>
+         <MaskColor r="140" g="92" b="10" a="255"/>
+         <EmissiveMult Value="50"/>
+      </StormEffect>
+      <Fog>
+         <Color r="0.1333333" g="0.13333334" b="0.1333333" a="1"/>
+      </Fog>
+      <TemperatureOffset>
+         <Day Value="-275"/>
+         <Night Value="150"/>
+      </TemperatureOffset>
+      <SolarRatio Value="0.05"/>
+      <WindStrength Value="15"/>
+      <MovementSpeedMultiplier Value ="0.1"/>
+      <DamageMultiplier Value="1"/>
+   </WeatherEvent>
+
+   <WeatherEvent Id="VulcanFireStorm" WindSound="true">
+      <Name Key="FireStorm"/>
+      <CoolDown Min="3" Max="6"/> <!-- Days -->
+      <StartDelay Min="900" Max="900"/>
+      <Duration Min="90" Max="180"/>
+      <StormEffect Speed="3" Size="12">
+         <TextureId Value="1"/>
+         <RayMarch Size="0.3" Growth="0" Density="0.5"/>
+         <YDirection Value ="1"/>
+         <Layer1 Threshold="0.57" Power="0.03" Multiplier="20" MaskMultiplier="25"/>
+         <Layer2 Threshold="0.07" Power="1.57" Multiplier="1" MaskMultiplier="0.01"/>
+         <Layer3 Threshold="0.2" Power="1.17" Multiplier="0.8" MaskMultiplier="1"/>
+         <Color1 r="42" g="55" b="57" a="255"/>
+         <Color2 r="214" g="31" b="31" a="255"/>
+         <MaskColor r="140" g="92" b="10" a="255"/>
+         <EmissiveMult Value="50"/>
+      </StormEffect>
+      <Fog>
+         <Color r="0.1333333" g="0.13333334" b="0.1333333" a="1"/>
+      </Fog>
+      <TemperatureOffset>
+         <Day Value="600"/>
+         <Night Value="600"/>
+      </TemperatureOffset>
+      <SolarRatio Value="0.4"/>
+      <WindStrength Value="15"/>
+      <MovementSpeedMultiplier Value ="0.1"/>
+      <DamageMultiplier Value="3"/>
+   </WeatherEvent>
+    
+   <WeatherEvent Id="VenusStorm" WindSound="true">
+      <Name Key="DustStorm"/>
+      <CoolDown Min="3" Max="12"/> <!-- Days -->
+      <StartDelay Min="120" Max="900"/>
+      <Duration Min="120" Max="600"/>
+      <Fog>
+         <Color r="0.6" g="0.4" b="0.1" a="1"/>
+      </Fog>
+      <StormEffect Speed="2.2" Size="12">
+         <TextureId Value="0"/>
+         <RayMarch Size="0.2" Growth="0.3" Density="1.5"/>
+         <Layer1 Threshold="-1.47" Power="5.1" Multiplier="3"/>
+         <Layer2 Threshold="0.25" Power="0.56" Multiplier="0.9"/>
+         <Layer3 Threshold="0.5" Power="0.5" Multiplier="0"/>
+         <Color1 r="107" g="101" b="71" a="255"/>
+         <Color2 r="215" g="170" b="53" a="255"/>
+         <MaskColor r="255" g="255" b="255" a="255"/>
+      </StormEffect>
+      <TemperatureOffset>
+         <Day Value="-98"/>
+         <Night Value="-98"/>
+      </TemperatureOffset>
+      <SolarRatio Value="0.3"/>
+      <WindStrength Value="15"/>
+      <MovementSpeedMultiplier Value ="0.1"/>
+      <DamageMultiplier Value="1"/>
+   </WeatherEvent>
+    
+   <WeatherEvent Id="Rain">
+      <Name Key="RainWeather"/>
+      <CoolDown Min="3" Max="12"/> <!-- Days -->
+      <StartDelay Min="30" Max="60"/>
+      <Duration Min="120" Max="240"/>
+      <Fog StartDistance="25" EndDistance="90">
+         <Color r="0.8207547" g="0.9103774" b="1" a="1"/>
+      </Fog>
+      <TemperatureOffset>
+         <Day Value="0"/>
+         <Night Value="0"/>
+      </TemperatureOffset>
+      <SolarRatio Value="0.5"/>
+      <WindStrength Value="2"/>
+      <MovementSpeedMultiplier Value ="1"/>
+      <DamageMultiplier Value="0"/>
+      <Direction Value="Down"/>
+      <Shell1Sound Value="RainShell1"/>
+      <Shell2Sound Value="RainShell2"/>
+      <Shell3Sound Value="RainShell3"/>
+      <Shell4Sound Value="RainShell4"/>
+   </WeatherEvent>
+    
+   <WeatherEvent Id="Snow">
+      <Name Key="SnowWeather"/>
+      <CoolDown Min="3" Max="12"/> <!-- Days -->
+      <StartDelay Min="30" Max="60"/>
+      <Duration Min="120" Max="240"/>
+      <Fog StartDistance="15" EndDistance="50">
+         <Color r="0.8207547" g="0.9103774" b="1" a="1"/>
+      </Fog>
+      <TemperatureOffset>
+         <Day Value="0"/>
+         <Night Value="0"/>
+      </TemperatureOffset>
+      <SolarRatio Value="0.5"/>
+      <WindStrength Value="2"/>
+      <MovementSpeedMultiplier Value ="1"/>
+      <DamageMultiplier Value="0"/>
+      <Direction Value="Down"/>
+   </WeatherEvent>
+    
+   <WeatherEvent Id="SolarStorm" WindSound="false" ActiveInOrbit="true">
+      <Name Key="SolarStormWeather"/>
+      <CoolDown Min="3" Max="12"/> <!-- Days -->
+      <StartDelay Min="30" Max="60"/>
+      <Duration Min="600" Max="900"/>
+      <TemperatureOffset>
+         <Day Value="50"/>
+         <Night Value="50"/>
+      </TemperatureOffset>
+      <SolarRatio Value="4"/>
+      <WindStrength Value="1"/>
+      <DirectionalLight>
+         <Intensity Min="8" Max="12"/>
+         <Frequency Value="0.3"/>
+         <Color32 r="84" g="64" b="44" a="255"/>
+      </DirectionalLight>
+      <MovementSpeedMultiplier Value ="1"/>
+      <DamageMultiplier Value="0"/>
+      <Direction Value="None"/>
+      <SolarStormCameraEffect Value="1"/>
+   </WeatherEvent>
+
+   <WeatherEvent Id="VulcanSolarStorm" WindSound="false" ActiveInOrbit="true">
+      <Name Key="SolarStormWeather"/>
+      <CoolDown Min="3" Max="12"/> <!-- Days -->
+      <StartDelay Min="30" Max="60"/>
+      <Duration Min="600" Max="900"/>
+      <TemperatureOffset>
+         <Day Value="500"/>
+         <Night Value="100"/>
+      </TemperatureOffset>
+      <SolarRatio Value="4"/>
+      <WindStrength Value="1"/>
+      <DirectionalLight>
+         <Intensity Min="11" Max="14"/>
+         <Frequency Value="0.3"/>
+         <Color32 r="84" g="64" b="44" a="255"/>
+      </DirectionalLight>
+      <MovementSpeedMultiplier Value ="1"/>
+      <DamageMultiplier Value="0"/>
+      <Direction Value="None"/>
+      <SolarStormCameraEffect Value="1"/>
+   </WeatherEvent>
+   
+</GameData>

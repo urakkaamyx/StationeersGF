@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WorldSettings>
+        <World Id="Venus" Priority="5" >
+            <AmbienceSound>loulan</AmbienceSound>
+            <Name Key="NewWorldAreaVenus" />
+            <Description Key="NewWorldVenusShortDesc" />
+            <ShortDescription Key="VenusWorldDescriptionShort"/>
+            <Rating Key="WorldRatingExtreme" Color="Red" />
+            <PreviewButton Path="Interface/preview_venus.png" Format="RGB24"/>
+            <StartCondition Id="VenusDefault" IsDefault="true"/>
+            <StartCondition Id="VulcanBrutal"/>
+            <StartCondition Id="VenusDefaultCommunity"/>
+            <StartCondition Id="VulcanBrutalCommunity"/>
+<!--            <StartCondition Id="TerrainEdit"/>-->
+            <GlobalAtmosphere>
+                <Temperature>
+                    <Key Time="0" Value="737" InTangent="0" OutTangent="0" InWeight="0.3" OutWeight="0.3" WeightedMode="None" />
+                    <Key Time="180" Value="737" InTangent="0" OutTangent="0" InWeight="0.3" OutWeight="0.3" WeightedMode="None" />
+                </Temperature>
+                <Gas>
+                    <Gas Type="CarbonDioxide" Quantity="200" />
+                    <Gas Type="HydrochloricAcid" Quantity="90"/>
+                    <Gas Type="Nitrogen" Quantity="21.5" />
+                    <Gas Type="Pollutant" Quantity="0.05" />
+                </Gas>
+            </GlobalAtmosphere>
+            <SkyBoxMaterialName>VenusSky</SkyBoxMaterialName>
+            <SetSunInSkybox>true</SetSunInSkybox>
+            <SunPrefabName>MarsSun</SunPrefabName>
+            <MaxSunIntensity>1</MaxSunIntensity>
+            <Stars>
+                <Star Minimum="0" Brightness="0" />
+                <Star Minimum="0" Brightness="0" />
+            </Stars>
+            <TerrainPrefabName>TerrainVenus</TerrainPrefabName>
+            <Gravity>-8.87</Gravity>
+            <StartingCondition>Venus</StartingCondition>
+            <PreviewScene>
+                <CameraPosition>
+                    <x>0.000</x>
+                    <y>0.000</y>
+                    <z>0.000</z>
+                </CameraPosition>
+                <CameraRotation>
+                    <x>0.000</x>
+                    <y>0.000</y>
+                    <z>0.000</z>
+                </CameraRotation>
+                <SunRotation>
+                    <x>14.008</x>
+                    <y>157.135</y>
+                    <z>121.060</z>
+                </SunRotation>
+                <Prefabs>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>287.000</x>
+                            <y>53.600</y>
+                            <z>631.300</z>
+                        </Position>
+                        <Rotation>
+                            <x>293.104</x>
+                            <y>171.154</y>
+                            <z>215.242</z>
+                        </Rotation>
+                        <Scale>
+                            <x>11.736</x>
+                            <y>11.736</y>
+                            <z>11.736</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>AmbientVenusLight</Name>
+                        <Position>
+                            <x>187.077</x>
+                            <y>-48.398</y>
+                            <z>-44.009</z>
+                        </Position>
+                        <Rotation>
+                            <x>356.694</x>
+                            <y>288.441</y>
+                            <z>110.125</z>
+                        </Rotation>
+                        <Scale>
+                            <x>97.047</x>
+                            <y>97.047</y>
+                            <z>97.047</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIVenus</Name>
+                        <Position>
+                            <x>59.470</x>
+                            <y>-39.000</y>
+                            <z>374.992</z>
+                        </Position>
+                        <Rotation>
+                            <x>288.032</x>
+                            <y>263.853</y>
+                            <z>90.000</z>
+                        </Rotation>
+                        <Scale>
+                            <x>300.000</x>
+                            <y>300.000</y>
+                            <z>300.000</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UISun</Name>
+                        <Position>
+                            <x>-40.065</x>
+                            <y>143.042</y>
+                            <z>612.192</z>
+                        </Position>
+                        <Rotation>
+                            <x>0.000</x>
+                            <y>0.000</y>
+                            <z>0.000</z>
+                        </Rotation>
+                        <Scale>
+                            <x>7.297</x>
+                            <y>7.297</y>
+                            <z>7.297</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>VenusSun</Name>
+                        <Position>
+                            <x>-45.723</x>
+                            <y>70.202</y>
+                            <z>595.792</z>
+                        </Position>
+                        <Rotation>
+                            <x>15.418</x>
+                            <y>173.403</y>
+                            <z>105.045</z>
+                        </Rotation>
+                        <Scale>
+                            <x>1.000</x>
+                            <y>1.000</y>
+                            <z>1.000</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>287.000</x>
+                            <y>53.600</y>
+                            <z>631.300</z>
+                        </Position>
+                        <Rotation>
+                            <x>293.104</x>
+                            <y>171.154</y>
+                            <z>215.242</z>
+                        </Rotation>
+                        <Scale>
+                            <x>11.736</x>
+                            <y>11.736</y>
+                            <z>11.736</z>
+                        </Scale>
+                    </Prefab>
+                </Prefabs>
+                <SunPrefab>MarsSun (UnityEngine.Light)</SunPrefab>
+                <LensFlare>true</LensFlare>
+                <LensFlareIntensity>0.000</LensFlareIntensity>
+            </PreviewScene>
+            <WeatherEvent Id="VenusStorm"/>
+            <AmbientLighting>
+                <Sky r="0.5" g="0.49838235" b="0.0" />
+                <Equator r="0.417176471" g="0.314176471" b="0.0" />
+                <Ground r="0.318088237" g="0.208088237" b="0.0" />
+            </AmbientLighting>
+            <CelestialConstants>
+                <TimeOffset Minutes="11" Seconds="0" />
+            </CelestialConstants>
+            <PlayableBody Id="Venus" Latitude="44.1" Longitude="15.3" />
+            <SpaceMap Id="VenusSpaceMap"/>
+            <CelestialBodies>
+                <Sprite Id="Mercury" Magnitude="1.4" />
+                <Body Id="Venus">
+                    <SynodicRotation x="0.045" y="-0.999" z="0" Days="-116.75"  />
+                </Body>
+                <Sprite Id="Earth" Magnitude="0.50" />
+                <Sprite Id="Mars" Magnitude="0.99" />
+                <Sprite Id="Jupiter" Magnitude="0.98" />
+                <Sprite Id="Saturn" Magnitude="1.1" />
+                <Sprite Id="Uranus" Magnitude="1.5" />
+                <Sprite Id="Neptune" Magnitude="1.5" />
+                <Sprite Id="Pluto" Magnitude="4" />
+            </CelestialBodies>
+            <AtmosphericScattering>true</AtmosphericScattering>
+            <AtmosphericScatteringData>
+                <RayleighColorRampColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.949019635</r>
+                            <g>0.788235334</g>
+                            <b>0.0509803966</b>
+                            <a>1</a>
+                        </color>
+                        <time>0.00588998245</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.84905684</r>
+                            <g>0.196922049</g>
+                            <b>0.00176219363</b>
+                            <a>1</a>
+                        </color>
+                        <time>0.467643231</time>
+                    </GradientColorKey>
+                </RayleighColorRampColorKey>
+                <RayleighColorRampAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>0</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>1</time>
+                    </GradientAlphaKey>
+                </RayleighColorRampAlphaKey>
+                <RayleighColorRampMode>Blend</RayleighColorRampMode>
+                <WorldRayleighColorIntensity>22</WorldRayleighColorIntensity>
+                <WorldRayleighDensity>2220.59</WorldRayleighDensity>
+                <WorldRayleighExtinctionFactor>0.55</WorldRayleighExtinctionFactor>
+                <WorldRayleighIndirectScatter>0</WorldRayleighIndirectScatter>
+                <WorldMieColorIntensity>1.3</WorldMieColorIntensity>
+                <MieColorRampColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>1</r>
+                            <g>0.8255202</g>
+                            <b>0.3</b>
+                            <a>1</a>
+                        </color>
+                        <time>0</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>1</r>
+                            <g>0.9255202</g>
+                            <b>0.3</b>
+                            <a>1</a>
+                        </color>
+                        <time>0.482352942</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>1</r>
+                            <g>0.79478613</g>
+                            <b>0.3</b>
+                            <a>1</a>
+                        </color>
+                        <time>1</time>
+                    </GradientColorKey>
+                </MieColorRampColorKey>
+                <MieColorRampAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>0</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>0.2627451</alpha>
+                        <time>1</time>
+                    </GradientAlphaKey>
+                </MieColorRampAlphaKey>
+                <MieColorRampMode>Blend</MieColorRampMode>
+                <WorldMieDensity>1</WorldMieDensity>
+                <WorldMieExtinctionFactor>1</WorldMieExtinctionFactor>
+                <WorldMiePhaseAnisotropy>0.5</WorldMiePhaseAnisotropy>
+                <WorldNearScatterPush>1.1</WorldNearScatterPush>
+                <WorldNormalDistance>0</WorldNormalDistance>
+                <HeightRayleighColor>
+                    <r>1</r>
+                    <g>0.3521328533</g>
+                    <b>0.003</b>
+                    <a>1</a>
+                </HeightRayleighColor>
+                <HeightRayleighIntensity>1</HeightRayleighIntensity>
+                <HeightRayleighDensity>1000</HeightRayleighDensity>
+                <HeightMieDensity>150.19</HeightMieDensity>
+                <HeightExtinctionFactor>0</HeightExtinctionFactor>
+                <HeightSeaLevel>100</HeightSeaLevel>
+                <HeightDistance>1000</HeightDistance>
+                <HeightPlaneShift>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </HeightPlaneShift>
+                <HeightNearScatterPush>1.46</HeightNearScatterPush>
+                <HeightNormalDistance>0</HeightNormalDistance>
+                <UseOcclusion>false</UseOcclusion>
+            </AtmosphericScatteringData>
+            
+            <StartLocation Id="VenusSpawnGaiaValley">
+                <Name Key="VenusSpawnGaiaValleyName"/>
+                <Description Key="VenusSpawnGaiaValleyDescription"/>
+                <Position x="361" y="-940"/>
+                <SpawnRadius Value="15"/>
+            </StartLocation>
+            <StartLocation Id="VenusSpawnDaisyValley">
+                <Name Key="VenusSpawnDaisyValleyName"/>
+                <Description Key="VenusSpawnDaisyValleyDescription"/>
+                <Position x="-1309" y="-406"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+            <StartLocation Id="VenusSpawnFaithValley">
+                <Name Key="VenusSpawnFaithValleyName"/>
+                <Description Key="VenusSpawnFaithValleyDescription"/>
+                <Position x="-259" y="851"/>
+                <SpawnRadius Value="16"/>
+            </StartLocation>
+            <StartLocation Id="VenusSpawnDuskValley">
+                <Name Key="VenusSpawnDuskValleyName"/>
+                <Description Key="VenusSpawnDuskValleyDescription"/>
+                <Position x="793" y="36"/>
+                <SpawnRadius Value="14"/>
+            </StartLocation>
+
+            <RandomStartLocation Id="VenusSpawnRoundRobin">
+                <Name Key="SpawnRoundRobin"/>
+                <Description Key="SpawnRoundRobinDescription"/>
+                <SpawnRadius Value="6"/>
+                <StartLocation Id="VenusSpawnGaiaValley"/>
+                <StartLocation Id="VenusSpawnDaisyValley"/>
+                <StartLocation Id="VenusSpawnFaithValley"/>
+                <StartLocation Id="VenusSpawnDuskValley"/>
+            </RandomStartLocation>
+            
+            <GeographicRegionData>
+                <DefaultRegionName Value="Venus"/>
+                <RegionSet Id="VenusNamedRegions"/>
+            </GeographicRegionData>
+            <PlayableArea Id="EuropaInvalidArea" Rule="Invalid">
+                <Region Id="EuropaOutOfBounds"/>
+            </PlayableArea>
+            <RegionSet Id="VenusPlayableBounds">
+                <Texture Path="Worlds/SharedTextures/4KMissionArea.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="VenusValidPlayArea" R="0" G="255" B="0"/>
+                <Region Id="VenusOutOfBounds" R="255" G="0" B="0"/>
+                <Region Id="VenusLeavingArea" R="0" G="0" B="255"/>
+            </RegionSet>
+            
+            <RegionSet Id="VenusNamedRegions">
+                <Texture Path="Worlds/Venus/Textures/venus_named_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="VenusNamedRegionSilverValley" R="0" G="255" B="34">
+                    <Name Key="VenusNamedRegionSilverValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionArtemisValley" R="0" G="0" B="0">
+                    <Name Key="VenusNamedRegionArtemisValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionDianaValley" R="0" G="0" B="50">
+                    <Name Key="VenusNamedRegionDianaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSeleneValley" R="0" G="0" B="100">
+                    <Name Key="VenusNamedRegionSeleneValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionLunaValley" R="0" G="0" B="150">
+                    <Name Key="VenusNamedRegionLunaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionPhoebeValley" R="0" G="0" B="200">
+                    <Name Key="VenusNamedRegionPhoebeValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionRhiannonValley" R="0" G="0" B="250">
+                    <Name Key="VenusNamedRegionRhiannonValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSifValley" R="0" G="50" B="0">
+                    <Name Key="VenusNamedRegionSifValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionIdunnValley" R="0" G="50" B="50">
+                    <Name Key="VenusNamedRegionIdunnValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionJunaValley" R="0" G="50" B="100">
+                    <Name Key="VenusNamedRegionJunaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionChandraValley" R="0" G="50" B="150">
+                    <Name Key="VenusNamedRegionChandraValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionMahinaValley" R="0" G="50" B="200">
+                    <Name Key="VenusNamedRegionMahinaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionPeleValley" R="0" G="50" B="250">
+                    <Name Key="VenusNamedRegionPeleValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionObaValley" R="0" G="100" B="0">
+                    <Name Key="VenusNamedRegionObaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionOyaValley" R="0" G="100" B="50">
+                    <Name Key="VenusNamedRegionOyaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAlaValley" R="0" G="100" B="100">
+                    <Name Key="VenusNamedRegionAlaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionOshunValley" R="0" G="100" B="150">
+                    <Name Key="VenusNamedRegionOshunValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionBastetValley" R="0" G="100" B="200">
+                    <Name Key="VenusNamedRegionBastetValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSekhmetValley" R="0" G="100" B="250">
+                    <Name Key="VenusNamedRegionSekhmetValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHathorValley" R="0" G="150" B="0">
+                    <Name Key="VenusNamedRegionHathorValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionNutValley" R="0" G="150" B="50">
+                    <Name Key="VenusNamedRegionNutValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFortunaValley" R="0" G="150" B="100">
+                    <Name Key="VenusNamedRegionFortunaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionTycheValley" R="0" G="150" B="150">
+                    <Name Key="VenusNamedRegionTycheValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCeresValley" R="0" G="150" B="200">
+                    <Name Key="VenusNamedRegionCeresValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFloraValley" R="0" G="150" B="250">
+                    <Name Key="VenusNamedRegionFloraValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionPaxValley" R="0" G="200" B="0">
+                    <Name Key="VenusNamedRegionPaxValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionVictoriaValley" R="0" G="200" B="50">
+                    <Name Key="VenusNamedRegionVictoriaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionConcordiaValley" R="0" G="200" B="100">
+                    <Name Key="VenusNamedRegionConcordiaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFidesValley" R="0" G="200" B="150">
+                    <Name Key="VenusNamedRegionFidesValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionJustitiaValley" R="0" G="200" B="200">
+                    <Name Key="VenusNamedRegionJustitiaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionLibertasValley" R="0" G="200" B="250">
+                    <Name Key="VenusNamedRegionLibertasValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSalusValley" R="0" G="250" B="0">
+                    <Name Key="VenusNamedRegionSalusValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSpesValley" R="0" G="250" B="50">
+                    <Name Key="VenusNamedRegionSpesValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionVeritasValley" R="0" G="250" B="100">
+                    <Name Key="VenusNamedRegionVeritasValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionVestaValley" R="0" G="250" B="150">
+                    <Name Key="VenusNamedRegionVestaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAuroraValley" R="0" G="250" B="200">
+                    <Name Key="VenusNamedRegionAuroraValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionMinervaValley" R="0" G="250" B="250">
+                    <Name Key="VenusNamedRegionMinervaValleyName"/>
+                </Region>
+
+                <Region Id="VenusNamedRegionJunoValley" R="50" G="0" B="0">
+                    <Name Key="VenusNamedRegionJunoValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionMaiaValley" R="50" G="0" B="50">
+                    <Name Key="VenusNamedRegionMaiaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCarmentaValley" R="50" G="0" B="100">
+                    <Name Key="VenusNamedRegionCarmentaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFeroniaValley" R="50" G="0" B="150">
+                    <Name Key="VenusNamedRegionFeroniaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionOpsValley" R="50" G="0" B="200">
+                    <Name Key="VenusNamedRegionOpsValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionBonaValley" R="50" G="0" B="250">
+                    <Name Key="VenusNamedRegionBonaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFelicitasValley" R="50" G="50" B="0">
+                    <Name Key="VenusNamedRegionFelicitasValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHonorValley" R="50" G="50" B="50">
+                    <Name Key="VenusNamedRegionHonorValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHopeValley" R="50" G="50" B="100">
+                    <Name Key="VenusNamedRegionHopeValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFaithValley" R="50" G="50" B="150">
+                    <Name Key="VenusNamedRegionFaithValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionGraceValley" R="50" G="50" B="200">
+                    <Name Key="VenusNamedRegionGraceValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCharityValley" R="50" G="50" B="250">
+                    <Name Key="VenusNamedRegionCharityValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionPrudenceValley" R="50" G="100" B="0">
+                    <Name Key="VenusNamedRegionPrudenceValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionWisdomValley" R="50" G="100" B="50">
+                    <Name Key="VenusNamedRegionWisdomValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHarmonyValley" R="50" G="100" B="100">
+                    <Name Key="VenusNamedRegionHarmonyValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionUnityValley" R="50" G="100" B="150">
+                    <Name Key="VenusNamedRegionUnityValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionMercyValley" R="50" G="100" B="200">
+                    <Name Key="VenusNamedRegionMercyValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionJoyValley" R="50" G="100" B="250">
+                    <Name Key="VenusNamedRegionJoyValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionJusticeValley" R="50" G="150" B="0">
+                    <Name Key="VenusNamedRegionJusticeValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionPeaceValley" R="50" G="150" B="50">
+                    <Name Key="VenusNamedRegionPeaceValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFortuneValley" R="50" G="150" B="100">
+                    <Name Key="VenusNamedRegionFortuneValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionDestinyValley" R="50" G="150" B="150">
+                    <Name Key="VenusNamedRegionDestinyValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionVictoryValley" R="50" G="150" B="200">
+                    <Name Key="VenusNamedRegionVictoryValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionTriumphValley" R="50" G="150" B="250">
+                    <Name Key="VenusNamedRegionTriumphValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionProsperityValley" R="50" G="200" B="0">
+                    <Name Key="VenusNamedRegionProsperityValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionPlentyValley" R="50" G="200" B="50">
+                    <Name Key="VenusNamedRegionPlentyValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAbundanceValley" R="50" G="200" B="100">
+                    <Name Key="VenusNamedRegionAbundanceValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionDawnValley" R="50" G="200" B="150">
+                    <Name Key="VenusNamedRegionDawnValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionDuskValley" R="50" G="200" B="200">
+                    <Name Key="VenusNamedRegionDuskValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHorizonValley" R="50" G="200" B="250">
+                    <Name Key="VenusNamedRegionHorizonValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionMeadowValley" R="50" G="250" B="0">
+                    <Name Key="VenusNamedRegionMeadowValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionRiverValley" R="50" G="250" B="50">
+                    <Name Key="VenusNamedRegionRiverValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionWillowValley" R="50" G="250" B="100">
+                    <Name Key="VenusNamedRegionWillowValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionLaurelValley" R="50" G="250" B="150">
+                    <Name Key="VenusNamedRegionLaurelValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionRoseValley" R="50" G="250" B="200">
+                    <Name Key="VenusNamedRegionRoseValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionLilyValley" R="50" G="250" B="250">
+                    <Name Key="VenusNamedRegionLilyValleyName"/>
+                </Region>
+
+                <Region Id="VenusNamedRegionIvyValley" R="100" G="0" B="0">
+                    <Name Key="VenusNamedRegionIvyValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHazelValley" R="100" G="0" B="50">
+                    <Name Key="VenusNamedRegionHazelValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionMapleValley" R="100" G="0" B="100">
+                    <Name Key="VenusNamedRegionMapleValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionRowanValley" R="100" G="0" B="150">
+                    <Name Key="VenusNamedRegionRowanValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHollyValley" R="100" G="0" B="200">
+                    <Name Key="VenusNamedRegionHollyValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHeatherValley" R="100" G="0" B="250">
+                    <Name Key="VenusNamedRegionHeatherValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionVioletValley" R="100" G="50" B="0">
+                    <Name Key="VenusNamedRegionVioletValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionDaisyValley" R="100" G="50" B="50">
+                    <Name Key="VenusNamedRegionDaisyValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCloverValley" R="100" G="50" B="100">
+                    <Name Key="VenusNamedRegionCloverValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFernValley" R="100" G="50" B="150">
+                    <Name Key="VenusNamedRegionFernValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAthenaValley" R="100" G="50" B="200">
+                    <Name Key="VenusNamedRegionAthenaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHeraValley" R="100" G="50" B="250">
+                    <Name Key="VenusNamedRegionHeraValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionDemeterValley" R="100" G="100" B="0">
+                    <Name Key="VenusNamedRegionDemeterValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHestiaValley" R="100" G="100" B="50">
+                    <Name Key="VenusNamedRegionHestiaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionIreneValley" R="100" G="100" B="100">
+                    <Name Key="VenusNamedRegionIreneValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionThemisValley" R="100" G="100" B="150">
+                    <Name Key="VenusNamedRegionThemisValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionNikeValley" R="100" G="100" B="200">
+                    <Name Key="VenusNamedRegionNikeValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionGaiaValley" R="100" G="100" B="250">
+                    <Name Key="VenusNamedRegionGaiaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCybeleValley" R="100" G="150" B="0">
+                    <Name Key="VenusNamedRegionCybeleValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionBrigidValley" R="100" G="150" B="50">
+                    <Name Key="VenusNamedRegionBrigidValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionEponaValley" R="100" G="150" B="100">
+                    <Name Key="VenusNamedRegionEponaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionTaraValley" R="100" G="150" B="150">
+                    <Name Key="VenusNamedRegionTaraValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionLakshmiValley" R="100" G="150" B="200">
+                    <Name Key="VenusNamedRegionLakshmiValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCalliopeValley" R="100" G="150" B="250">
+                    <Name Key="VenusNamedRegionCalliopeValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionClioValley" R="100" G="200" B="0">
+                    <Name Key="VenusNamedRegionClioValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionThaliaValley" R="100" G="200" B="50">
+                    <Name Key="VenusNamedRegionThaliaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionEratoValley" R="100" G="200" B="100">
+                    <Name Key="VenusNamedRegionEratoValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionUraniaValley" R="100" G="200" B="150">
+                    <Name Key="VenusNamedRegionUraniaValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionEchoValley" R="100" G="200" B="200">
+                    <Name Key="VenusNamedRegionEchoValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAuraValley" R="100" G="200" B="250">
+                    <Name Key="VenusNamedRegionAuraValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCedarValley" R="100" G="250" B="0">
+                    <Name Key="VenusNamedRegionCedarValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionBirchValley" R="100" G="250" B="50">
+                    <Name Key="VenusNamedRegionBirchValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAspenValley" R="100" G="250" B="100">
+                    <Name Key="VenusNamedRegionAspenValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionPineValley" R="100" G="250" B="150">
+                    <Name Key="VenusNamedRegionPineValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionOakValley" R="100" G="250" B="200">
+                    <Name Key="VenusNamedRegionOakValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionElmValley" R="100" G="250" B="250">
+                    <Name Key="VenusNamedRegionElmValleyName"/>
+                </Region>
+
+                <Region Id="VenusNamedRegionBeechValley" R="150" G="0" B="0">
+                    <Name Key="VenusNamedRegionBeechValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAlderValley" R="150" G="0" B="50">
+                    <Name Key="VenusNamedRegionAlderValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSpruceValley" R="150" G="0" B="100">
+                    <Name Key="VenusNamedRegionSpruceValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAshValley" R="150" G="0" B="150">
+                    <Name Key="VenusNamedRegionAshValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAmberValley" R="150" G="0" B="200">
+                    <Name Key="VenusNamedRegionAmberValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCloudValley" R="150" G="0" B="250">
+                    <Name Key="VenusNamedRegionCloudValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionBrookValley" R="150" G="50" B="0">
+                    <Name Key="VenusNamedRegionBrookValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCoralValley" R="150" G="50" B="50">
+                    <Name Key="VenusNamedRegionCoralValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionPearlValley" R="150" G="50" B="100">
+                    <Name Key="VenusNamedRegionPearlValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSunriseValley" R="150" G="50" B="150">
+                    <Name Key="VenusNamedRegionSunriseValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionStarlightValley" R="150" G="50" B="200">
+                    <Name Key="VenusNamedRegionStarlightValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionGladeValley" R="150" G="50" B="250">
+                    <Name Key="VenusNamedRegionGladeValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHarborValley" R="150" G="100" B="0">
+                    <Name Key="VenusNamedRegionHarborValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionBeaconValley" R="150" G="100" B="50">
+                    <Name Key="VenusNamedRegionBeaconValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSaffronValley" R="150" G="100" B="100">
+                    <Name Key="VenusNamedRegionSaffronValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCitrineValley" R="150" G="100" B="150">
+                    <Name Key="VenusNamedRegionCitrineValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionTopazValley" R="150" G="100" B="200">
+                    <Name Key="VenusNamedRegionTopazValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionMarigoldValley" R="150" G="100" B="250">
+                    <Name Key="VenusNamedRegionMarigoldValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAmbergrisValley" R="150" G="150" B="0">
+                    <Name Key="VenusNamedRegionAmbergrisValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSaddleValley" R="150" G="150" B="50">
+                    <Name Key="VenusNamedRegionSaddleValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCradleValley" R="150" G="150" B="100">
+                    <Name Key="VenusNamedRegionCradleValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHearthValley" R="150" G="150" B="150">
+                    <Name Key="VenusNamedRegionHearthValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionEmberValley" R="150" G="150" B="200">
+                    <Name Key="VenusNamedRegionEmberValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCinderValley" R="150" G="150" B="250">
+                    <Name Key="VenusNamedRegionCinderValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionBreezeValley" R="200" G="0" B="0">
+                    <Name Key="VenusNamedRegionBreezeValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionShoreValley" R="200" G="0" B="50">
+                    <Name Key="VenusNamedRegionShoreValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionHarborlightValley" R="200" G="0" B="100">
+                    <Name Key="VenusNamedRegionHarborlightValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionBeaconridgeValley" R="200" G="0" B="150">
+                    <Name Key="VenusNamedRegionBeaconridgeValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionWindsongValley" R="200" G="0" B="200">
+                    <Name Key="VenusNamedRegionWindsongValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionStarfallValley" R="200" G="0" B="250">
+                    <Name Key="VenusNamedRegionStarfallValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionMoonlitValley" R="200" G="50" B="0">
+                    <Name Key="VenusNamedRegionMoonlitValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSkylarkValley" R="200" G="50" B="50">
+                    <Name Key="VenusNamedRegionSkylarkValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSilverleafValley" R="200" G="50" B="100">
+                    <Name Key="VenusNamedRegionSilverleafValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionGoldleafValley" R="200" G="50" B="150">
+                    <Name Key="VenusNamedRegionGoldleafValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionAmberleafValley" R="200" G="50" B="200">
+                    <Name Key="VenusNamedRegionAmberleafValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionSunburstValley" R="200" G="50" B="250">
+                    <Name Key="VenusNamedRegionSunburstValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionCrystalValley" R="200" G="100" B="0">
+                    <Name Key="VenusNamedRegionCrystalValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionEchoingValley" R="200" G="100" B="50">
+                    <Name Key="VenusNamedRegionEchoingValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionWhisperValley" R="200" G="100" B="100">
+                    <Name Key="VenusNamedRegionWhisperValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionShadowValley" R="200" G="100" B="150">
+                    <Name Key="VenusNamedRegionShadowValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionFrostValley" R="200" G="100" B="200">
+                    <Name Key="VenusNamedRegionFrostValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionEmberlightValley" R="200" G="100" B="250">
+                    <Name Key="VenusNamedRegionEmberlightValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionTwilightValley" R="200" G="150" B="0">
+                    <Name Key="VenusNamedRegionTwilightValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionDawnfireValley" R="200" G="150" B="50">
+                    <Name Key="VenusNamedRegionDawnfireValleyName"/>
+                </Region>
+                <Region Id="VenusNamedRegionStarglowValley" R="200" G="150" B="100">
+                    <Name Key="VenusNamedRegionStarglowValleyName"/>
+                </Region>
+            </RegionSet>
+
+            <RegionSet Id="VenusPoiRegions">
+                <Texture Path="Worlds/Venus/Textures/venus_poi_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="VenusPoiRegionFumaroleSteppe" R="0" G="0" B="125"/>
+                <Region Id="VenusPoiRegionAureliaFlats" R="0" G="0" B="250"/>
+                <Region Id="VenusPoiRegionIshtarPlate" R="0" G="125" B="0"/>
+                <Region Id="VenusPoiRegionCythereanPlain" R="0" G="125" B="125"/>
+                <Region Id="VenusPoiRegionVesperaPans" R="0" G="125" B="250"/>
+                <Region Id="VenusPoiRegionVulcanReach" R="0" G="250" B="0"/>
+                <Region Id="VenusPoiRegionHephaestianFlats" R="0" G="250" B="125"/>
+                <Region Id="VenusPoiRegionSulfurMirror" R="0" G="250" B="250"/>
+                <Region Id="VenusPoiRegionPyriteTableland" R="125" G="0" B="0"/>
+                <Region Id="VenusPoiRegionThiolBasin" R="125" G="0" B="125"/>
+                <Region Id="VenusPoiRegionGossanPlain" R="125" G="0" B="250"/>
+                <Region Id="VenusPoiRegionYellowMesa" R="125" G="125" B="0"/>
+                <Region Id="VenusPoiRegionSaffronFlats" R="125" G="125" B="125"/>
+                <Region Id="VenusPoiRegionMidasWastes" R="125" G="125" B="250"/>
+                <Region Id="VenusPoiRegionCalderaSheet" R="125" G="250" B="0"/>
+                <Region Id="VenusPoiRegionGalenaPans" R="125" G="250" B="125"/>
+                <Region Id="VenusPoiRegionOrpimentPan" R="125" G="250" B="250"/>
+                <Region Id="VenusPoiRegionRealgarPan" R="250" G="0" B="0"/>
+                <Region Id="VenusPoiRegionCinnabarPan" R="250" G="0" B="125"/>
+                <Region Id="VenusPoiRegionJarositeFlats" R="250" G="0" B="250"/>
+                <Region Id="VenusPoiRegionBrimPoolSteppe" R="250" G="125" B="0"/>
+                <Region Id="VenusPoiRegionSulfurSaltPan" R="250" G="125" B="125"/>
+                <Region Id="VenusPoiRegionFadedSulfurPlate" R="250" G="125" B="250"/>
+                <Region Id="VenusPoiRegionPaleBrimstonePlain" R="250" G="250" B="0"/>
+            </RegionSet>
+            
+            <PointOfInterest Id="VenusPoiRegionFumaroleSteppe">
+                <Region Id="VenusPoiRegionFumaroleSteppe"/>
+                <Name Key="VenusPoiRegionFumaroleSteppeName"/>
+                <Description Key="VenusPoiRegionFumaroleSteppeDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionAureliaFlats">
+                <Region Id="VenusPoiRegionAureliaFlats"/>
+                <Name Key="VenusPoiRegionAureliaFlatsName"/>
+                <Description Key="VenusPoiRegionAureliaFlatsDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionIshtarPlate">
+                <Region Id="VenusPoiRegionIshtarPlate"/>
+                <Name Key="VenusPoiRegionIshtarPlateName"/>
+                <Description Key="VenusPoiRegionIshtarPlateDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionCythereanPlain">
+                <Region Id="VenusPoiRegionCythereanPlain"/>
+                <Name Key="VenusPoiRegionCythereanPlainName"/>
+                <Description Key="VenusPoiRegionCythereanPlainDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionVesperaPans">
+                <Region Id="VenusPoiRegionVesperaPans"/>
+                <Name Key="VenusPoiRegionVesperaPansName"/>
+                <Description Key="VenusPoiRegionVesperaPansDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionVulcanReach">
+                <Region Id="VenusPoiRegionVulcanReach"/>
+                <Name Key="VenusPoiRegionVulcanReachName"/>
+                <Description Key="VenusPoiRegionVulcanReachDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionHephaestianFlats">
+                <Region Id="VenusPoiRegionHephaestianFlats"/>
+                <Name Key="VenusPoiRegionHephaestianFlatsName"/>
+                <Description Key="VenusPoiRegionHephaestianFlatsDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionSulfurMirror">
+                <Region Id="VenusPoiRegionSulfurMirror"/>
+                <Name Key="VenusPoiRegionSulfurMirrorName"/>
+                <Description Key="VenusPoiRegionSulfurMirrorDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionPyriteTableland">
+                <Region Id="VenusPoiRegionPyriteTableland"/>
+                <Name Key="VenusPoiRegionPyriteTablelandName"/>
+                <Description Key="VenusPoiRegionPyriteTablelandDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionThiolBasin">
+                <Region Id="VenusPoiRegionThiolBasin"/>
+                <Name Key="VenusPoiRegionThiolBasinName"/>
+                <Description Key="VenusPoiRegionThiolBasinDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionGossanPlain">
+                <Region Id="VenusPoiRegionGossanPlain"/>
+                <Name Key="VenusPoiRegionGossanPlainName"/>
+                <Description Key="VenusPoiRegionGossanPlainDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionYellowMesa">
+                <Region Id="VenusPoiRegionYellowMesa"/>
+                <Name Key="VenusPoiRegionYellowMesaName"/>
+                <Description Key="VenusPoiRegionYellowMesaDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionSaffronFlats">
+                <Region Id="VenusPoiRegionSaffronFlats"/>
+                <Name Key="VenusPoiRegionSaffronFlatsName"/>
+                <Description Key="VenusPoiRegionSaffronFlatsDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionMidasWastes">
+                <Region Id="VenusPoiRegionMidasWastes"/>
+                <Name Key="VenusPoiRegionMidasWastesName"/>
+                <Description Key="VenusPoiRegionMidasWastesDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionCalderaSheet">
+                <Region Id="VenusPoiRegionCalderaSheet"/>
+                <Name Key="VenusPoiRegionCalderaSheetName"/>
+                <Description Key="VenusPoiRegionCalderaSheetDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionGalenaPans">
+                <Region Id="VenusPoiRegionGalenaPans"/>
+                <Name Key="VenusPoiRegionGalenaPansName"/>
+                <Description Key="VenusPoiRegionGalenaPansDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionOrpimentPan">
+                <Region Id="VenusPoiRegionOrpimentPan"/>
+                <Name Key="VenusPoiRegionOrpimentPanName"/>
+                <Description Key="VenusPoiRegionOrpimentPanDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionRealgarPan">
+                <Region Id="VenusPoiRegionRealgarPan"/>
+                <Name Key="VenusPoiRegionRealgarPanName"/>
+                <Description Key="VenusPoiRegionRealgarPanDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionCinnabarPan">
+                <Region Id="VenusPoiRegionCinnabarPan"/>
+                <Name Key="VenusPoiRegionCinnabarPanName"/>
+                <Description Key="VenusPoiRegionCinnabarPanDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionJarositeFlats">
+                <Region Id="VenusPoiRegionJarositeFlats"/>
+                <Name Key="VenusPoiRegionJarositeFlatsName"/>
+                <Description Key="VenusPoiRegionJarositeFlatsDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionBrimPoolSteppe">
+                <Region Id="VenusPoiRegionBrimPoolSteppe"/>
+                <Name Key="VenusPoiRegionBrimPoolSteppeName"/>
+                <Description Key="VenusPoiRegionBrimPoolSteppeDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionSulfurSaltPan">
+                <Region Id="VenusPoiRegionSulfurSaltPan"/>
+                <Name Key="VenusPoiRegionSulfurSaltPanName"/>
+                <Description Key="VenusPoiRegionSulfurSaltPanDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionFadedSulfurPlate">
+                <Region Id="VenusPoiRegionFadedSulfurPlate"/>
+                <Name Key="VenusPoiRegionFadedSulfurPlateName"/>
+                <Description Key="VenusPoiRegionFadedSulfurPlateDescription"/>
+            </PointOfInterest>
+
+            <PointOfInterest Id="VenusPoiRegionPaleBrimstonePlain">
+                <Region Id="VenusPoiRegionPaleBrimstonePlain"/>
+                <Name Key="VenusPoiRegionPaleBrimstonePlainName"/>
+                <Description Key="VenusPoiRegionPaleBrimstonePlainDescription"/>
+            </PointOfInterest>
+
+            <Minables Id="DefaultMinablesSurfaceNoIce" OreDensity="0.6">
+                <Surface Value="true"/>
+            </Minables>
+            <Minables Id="DefaultMinablesNoIce" OreDensity="1">
+                <Surface Value="false"/>
+            </Minables>
+
+            <RegionSet Id="VenusDeepMiningRegions">
+                <Texture Path="Worlds/Venus/Textures/venus_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="VenusDeepMiningRegionCoal" R="245" G="36" B="36"/>
+                <Region Id="VenusDeepMiningRegionNickel" R="245" G="150" B="36"/>
+                <Region Id="VenusDeepMiningRegionGold" R="226" G="245" B="36"/>
+                <Region Id="VenusDeepMiningRegionSilver" R="112" G="245" B="36"/>
+                <Region Id="VenusDeepMiningRegionLead" R="36" G="245" B="74"/>
+                <Region Id="VenusDeepMiningRegionIronCopperSilicon" R="36" G="245" B="188"/>
+                <Region Id="VenusDeepMiningRegionCobalt" R="36" G="188" B="245"/>
+                <Region Id="VenusDeepMiningRegionGoldSilver" R="36" G="74" B="245"/>
+                <Region Id="VenusDeepMiningRegionSilverLeadNickel" R="112" G="36" B="245"/>
+                <Region Id="VenusDeepMiningRegionIron" R="226" G="36" B="245"/>
+                <Region Id="VenusDeepMiningRegionSilicon" R="245" G="36" B="150"/>
+            </RegionSet>
+
+            <DeepMinables Id="DeepMinableProfileIron">
+                <Region Id="VenusDeepMiningRegionIron"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilicon">
+                <Region Id="VenusDeepMiningRegionSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
+                <Region Id="VenusDeepMiningRegionIronCopperSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
+                <Region Id="VenusDeepMiningRegionSilverLeadNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGoldSilver">
+                <Region Id="VenusDeepMiningRegionGoldSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilver">
+                <Region Id="VenusDeepMiningRegionSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileLead">
+                <Region Id="VenusDeepMiningRegionLead"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileNickel">
+                <Region Id="VenusDeepMiningRegionNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCoal">
+                <Region Id="VenusDeepMiningRegionCoal"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCobalt">
+                <Region Id="VenusDeepMiningRegionCobalt"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGold">
+                <Region Id="VenusDeepMiningRegionGold"/>
+            </DeepMinables>
+
+            <DeepMinablesRegionData>
+                <RegionSet Id="VenusDeepMiningRegions"/>
+            </DeepMinablesRegionData>
+
+
+            <TerrainSettings Path="Worlds/Venus/Terrain" WorldSize="4096">
+                <Curvature Value="0.3"/>
+                <MiniMap Path="Worlds/Venus/Textures/minimap.png" Format="DXT1" LoadType="OnRequest"/>
+                <MaterialSettings>
+                    <Macro>
+                        <MacroTextureBlend Value="0.66"/>
+                        <Albedo Path="Worlds/Venus/Textures/macro_colormap.png" Format="BC7" LoadType="OnRequest"/>
+                        <Normal Path="Worlds/Mars/Textures/macro_normal.png" LoadType="OnRequest" Value="1"/>
+                    </Macro>
+                    <Detail
+                            UVScale="1"
+                            DetailFadeStart="50"
+                            DetailFadeEnd="100"
+                            FractalDepthScale="0.5"
+                            LodMin="2"
+                            MipmapBias="-0.1"
+                            BlendSharpness="30">
+                        <GroupOne>
+                            <Albedo Path="Worlds/Venus/Textures/detail_1_diffuse.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Venus/Textures/detail_1_normal.png" LoadType="OnRequest" Value="0.5"/>
+                            <Roughness Path="Worlds/Venus/Textures/detail_1_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.3"/>
+                            <Displacement Path="Worlds/Venus/Textures/detail_1_displacement.png" Format="BC4" LoadType="OnRequest" Value="0.05"/>
+                        </GroupOne>
+                        <GroupTwo>
+                            <Albedo Path="Worlds/Venus/Textures/detail_2_diffuse.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Venus/Textures/detail_2_normal.png" LoadType="OnRequest" Value="1"/>
+                            <Roughness Path="Worlds/Venus/Textures/detail_2_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.1"/>
+                            <Displacement Path="Worlds/Venus/Textures/detail_2_displacement.png" Format="BC4" LoadType="OnRequest" Value="0.25"/>
+                        </GroupTwo>
+                    </Detail>
+                </MaterialSettings>
+            </TerrainSettings>
+
+        </World>
+
+    </WorldSettings>
+</GameData>

@@ -1,0 +1,153 @@
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Code>RU</Code>
+  <ScreenSpaceToolTips>
+    <Record>
+      <Key>StatusIconToxinName</Key>
+      <Value>Загрязнение воздуха</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconToxinDescription</Key>
+      <Value>Окружающий вас воздух содержит смертельную концентрацию токсина и/или закиси азота</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHydrationDesc</Key>
+      <Value>Сильное обезвоживание. Выпейте немного воды.</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHydrationKey</Key>
+      <Value>Низкий уровень воды в организме</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconOxygenName</Key>
+      <Value>Низкий уровень кислорода в крови</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconOxygenDesc</Key>
+      <Value>Вдыхаемый вами воздух повреждает ваши лёгкие.</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPressureName</Key>
+      <Value>Неподходящее давление окружающего воздуха</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPressureDesc</Key>
+      <Value>Давление окружающей атмосферы не подходит для жизни человека</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconTemperatureName</Key>
+      <Value>Неподходящая температура окружающего воздуха</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconTemperatureDesc</Key>
+      <Value>Текущая температура вашего окружения не подходит для жизни человека</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconLeakingName</Key>
+      <Value>Утечка в скафандре</Value>
+    </Record>
+    <Record>
+      <Key>StatucIconLeakingDesc</Key>
+      <Value>Скафандр поврежден и теряет воздух. Почините его с помощью Клейкой ленты.</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPowerName</Key>
+      <Value>Низкий заряд аккумулятора</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPowerDesc</Key>
+      <Value>Аккумулятор в скафандре разрядился. Зарядите его в Зарядном устройстве как можно скорее!</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconInSlotName</Key>
+      <Value>Вы сидите</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconInSlotDesc</Key>
+      <Value>Вы находитесь в транспорте или сидите на стуле. Вам удобно?</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHungerName</Key>
+      <Value>Высокий уровень голода</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHungerDesc</Key>
+      <Value>Вам нужно перекусить</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconStunName</Key>
+      <Value>Оглушение</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconStunDesc</Key>
+      <Value>Вы теряете сознание</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconAirTankName</Key>
+      <Value>Низкое давление воздуха в баллоне</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconAirTankDesc</Key>
+      <Value>Воздушный баллон почти опустел. Заправьте его кислородом как можно скорее!</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconJetpackWarningName</Key>
+      <Value>Низкое давление пропеллента</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconJetpackWarningDesc</Key>
+      <Value>Топливо для реактивного ранца на исходе. Заправьте его, чтобы продолжать полёт</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconFilterName</Key>
+      <Value>Фильтр забился</Value>
+    </Record>
+    <Record>
+      <Key>StatucIconFilterDesc</Key>
+      <Value>Фильтр изношен и требует замены</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconWasteName</Key>
+      <Value>Баллон с отходами полон</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconWasteDesc</Key>
+      <Value>Баллон с выдыхаемыми газами почти заполнился. Освободите его, иначе система жизнеобеспечения перестанет работать</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHealthName</Key>
+      <Value>Низкий уровень здоровья</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHealthDesc</Key>
+      <Value>Ваш организм повреждён. Со временем он восстановится сам, но вы можете принять таблетку (Лечение) для ускорения</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconUnconsciousName</Key>
+      <Value>Без сознания</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconUnconsciousDesc</Key>
+      <Value>Одно из двух: вы либо спите, либо мертвы</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconMoodName</Key>
+      <Value>Плохое настроение</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHygieneName</Key>
+      <Value>Плохая гигиена</Value>
+    </Record>
+    <Record>
+      <Key>DeconstructCanisterFull</Key>
+      <Value>Нельзя разобрать резервуар, пока в нем есть содержимое.</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconLeavingAreaName</Key>
+      <Value>За границей миссии</Value>
+    </Record>
+    <Record>
+    <Key>StatusIconLeavingAreaDesc</Key>
+    <Value>Вы вышли из зоны миссии, поверните назад</Value>
+    </Record>
+  </ScreenSpaceToolTips>
+</Language>

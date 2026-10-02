@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <DifficultySettings>
+        <DifficultySetting Id="Creative">
+            <Name Key="DifficultyCreative"/>
+            <Description Key="DifficultyDescriptionCreative" Value="Access item spawning functions and no resource usage. You will survive forever in toxic environments. Respawning is no issue." />
+            <PreviewButton Path="Interface/button_creative.png" Format="RGB24"/>
+            <HungerRate Value="0"/>
+            <HydrationRate Value="0"/>
+            <Sanitation Value="false"/>
+            <BreathingRate Value="0"/>
+            <RobotBatteryRate Value="0"/>
+            <MoodRate Value="0"/>
+            <HygieneRate Value="0"/>
+            <JetpackRate Value="0"/>
+            <LungDamageRate Value="0"/>
+            <FoodDecayRate Value="0"/>
+            <MiningYield Value="5"/>
+            <OfflineMetabolism Value="0.0"/>
+            <EatWhileHelmetClosed Value="true"/>
+            <DrinkWhileHelmetClosed Value="true"/>
+            <WeatherLanderDamageRate Value="0"/>
+            <Creative Value="true"/>
+            <SpaceMapDistanceMultiplier Value="1"/>
+            <Achievements Value="false"/>
+            <StartingWeatherMultiplier Value="2"/>
+            <RespawnStressTime Value="0" />
+            <RespawnStressConsumptionSpeed Value="1" />
+            <RespawnStressToolUseSpeed Value="1" />
+            <RespawnStressTradePenalty Value="1" />
+            <GoodHygieneToolSpeedMultiplier Value="1" />
+            <MoodToolSpeedMultiplier Value="1" />
+        </DifficultySetting>
+        <DifficultySetting Id="Easy">
+            <Name Key="DifficultyEasy"/>
+            <Description Key="DifficultyDescriptionEasy" Value="A more relaxed game, with lower oxygen, food and water usage. You will survive longer in toxic environments. Respawning is no issue" />
+            <PreviewButton Path="Interface/button_easy.png" Format="RGB24"/>
+            <HungerRate Value="0.5"/>
+            <HydrationRate Value="0.5"/>
+            <Sanitation Value="false"/>
+            <RobotBatteryRate Value="0.5"/>
+            <BreathingRate Value="1.0"/>
+            <LungDamageRate Value="0.02"/>
+            <FoodDecayRate Value="0.5"/>
+            <MiningYield Value="2" />
+            <OfflineMetabolism Value="0.0"/>
+            <EatWhileHelmetClosed Value="true"/>
+            <DrinkWhileHelmetClosed Value="true"/>
+            <WeatherLanderDamageRate Value="0"/>
+            <SpaceMapDistanceMultiplier Value="1"/>
+            <StartingWeatherMultiplier Value="1.5"/>
+            <RespawnStressTime Value="600" />
+            <RespawnStressConsumptionSpeed Value="0.9" />
+            <RespawnStressToolUseSpeed Value="0.9" />
+            <RespawnStressTradePenalty Value="0.9" />
+            <GoodHygieneToolSpeedMultiplier Value="1.1" />
+            <MoodToolSpeedMultiplier Value="0.9" />
+        </DifficultySetting>
+        <DifficultySetting Id="Normal" Default="true">
+            <Name Key="DifficultyNormal"/>
+            <Description Key="DifficultyDescriptionNormal" Value="You will need to work hard to keep yourself alive. Planning into the future is key for survival, as food, water, and oxygen may be in short supply. Respawning will only provide you with limited equipment" />
+            <PreviewButton Path="Interface/button_normal.png" Format="RGB24"/>
+            <HungerRate Value="1.0"/>
+            <HydrationRate Value="1.0"/>
+            <Sanitation Value="true"/>
+            <RobotBatteryRate Value="1.0"/>
+            <BreathingRate Value="2.0"/>
+            <LungDamageRate Value="0.25"/>
+            <FoodDecayRate Value="1"/>
+            <OfflineMetabolism Value="0.1"/>
+            <EatWhileHelmetClosed Value="false"/>
+            <DrinkWhileHelmetClosed Value="false"/>
+            <WeatherLanderDamageRate Value="1.0"/>
+            <SpaceMapDistanceMultiplier Value="1"/>
+            <RespawnStressTime Value="1200" />
+            <RespawnStressConsumptionSpeed Value="0.9" />
+            <RespawnStressToolUseSpeed Value="0.9" />
+            <RespawnStressTradePenalty Value="0.9" />
+            <GoodHygieneToolSpeedMultiplier Value="1.1" />
+            <MoodToolSpeedMultiplier Value="0.9" />
+        </DifficultySetting>
+        <DifficultySetting Id="Stationeer">
+            <Name Key="DifficultyStationeer"/>
+            <Description Key="DifficultyDescriptionStationeer" Value="A challenging experience. You will need vast life support and hydroponic systems to stay alive. One wrong breath may kill you. You respawn with no suit, and no equipment" />
+            <PreviewButton Path="Interface/button_stationeer.png" Format="RGB24"/>
+            <MoodRate Value="2"/>
+            <HygieneRate Value="2"/>
+            <HungerRate Value="1.5"/>
+            <HydrationRate Value="1.5"/>
+            <Sanitation Value="true"/>
+            <RobotBatteryRate Value="1.5"/>
+            <BreathingRate Value="4.0"/>
+            <JetpackRate Value="5.0"/>
+            <FoodDecayRate Value="1"/>
+            <LungDamageRate Value="1.0"/>
+            <OfflineMetabolism Value="1.0"/>
+            <EatWhileHelmetClosed Value="false"/>
+            <DrinkWhileHelmetClosed Value="false"/>
+            <WeatherLanderDamageRate Value="2.0"/>
+            <SpaceMapDistanceMultiplier Value="1.5"/>
+            <RespawnStressTime Value="2400" />
+            <RespawnStressConsumptionSpeed Value="0.9" />
+            <RespawnStressToolUseSpeed Value="0.9" />
+            <RespawnStressTradePenalty Value="0.9" />
+            <GoodHygieneToolSpeedMultiplier Value="1.1" />
+            <MoodToolSpeedMultiplier Value="0.9" />
+        </DifficultySetting>
+    </DifficultySettings>
+</GameData>

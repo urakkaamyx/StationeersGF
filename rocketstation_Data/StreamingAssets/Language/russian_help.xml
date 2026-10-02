@@ -1,0 +1,582 @@
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Code>RU</Code>
+	<HelpPage>
+		<!--
+		~~~~~~~~~~~~~~~~~~~~~~~~~
+		|                 MASTER PAGES            |
+		~~~~~~~~~~~~~~~~~~~~~~~~~
+		-->
+
+		<StationpediaPage>
+			<!--LEAVE THIS ALONE NEEDED FOR THOSE PAGES-->
+			<Key>Home</Key>
+			<Title>Home</Title>
+			<Text>
+			</Text>
+		</StationpediaPage>
+		<!--LEAVE THIS ALONE NEEDED FOR THOSE PAGES-->
+		<StationpediaPage>
+			<Key>Search</Key>
+			<Title>Search</Title>
+			<Text>
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>AirlockDevicePage</Key>
+			<Title>Устройства шлюзов</Title>
+			<Text>{LIST_OF_AIRLOCK_DEVICES}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>LogicUnitPage</Key>
+			<Title>Логика и чипы</Title>
+			<Text>{LIST_OF_LOGIC_UNITS}{LIST_OF_MOTHERBOARD}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>CartridgePage</Key>
+			<Title>Картриджи</Title>
+			<Text>Картриджи вставляются в  {THING:ItemTablet} или {THING:ItemAdvancedTablet}. Каждый картридж даёт возможность что-то проанализировать, отладить или узнать.
+				{LIST_OF_CARTRIDGES}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>StructurePage</Key>
+			<Title>Структуры</Title>
+			<Text>{LIST_OF_STRUCTURES}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>ElectronicPage</Key>
+			<Title>Электроника</Title>
+			<Text>{LIST_OF_ELECTRONICS}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>OrganicPage</Key>
+			<Title>Органика</Title>
+			<Text>{LIST_OF_ORGANICS}</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>AtmosphericPage</Key>
+			<Title>Атмосферные машины</Title>
+			<Text>{LIST_OF_ATMOSPHERICS}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>RubbishPage</Key>
+			<Title>Мусор</Title>
+			<Text>{LIST_OF_ELECTRONICS}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>FurniturePage</Key>
+			<Title>Мебель</Title>
+			<Text>{LIST_OF_FURNITURES}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>LorePage</Key>
+			<DisplayFilter>Lore</DisplayFilter>
+			<Title>Фракции</Title>
+			<Text>{LIST_OF_FACTIONS}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>FabricatorPage</Key>
+			<Title>Фабрикаторы</Title>
+			<Text>Фабрикаторы - это устройства, которые могут создавать различные предметы, необходимые для выживания Станционеров в этих недружелюбных мирах. Фабрикаторам нужно питание, {LINK:IngotPage;Слитки} в качестве {LINK:ReagentPage;Реагентов} для производства и человек, который будет контролировать работу этих адских принтеров.
+				{LIST_OF_FABRICATORS}
+			</Text>
+
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>DevicePage</Key>
+			<Title>Устройства</Title>
+			<Text>Устройства - это конструкции, которые обладают специальными функциями, такими как управление {LINK:LogicUnitPage;логикой}, {LINK:AtmosphericPage;атмосферой}, {LINK:ElectronicPage;энергией} и т.п. {LINK:ConstructionPage;Сборка} выполняется также, как и другие конструкции.
+				{LIST_OF_DEVICES}
+			</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>ImportExportPage</Key>
+			<Title>Трубы, импорт и экспорт</Title>
+			<Text>Эти структуры могут передавать друг другом предметы через транспортные трубы или помогать в этом. {LINK:ConstructionPage;Сборка} выполняется также, как и другие конструкции.
+				{LIST_OF_IMPORTEXPORT}
+			</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>SmeltingPage</Key>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Title>Выплавка</Title>
+			<Text>
+				После того, как вы добыли первую {LINK:OrePage;руду}, вам её нужно превратить в {LINK:IngotPage;слиток}, чтобы в дальнейшем, его можно было использовать как {LINK:ReagentPage;реагент} в других процессах.
+				Процесс плавки происходит в печах. Есть три вида печей:
+				1. {THING:StructureArcFurnace}. Она используется для преобразования руды в слитки, например, {THING:ItemCopperIngot}.
+				2. Обычная {THING:StructureFurnace} нужна для создания простых сплавов, таких как {THING:ItemSteelIngot}.
+				3. {THING:StructureAdvancedFurnace} необходима, если требуется выплавлять суперсплавы. Яркий пример: {THING:ItemAstroloyIngot}.
+				При этом, можно использовать {THING:StructureAdvancedFurnace} или обычную {THING:StructureFurnace} для переплавки обычных руд, но тогда следует быть внимательным и перед загрузкой руды всегда проверять, что печь не содержит других реагентов. Если всё же случилось страшное, то вам сюда: {THING:StructureCentrifuge}.
+
+				В процессе плавления руды часто образуются {LINK:GasPage;газы}. Учитывайте этот факт, когда решите поставить Дуговую печь внутри своей базы. Также, не забывайте периодически сбрасывать этот газ из остальных печей, чтобы избежать неприятных последствий.
+			</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>MiningPage</Key>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Title>Добыча ресурсов</Title>
+			<Text>Используйте {THING:ItemMiningDrill} для добычи {LINK:OrePage;руды}. Чтобы было удобнее собирать добытые ресурсы, вы можете использовать {THING:ItemMiningBelt}.</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>TradingPage</Key>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Title>Торговля</Title>
+			<Text>Trading is an essential part of a {LINK:Stationeers;Stationeers} existence, especially on more extreme worlds, where new cadets may be challenged at first to survive without assistance.
+
+				There are three separate tiers of contacts. These contacts have increasing difficulties to contact, and hang around for about 20 minutes before they leave and another one takes their place, so you’ll have to find the harder contacts if you want to check out many traders.
+
+				Contacts must be resolved by the dish before it can determine how accurately it is pointed at the contact.  The time to resolve is determined by the dish's power output multiplied by the dish alignment,  over the contact’s expected resolve wattage. If the contact is resolving too slowly, it likely indicates you are not close to the target at all, and you should try a very different angle. Alternately, the contact might have a very high expected wattage, and your current dish just isnt big enough to resolve it in a reasonable time. The resolving process only uses 10% of the actual power your dish is set to.
+
+				Once you have resolved the contacts position, you’ll be able to press the interrogate button.  Similar to resolving, you’ll need to land enough wattage on the contact. The interrogation dialog will inform you of the current calculations. Interrogation does have a hard minimum, and if the dish is not pointed well enough, or the power is too low, you won't be able to start the process. Interrogation also has a time requirement, with harder contacts taking significantly longer, so you’ll want to use high wattages to ensure you finish before the trader moves on.  Once interrogation is complete, you can land the trader just as before.
+
+				{LIST_OF_TRADING_DEVICES}
+			</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>ConstructionPage</Key>
+			<Title>Строительство</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>{HEADER:Начало}
+				Чтобы начать процесс строительства, вам понадобятся {LINK:KitPage;наборы}. Завершить строительство можно с помощью разных {LINK:ToolPage;инструментов} и {LINK:ResourcePage;ресурсов}. Обращайте внимание на то, сколько нужно наборов для строительства того, что вы выбрали, потому что некоторым постройкам нужно больше одного набора. Для некоторых наборов есть разные варианты — крутите {COLORRED:Колесо мыши} чтобы изменить выбор.
+
+				{HEADER:Стадии строительства}
+				Некоторые структуры собираются в несколько этапов, которые требуют разные комбинации инструментов и ресурсов. Подсказка во время строительства укажет, какую комбинацию нужно использовать. Иногда вам может потребоваться два предмета - по одному на каждую руку. Некоторые инструменты должны быть включены нажатием {KEY:ToggleHandPower} в активной руке.
+
+				{HEADER:Подсказки}
+				Если вы взгляните на незавершённую структуру, вы получите информацию о том, что нужно сделать для её завершения. Если вы держите в руке {LINK:ToolPage;инструмент}, но он не подходит для демонтажа, появится подсказка с информацией о правильном инструменте для этого.
+
+				{HEADER:Давление}
+				При постройке базы важно знать, что каркасы, двери, окна, стены и полы имеют такой важный параметр как допустимое давление. Здесь "давление" значит разницу между давлением "с улицы" и давлением "из помещения". Большинство таких структур выдерживают давление в 200 кПа, но есть и более прочные. Если его превысить, то у вас будут проблемы.
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>ReagentPage</Key>
+			<Title>Реагенты</Title>
+			<Text>Это химические вещества, используемые в некоторых производственных процессах.
+				{LIST_OF_REAGENTS}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>MusicPage</Key>
+			<Title>Нескучная музыка</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>{LINK:ODA;Агентство Внеземного Развития} не одобряет музыку и другие отвлекающие факторы, поэтому {LINK:Stationeers;Станционерам} приходится самим создавать музыкально сопровождение, чтобы было веселее заниматься сложными задачами строительства и обслуживания внеземной инфраструктуры.
+				Помогает им в этом пошаговый секвенсор, позволяя им создавать музыкальные последовательности и лупы.
+
+				{HEADER:МУЗЫКА СВОИМИ РУКАМИ - НАЧАЛО}
+
+				1. Установите {THING:LogicStepSequencer8} и подключите к его левому порту данных 8 штук {THING:DeviceStepUnit} используя {THING:ItemCableCoil}.
+
+				2. Для удобства, назовите каждый шаговый блок, используя {THING:ItemLabeller}, а затем выберите каждый блок в секвенсоре. Для этого вам понадобится {THING:ItemScrewdriver}.
+
+				3. Подключите к правому порту данных секвенсора любое проигрывающее устройство. Это может быть, например, {THING:StructureKlaxon} или {THING:PassiveSpeaker}.
+
+				4. Установите {THING:StopWatch} для отсчета времени. Чтобы считать данные с секундомера, используйте {THING:StructureLogicReader}, а для записи в секвенсор - {THING:StructureLogicWriter}. Значение нужно записывать в переменную Time.
+
+				5. На секвенсоре настройте темп, через {THING:StructureLogicDial} и {THING:StructureLogicWriter} для записи значения в переменную BPM секвенсора. Чем выше темп, тем быстрее будет проигрываться последовательность.
+
+				6. Вставьте нужный вам Звуковой картридж в слот секвенсора и настройте, какой вариант звука вы хотите слышать. Для этого на секвенсоре есть стрелки над и под слотом с картриджем.
+
+				7. Выберите желаемые ноты на каждом Шаговом блоке используя их регуляторы. Нота для барабанов выбирает, какая часть установки будет звучать: бас-барабан, хай-хет, тарелки и т.д. Чтобы прослушать звук, нажмите кнопку активации на Шаговом блоке. При этом, секвенсор должен быть неактивен.
+
+				8. Опционально: Установите и настройте {THING:DeviceLfoVolume}.
+
+				9. Наконец, можно ловить вайб! Ну... Или понять, что нужно больше заниматься музыкой, как случилось это у меня :(
+
+
+				&lt;size=50%&gt;Любите музыку или идите лесом.&lt;/size&gt;
+			</Text>
+		</StationpediaPage>
+
+
+		<StationpediaPage>
+			<Key>TemperatureControlPage</Key>
+			<Title>Temperature Control</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>In order to control the temperature of a system, we have to either add heat to it thus increasing its temperature or remove heat from it thus cooling it down, that's the basic idea of temperature control. Devices that achieve this goal for you are {THING:ItemWallHeater}, {THING:ItemWallCooler}, {THING:StructurePipeRadiator}, and {THING:StructureAirConditioner}.
+
+				NOTE: There are many methods of temperature control. Some involve none of the devices mentioned. Here, we are covering the basics.
+
+				It is important to understand your environment before you install any type of temperature control. The gas or liquid volume is an important factor to when choosing your method of temperature control. A {THING:StructureTankSmall} can hold up to 6000L, while a {THING:StructureTankBig} can hold up to 50,000L, which means that if both are full, the small tank will react faster to temperature changes. A room is a space that can hold a certain amount of gas. The bigger it is the more volume it will be able to hold, so the same rules generally apply to tanks and rooms.
+
+				{HEADER:PIPE NETWORKS}
+				A pipe network is one or more pipe segments connected to each other with no separation at any point. A pipe network shares the same atmosphere everywhere along the pipe, no matter how large it is. If you change the temperature or pressure at one end of the network, the furthest end will experience the same change immediately with no delay.
+
+				Adding devices to a network may split it into two different networks. For instance, adding a {THING:StructureVolumePump} to a pipe network will split the network into two networks: one before the pump, and one after it.
+
+				Use the {THING:ItemTablet} with the {THING:CartridgeAtmosAnalyser} installed to see information about the contents of any pipe network.
+
+				{HEADER:RADIATORS}
+				Manufactured in the pipe bender, a {THING:StructurePipeRadiator} will help you exchange heat between pipes and their surrounding environment. They work on both insulated pipes and pipes, as well as having liquid variants.
+
+				In normal conditions a pipe segment will exchange heat with its surrounding environment, but adding a radiator to that pipe segment will speed up the process greatly. A pipe segment will keep exchanging heat with the surrounding atmosphere until both equalize in temperature.
+
+				{HEADER:PASSIVE COOLING}
+				You can cool or heat any environment by using a {THING:StructurePipeRadiator} to exchange heat between two atmospheres. An example of this would be to place a pipe on the wall, fill it with gas, and place radiators on the pipe. Now the two atmospheres of the pipe and the room will exchange temperature until their environments equalize.
+
+				{HEADER:WALL HEATER}
+				The {THING:ItemWallHeater} is a simple device that can be installed on a wall or a frame and connected to power. When switched on, it will start heating the surrounding environment. It consumes 1010W of power and can be controlled by logic chips to run when the temperature hits a certain level.
+
+				{HEADER:WALL COOLER}
+				The {THING:ItemWallCooler} complements the wall heater, which can only raise the temperature. The wall cooler functions by drawing heat from the surrounding atmosphere and adding that heat into its pipe network. In order to run the wall cooler properly, you will need to connect pipes to the wall cooler and fill the connected pipe network with any type of gas. The gas's heat capacity and volume will determine how fast it reacts to temperature changes.
+
+				The higher the difference in temperature between the gas stored in the pipes and the room, the less efficient the wall cooler will be. So to keep the wall cooler running at an acceptable efficiency you will need to get rid of the heat that accumulates in the pipes connected to it. A common practice would be to run the pipes to the outside and use radiators on the outside section of the pipes to get rid of the heat.
+
+				The less efficient the wall cooler, the less power it consumes. It will consume 1010W at max efficiency. The wall cooler can be controlled by logic chips to run when the temperature hits a certain degree.
+
+				If the wall cooler is flashing an error then it is missing one of the following:
+				- Pipe connection to the wall cooler.
+				- Gas in the connected pipes, or pressure is too low.
+				- Atmosphere in the surrounding environment or pressure is too low.
+
+				{HEADER:AIR CONDITIONER}
+				The {THING:StructureAirConditioner} in its basic form works just like the wall cooler and can benefit from the same designs. However it is more powerful. It cools faster and uses considerably more power depending on the situation, thus making it more suitable to deal with large volumes and large areas. It can heat or cool depending on the setting.
+
+				AIR CONDITIONER: HOW IT WORKS
+				The air conditioner has 3 pipe connections (Input, Output, Waste). Gas goes in through the input side, then, depending on the setting, heat is added or removed from the incoming gas, and added to the waste pipe. The output gas will then exit through the output connection, cooler or hotter depending on the setting.
+				You can connect the input pipe to the output pipes (you can see if they are connected if they both have the same network number): this will give you more control over the temperature, since the gas won't reach the target temperature after the first pass. It will take time and energy to remove or add heat from any gas.
+
+				The way you install and set up your air conditioner depends on what you are trying to cool or heat up. For a room, you will need a passive vent inside the room connected to the air conditioner's input and output, while the waste pipe has to be filled with a coolant gas.
+
+				The air conditioner does not have to be inside the room. The only part of this setup that has to be in the room is the passive vent which will circle the room's atmosphere through to the air conditioner to be cooled or heated.
+
+				You can use a single air conditioner to do both heating and cooling. You just need to change the target temperature setting on the panel. However, if you want to automate cooling and heating at the same time you will need one air conditioner for cooling and another one for heating, because the setting on the panel can only be changed manually.
+
+				Setting up more than one air conditioner on the same pipe network can be useful if you need things to go faster or if you need to use some for heating and others for cooling. Do this by connecting the inputs and the outputs of the air conditioners together and having them all share the same pipe network for their inputs and outputs. The waste pipe network can also be shared between them, but it has to be separate from the input/output pipe network. The same idea applies when using the air conditioner to control the temperature of tanks. However, instead of using a passive vent, you will need to connect the tank to the air conditioner directly.
+
+				AIR CONDITIONER: KEEP IN MIND
+				- The greater the difference in temperature between the input pipe and the waste pipe, the more power the air conditioner will use
+				- The power consumed by the air conditioner can exceed 5kW, therefore using heavy cables to power up air conditioners is recommended.
+				- Running the waste pipe outside and equalizing it with the outside atmosphere isn't always the best option: the gas you put inside of it can be applied somewhere else in your base.
+
+				AIR CONDITIONER: BASE TEMPERATURE CONTROL
+				There are many ways to control the temperature of your base using air conditioners - this is one way of achieving this goal:
+				Step 1: Run a single pipe network around your base, and install passive vents connected to this pipe in every room you wish to be controlled by this setup. This is 'Network A'
+				Step 2: Connect 'Network A' to an air conditioner's input and output.
+				Step 3: Connect the waste pipe to a different network, and run it to the outside. Install radiators on this network.
+				This is the basic setup. To automate it you will need a pipe analyzer on Network A, then read the temperature and run your air conditioner(s) accordingly.
+				Good luck, Cadet!
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>GasPage</Key>
+			<Title>Газы</Title>
+			<Text>
+				Это химические вещества разных типов. Некоторые дают жизнь, некоторые убивают, а некоторые используются в производстве.
+				{LIST_OF_GASES}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>OrePage</Key>
+			<Title>Руды</Title>
+			<Text>
+				Руды можно {LINK:MiningPage;добыть} в недрах планеты или астероида, а затем {LINK:SmeltingPage;переплавить}. Однако, есть такие руды, для которых нужна {THING:StructureCentrifuge}. Если быть точным, то это {THING:ItemDirtyOre}, {THING:ItemSpaceOre} и {THING:ItemReagentMix}.
+				Помимо руд, есть еще льды, из которых можно получить необходимые {LINK:GasPage;газы} при их плавлении. Например, {THING:ItemIce} образует {GAS:Water} и {GAS:Oxygen}. Важно отметить, что температура окружающий среды выше нуля и падающие солнечные лучи приведут к неконтролируемому процессу плавления.
+				{LIST_OF_ORES}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>GeneticsPage</Key>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Title>Genetics</Title>
+			<Text>Plants have a set of Genes that modifies their behavior. A plant's genes will be manipulated in a number of ways, both naturally as well as artificially. When a plant produces fruit or seeds it will pass on its genetics with a small random mutation.
+
+				On top of random mutations, a plant's condition over its life can also affect its genes - for example if a plant is starved of water, while it may affect the plants growth speed and yield, the offspring will receive genes that make it require less water. In this way you can manipulate your crop's ideal conditions.
+
+				There are a number of tools you will need to manage your crops effectively: {THING:ItemPlantSampler} and {THING:AppliancePlantGeneticAnalyzer}. These tools allow you to sample a growing plant and see the state of its genes.
+
+				Plant genetics is not an exact science and will require trial and error and repeated attempts before you are able to reach your targets. {LIST_OF_GENES} {LIST_OF_GENETIC_DEVICES}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>IngotPage</Key>
+			<Title>Слитки</Title>
+			<Text>
+				Слитки можно получить путём {LINK:SmeltingPage;выплавления} {LINK:OrePage;руд}, чтобы в дальнейшем использовать их в {LINK:FabricatorPage;фабрикаторах}.
+				{LIST_OF_INGOTS}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>ToolPage</Key>
+			<Title>Инструменты</Title>
+			<Text>These are items that can fit in a specialist tool slot, and are used for {LINK:ConstructionPage;Construction} and other tasks.
+
+				{LIST_OF_TOOLS}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>ResourcePage</Key>
+			<Title>Ресурсы</Title>
+			<Text>Это предметы, которые расходуются во время {LINK:ConstructionPage;Строительства} и в других задачах.
+				{LIST_OF_RESOURCES}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>KitPage</Key>
+			<Title>Наборы</Title>
+			<Text>Это предметы, которые нужны для создания основы конструкций и устройств. В наборе может быть несколько типов конструкций. Подробнее на странице {LINK:ConstructionPage;Строительства} в руководстве.
+				{LIST_OF_KITS}
+			</Text>
+		</StationpediaPage>
+
+    <StationpediaPage>
+      <Key>AutomatedRocketPage</Key>
+      <Title>Rockets</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>
+Части ракеты печатаются в {THING:StructureRocketManufactory}.
+
+{HEADER:ПОСТРОЙКА}
+Сначала постройте {THING:StructureLaunchMount}, затем разместите на ней {THING:StructureEngineMountTypeA1}. На это крепление поставьте {THING:StructureGovernedGasEngine} или любой другой ракетный двигатель. Также, на крепление можно ставить {THING:StructureFuselageTypeA1} и другие фюзеляжи.
+Далее, вам нужно построить {THING:StructureRocketTower} для снабжения ракеты ресурсами. Чтобы подключить ракету к энергии, вам нужно поставить {THING:StructurePowerUmbilicalMale} на эту башню, а на ракету - {THING:StructurePowerUmbilicalFemale}. Важно расположить их на одной высоте.
+Для передачи газообразного топлива используйте {THING:StructureGasUmbilicalMale} и {THING:StructureGasUmbilicalFemale}.
+Для жидкого - {THING:StructureLiquidUmbilicalMale} и {THING:StructureLiquidUmbilicalFemale}.
+Ресурсы можно передать с помощью {THING:StructureChuteUmbilicalMale} и {THING:StructureChuteUmbilicalFemale}.
+
+{HEADER:СВЯЗЬ}
+Чтобы управлять ракетой, постройте {THING:StructureComputer} и вставьте в него {THING:MotherboardRockets}.
+После этого, вам нужно установить канал связи между ракетой и базой. Для этого вам понадобится {THING:StructureLogicRocketUplink} на базе и {THING:StructureLogicRocketDownlink} на ракете. На восходящем передатчике вам нужно будет с помощью отвёртки выбрать нисходящий передатчик ракеты, которой вы хотите управлять.
+Затем, установите на ракету {THING:StructureRocketAvionics}, которая будет выступать главным ракетным контроллером.
+
+{HEADER:НАСТРОЙКА И ЗАПУСК}
+В компьютере на карте можно выбрать пункт назначения для ракеты, после чего можно включить ракетный двигатель и ракета начнёт свой полёт.
+Если нужно узнать о расходе топлива ракетой в ваших текущих погодных и гравитационных условиях, запустите двигатель без выбранного пункта назначения.
+В зависимости от разных условий (массы ракеты, мощности двигателя, силы притяжения планеты и так далее) ракета может расходовать от 5 кМоль до 20кМоль топлива на один полёт в обе стороны.
+
+{HEADER:ДОБЫЧА И РАЗВЕДКА}
+Ракета, оборудованная {THING:StructureRocketScanner}, может разведывать неизвестные месторождения полезных ископаемых на астероидах и в скоплениях.
+Чтобы добывать эти ресурсы, вам нужен {THING:StructureRocketMiner} и {THING:StructureCargoStorageSmall}.
+
+Успехов в изобретении своего Старшипа!
+{LIST_OF_ROCKET}
+      </Text>
+    </StationpediaPage>
+
+		<StationpediaPage>
+			<Key>FoodPage</Key>
+			<Title>Еда</Title>
+			<Text>Это предметы, необходимые для поддержания сытости.
+				{LIST_OF_FOOD}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>ClothingPage</Key>
+			<Title>Экипировка</Title>
+			<Text>Это предметы, которые можно носить в слотах экипировки.
+				{LIST_OF_CLOTHING}
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>AppliancePage</Key>
+			<Title>Бытовая техника</Title>
+			<Text>Это предметы, которые можно разместить на рабочем столе. Сперва вы должны поместить их на стол, затем закрепить при помощи гаечного ключа.
+				{LIST_OF_APPLIANCES}
+			</Text>
+		</StationpediaPage>
+
+
+		<StationpediaPage>
+			<Key>WeatherPage</Key>
+			<Title>Погода</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>Планеты Солнечной системы (и не только) не такие спокойные, как может показаться на первый взгляд. Если на планете есть атмосфера, то на её поверхности время от времени могут происходит бури. Их частота зависит от сложности:
+				Для Лёгкой сложности период равен 14 дней.
+				Для Нормальной сложности и сложности "Станционер" - 7 дней.
+				Из-за таких погодных явлений, {LINK:ODA;Агентство Внеземного Развития} рекомендует Станционерам-новичкам за это время успеть создать герметичную базу. Любые предметы вне базы, а также незакреплённые переносные резервуары, ящики и устройства будут унесены ветром очень-очень далеко, а посадочная капсула и модуль будут разрушаться.
+				Любые стационарные солнечные панели (кроме усиленных) будут повреждаться во время бури: мелкие частицы пыли, пепла или льда на большой скорости действуют как абразив, царапая защитное стекло. Такие повреждения можно починить: вам нужна {THING:ItemDuctTape}. Если вовремя не исправить ситуацию, панель сломается окончательно, поэтому следите за ними очень внимательно.
+				Также, начинающим Станционерам стоит учитывать, что во время бури, солнечные панели генерируют очень маленькое количество энергии. Зато {THING:StructureWindTurbine} и {THING:StructureUprightWindTurbine} наоборот, выдают огромную мощность, которая может сжечь слабую проводку.
+			</Text>
+		</StationpediaPage>
+
+		<!--
+		~~~~~~~~~~~~~~~~~~~~~~~~~
+		|                     TEMPLATES               |
+		~~~~~~~~~~~~~~~~~~~~~~~~~
+		-->
+
+		<StationpediaPage>
+			<Key>ThingTemplate</Key>
+			<Text>{0}
+
+				{HEADER:Общая}
+				{LIST}Хэш объекта {POS:300}{1}
+				Можно покрасить {POS:300}{2}{3}{/LIST}</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>ThingThermalTemplate</Key>
+			<Text>{HEADER:Предел температур}
+				{LIST}Разрушение {POS:300}{0}
+				Точка возгорания{POS:300}{1}
+				Самовоспламенения{POS:300}{2}{3}{/LIST}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>ThingSlotItemTemplate</Key>
+			<Text>{0}. {1} Тип {2}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>ThingTransmissibleTemplate</Key>
+			<Text>Подключается к {POS:300}{THING:StructureLogicTransmitter}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>IceMeltingTemplate</Key>
+			<Text>Температура плавления {1}
+				Давление плавления {0}</Text>
+		</StationpediaPage>
+		<StationpediaPage>
+			<Key>ReagentPageTemplate</Key>
+			<Text>{LINK:ReagentPage;Реагенты}, часто используются в форме {LINK:IngotPage;слитков}.
+
+
+				{LIST}Unit {1}{/LIST}
+
+
+				{LIST}{2}{/LIST}</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>GasPageTemplate</Key>
+			<Text>{LINK:GasPage;Газы}, часто вырабатываются в процессе {LINK:SmeltingPage;плавки}.
+
+
+				{LIST}Specific Heat {1}{2}{/LIST}
+
+
+				{LIST}{0}{/LIST}</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>GasPageFlamableTemplate</Key>
+			<Text>Огнеопасный Предел {0} до {1}</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>NutritionPage</Key>
+			<Title>Hunger and nutrition</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>{HEADER:HUNGER}
+
+				Stationeers get hungry eventually, but not all food is created equal. Also, your hunger rate varies depending on settings and difficulty. Eating will only consume that part of an item adequate to restoring your hunger to 100%.
+
+				Stationeers receive supplies of food such as {LINK:Agrizero;Agrizero} {THING:ItemCerealBar} in their lander upon arriving on a new world. When these are exhausted, you must find new sources of sustenance - such as growing your own, from the seeds supplied, or contacting a {LINK:TradingPage;Trader}.
+
+				{HEADER:NUTRITION}
+
+				Eating raw ingredients will satisfy hunger less than meals, ie will replace a smaller proportion of your hunger. The basic elements of food are created using {LINK:OrganicPage;hydroponics} systems. These can be processed into recipe ingredients using the {THING:ApplianceReagentProcessor}, then turned into meals using a {THING:ApplianceMicrowave} or {THING:StructureAutomatedOven}.
+
+				Your hunger rate can be adjusted set in the main settings menu by adjusting the Hunger/Hydration rate slider in the settings. Note that the hunger slider also governs your {LINK:HydrationPage;Thirst}.
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>FarmingPage</Key>
+			<Title>Выращивание еды</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>Для выживания в инопланетных мирах, {LINK:ODA;Агентство Внеземного Развития} рекомендует всем {LINK:Stationeers;Станционерам} устанавливать {LINK:OrganicPage;гидропонные} системы как можно раньше. Также можно связаться с местными {LINK:TradingPage;торговцами} для приобретения готовой еды, семян и плодов растений.
+
+				{HEADER:УСТАНОВКА}
+				Для работы гидропонной системы, вам понадобятся {LINK:OrganicPage;семена}. Если их нет, то можно посадить сам плод.
+				Типичный набор гидропонного снаряжения включает:
+				- {THING:DynamicHydroponics}
+				- {THING:ItemHydroponicTray}
+				- {THING:ItemKitHydroponicStation}
+				- {THING:StructureHarvie}
+
+				Любая гидропонная система требует воду, солнечный свет и правильную воздушную смесь - обычно, растения потребляют {GAS:CarbonDioxide} и выделяют {GAS:Oxygen} (за исключением некоторых растений вроде {THING:ItemAlienMushroom}). Растения не будут расти в неправильной атмосфере. Если растениям недостаточно света, то вам нужна {THING:StructureGrowLight}.
+				Узнать состояние любого растения вам поможет {THING:CartridgePlantAnalyser}, вставленный в {THING:ItemTablet}.
+				Архитектура вашей системы будет зависеть от доступных ресурсов и времени, но хорошо спроектированные системы могут быть автоматизированы почти полностью, экономя это самое время и ресурсы.
+
+				{HEADER:СБОР УРОЖАЯ}
+				У большинства растений есть несколько стадий роста, но самые полезные из них - последние. На третьей (предпоследней) стадии уже можно собирать урожай, но главное не переусердствовать, так как есть еще четвёртая стадия, которая даёт семена. Их можно использовать для {LINK:GeneticsPage;селекции генов}.
+
+				{HEADER:УДОБРЕНИЕ}
+				Удобрение улучшает процесс роста растений. Используя {THING:PortableComposter} или {THING:StructureAdvancedComposter} можно создать удобрение, которое улучшит желаемый аспект роста.
+				Действие удобрения зависит от его ингредиентов:
+				- {LINK:OrganicPage;Еда} увеличивает урожайность до 3-х плодов.
+				- {THING:DecayedFood} увеличивает скорость роста до 3-х раз.
+				- {THING:ItemBiomass} увеличивает циклов роста до 5.
+				Сила эффектов от этих ингредиентов зависит от их пропорций, заложенных в компостер. Для производства одного удобрения, требуется 3 ингредиента. Во время компостирования выделяется {GAS:Nitrogen}, {GAS:Methane} и небольшое количество тепла.
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>DecayPage</Key>
+			<Title>Разложение пищи</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>Со временем, любая еда превращается в непонятную кучу, которую называют {THING:DecayedFood}. Остановить этот нежелательный процесс нельзя, но его можно замедлить, если поместить еду в подходящую атмосферу. Точная скорость порчи пищи зависит от:
+
+				- Температуры: Охлаждение замедлит процесс разложения. Оптимальная температура - это 0 Кельвин (-272.15 C).
+				- Типа пищи: У каждого типа {LINK:OrganicPage;еды} есть свои особенности, влияющие на скорость разложения. Например, {THING:ItemTomatoSoup} портятся дольше, чем просто {THING:ItemTomato}.
+				- Давления: Еда разлагается быстрее, если давление ниже 1 атмосферы (101кПа). Разложение ускоряется экспоненциально при приближении к вакууму. Обратите внимание, что повышение давления выше 1 атмосферы не даст эффекта.
+				- Атмосферы: Некоторые газы могут ускорить разложение, а некоторые - замедлить. Процентное соотношение газов также влияет на скорость порчи пищи. Следующие множители применимы для всех типов пищи:
+				> {GAS:Oxygen} x 1.3
+				> {GAS:Nitrogen} x 0.6
+				> {GAS:CarbonDioxide} x 0.8
+				> {GAS:Methane} x 1
+				> {GAS:Pollutant} x 3
+				> {GAS:NitrousOxide} x 1.5
+				> {GAS:Water} x 2
+				> Вакуум - см. выше
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>HydrationPage</Key>
+			<Title>Жажда и обезвоживание</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>Любому среднестатистическому Станционеру необходимо регулярно пить воду. По непонятным причинам, возможно из-за ошибок в правилах техники безопасности и охраны труда {LINK:ODA;Агентства Внеземного Развития}, Станционерам отказывали в праве на встроенные в скафандр устройства для питья. Из-за этого они были вынуждены регулярно открывать или снимать шлем, чтобы хотя бы немного попить. Примечание: не рекомендуется повторять это в безвоздушных пространствах. &lt;size=60%&gt;Но если очень хочется...&lt;/size&gt;
+
+				Как часть нужно пить? Это зависит от уровня сложности, температуры планеты и вашей непоседливости.
+
+				Воду можно получить разными способами, но самый доступный - это {THING:ItemWaterBottle}, которая предоставляется Станционеру как часть рациона. Больше таких бутылок можно найти в одном из ящиков посадочного модуля или капсулы. Бутылки можно снова наполнить водой, используя {THING:StructureWaterBottleFillerPowered}, который должен быть подключен к жидкостной системе труб. Сама система может быть наполнена водой через {THING:StructureIceCrusher}. В него нужно загрузить правильный лёд, а неправильный не надо!
+			</Text>
+		</StationpediaPage>
+
+		<StationpediaPage>
+			<Key>EVAPage</Key>
+			<Title>EVA Suits</Title>
+			<DisplayFilter>Guides</DisplayFilter>
+			<Text>Your spacesuit provides you with a portable atmosphere, with adjustable pressure and air conditioning (temperature) settings, as well as an warning system that will alert you should the atmosphere inside the suit become hazardous. It functions in conjunction with a suitable helmet to function properly, as well as suitable gas canisters and filters in the suit's various slots. These will need to be changed regularly, and can also be recharged (or drained) using a {THING:StructureSuitStorage}.
+
+				There are several suits, including the {THING:ItemEvaSuit} and the more pressure- and temperature-resistant {THING:ItemHardSuit}.
+
+				Your suit various readouts are at the bottom-right of the screen. Pressing the appropriate numeric key (2will bring up a panel showing its slots and settings. These include:
+
+				- A/C On / Off (i.e. Temperature control on/off)
+				- Filters On / Off
+				- Air On / Off
+				- Pressure Up / Down (with a range of 0kPA to 202kPa, or 0-2 Earth atmospheres)
+				- Temperature Up / Down (with a range of 0°C to 60°C)
+
+				Suits contains 6-8 slots:
+				- Air tank (x1) - insert a canister or smart canister containing a breathable gas mix, eg {GAS:Oxygen} or {GAS:Nitrogen}/{GAS:Oxygen} 35/65.
+				- Waste tank (x1) - collects gases removed by the filters
+				- Life support (x1) - holds one battery, which powers your A/C, lights, etc.
+				- {SLOT:GasFilter} (x3) - requires at least one {THING:ItemGasFilterCarbonDioxide} (if human), depending on your breathable gas mix. Note that a {THING:ItemHardSuit} has 4 filter slots.
+				- IC - {THING:ItemHardSuit} only.
+
+				Pressure: should be set to 50-100 KPa (0.5 to 1 Earth atmospheres). Humans in-game tolerate up to ~250kPa and can survive up to ~300kPA.
+
+				Temperature: normally set to 18-21°C, with humans in-game preferring 10-29°C, tolerating 0-39°C and surviving around up to 49°C. In higher temperatures, your A/C will consume more battery power to maintain internal temperature.
+
+				Filters: the default filter is the {GAS:CarbonDioxide} filter, which captures the gas generated by humans when breathing out. If you are not using 100% {GAS:Oxygen} in your breathing gas, add additional filters, eg if you mix 25% {GAS:Oxygen} + 75% {GAS:Nitrogen}, the nitrogen will accumulate in your suit over time and suffocate you, unless you have a nitrogen filter. If you have the correct filters and breathable gas, but are still experiencing problems, use the 'Flush' function on your Space Helmet. Low/critical oxygen warnings will sound as your filters cease to function.
+
+				If damaged, your suit can be patched by holding duct tape in your hand and using 'activate' button.
+			</Text>
+		</StationpediaPage>
+
+
+	</HelpPage>
+</Language>

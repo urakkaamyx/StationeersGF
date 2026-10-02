@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CelestialBodies>
+		<CelestialBody Id="Mercury">
+			<Name Key="CelestialBodyMercury" />
+			<Orbit SemiMajorAxisAu="0.39" Period="88" Inclination="7.00487" Eccentricity="0.2056" LongitudeOfAscendingNode="48.331" ArgumentOfPeriapsis="29.124" />
+			<Color r="0.6" g="0.5" b="0.5" /> <!-- A gray-brown color, reflecting Mercury's rocky surface and lack of atmosphere. -->
+			<LongitudeAtEpoch>252.25084</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Venus">
+			<Name Key="CelestialBodyVenus" />
+			<Orbit SemiMajorAxisAu="0.72" Period="225" Inclination="3.39458" Eccentricity="0.0068" LongitudeOfAscendingNode="76.680" ArgumentOfPeriapsis="54.891" />
+			<Color r="0.9" g="0.8" b="0.6" /> <!-- A pale yellow-orange color representing Venus' thick atmosphere filled with sulfuric acid clouds. -->
+			<LongitudeAtEpoch>181.97973</LongitudeAtEpoch>
+		</CelestialBody>
+		
+		<!-- Earth System -->
+		<CelestialBody Id="Earth">
+			<Name Key="CelestialBodyEarth" />
+			<Orbit SemiMajorAxisAu="1" Period="365.25" Inclination="0.00005" Eccentricity="0.0167" LongitudeOfAscendingNode="-11.261" ArgumentOfPeriapsis="114.207" />
+			<Color r="0.2" g="0.5" b="0.8" /> <!-- A blue color to primarily represent Earth's oceans, though it doesn't capture the green landmasses or white clouds. -->
+			<LongitudeAtEpoch>0</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="LowEarthOrbit">
+			<Orbit SemiMajorAxisKm="6778" Period="0.06391" Inclination="51.64" Eccentricity="0.0007" LongitudeOfAscendingNode="15.54" ArgumentOfPeriapsis="25.25" />
+			<LongitudeAtEpoch>45.36</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Moon">
+			<Name Key="CelestialBodyMoon" />
+			<Orbit SemiMajorAxisKm="384400.000" Period="27.3" Inclination="5.145" Eccentricity="0.0549" LongitudeOfAscendingNode="125.08" ArgumentOfPeriapsis="318.15" />
+			<SunriseOffset Value="140"/>
+			<LongitudeAtEpoch>0</LongitudeAtEpoch>
+		</CelestialBody>
+
+		<!-- Space -->
+		<CelestialBody Id="AsteroidBelt">
+			<Orbit SemiMajorAxisAu="2.5" Period="1500" Inclination="10" Eccentricity="0.2" LongitudeOfAscendingNode="30" ArgumentOfPeriapsis="150" />
+			<Color r="0.5" g="0.5" b="0.5" />  <!-- A gray color to represent the typical asteroid. -->
+			<LongitudeAtEpoch>100</LongitudeAtEpoch>
+		</CelestialBody>
+		
+		<!-- Mars System -->
+		<CelestialBody Id="Mars">
+			<Name Key="CelestialBodyMars" />
+			<Orbit SemiMajorAxisAu="1.52" Period="687" Inclination="1.85061" Eccentricity="0.0935" LongitudeOfAscendingNode="49.578" ArgumentOfPeriapsis="286.462" />
+			<Color r="0.9" g="0.5" b="0.3" /> <!-- A reddish-brown color representing the iron oxide on Mars' surface. -->
+			<LongitudeAtEpoch>355.433</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Phobos">
+			<Name Key="CelestialBodyPhobos" />
+			<Orbit SemiMajorAxisKm="9376.000" Period="0.3189" Inclination="1.093" Eccentricity="0.0151" LongitudeOfAscendingNode="44.058" ArgumentOfPeriapsis="151.279" />
+			<LongitudeAtEpoch>34.0</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Deimos">
+			<Name Key="CelestialBodyDeimos" />
+			<Orbit SemiMajorAxisKm="23458.000" Period="1.2624" Inclination="1.788" Eccentricity="0.00033" LongitudeOfAscendingNode="24.525" ArgumentOfPeriapsis="91.081" />
+			<LongitudeAtEpoch>79.4</LongitudeAtEpoch>
+		</CelestialBody>
+
+		
+		<!-- Jupiter System -->		
+		<CelestialBody Id="Jupiter">
+			<Name Key="CelestialBodyJupiter" />
+			<Orbit SemiMajorAxisAu="5.2044" Period="4333" Inclination="1.30530" Eccentricity="0.0489" LongitudeOfAscendingNode="100.464" ArgumentOfPeriapsis="273.867" />
+			<Color r="0.9" g="0.7" b="0.5" />
+			<LongitudeAtEpoch>34.35152</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Io">
+			<Name Key="CelestialBodyIo" />
+			<Orbit SemiMajorAxisKm="421700.000" Period="1.769" Inclination="0.036" Eccentricity="0.0041" />
+			<LongitudeAtEpoch>355.8</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Europa">
+			<Name Key="CelestialBodyEuropa" />
+			<Orbit SemiMajorAxisKm="671100.000" Period="3.551" Inclination="0.466" Eccentricity="0.0094" />
+			<LongitudeAtEpoch>181.4</LongitudeAtEpoch>
+			<SunriseOffset Value="170"/>
+		</CelestialBody>
+		<CelestialBody Id="Ganymede">
+			<Name Key="CelestialBodyGanymede" />
+			<Orbit SemiMajorAxisKm="1070400.000" Period="7.155" Inclination="0.177" Eccentricity="0.0015" />
+			<LongitudeAtEpoch>52.2</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Callisto">
+			<Name Key="CelestialBodyCallisto" />
+			<Orbit SemiMajorAxisAu="0.012584" Period="16.689" Inclination="0.192" Eccentricity="0.0074" />
+			<LongitudeAtEpoch>21.6</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Himalia">
+			<Name Key="CelestialBodyHimalia" />
+			<Orbit SemiMajorAxisAu="0.113" Period="250.6" Inclination="28.3" Eccentricity="0.16" LongitudeOfAscendingNode="110" ArgumentOfPeriapsis="285" />
+			<LongitudeAtEpoch>58.0</LongitudeAtEpoch>
+		</CelestialBody>
+		
+		<!-- Saturn System -->
+		<CelestialBody Id="Saturn">
+			<Name Key="CelestialBodySaturn" />
+			<Orbit SemiMajorAxisAu="9.58" Period="10759" Inclination="2.48446" Eccentricity="0.0565" LongitudeOfAscendingNode="113.665" ArgumentOfPeriapsis="338.911" />
+			<Color r="0.9" g="0.8" b="0.7" />
+			<LongitudeAtEpoch>50.07744</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Mimas">
+			<Name Key="CelestialBodyMimas" />
+			<Orbit SemiMajorAxisKm="185539" Period="0.94242" Inclination="1.6" Eccentricity="0.0202" />
+			<LongitudeAtEpoch>324.7</LongitudeAtEpoch>
+			<SunriseOffset Value="277"/>
+		</CelestialBody>
+		<CelestialBody Id="Enceladus">
+			<Name Key="CelestialBodyEnceladus" />
+			<Orbit SemiMajorAxisKm="237948" Period="1.37" Inclination="0.009" Eccentricity="0.0047" />
+			<LongitudeAtEpoch>143.7</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Tethys">
+			<Name Key="CelestialBodyTethys" />
+			<Orbit SemiMajorAxisKm="294619" Period="1.888" Inclination="1.12" Eccentricity="0.0001" />
+			<LongitudeAtEpoch>285.3</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Dione">
+			<Name Key="CelestialBodyDione" />
+			<Orbit SemiMajorAxisKm="377396" Period="2.737" Inclination="0.02" Eccentricity="0.0022" />
+			<LongitudeAtEpoch>168.8</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Rhea">
+			<Name Key="CelestialBodyRhea" />
+			<Orbit SemiMajorAxisKm="527108" Period="4.518" Inclination="0.35" Eccentricity="0.0010" />
+			<LongitudeAtEpoch>227.9</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Titan">
+			<Name Key="CelestialBodyTitan" />
+			<Orbit SemiMajorAxisKm="1221870" Period="15.945" Inclination="0.348" Eccentricity="0.0288" />
+			<LongitudeAtEpoch>187.3</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Hyperion">
+			<Name Key="CelestialBodyHyperion" />
+			<Orbit SemiMajorAxisKm="1481009" Period="21.276" Inclination="0.6" Eccentricity="0.1230" />
+			<LongitudeAtEpoch>177.4</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Iapetus">
+			<Name Key="CelestialBodyIapetus" />
+			<Orbit SemiMajorAxisAu="0.0238026" Period="79.33" Inclination="14.72" Eccentricity="0.0293" />
+			<LongitudeAtEpoch>91.0</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Phoebe">
+			<Name Key="CelestialBodyPhoebe" />
+			<Orbit SemiMajorAxisAu="0.0866322" Period="550.48" Inclination="151.78" Eccentricity="0.1635" />
+			<LongitudeAtEpoch>304.9</LongitudeAtEpoch>
+		</CelestialBody>
+		
+		<!-- Outer Planets -->
+		<CelestialBody Id="Uranus">
+			<Name Key="CelestialBodyUranus" />
+			<Orbit SemiMajorAxisAu="19.22" Period="30660" Inclination="0.76986" Eccentricity="0.04638" LongitudeOfAscendingNode="74.006" ArgumentOfPeriapsis="96.998857" />
+			<Color r="0.5" g="0.8" b="0.9" /> <!-- A pale blue to represent Uranus' methane-rich atmosphere. -->
+			<LongitudeAtEpoch>314.055005</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Neptune">
+			<Name Key="CelestialBodyNeptune" />
+			<Orbit SemiMajorAxisAu="30.05" Period="60225" Inclination="1.76917" Eccentricity="0.009456" LongitudeOfAscendingNode="131.783" ArgumentOfPeriapsis="273.219" />
+			<Color r="0.3" g="0.4" b="0.9" /> <!-- A deep blue color to reflect Neptune's atmosphere. -->
+			<LongitudeAtEpoch>304.348665</LongitudeAtEpoch>
+		</CelestialBody>		
+
+		<!-- Dwarf Planets -->
+		<CelestialBody Id="Pluto">
+			<Name Key="CelestialBodyPluto" />
+			<Orbit SemiMajorAxisAu="39.48" Period="90560" Inclination="17.14175" Eccentricity="0.24883" LongitudeOfAscendingNode="110.303" ArgumentOfPeriapsis="113.763" />
+			<Color r="0.9" g="0.8" b="0.7" /> <!-- A pale brown to reflect Pluto's icy-rocky surface. -->
+			<LongitudeAtEpoch>237.305</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Eris">
+			<Name Key="CelestialBodyEris" />
+			<Orbit SemiMajorAxisAu="67.78" Period="203830" Inclination="44.0445" Eccentricity="0.44177" LongitudeOfAscendingNode="35.9531" ArgumentOfPeriapsis="151.689" />
+			<LongitudeAtEpoch>151.780</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Haumea">
+			<Name Key="CelestialBodyHaumea" />
+			<Orbit SemiMajorAxisAu="43.13" Period="103774" Inclination="28.220" Eccentricity="0.19126" LongitudeOfAscendingNode="121.792" ArgumentOfPeriapsis="216.064" />
+			<LongitudeAtEpoch>122.704</LongitudeAtEpoch>
+		</CelestialBody>
+		
+		<!-- Vulcan System -->
+		<CelestialBody Id="Vulcan">
+			<Name Key="CelestialBodyVulcan" />
+			<Orbit SemiMajorAxisAu="1.2" Period="500" Inclination="12" Eccentricity="0.3" LongitudeOfAscendingNode="5.32" ArgumentOfPeriapsis="95.41" />
+			<Color r="0.4" g="0.3" b="0.2" />  <!-- A red and black splintered world. -->
+			<LongitudeAtEpoch>121.7642</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Erebus">
+			<Name Key="CelestialBodyErebus" />
+			<Orbit SemiMajorAxisKm="14400" Period="1.5" Inclination="5.145" Eccentricity="0.0549" />
+			<Color r="0.6" g="0.8" b="1" />  <!-- Icy blue. -->
+			<LongitudeAtEpoch>190.4</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Prometheus">
+			<Name Key="CelestialBodyPrometheus" />
+			<Orbit SemiMajorAxisKm="30000" Period="1.9" Inclination="7" Eccentricity="0.1" LongitudeOfAscendingNode="10" ArgumentOfPeriapsis="110" />
+			<Color r="0.65" g="0.85" b="1" />  <!-- A slightly different shade of icy blue. -->
+			<LongitudeAtEpoch>200</LongitudeAtEpoch>
+		</CelestialBody>
+		
+		<CelestialBody Id="Acheron">
+			<Name Key="CelestialBodyAcheron" />
+			<Orbit SemiMajorAxisAu="2.4" Period="850" Inclination="12" />
+			<Color r="1" g="0.5" b="0" />  <!-- Molten yellow and orange. -->
+			<LongitudeAtEpoch>50.2</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Styx">
+			<Name Key="CelestialBodyStyx" />
+			<Orbit SemiMajorAxisAu="6.5" Period="12032" Inclination="8" />
+			<LongitudeAtEpoch>110.3</LongitudeAtEpoch>
+		</CelestialBody>
+		<CelestialBody Id="Lethos">
+			<Name Key="CelestialBodyLethos" />
+			<Orbit SemiMajorAxisAu="15.235" Period="64305" Inclination="31" />
+			<Color r="0" g="0.6" b="0.6" />  <!-- Opaque teal. -->
+			<LongitudeAtEpoch>270.5</LongitudeAtEpoch>
+		</CelestialBody>
+			
+	</CelestialBodies>
+</GameData>

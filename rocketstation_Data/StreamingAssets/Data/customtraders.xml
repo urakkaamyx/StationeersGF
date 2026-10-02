@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--
+EXAMPLE OF CUSTOM TRADER
+<TraderContactModLoadData>
+  <TraderContactData>
+    <ContactName>Bean Trader</ContactName>
+    <CustomTraderInventory>
+        <PrefabName>ItemSoybean</PrefabName>
+        <PrefabName>ItemCorn</PrefabName>
+        <PrefabName>ItemPumpkin</PrefabName>
+    </CustomTraderInventory>
+        <MinStartingLifetime>500</MinStartingLifetime>
+        <MaxStartingLifetime>600</MaxStartingLifetime>
+        <WeightValue>6</WeightValue>
+    </TraderContactData>
+  </TraderContactModLoadData>
+-->
+</GameData>

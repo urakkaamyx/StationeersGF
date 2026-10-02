@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    
+    <LifeRequirements Id="LifeRequirementsDefault">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="600" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+
+    <LifeRequirements Id="LifeRequirementsItemSoybean">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Inhaled Type="Nitrogen" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="600" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+    <LifeRequirements Id="LifeRequirementsItemCorn">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="500" Invert="true"/>
+        <DarknessPerDay Base="200" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+    <LifeRequirements Id="LifeRequirementsItemFern">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0024" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0024"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1200"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="120"/>
+        <TimeUntilOverHeatedDamage Base="120"/>
+        <TimeUntilSuffocatedDamage Base="1200"/>
+        <TimeUntilLowPressureDamage Base="120"/>
+        <TimeUntilHighPressureDamage Base="120"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="480" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+
+    <LifeRequirements Id="LifeRequirementsItemDargaFern">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0085" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0085"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1200"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="120"/>
+        <TimeUntilOverHeatedDamage Base="120"/>
+        <TimeUntilSuffocatedDamage Base="1200"/>
+        <TimeUntilLowPressureDamage Base="120"/>
+        <TimeUntilHighPressureDamage Base="120"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="480" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+    <LifeRequirements Id="LifeRequirementsItemMushroom">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="Oxygen" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="CarbonDioxide" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="300"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="120"/>
+        <TimeUntilDarknessDamage Base="0"/>
+        <LightPerDay Base="0" Invert="true"/>
+        <DarknessPerDay Base="1100" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+
+    <LifeRequirements Id="LifeRequirementsItemPlantSwitchGrass">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="600" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="30" CenterSize="20" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+    <LifeRequirements Id="LifeRequirementsItemPotato">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="300" Invert="true"/>
+        <DarknessPerDay Base="200" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+    <LifeRequirements Id="LifeRequirementsItemPumpkin">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="500" Invert="true"/>
+        <DarknessPerDay Base="100" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+    <LifeRequirements Id="LifeRequirementsItemRice">
+        <LiquidPerTick Type="Water" Moles="0.00012"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="300"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="600" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+    <LifeRequirements Id="LifeRequirementsItemTomato">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1200"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="120"/>
+        <TimeUntilOverHeatedDamage Base="120"/>
+        <TimeUntilSuffocatedDamage Base="1200"/>
+        <TimeUntilLowPressureDamage Base="120"/>
+        <TimeUntilHighPressureDamage Base="120"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="480" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+
+    <LifeRequirements Id="LifeRequirementsItemSugarcane">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="500" Invert="true"/>
+        <DarknessPerDay Base="200" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+
+    <LifeRequirements Id="LifeRequirementsItemCocoa">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="CarbonDioxide" Moles="0.0012" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0012"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="500" Invert="true"/>
+        <DarknessPerDay Base="200" Invert="true"/>
+        <GrowTemperatureC MidPoint="35" CenterSize="10" LowSize="10" HighSize="10"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+
+    <LifeRequirements Id="LifeRequirementsItemWinterspawnAlpha">
+        <LiquidPerTick Type="Water" Moles="0.0002"/>
+        <Inhaled Type="Nitrogen" Moles="0.003" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0002"/>
+        <Exhaled Type="Volatiles" Moles="0.0004"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="600" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+    <LifeRequirements Id="LifeRequirementsItemWinterspawnBeta">
+        <LiquidPerTick Type="Water" Moles="0.0004"/>
+        <Inhaled Type="Nitrogen" Moles="0.005" Ratio="0.01"/>
+        <Exhaled Type="Oxygen" Moles="0.0004"/>
+        <Exhaled Type="Volatiles" Moles="0.0008"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="600" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+
+    <LifeRequirements Id="LifeRequirementsItemHadesAlpha">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="Oxygen" Moles="0.0075" Ratio="0.01"/>
+        <Inhaled Type="Volatiles" Moles="0.0025" Ratio="0.01"/>
+        <Exhaled Type="Pollutant" Moles="0.004"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="600" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+
+    <LifeRequirements Id="LifeRequirementsItemHadesBeta">
+        <LiquidPerTick Type="Water" Moles="0.00006"/>
+        <Inhaled Type="Oxygen" Moles="0.0075" Ratio="0.01"/>
+        <Inhaled Type="Volatiles" Moles="0.0025" Ratio="0.01"/>
+        <Exhaled Type="Pollutant" Moles="0.0025"/>
+        <HarmfulGas Type="Pollutant" PartialPressure="1"/>
+        <HarmfulGas Type="Volatiles" PartialPressure="1"/>
+        <HarmfulGas Type="Silanol" PartialPressure="1"/>
+        <HarmfulGas Type="HydrochloricAcid" PartialPressure="0.1"/>
+        <HarmfulGas Type="Hydrazine" PartialPressure="0.1"/>
+
+        <WaterUsage Base="1"/>
+        <GasProduction Base="1"/>
+        <GrowthSpeedMultiplier Base="1"/>
+        <TimeUntilDehydrationDamage Base="1800"/>
+        <TimeUntilUndesiredGasDamage Base="300"/>
+        <UndesiredGasResistance Base="1"/>
+        <TimeUntilFrozenDamage Base="300"/>
+        <TimeUntilOverHeatedDamage Base="300"/>
+        <TimeUntilSuffocatedDamage Base="3600"/>
+        <TimeUntilLowPressureDamage Base="600"/>
+        <TimeUntilHighPressureDamage Base="600"/>
+        <TimeUntilLightDamage Base="3600"/>
+        <TimeUntilDarknessDamage Base="3600"/>
+        <LightPerDay Base="600" Invert="true"/>
+        <DarknessPerDay Base="300" Invert="true"/>
+        <GrowTemperatureC MidPoint="25" CenterSize="10" LowSize="20" HighSize="20"/>
+        <GrowPressure MidPoint="75" CenterSize="50" LowSize="25" HighSize="100" Clamp="true"/>
+    </LifeRequirements>
+    
+</GameData>

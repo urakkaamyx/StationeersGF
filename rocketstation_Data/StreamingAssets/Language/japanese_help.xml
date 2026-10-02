@@ -1,0 +1,618 @@
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Code>KN</Code>
+  <HelpPage>
+    <!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+    |                 MASTER PAGES            |
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+    -->
+    <StationpediaPage>
+      <!--LEAVE THIS ALONE NEEDED FOR THOSE PAGES-->
+      <Key>Home</Key>
+      <Title>Home</Title>
+      <Text/>
+    </StationpediaPage>
+    <!--LEAVE THIS ALONE NEEDED FOR THOSE PAGES-->
+    <StationpediaPage>
+      <Key>Search</Key>
+      <Title>Search</Title>
+      <Text/>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>AirlockDevicePage</Key>
+      <Title>エアロック装置</Title>
+      <Text>{LIST_OF_AIRLOCK_DEVICES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>LogicUnitPage</Key>
+      <Title>ロジックユニット</Title>
+      <Text>{LIST_OF_LOGIC_UNITS}{LIST_OF_MOTHERBOARD}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>CartridgePage</Key>
+      <Title>カートリッジ</Title>
+      <Text>これらを {THING:ItemTablet} または {THING:ItemAdvancedTablet} に追加して、さまざまな診断機能を実行できます。
+{LIST_OF_CARTRIDGES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>StructurePage</Key>
+      <Title>構造物</Title>
+      <Text>{LIST_OF_STRUCTURES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ElectronicPage</Key>
+      <Title>エレクトロニクス</Title>
+      <Text>{LIST_OF_ELECTRONICS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>OrganicPage</Key>
+      <Title>オーガニック</Title>
+      <Text>{LIST_OF_ORGANICS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>AtmosphericPage</Key>
+      <Title>大気</Title>
+      <Text>{LIST_OF_ATMOSPHERICS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>RubbishPage</Key>
+      <Title>ごみ</Title>
+      <Text>{LIST_OF_ELECTRONICS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>FurniturePage</Key>
+      <Title>家具</Title>
+      <Text>{LIST_OF_FURNITURES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>LorePage</Key>
+      <DisplayFilter>Lore</DisplayFilter>
+      <Title>派閥</Title>
+      <Text>{LIST_OF_FACTIONS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>FabricatorPage</Key>
+      <Title>製造機械</Title>
+      <Text>これらはゲーム内で必要なものを製造できる動力構造物です。通常、物を作るのに必要な{LINK:ReagentPage;Reagents}を得るには{LINK:IngotPage;Ingots}が必要です。
+        {LIST_OF_FABRICATORS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>DevicePage</Key>
+      <Title>デバイス</Title>
+      <Text>これらは、ロジックや大気など、特殊な機能を持つ、通常は動力付きの構造物です。他の構造物と同様に構築されます。
+        {LIST_OF_DEVICES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ImportExportPage</Key>
+      <Title>入出力とアイテムパイプ</Title>
+      <Text>これらは、通常は電力供給を受け、他のアイテムを受け取ったり出力したり、あるいはその補助をしたりできる構造物です。ほとんどの構造物は、{LINK:LogicUnitPage;logic}、{LINK:AtmosphericPage;atmospherics}など、特殊な機能を備えています。他の構造物と同様に構築されます。
+        {LIST_OF_IMPORTEXPORT}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>SmeltingPage</Key>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Title>精錬</Title>
+      <Text>{LINK:OrePage;ore}を入手したら、それを{LINK:IngotPage;ingots}に変換して{LINK:ReagentPage;reagents}として使用する必要があります。精錬では多くの場合{LINK:GasPage;gases}が発生します。これは、{THING:StructureArcFurnace}（簡単なレシピ用）または{THING:StructureFurnace}（より複雑な{LINK:AlloyPage;Alloys}用）、そして{THING:StructureAdvancedFurnace}（非常に複雑な{LINK:SuperAlloyPage;Superalloys}用）で発生します。複雑な合金を作るには、{LINK:TemperaturePage;Temperature}と{LINK:PressurePage;Pressure}を完璧な比率で混合する必要があります。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>MiningPage</Key>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Title>採掘</Title>
+      <Text>{THING:ItemMiningDrill}を使って{LINK:OrePage;ore}を採掘できます。{THING:ItemMiningBelt}を装備している場合は、{LINK:OrePage;ore}が自動的にベルト内に配置されます。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>TradingPage</Key>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Title>トレーディング</Title>
+      <Text>トレーディングは{LINK:Stationeers;Stationeers}での生活に不可欠な要素です。特に、新人士官候補生が最初は援助なしで生き延びるのが困難な、より過酷な世界ではなおさらです。
+
+コンタクトには3つのレベルがあります。レベルが上がるにつれてコンタクトの難易度が上がり、20分ほどで離脱して別のコンタクトに交代します。そのため、多くのトレーダーとコンタクトを取りたいのであれば、より難易度の高いコンタクトを見つける必要があります。
+
+アンテナが接触点にどれだけ正確に向いているかを判断するには、まず接触点を解像する必要があります。解像にかかる時間は、アンテナの出力にアンテナのアライメントを掛け合わせ、接触点の予想解像ワット数を掛け合わせた値で決まります。接触点の解像が遅すぎる場合は、ターゲットに全く近づいていない可能性が高いため、角度を大きく変える必要があります。あるいは、接触点の予想ワット数が非常に高く、現在のアンテナでは妥当な時間で解像するには小さすぎる可能性があります。解像処理では、アンテナに設定されている実際の電力の10%しか使用されません。
+
+接触点の位置を解像したら、調査ボタンを押すことができます。解像処理と同様に、接触点に十分なワット数を当てる必要があります。調査ダイアログに、現在の計算結果が表示されます。調査には最低限必要なワット数があり、アンテナの向きが適切でない場合、または出力が低すぎる場合は、処理を開始できません。調査には時間制限があり、より強い接触には大幅に時間がかかります。そのため、トレーダーが次の場所へ移動する前に確実に終わらせるためには、高出力のパワーを使う必要があります。調査が完了したら、以前と同じようにトレーダーを着陸させることができます。
+
+{LIST_OF_TRADING_DEVICES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ConstructionPage</Key>
+      <Title>建設物キット</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>{HEADER:はじめる}
+
+通常、{LINK:KitPage;kits}を使用して建設を開始し、その後、様々な{LINK:ToolPage;tools}と{LINK:ResourcePage;resources}を使用して完成させます。選択した建造物の構築に必要なキットの数に注意してください。建造物によっては、スタック内の複数のキットを消費する必要があるものもあります。キットによっては複数のオプションが用意されている場合があり、{COLORRED:Scroll Wheel}を使用して、現在構築しようとしているオプションを切り替えます。
+
+{HEADER:建設手順}
+建造物によっては、複数の建設手順があり、それぞれ異なる組み合わせで完成させる必要があります。ツールチップには、建造物を完成させるために必要な組み合わせが表示されます。場合によっては、建設手順を完成させるために、両手に1つずつ、合計2つのオブジェクトが必要になることもあります。一部のツールは、最初にオンにする必要があります。これは、アクティブな手にツールがある状態で{KEY:ToggleHandPower}を押すことで行えます。
+
+{HEADER:ツールチップ}
+未完成の構造物を直接見ると、完成させるために必要な情報が表示されます。{LINK:ToolPage;tool}を持っているものの、それが適切な{LINK:ToolPage;tool}でない場合は、解体に必要なツールチップが表示されます。
+
+{HEADER:圧力}
+建物を建てる際には、圧力は差圧で測定されることに注意することが重要です。ほとんどの建物では200kPaの圧力制限があります。もし内外の差がこれを超えると、問題が発生します。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ReagentPage</Key>
+      <Title>試薬</Title>
+      <Text>これらは特定の種類の化学量です。
+      {LIST_OF_REAGENTS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>MusicPage</Key>
+      <Title>音楽を作る</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>{LINK:ODA;ODA}はサウンドトラックやその他の気を散らすものを容認しません。
+そのため、{LINK:Stationeers;Stationeers}は、地球外インフラの構築と維持という過酷な労働に伴奏する独自の音楽を創作せざるを得ませんでした。
+この娯楽の中心となるのがステップシーケンサーで、これによりStationeersは短い音楽パターンやループをシーケンスすることができます。
+
+{HEADER:DIY音楽 - 始めよう}
+
+1: 左側のデータ ポートを介して 8 つの {THING:DeviceStepUnit} をステップ シーケンサーに接続します。
+
+2: 各ステップ ユニットにラベルを付け、screwdiver を使用してステップ シーケンサーにステップ ユニット 1 ～ 8 を割り当てます。
+
+3: シーケンサーが音を再生する出力スピーカー（例：{THING:PassiveSpeaker}）を選択します。このスピーカーは、シーケンサーの右側にあるロジックネットワークに接続する必要があります。
+4: {THING:StopWatch} を配置し、{THING:StructureLogicReader} と {THING:StructureLogicWriter} を使用して、シーケンサーの時間変数に時間を書き込みます。
+
+5: シーケンサーのBPMを設定するには、{THING:StructureLogicDial}と{THING:StructureLogicWriter}を使ってシーケンサーのBPM変数に書き込みます。BPMを高くすると、シーケンスの再生速度が速くなります。
+
+6: 選択したサウンド カートリッジを挿入し、サウンド カートリッジ スロットの上下にある矢印ボタンを押して、再生したいサウンドの種類を選択します。
+
+7: 8つのステップユニットそれぞれにあるダイヤルを希望の音程に設定して、演奏するサウンドのピッチを選択します。ドラムの場合、各音程は異なるドラムサウンドです。各ステップユニットのアクティブボタンを押すことで、サウンドを試奏できます（シーケンサーはオフの状態）。
+
+8: {THING:DeviceLfoVolume}でフリーキーなサウンドを楽しみましょう。
+
+9: 最後にシーケンサーVibeoneerを起動します。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>TemperatureControlPage</Key>
+      <Title>温度の制御</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>システムの温度を制御するには、熱を加えて温度を上げるか、熱を奪って温度を下げるか、どちらかを行う必要があります。これが温度制御の基本的な考え方です。この目的を達成できるデバイスには、{THING:ItemWallHeater}、{THING:ItemWallCooler}、{THING:StructurePipeRadiator}、{THING:StructureAirConditioner}などがあります。
+
+注: 温度制御には多くの方法があり、ここに挙げたデバイスをまったく使用しない方法もあります。ここでは基本的な方法を説明します。
+
+温度制御システムを設置する前に、設置環境を理解することが重要です。ガスまたは液体の容量は、温度制御方法を選択する上で重要な要素です。{THING:StructureTankSmall} は最大 6000L、{THING:StructureTankBig} は最大 50,000L まで収容できます。つまり、両方のタンクが満杯の場合、小型タンクの方が温度変化に速く反応します。部屋とは、一定量のガスを収容できる空間です。部屋が大きいほど収容できる容積も大きくなるため、タンクと部屋には基本的に同じルールが適用されます。
+
+{HEADER:パイプネットワーク}
+パイプネットワークとは、1 つまたは複数のパイプセグメントが互いに接続され、どの地点でも分離されていない状態です。パイプネットワークは、パイプのサイズに関係なく、その全域で同じ大気を共有します。ネットワークの一端で温度または圧力を変更すると、最遠端でも遅延なく即座に同じ変化が発生します。
+
+ネットワークにデバイスを追加すると、ネットワークが2つの異なるネットワークに分割される場合があります。例えば、パイプネットワークに{THING:StructureVolumePump}を追加すると、ネットワークはポンプの前と後ろの2つのネットワークに分割されます。
+
+{THING:CartridgeAtmosAnalyser}がインストールされた{THING:ItemTablet}を使用すると、パイプネットワークの内容に関する情報を確認できます。
+
+{HEADER:ラジエーター}
+パイプベンダーで製造される{THING:StructurePipeRadiator}は、パイプと周囲の環境との間の熱交換に役立ちます。断熱パイプとパイプの両方に使用でき、液体タイプのものもあります。
+通常の状態では、パイプセグメントは周囲の環境と熱を交換しますが、そのパイプセグメントにラジエーターを追加すると、このプロセスが大幅に高速化されます。パイプセグメントは、両方の温度が均一になるまで周囲の環境と熱交換を続けます。
+
+{HEADER:パッシブ冷却}
+{THING:StructurePipeRadiator} を使って2つの大気間で熱交換を行うことで、あらゆる環境を冷却または加熱できます。例えば、壁にパイプを設置し、ガスを充填し、その上にラジエーターを設置するとします。こうすることで、パイプと部屋の2つの大気が温度交換を繰り返し、最終的に温度が均一化されます。
+{HEADER:壁掛けヒーター}
+{THING:ItemWallHeater}は、壁やフレームに設置して電源に接続するだけのシンプルなデバイスです。電源を入れると、周囲の環境を暖め始めます。消費電力は1010Wで、ロジックチップによって制御され、温度が一定レベルに達すると作動します。
+
+{HEADER:壁掛けクーラー}
+{THING:ItemWallCooler}は、温度を上げることしかできない壁掛けヒーターを補完するものです。壁掛けクーラーは、周囲の大気から熱を吸収し、その熱を配管網に供給することで機能します。壁掛けクーラーを適切に動作させるには、壁掛けクーラーに配管を接続し、接続された配管網に任意の種類のガスを充填する必要があります。ガスの熱容量と体積によって、温度変化への反応速度が決まります。
+
+パイプ内に貯蔵されたガスと室内の温度差が大きいほど、壁掛けクーラーの効率は低下します。そのため、壁掛けクーラーを適切な効率で稼働させるには、接続されたパイプに蓄積された熱を除去する必要があります。一般的な方法としては、パイプを屋外に出し、パイプの外側部分にラジエーターを設置して熱を逃がす方法が挙げられます。
+
+壁掛けクーラーの効率が低いほど、消費電力は少なくなります。最大効率でも1010Wの消費電力になります。壁掛けクーラーはロジックチップによって制御され、温度が一定温度に達すると作動します。
+
+壁掛けクーラーにエラーが表示されている場合は、次のいずれかに問題があります。
+- 壁掛けクーラーへの配管接続。
+- 接続された配管内にガスがあるか、圧力が低すぎる。
+- 周囲の大気または圧力が低すぎる。
+
+{HEADER:エアコン}
+{THING:StructureAirConditioner}は、基本的な形態では壁掛けクーラーと同じように機能し、同じ設計の恩恵を受けられます。しかし、より強力です。冷却速度は速く、状況に応じて消費電力が大幅に増加するため、大規模な空間や広いエリアに適しています。設定に応じて暖房にも冷房にも使えます。
+
+エアコンの仕組み
+エアコンには3つの配管接続部（入力、出力、排気）があります。入力側からガスが流入し、設定に応じて熱が加えられたり、取り除かれたりして、排気管に送られます。出力されたガスは、設定に応じてより冷たい、またはより熱い状態で出力接続部から排出されます。
+入力側配管と出力側配管を接続することができます（両方の配管が同じネットワーク番号を持っているかどうかで接続を確認できます）。これにより、ガスは最初の通過後では目標温度に達しないため、温度をより細かく制御できます。ガスから熱を取り除いたり加えたりするには、時間とエネルギーがかかります。
+
+エアコンの設置と設定方法は、冷房または暖房の目的によって異なります。室内の場合、エアコンの吸排気口に接続されたパッシブベントを室内に設置し、排気管に冷媒ガスを充填する必要があります。
+
+エアコンは必ずしも室内に設置する必要はありません。設置に必要なのは、室内の空気をエアコンに循環させて冷房または暖房を行うパッシブベントのみです。
+
+1台のエアコンで冷房と暖房の両方を行うことができます。パネルで目標温度設定を変更するだけです。ただし、冷房と暖房を同時に自動化したい場合は、パネルの設定は手動でしか変更できないため、冷房用と暖房用にそれぞれ1台のエアコンが必要になります。
+
+複数のエアコンを同じ配管網に設置すると、処理速度を速めたい場合や、一部を暖房用、一部を冷房用として使い分ける必要がある場合に便利です。複数のエアコンの入力と出力を接続し、すべてのエアコンが同じ配管網を共有することで実現できます。排水配管網も複数のエアコンで共有できますが、入出力配管網とは別にする必要があります。エアコンを使ってタンクの温度を制御する場合も同様の考え方が当てはまります。ただし、パッシブベントを使用する代わりに、タンクをエアコンに直接接続する必要があります。
+
+エアコン：留意事項
+- 入口パイプと出口パイプの温度差が大きいほど、エアコンの消費電力は増加します。
+- エアコンの消費電力は5kWを超える場合があるため、エアコンの電源には太いケーブルを使用することをお勧めします。
+- 出口パイプを屋外に配線し、外気と均一にすることは必ずしも最適な選択肢ではありません。出口パイプに充填したガスは、基地内の他の場所で使用できる場合があります。
+
+エアコン：基地の温度制御
+エアコンを使って基地の温度を制御する方法は数多くありますが、これはその一つです。
+ステップ1：基地の周囲に単一の配管ネットワークを敷設し、この設定で制御したい各部屋に、この配管に接続されたパッシブベントを設置します。これを「ネットワークA」と呼びます。
+ステップ2：ネットワークAをエアコンの入出力に接続します。
+ステップ3：排水管を別のネットワークに接続し、屋外に配管します。このネットワークにラジエーターを設置します。
+これが基本的な設定です。自動化するには、ネットワークAに配管アナライザーを設置し、温度を読み取り、それに応じてエアコンを稼働させます。
+頑張ってください、士官候補生！</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>GasPage</Key>
+      <Title>ガス</Title>
+      <Text>これらは特定の種類の化学ガスです。{LIST_OF_GASES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>OrePage</Key>
+      <Title>鉱石</Title>
+      <Text>これらは{LINK:MiningPage;mined}され、多くの場合{LINK:SmeltingPage;smelted}されるアイテムです。また、{THING:StructureRecycler}でアイテムをリサイクルし、{THING:StructureCentrifuge}に通すことで混合鉱石を得ることもできます。{LINK:OrePage;ore}に分解され、{LINK:SmeltingPage;smelting}されます。
+一部の鉱石は日光や熱にさらされると溶けて{LINK:GasPage;gases}を生成します。例えば、{THING:ItemIce}は{GAS:Water}と{GAS:Oxygen}に溶けます。実際に溶かしたい時まで、これらの鉱石は熱や日光にさらさないように注意してください。{LIST_OF_ORES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>GeneticsPage</Key>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Title>遺伝学</Title>
+      <Text>植物は、その行動を変化させる遺伝子群を持っています。植物の遺伝子は、自然界だけでなく人工的にも、様々な方法で操作されます。植物が果実や種子を生成する際、小さなランダムな突然変異を伴って遺伝子が受け継がれます。
+
+ランダムな突然変異に加えて、植物の生涯における環境も遺伝子に影響を与える可能性があります。例えば、植物が水不足に陥ると、成長速度や収量に影響が出る可能性がありますが、子孫はより少ない水を必要とする遺伝子を受け継ぎます。このようにして、作物にとって理想的な環境を操作することができます。
+
+作物を効果的に管理するために必要なツールがいくつかあります。{THING:ItemPlantSampler}と{THING:AppliancePlantGeneticAnalyzer}です。これらのツールを使うと、成長中の植物からサンプルを採取し、遺伝子の状態を確認できます。
+
+植物遺伝学は精密科学ではなく、目標を達成するまでには試行錯誤と繰り返しの試行が必要になります。{LIST_OF_GENES} {LIST_OF_GENETIC_DEVICES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>IngotPage</Key>
+      <Title>インゴット</Title>
+      <Text>これらは通常、{LINK:FabricatorPage;fabricators}で使用するために {LINK:SmeltingPage;Smelting} {LINK:OrePage;ores}から作成されるアイテムです。
+{LIST_OF_INGOTS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ToolPage</Key>
+      <Title>ツール</Title>
+      <Text>これらは、専門ツール スロットに収まるアイテムであり、{LINK:ConstructionPage;Construction} やその他のタスクに使用されます。
+
+{LIST_OF_TOOLS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ResourcePage</Key>
+      <Title>資源</Title>
+      <Text>これらは、{LINK:ConstructionPage;Construction}やその他のタスク中に消費されるアイテムです。
+{LIST_OF_RESOURCES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>KitPage</Key>
+      <Title>キット</Title>
+      <Text>これらは、{LINK:ConstructionPage;Construction}やその他のタスク中に消費されるアイテムです。
+{LIST_OF_KITS}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>AutomatedRocketPage</Key>
+      <Title>ロケット</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>ロケットの部品は{THING:StructureRocketManufactory}に印刷されています。
+
+{THING:StructureFuselageTypeA1}は{THING:StructureLaunchMount}上に構築する必要があります。{THING:StructureGovernedGasEngine}は{THING:StructureEngineMountTypeA1}に配置する必要があります。
+
+リソースアンビリカルは{THING:StructureRocketTower}上に配置され、ロケット内に配置された{THING:StructureGasUmbilicalMale}と{THING:StructureGasUmbilicalFemale}を接続します。
+
+{THING:MotherboardRockets} を搭載した {THING:StructureComputer} は、ロケットを制御するためのユーザーインターフェースを提供します。
+
+一対のデータリンクを使用して、惑星側の {THING:StructureLogicRocketUplink} とロケット側の {THING:StructureLogicRocketDownlink} を作成します。これらは {THING:StructureComputer} に接続する必要があります。
+
+ロケットには、メインのロケットコントローラーとして機能する {THING:StructureRocketAvionics} を配置する必要があります。
+
+{THING:MotherboardRockets} のマップ画面では、ロケットの目的地を設定できます。
+
+目的地を設定せずにロケットに点火すると、ロケットを打ち上げずにロケットの性能と燃料消費量を確認できます。
+
+ロケットのサイズに応じて、1回のロケット飛行で5～20Kmolの燃料消費量が見込まれます。
+
+{THING:StructureRocketScanner} は、未知の場所をマッピングし、採掘可能な小惑星を発見するために使用されます。
+
+より複雑なロケットでは、{THING:StructureRocketMiner} と {THING:StructureCargoStorageSmall} が使用される場合があります。
+{LIST_OF_ROCKET}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>FoodPage</Key>
+      <Title>食料</Title>
+      <Text>これらは栄養補給のために消費されるアイテムです。
+        {LIST_OF_FOOD}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ClothingPage</Key>
+      <Title>衣服</Title>
+      <Text>衣服スロットに入れることで着用できるアイテムです。
+      
+{HEADER:衣服のリスト}
+{LIST_OF_CLOTHING}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>AppliancePage</Key>
+      <Title>家電製品</Title>
+      <Text>これらはベンチに置けるアイテムです。ベンチの上に置いてレンチを使うことで、ベンチに置くことができます。
+{LIST_OF_APPLIANCES}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>WeatherPage</Key>
+      <Title>天候</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>太陽系の惑星は、見た目ほど穏やかではありません。大気圏のある惑星では、7日後には不可解な自然の力が働き始め、不注意なステーショナーマーに猛吹雪、砂嵐、火山噴火といった被害を与えます。
+
+そのため、{LINK:ODA;ODA}では、新しく派遣されたステーショナーマーに対し、着陸後7日以内に気密基地を構築することを推奨しています。
+
+火星、楼蘭、バルカン、エウロパなど、嵐の中に放置された動体は、着陸機を含め、はるか遠くまで吹き飛ばされる危険性があります。
+
+同様に、ソーラーパネルは壊れやすく、非常に激しい嵐によってガラスが割れたり、場合によっては破壊されたりする可能性があることに注意してください。嵐の間は、ソーラーパネルの出力も大幅に低下します。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>CableNetworkPage</Key>
+      <Title>ケーブルネットワーク</Title>
+      <Text>{THING:ItemCableCoil} を使用してケーブルを配置すると、ケーブルネットワークが作成されます。これらのネットワークには、{THING:ItemIntegratedCircuit10} を使用して読み書きできる揮発性メモリが含まれています。これには、{LOGICTYPE:Channel0} から {LOGICTYPE:Channel7} などのさまざまな特殊なロジック変数が含まれます。ネットワークには読み取り可能なメモリもあり、ネットワーク上のすべてのデータデバイスのリストが含まれており、GET を使用して各デバイスの {LOGICTYPE:ReferenceId} を取得できます。
+
+スタック内の現在のデバイス数を確認するには、ネットワークの {LOGICTYPE:StackSize} 変数を使用します。ネットワークは、スタック内のデバイスに基づいてスタックサイズを動的に調整します。ケーブルネットワークは揮発性メモリであり、ネットワークが変更されるたびに順序、内容、データが変更されるため、情報を定期的にポーリングして更新する必要がある場合があります。
+
+これにアクセスするには、デバイス参照に{COLORYELLOW:d0}:{COLORYELLOW:1}などの追加表記を使用して、指定されたデバイスのネットワーク1にアクセスします。接続番号を確認するには、該当デバイスのステーションペディアページで接続セクションの番号を確認してください。</Text>
+    </StationpediaPage>
+    <!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+    |                     TEMPLATES               |
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+    -->
+    <StationpediaPage>
+      <Key>ThingTemplate</Key>
+      <Text>{0}
+
+{HEADER:概要}
+{LIST}Prefab Hash {POS:300}{1}
+ペイント可能 {POS:300}{2}{3}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ThingThermalTemplate</Key>
+      <Text>{HEADER:熱制限}
+{LIST}粉砕 {POS:300}{0}
+引火点{POS:300}{1}
+自然発火{POS:300}{2}{3}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>LogicTypePageTemplate</Key>
+      <Text>{0}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ThingSlotHeaderTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ThingSlotItemTemplate</Key>
+      <Text>{0}. {1} Type {2}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ThingStackTemplate</Key>
+      <Text>{0}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ThingTransmissibleTemplate</Key>
+      <Text>Connects to {POS:300}{THING:StructureLogicTransmitter}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ThingNutritionTemplate</Key>
+      <Text>{0}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>IceMeltingTemplate</Key>
+      <Text>Melt Temperature {1}
+Melt Pressure {0}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>DeviceTemplate</Key>
+      <Text>{0}W</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>GasCanisterTemplate</Key>
+      <Text>{0}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>AtmosphericsTemplate</Key>
+      <Text>{0}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>NutritionPageTemplate</Key>
+      <Text>{0}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>CreatorsHeaderTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ConstructedByHeaderTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>CreatedHeaderTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ConstructedHeaderTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>LogicTransmitHeaderTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>TierListHeaderTemplate</Key>
+      <Text/>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>CreatorTemplate</Key>
+      <Text>{LIST}{0}{1}{/LIST}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>LogicTypeHeaderTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>LogicTypeTemplate</Key>
+      <Text>{0}{POS:300}{1} {2}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ModeStringHeaderTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>CreatedGasesTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>Lore</Key>
+      <Text/>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>Guides</Key>
+      <Text/>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>CreatedReagentTemplate</Key>
+      <Text>{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ModeStringItemTemplate</Key>
+      <Text>{0}.{1}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>ReagentPageTemplate</Key>
+      <Text>A {LINK:ReagentPage;reagent}, often usable when in {LINK:IngotPage;Ingots} form.
+
+
+{LIST}Unit {1}{/LIST}
+
+
+{LIST}{2}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>GasPageTemplate</Key>
+      <Text>A {LINK:GasPage;gas}, often produced when {LINK:SmeltingPage;smelting}.
+
+
+{LIST}Specific Heat {1}{2}{/LIST}
+
+
+{LIST}{0}{/LIST}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>GasPageFlamableTemplate</Key>
+      <Text>Flamable Limit {0} to {1}</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>NutritionPage</Key>
+      <Title>空腹と栄養</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>{HEADER:空腹}
+
+ステーションニアはいずれ空腹になりますが、食べ物はどれも同じではありません。また、空腹度は設定や難易度によって異なります。食事をすると、空腹度を100%回復するのに十分な量のアイテムしか消費されません。
+
+ステーションニアは新しい惑星に到着すると、着陸船で{LINK:Agrizero;Agrizero} {THING:ItemCerealBar}などの食料を受け取ります。これらが尽きると、支給された種から自分で育てたり、{LINK:TradingPage;Trader}に連絡を取ったりするなど、新たな食料源を見つける必要があります。
+
+{HEADER:栄養}
+
+生の食材を食べると、食事よりも空腹感は少なく、つまり満たせる空腹感の割合も少なくなります。食品の基本的な要素は、{LINK:OrganicPage;hydroponics}システムで作られています。これらは{THING:ApplianceReagentProcessor}を使ってレシピの材料に加工され、{THING:ApplianceMicrowave}または{THING:StructureAutomatedOven}を使って調理できます。
+
+空腹度は、メイン設定メニューの「空腹度/水分補給度」スライダーで調整できます。空腹度スライダーは{LINK:HydrationPage;Thirst}にも影響することに注意してください。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>FarmingPage</Key>
+      <Title>食料を育てる</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>異星で生き残るために、{LINK:ODA;ODA}はすべての{LINK:Stationeers;Stationeers}に対し、実用的な{LINK:OrganicPage;hydroponic}システムを構築するか、登録済みの地域リソース{LINK:TradingPage;traders}に連絡することを期待しています。
+
+{HEADER:セットアップ}
+
+水耕栽培システムを構築するには、{LINK:OrganicPage;seeds}が必要です。あるいは、自分で種を植えることもできます。
+
+一般的なStationeersの水耕栽培機器には、以下のものがあります。
+
+- {THING:DynamicHydroponics}
+- {THING:ItemHydroponicTray}
+- {THING:ItemKitHydroponicStation}
+- {THING:StructureHarvie}
+
+すべての水耕栽培システムには、水、日光、そして適切なガス混合物が必要です。植物は{GAS:CarbonDioxide}を必要とし、酸素を生成します（{THING:ItemAlienMushroom}を除く）。植物は不適切な環境では育ちません。植物に十分な光が届かない場合は、{THING:StructureGrowLight}を設置する必要があります。
+
+システムの性能は利用可能な資源と時間に依存しますが、適切に設計された農業システムは、十分な時間と資源があればほぼ完全に自動化できます。
+
+{HEADER:収穫}
+
+ほとんどの植物には複数の成長段階があります。最初の段階では、植物はライフサイクルを通じて成長します。第3段階では、植物から種子を収穫することができます。第4段階では、植物は果実をつけます。その後、除去されない限り、植物は枯れてしまいます。
+
+{HEADER:肥料}
+
+肥料は植物の成長プロセスを変え、{LINK:OrganicPage;有機物}を使用して {THING:PortableComposter} と {THING:StructureAdvancedComposter} によって生成されます。
+
+肥料の効果はその成分によって異なる
+
+- {LINK:OrganicPage;Food} は、個々の植物の収穫量を最大3アイテム増加させます。
+- {THING:DecayedFood} は、植物の成長速度を最大3倍増加させます。
+- {THING:ItemBiomass} は、肥料の持続期間である成長サイクル数を最大5回増加させます。
+
+これらの成分の効果は、処理開始時のコンポスター内でのそれぞれの割合によって異なります。肥料は、肥料と成分の比率が1:3のときに生成されます。処理の際には、{GAS:Nitrogen}と{GAS:Methane}が放出され、少量の熱も発生します。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>DecayPage</Key>
+      <Title>食品の腐敗</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>適切な大気下で冷蔵保存しない限り、食品は時間の経過とともに{THING:DecayedFood}に腐敗します。腐敗の正確な速度は、以下の要因によって個別に異なります。
+
+- 温度 - 冷蔵は腐敗を遅らせますが、多くの食品は極度の低圧や高温にさらされると損傷を受けます。最適な温度は0ケルビン（-272℃）です。
+
+- 食品の種類 - それぞれの{LINK:OrganicPage;food}の種類には独自の腐敗特性があります。例えば、{THING:ItemTomatoSoup}は{THING:ItemTomato}よりもはるかに長持ちします。
+
+- 圧力 - 食品の腐敗は、圧力が1気圧（101kPa）を下回ると加速します。大気が完全な真空に近づくにつれて、腐敗は指数関数的に加速します。より高い圧力による影響はありません。
+
+- 大気 - 様々なガスが腐敗プロセスを遅らせたり加速させたりします。このプロセスでは、混合大気中のそれぞれのガスの比率を考慮して腐敗係数を計算します。すべての食品に以下の料金が適用されます。
+
+&amp;gt; {GAS:Oxygen} x 1.3
+> {GAS:Nitrogen} x 0.6
+> {GAS:CarbonDioxide} x 0.8
+> {GAS:Methane} x 1
+> {GAS:Pollutant} x 3
+> {GAS:NitrousOxide} x 1.5
+> {GAS:Water} x 2
+> 真空 - 上記の「圧力」を参照してください。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>HydrationPage</Key>
+      <Title>喉の渇き + 水分補給</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>一般的なステーショナーは定期的に水分補給を行う必要があります。しかし、難解で、おそらくは誤った{LINK:ODA;ODA}の健康と安全に関する規制により、ステーショナーはスーツ内で水分補給を行う権利を長らく否定されてきました。その代わりに、定期的にヘルメットを開けて水分補給を行う休憩を取らなければなりません。ただし、加圧されていない環境で水分補給を行うことは推奨されません。
+
+どのくらいの頻度で水分補給を行うべきか？これは、難易度、惑星の気温、そして体を動かす頻度によって決まります。
+
+水には様々な形態があります。ステーション係には、新しい惑星に着陸した際に少なくとも1つの{THING:ItemWaterBottle}が配給されます。また、着陸船のクレートにも水が補給されます。これらの水は{THING:ItemWaterBottleFiller}を使用して補充できます。この水は液体パイプネットワークに接続されている必要があります。ネットワーク自体は、適切な量の氷を詰めた{THING:StructureIceCrusher}を使用して補充できます。
+
+喉の渇きの度合いは、メイン設定メニューの空腹度/水分補給度スライダーを調整することで調整できます。</Text>
+    </StationpediaPage>
+    <StationpediaPage>
+      <Key>EVAPage</Key>
+      <Title>EVAスーツ</Title>
+      <DisplayFilter>Guides</DisplayFilter>
+      <Text>宇宙服は、気圧と空調（温度）を調節できるポータブル大気と、宇宙服内の大気が危険状態になった場合に警告を発するシステムを備えています。宇宙服は、適切なヘルメットと、宇宙服の各スロットに装着された適切なガスボンベとフィルターとの組み合わせで正常に機能します。これらは定期的に交換する必要があり、{THING:StructureSuitStorage}を使用して充填（または排出）することもできます。
+
+宇宙服には、{THING:ItemEvaSuit}や、より耐圧性と耐温度性に優れた{THING:ItemHardSuit}など、複数の種類があります。
+
+宇宙服の各種表示は画面右下に表示されます。適切な数字キー（2）を押すと、スロットと設定を示すパネルが表示されます。設定内容は以下の通りです。
+
+- エアコンのオン/オフ（温度調節のオン/オフ）
+- フィルターのオン/オフ
+- エアのオン/オフ
+- 圧力の上昇/下降（0kPa～202kPa、または0～2気圧の範囲）
+- 温度の上昇/下降（0℃～60℃の範囲）
+
+スーツには6～8個のスロットがあります。
+- エアタンク (x1) - 呼吸可能な混合ガス（例：{GAS:Oxygen} または {GAS:Nitrogen}/{GAS:Oxygen} 35/65）が入ったキャニスターまたはスマートキャニスターを挿入します。
+- 廃液タンク (x1) - フィルターで除去されたガスを回収します。
+- ライフサポート (x1) - エアコンや照明などに電力を供給するバッテリーを1個収納します。
+- {SLOT:GasFilter} (x3) - 呼吸可能な混合ガスに応じて、少なくとも1つの {THING:ItemGasFilterCarbonDioxide} が必要です（人間の場合）。{THING:ItemHardSuit} には4つのフィルタースロットがあります。
+- IC - {THING:ItemHardSuit} のみ。
+
+気圧：50～100kPa（地球の0.5～1気圧）に設定してください。ゲーム内の人間は最大約250kPaまで耐えられ、最大約300kPaまで生存可能です。
+
+温度：通常は18～21℃に設定されていますが、ゲーム内の人間は10～29℃を好み、0～39℃まで耐えられ、最大49℃まで生存可能です。気温が高い場合、エアコンは内部温度を維持するためにバッテリーの消費量が増加します。
+
+フィルター：デフォルトのフィルターは{GAS:CarbonDioxide}フィルターで、人間の呼気時に発生するガスを捕捉します。呼吸ガスに100% {ガス:Oxygen}を使用していない場合は、フィルターを追加してください。例えば、{ガス:Oxygen} 25% + {ガス:Nitrogen} 75% を混合した場合、窒素フィルターを使用しない限り、時間の経過とともに窒素が宇宙服内に蓄積し、窒息する可能性があります。適切なフィルターと呼吸可能なガスを使用していても問題が解決しない場合は、宇宙ヘルメットの「フラッシュ」機能を使用してください。フィルターが機能しなくなると、酸素不足/危険警告が鳴ります。
+
+宇宙服が損傷した場合は、ダクトテープを手に持ち、「起動」ボタンを押して修理できます。</Text>
+    </StationpediaPage>
+  </HelpPage>
+</Language>

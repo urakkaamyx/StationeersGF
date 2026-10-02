@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Rich Surface Deposits -->
+    <OreVein Id="GoldSurfaceRich" Type="Gold" Weight="30" MaxSize="56" MaxDepth="8" MinDropQuantity="2" MaxDropQuantity="4" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.5">
+            <Depth Value="1" Mul="2"/>
+            <Depth Value="2" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="SilverSurfaceRich" Type="Silver" Weight="10" MaxSize="48" MaxDepth="8" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.5">
+            <Depth Value="1" Mul="2"/>
+            <Depth Value="2" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+
+    <OreVein Id="NickelSurfaceRich" Type="Nickel" Weight="10" MaxSize="40" MaxDepth="8" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.5">
+            <Depth Value="1" Mul="2"/>
+            <Depth Value="2" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="LeadSurfaceRich"  Type="Lead" Weight="10" MaxSize="40" MaxDepth="8" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.5">
+            <Depth Value="1" Mul="2"/>
+            <Depth Value="2" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="CobaltSurfaceRich" Type="Cobalt" Weight="10" MaxSize="48" MaxDepth="8" MinDropQuantity="3" MaxDropQuantity="5" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.5">
+            <Depth Value="1" Mul="2"/>
+            <Depth Value="2" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <!-- Surface Veins -->
+    <OreVein Id="IronSurface" Type="Iron" Weight="70" MaxSize="50" MaxDepth="9" MinDropQuantity="3" MaxDropQuantity="6" MiningTime="1">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="IronSurfaceSmall" Type="Iron" Weight="70" MaxSize="35" MaxDepth="8" MinDropQuantity="3" MaxDropQuantity="6" MiningTime="1">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="IceSurface" Type="Ice" Weight="20" MaxSize="30" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10"  MiningTime="2">
+        <SeekSurface Value="true"/>
+        <Direction X="1" Y="0" Z="1" Value="0.7">
+            <Depth Value="0" Mul="1"/>
+            <Depth Value="6" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="3"/>
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="3"/>
+            <Depth Value="8" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1">
+            <Depth Value="0" Mul="0.1"/>
+            <Depth Value="7" Mul="0.5"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="OxiteSurface" Type="Oxite" Weight="60" MaxSize="40" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <SeekSurface Value="true"/>
+        <Direction X="1" Y="0" Z="1" Value="0.7">
+            <Depth Value="0" Mul="1"/>
+            <Depth Value="6" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="3"/>
+            <Depth Value="8" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1">
+            <Depth Value="0" Mul="0.1"/>
+            <Depth Value="7" Mul="0.5"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="VolatilesSurface" Type="Volatiles" Weight="25" MaxSize="40" MaxDepth="12" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.9">
+            <Depth Value="0" Mul="0.2"/>
+            <Depth Value="2" Mul="1"/>
+        </Direction>
+        <BranchAttempts Value="6"/>
+    </OreVein>
+    <OreVein Id="CopperSurface" Type="Copper" Weight="40" MaxSize="40" MaxDepth="10" MinDropQuantity="3" MaxDropQuantity="5" MiningTime="2">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.9">
+            <Depth Value="0" Mul="0.2"/>
+            <Depth Value="2" Mul="1"/>
+        </Direction>
+        <BranchAttempts Value="6"/>
+    </OreVein>
+
+    <OreVein Id="GoldSurface" Type="Gold" Weight="30" MaxSize="40" MaxDepth="20" MinDropQuantity="2" MaxDropQuantity="4" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="1"/>
+        <Momentum Value="1"/>
+        <Thickness Value="2"/>
+    </OreVein>
+    <OreVein Id="CoalSurface" Type="Coal" Weight="60" MaxSize="60" MaxDepth="30" MinDropQuantity="2" MaxDropQuantity="5" MiningTime="3">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="1"/>
+        <Momentum Value="1"/>
+        <Thickness Value="2"/>
+    </OreVein>
+    <OreVein Id="SiliconSurface" Type="Silicon" Weight="40" MaxSize="25" MaxDepth="20" MinDropQuantity="3" MaxDropQuantity="6" MiningTime="4">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="CobaltSurface" Type="Cobalt" Weight="10" MaxSize="32" MaxDepth="13" MinDropQuantity="3" MaxDropQuantity="5" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="SilverSurface" Type="Silver" Weight="10" MaxSize="32" MaxDepth="13" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="NitriceSurface" Type="Nitrice" Weight="20" MaxSize="30" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="NickelSurface" Type="Nickel" Weight="10" MaxSize="32" MaxDepth="10" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="LeadSurface"  Type="Lead" Weight="10" MaxSize="32" MaxDepth="10" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    
+    <!-- Default Veins -->
+    <!--Cluster-->
+    <OreVein Id="DefaultIronVein" Type="Iron" Weight="90" MaxSize="80" MaxDepth="9" MinDropQuantity="3" MaxDropQuantity="6" MiningTime="1">
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="DefaultUraniumVein" Type="Uranium" Weight="5" MaxSize="30" MaxDepth="6" MinDropQuantity="2" MaxDropQuantity="3" MiningTime="5">
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <!-- Surface Spread to roots -->
+    <OreVein Id="DefaultIceVein" Type="Ice" Weight="20" MaxSize="40" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10"  MiningTime="2">
+        <Direction X="1" Y="0" Z="1" Value="0.7">
+            <Depth Value="0" Mul="1"/>
+            <Depth Value="6" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="3"/>
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="3"/>
+            <Depth Value="8" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1">
+            <Depth Value="0" Mul="0.1"/>
+            <Depth Value="7" Mul="0.5"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="DefaultOxiteVein" Type="Oxite" Weight="60" MaxSize="60" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <Direction X="1" Y="0" Z="1" Value="0.7">
+            <Depth Value="0" Mul="1"/>
+            <Depth Value="6" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="3"/>
+            <Depth Value="8" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1">
+            <Depth Value="0" Mul="0.1"/>
+            <Depth Value="7" Mul="0.5"/>
+        </Momentum>
+    </OreVein>
+    <!--Downwards Stack-->
+    <OreVein Id="DefaultVolatilesVein" Type="Volatiles" Weight="25" MaxSize="80" MaxDepth="12" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <Direction X="0" Y="-1" Z="0" Value="0.9"/>
+        <BranchAttempts Value="6"/>
+    </OreVein>
+    <OreVein Id="DefaultCopperVein" Type="Copper" Weight="40" MaxSize="70" MaxDepth="10" MinDropQuantity="3" MaxDropQuantity="5" MiningTime="2">
+        <Direction X="0" Y="-1" Z="0" Value="0.9"/>
+        <BranchAttempts Value="6"/>
+    </OreVein>
+    <!--spider-->
+    <OreVein Id="DefaultGoldVein" Type="Gold" Weight="30" MaxSize="40" MaxDepth="20" MinDropQuantity="2" MaxDropQuantity="4" MiningTime="5">
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="5"/>
+            <Depth Value="1" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1"/>
+        <Thickness Value="2"/>
+    </OreVein>
+    <OreVein Id="DefaultCoalVein" Type="Coal" Weight="60" MaxSize="60" MaxDepth="30" MinDropQuantity="2" MaxDropQuantity="5" MiningTime="3">
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="5"/>
+            <Depth Value="1" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1"/>
+        <Thickness Value="2"/>
+    </OreVein>
+    <OreVein Id="DefaultSiliconVein" Type="Silicon" Weight="40" MaxSize="45" MaxDepth="20" MinDropQuantity="3" MaxDropQuantity="6" MiningTime="4">
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="5"/>
+            <Depth Value="1" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1"/>
+        <Thickness Value="1"/>
+    </OreVein>
+    <!--ball to spider-->
+    <OreVein Id="DefaultCobaltVein" Type="Cobalt" Weight="10" MaxSize="32" MaxDepth="13" MinDropQuantity="3" MaxDropQuantity="5" MiningTime="5">
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="9"/>
+            <Depth Value="2" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value = "1">
+            <Depth Value="0" Mul="0"/>
+            <Depth Value="2" Mul="1"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="DefaultSilverVein" Type="Silver" Weight="10" MaxSize="32" MaxDepth="13" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="9"/>
+            <Depth Value="2" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value = "1">
+            <Depth Value="0" Mul="0"/>
+            <Depth Value="2" Mul="1"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="DefaultNitriceVein" Type="Nitrice" Weight="20" MaxSize="60" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="9"/>
+            <Depth Value="2" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value = "1">
+            <Depth Value="0" Mul="0"/>
+            <Depth Value="2" Mul="1"/>
+        </Momentum>
+    </OreVein>
+    <!--Snake-->
+    <OreVein Id="DefaultNickelVein" Type="Nickel" Weight="10" MaxSize="32" MaxDepth="32" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <Direction X="0" Y="-1" Z="0" Value="1">
+            <Depth Value="0" Mul="0.5"/>
+            <Depth Value="3" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="1"/>
+        <Momentum Value="1"/>
+    </OreVein>
+    <OreVein Id="DefaultLeadVein"  Type="Lead" Weight="10" MaxSize="32" MaxDepth="32" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="5">
+        <Direction X="0" Y="-1" Z="0" Value="1">
+            <Depth Value="0" Mul="0.5"/>
+            <Depth Value="3" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="1"/>
+        <Momentum Value="1"/>
+    </OreVein>
+
+    <Minables Id="DefaultMinablesNoWater" OreDensity="1">
+        <OreVein Id="DefaultIronVein"/>
+        <OreVein Id="DefaultUraniumVein"/>
+        <OreVein Id="DefaultOxiteVein"/>
+        <OreVein Id="DefaultVolatilesVein"/>
+        <OreVein Id="DefaultCopperVein"/>
+        <OreVein Id="DefaultGoldVein"/>
+        <OreVein Id="DefaultCoalVein"/>
+        <OreVein Id="DefaultSiliconVein"/>
+        <OreVein Id="DefaultCobaltVein"/>
+        <OreVein Id="DefaultSilverVein"/>
+        <OreVein Id="DefaultNitriceVein"/>
+        <OreVein Id="DefaultNickelVein"/>
+        <OreVein Id="DefaultLeadVein"/>
+    </Minables>
+    <Minables Id="DefaultMinablesNoWaterSurface" OreDensity="1">
+        <OreVein Id="IronSurface"/>
+        <OreVein Id="OxiteSurface"/>
+        <OreVein Id="VolatilesSurface"/>
+        <OreVein Id="CopperSurface"/>
+        <OreVein Id="GoldSurface"/>
+        <OreVein Id="CoalSurface"/>
+        <OreVein Id="SiliconSurface"/>
+        <OreVein Id="CobaltSurface"/>
+        <OreVein Id="SilverSurface"/>
+        <OreVein Id="NitriceSurface"/>
+        <OreVein Id="NickelSurface"/>
+        <OreVein Id="LeadSurface"/>
+    </Minables>
+    
+    <Minables Id="DefaultMinables" OreDensity="1">
+        <OreVein Id="DefaultIronVein"/>
+        <OreVein Id="DefaultUraniumVein"/>
+        <OreVein Id="DefaultIceVein"/>
+        <OreVein Id="DefaultOxiteVein"/>
+        <OreVein Id="DefaultVolatilesVein"/>
+        <OreVein Id="DefaultCopperVein"/>
+        <OreVein Id="DefaultGoldVein"/>
+        <OreVein Id="DefaultCoalVein"/>
+        <OreVein Id="DefaultSiliconVein"/>
+        <OreVein Id="DefaultCobaltVein"/>
+        <OreVein Id="DefaultSilverVein"/>
+        <OreVein Id="DefaultNitriceVein"/>
+        <OreVein Id="DefaultNickelVein"/>
+        <OreVein Id="DefaultLeadVein"/>
+    </Minables>
+    <Minables Id="DefaultMinablesNoIce" OreDensity="1">
+        <OreVein Id="DefaultIronVein" />
+        <OreVein Id="DefaultUraniumVein"/>
+        <OreVein Id="DefaultCopperVein"/>
+        <OreVein Id="DefaultGoldVein"/>
+        <OreVein Id="DefaultCoalVein"/>
+        <OreVein Id="DefaultSiliconVein"/>
+        <OreVein Id="DefaultCobaltVein"/>
+        <OreVein Id="DefaultSilverVein"/>
+        <OreVein Id="DefaultNickelVein"/>
+        <OreVein Id="DefaultLeadVein"/> 
+    </Minables>
+    <Minables Id="DefaultMinablesSurface" OreDensity="1">
+        <OreVein Id="IronSurface"/>
+        <OreVein Id="IceSurface"/>
+        <OreVein Id="OxiteSurface"/>
+        <OreVein Id="VolatilesSurface"/>
+        <OreVein Id="CopperSurface"/>
+        <OreVein Id="GoldSurface"/>
+        <OreVein Id="CoalSurface"/>
+        <OreVein Id="SiliconSurface"/>
+        <OreVein Id="CobaltSurface"/>
+        <OreVein Id="SilverSurface"/>
+        <OreVein Id="NitriceSurface"/>
+        <OreVein Id="NickelSurface"/>
+        <OreVein Id="LeadSurface"/>
+    </Minables>
+    <Minables Id="DefaultMinablesSurfaceNoIce" OreDensity="1">
+        <OreVein Id="IronSurface"/>
+        <OreVein Id="CopperSurface"/>
+        <OreVein Id="GoldSurface"/>
+        <OreVein Id="CoalSurface"/>
+        <OreVein Id="SiliconSurface"/>
+        <OreVein Id="CobaltSurface"/>
+        <OreVein Id="SilverSurface"/>
+        <OreVein Id="NickelSurface"/>
+        <OreVein Id="LeadSurface"/>
+    </Minables>
+
+    <Minables Id="DefaultMinablesSurfaceVulcan" OreDensity="1">
+        <OreVein Id="IronSurfaceSmall"/>
+        <OreVein Id="CopperSurface"/>
+        <OreVein Id="GoldSurface"/>
+        <OreVein Id="CoalSurface"/>
+        <OreVein Id="SiliconSurface"/>
+        <OreVein Id="CobaltSurface"/>
+        <OreVein Id="SilverSurface"/>
+        <OreVein Id="NickelSurface"/>
+        <OreVein Id="LeadSurface"/>
+    </Minables>
+
+    <!--  deprecated  -->
+    <DeepMinables Id="DefaultDeepMinables">
+        <Quantity Min="10" Max="11"/>
+        <Time Min="80" Max="100"/>
+        <ReagentMix Iron="0.4" Uranium="0.005" Copper="0.15" Gold="0.06" Hydrocarbon="0.2" Silicon="0.1" Cobalt="0.015" Silver="0.03" Nickel="0.03" Lead="0.03"/>
+    </DeepMinables>
+    <!--  end deprecated  -->
+
+    <DeepMinables Id="DeepMinableProfileIron">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="1.0" Uranium="0.0" Copper="0.0" Gold="0.0" Hydrocarbon="0.0" Silicon="0.0" Cobalt="0.0" Silver="0.0" Nickel="0.0" Lead="0.0"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileSilicon">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.0" Hydrocarbon="0.0" Silicon="0.5" Cobalt="0.0" Silver="0.0" Nickel="0.0" Lead="0.0"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileSilver">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.0" Hydrocarbon="0.0" Silicon="0.0" Cobalt="0.0" Silver="0.2" Nickel="0.0" Lead="0.0"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileLead">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.0" Hydrocarbon="0.0" Silicon="0.0" Cobalt="0.0" Silver="0.0" Nickel="0.0" Lead="0.2"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileNickel">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.0" Hydrocarbon="0.0" Silicon="0.0" Cobalt="0.0" Silver="0.0" Nickel="0.2" Lead="0.0"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileCoal">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.0" Hydrocarbon="0.5" Silicon="0.0" Cobalt="0.0" Silver="0.0" Nickel="0.0" Lead="0.0"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileCobalt">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.0" Hydrocarbon="0.0" Silicon="0.0" Cobalt="0.1" Silver="0.0" Nickel="0.0" Lead="0.0"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileGold">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.3" Hydrocarbon="0.0" Silicon="0.0" Cobalt="0.0" Silver="0.0" Nickel="0.0" Lead="0.0"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.250" Uranium="0.0" Copper="0.15" Gold="0.0" Hydrocarbon="0.0" Silicon="0.1" Cobalt="0.0" Silver="0.0" Nickel="0.0" Lead="0.0"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.0" Hydrocarbon="0.0" Silicon="0.0" Cobalt="0.0" Silver="0.15" Nickel="0.1" Lead="0.15"/>
+    </DeepMinables>
+
+    <DeepMinables Id="DeepMinableProfileGoldSilver">
+        <Quantity Min="10" Max="12"/>
+        <Time Min="100" Max="120"/>
+        <ReagentMix Iron="0.0" Uranium="0.0" Copper="0.0" Gold="0.2" Hydrocarbon="0.0" Silicon="0.0" Cobalt="0.0" Silver="0.1" Nickel="0.0" Lead="0.0"/>
+    </DeepMinables>
+</GameData>

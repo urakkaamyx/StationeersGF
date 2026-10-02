@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--
+		Tool replacements: the Substitute tool is accepted anywhere the Replaces tool is required
+		(construction, deconstruction, repair, upgrade). Same schema and rules as materialreplacements.xml.
+	-->
+	<ItemReplacements>
+		<ItemReplacement Substitute="ItemArcWelder" Replaces="ItemWeldingTorch" />
+		<ItemReplacement Substitute="ItemEmergencyArcWelder" Replaces="ItemWeldingTorch" />
+		<ItemReplacement Substitute="ItemMKIIArcWelder" Replaces="ItemWeldingTorch" />
+		<ItemReplacement Substitute="ItemEmergencyAngleGrinder" Replaces="ItemAngleGrinder" />
+		<ItemReplacement Substitute="ItemMKIIAngleGrinder" Replaces="ItemAngleGrinder" />
+		<ItemReplacement Substitute="ItemEmergencyCrowbar" Replaces="ItemCrowbar" />
+		<ItemReplacement Substitute="ItemMKIICrowbar" Replaces="ItemCrowbar" />
+		<ItemReplacement Substitute="ItemEmergencyDrill" Replaces="ItemDrill" />
+		<ItemReplacement Substitute="ItemMKIIDrill" Replaces="ItemDrill" />
+		<ItemReplacement Substitute="ItemEmergencyScrewdriver" Replaces="ItemScrewdriver" />
+		<ItemReplacement Substitute="ItemMKIIScrewdriver" Replaces="ItemScrewdriver" />
+		<ItemReplacement Substitute="ItemEmergencyWireCutters" Replaces="ItemWireCutters" />
+		<ItemReplacement Substitute="ItemMKIIWireCutters" Replaces="ItemWireCutters" />
+		<ItemReplacement Substitute="ItemEmergencyWrench" Replaces="ItemWrench" />
+		<ItemReplacement Substitute="ItemMKIIWrench" Replaces="ItemWrench" />
+		<ItemReplacement Substitute="ItemMKIIDuctTape" Replaces="ItemDuctTape" />
+	</ItemReplacements>
+</GameData>

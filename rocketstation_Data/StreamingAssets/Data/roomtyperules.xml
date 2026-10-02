@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <RoomTypeRule RoomType="Manufacturing">
+        <Any>
+            <Contains Prefab="StructureAutolathe"/>
+            <Contains Prefab="StructureToolManufactory"/>
+            <Contains Prefab="StructureHydraulicPipeBender"/>
+            <Contains Prefab="StructureElectronicsPrinter"/>
+        </Any>
+    </RoomTypeRule>
+    <RoomTypeRule RoomType="Kitchen">
+        <Contains Prefab="StructureBench"/>
+    </RoomTypeRule>
+    <RoomTypeRule RoomType="Bedroom">
+        <All>
+            <Any>
+                <Contains Prefab="StructureSingleBed"/>
+                <Contains Prefab="StructureBlockBed"/>
+                <Contains Prefab="StructureSleeperLeft"/>
+                <Contains Prefab="StructureSleeperRight"/>
+                <Contains Prefab="StructureSleeperVertical"/>
+            </Any>
+            <Any>
+                <Contains Prefab="StructureChair"/>
+                <Contains Prefab="StructureChairBacklessDouble"/>
+            </Any>
+            <SmallerThan Size="20"/>
+        </All>
+    </RoomTypeRule>
+</GameData>

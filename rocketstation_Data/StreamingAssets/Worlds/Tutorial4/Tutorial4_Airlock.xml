@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WorldSettings>
+    <World Id="Airlock" Hidden="false">
+      <Name Key="TutorialAirlockWorldName" />
+      <SummaryText Key="TutorialAirlockDescription" />
+      <Description Key="CommunityTutorialBigFootMSR" />
+      <ShortDescription Key="CommunityTutorialBigFootMSR"/>
+      <IsTutorial Value="true" />
+      <DisplayBadge xsi:nil="true" />
+      <IsDepreciated>false</IsDepreciated>
+      <Rating Key="TutorialRating" Color="Green" />
+	  <WorldObjective Id="AirlockTutorialObjectives"/>
+      <SkyBoxMaterialName>Starfield Skybox</SkyBoxMaterialName>
+      <SunPrefabName>MarsSun</SunPrefabName>
+      <MaxSunIntensity>1</MaxSunIntensity>
+      <Spawn Id="Airlock_Things" Event="NewWorld" HideInStartScreen="true" ShowInSpawnMenu="false" />
+      <Spawn Id="Airlock_WorldAtmospheres" Event="NewWorld" HideInStartScreen="true" ShowInSpawnMenu="false" />
+      <StartCondition Id="DefaultScenario" IsDefault="true" IsBrutal="false" />
+      <PlayableArea Id="Moon4KWarningArea" Rule="Warning">
+        <Region Hidden="false" Id="LunarLeavingArea" />
+      </PlayableArea>
+      <PlayableArea Id="LunarKInvalidArea" Rule="Invalid">
+        <Region Hidden="false" Id="LunarOutOfBounds" />
+      </PlayableArea>
+      <PreviewButton Path="Interface/button_tutorial4.png" Format="RGB24"/>
+      <Skybox />
+      <CelestialBodies>
+        <Sprite Id="Mercury" Hidden="false" Magnitude="1.4" />
+        <Sprite Id="Venus" Hidden="false" Magnitude="0.9" />
+        <AtmosphericBody Id="Earth" Hidden="false" RadiusKm="6380" RadiusAu="NaN" Scale="1" CanOccult="true">
+          <Name Key="CelestialBodyEarth" />
+          <FixedRotation x="0.3978" y="0.9175" z="0" Speed="9" />
+          <Texture Path="Textures/earth_diffuse.png" Format="DXT1" Linear="false" MipMapped="true" LoadType="OnRequest" />
+          <Fresnel r="0.4213835" g="0.586222" b="1" Power="1" Emission="1">
+            <RimLow r="0.4245283" g="0" b="0" />
+            <RimHigh r="0.735849" g="0.4707605" b="0" />
+          </Fresnel>
+          <Normal Path="Textures/earth_normal.png" Format="DXT5" Linear="false" MipMapped="true" LoadType="OnRequest" />
+          <Specular Path="Textures/earth_specular.png" Format="DXT1" Linear="false" MipMapped="true" LoadType="OnRequest" />
+          <Cloud Path="Textures/earth_clouds.png" Format="DXT1" Linear="false" MipMapped="true" LoadType="OnRequest" Speed="0" Opacity="1">
+            <Shadow Opacity="0.5" Parallax="0.015" />
+          </Cloud>
+          <Material Smoothness="1" Metallic="0" />
+        </AtmosphericBody>
+        <Body Id="Moon" Hidden="false" Parent="Earth">
+          <TidalLocking x="0.0269" y="0.9996" z="0" />
+        </Body>
+        <Sprite Id="Mars" Hidden="false" Magnitude="0.99" />
+        <Sprite Id="Jupiter" Hidden="false" Magnitude="0.98" />
+        <Sprite Id="Saturn" Hidden="false" Magnitude="1.1" />
+        <Sprite Id="Uranus" Hidden="false" Magnitude="1.5" />
+        <Sprite Id="Neptune" Hidden="false" Magnitude="1.5" />
+        <Sprite Id="Pluto" Hidden="false" Magnitude="4" />
+      </CelestialBodies>
+      <CelestialConstants Id="Earth" Hidden="false" BodyScale="5" SkyboxScale="1">
+        <TimeOffset Days="NaN" Hours="NaN" Minutes="18" Seconds="30" />
+      </CelestialConstants>
+      <PlayableBody Id="Moon" Hidden="false" Latitude="0" Longitude="45" />
+      <AmbientLighting>
+        <Sky r="0.1838235" g="0.1838235" b="0.1838235" />
+        <Equator r="0.1176471" g="0.1176471" b="0.1176471" />
+        <Ground r="0.08088237" g="0.08088237" b="0.08088237" />
+      </AmbientLighting>
+      <GlobalAtmosphere>
+        <Temperature />
+        <SolarRadiationTemperature>
+          <Day />
+          <Night />
+        </SolarRadiationTemperature>
+        <GHGTemperatureOffset>
+          <Day />
+          <Night />
+        </GHGTemperatureOffset>
+        <DensityOffset>
+          <Day />
+          <Night />
+        </DensityOffset>
+        <Gas />
+        <Volume Value="40000000000" />
+      </GlobalAtmosphere>
+      <PreviewScene fov="38">
+        <CameraPosition>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </CameraPosition>
+        <CameraRotation>
+          <x>327.15</x>
+          <y>180.42</y>
+          <z>358.823</z>
+        </CameraRotation>
+        <SunRotation>
+          <x>47.266</x>
+          <y>-46.001</y>
+          <z>-107.52</z>
+        </SunRotation>
+        <SunPrefab>SpaceSun (UnityEngine.Light)</SunPrefab>
+        <AtmosphericScattering>false</AtmosphericScattering>
+        <LensFlare>true</LensFlare>
+        <LensFlareIntensity>0.25</LensFlareIntensity>
+        <SkyBoxMaterial>Starfield Skybox</SkyBoxMaterial>
+        <Prefabs>
+          <Prefab>
+            <Name>UISun</Name>
+            <Position>
+              <x>-12</x>
+              <y>731</y>
+              <z>-728</z>
+            </Position>
+            <Rotation>
+              <x>0</x>
+              <y>0</y>
+              <z>0</z>
+            </Rotation>
+            <Scale>
+              <x>13.419</x>
+              <y>13.419</y>
+              <z>13.419</z>
+            </Scale>
+          </Prefab>
+          <Prefab>
+            <Name>UIShuttlecraft</Name>
+            <Position>
+              <x>-21</x>
+              <y>159.1</y>
+              <z>-236.2</z>
+            </Position>
+            <Rotation>
+              <x>-36.429</x>
+              <y>140.917</y>
+              <z>32.933</z>
+            </Rotation>
+            <Scale>
+              <x>15.85437</x>
+              <y>15.85437</y>
+              <z>15.85437</z>
+            </Scale>
+          </Prefab>
+          <Prefab>
+            <Name>UIPlanetEarth</Name>
+            <Position>
+              <x>-165.7227</x>
+              <y>331.3017</y>
+              <z>-664.209</z>
+            </Position>
+            <Rotation>
+              <x>71</x>
+              <y>130</y>
+              <z>76</z>
+            </Rotation>
+            <Scale>
+              <x>1.274</x>
+              <y>1.274</y>
+              <z>1.274</z>
+            </Scale>
+          </Prefab>
+          <Prefab>
+            <Name>UIMoon</Name>
+            <Position>
+              <x>78.3</x>
+              <y>61</y>
+              <z>-298.5</z>
+            </Position>
+            <Rotation>
+              <x>31.644</x>
+              <y>0</y>
+              <z>0</z>
+            </Rotation>
+            <Scale>
+              <x>50</x>
+              <y>50</y>
+              <z>50</z>
+            </Scale>
+          </Prefab>
+        </Prefabs>
+      </PreviewScene>
+      <Gravity>-1.62</Gravity>
+      <LavaLevel>0</LavaLevel>
+      <HasLava>false</HasLava>
+      <Seed>0</Seed>
+      <AtmosphericScattering>false</AtmosphericScattering>
+      <AtmosphericScatteringData>
+        <RayleighColorRampColorKey />
+        <RayleighColorRampAlphaKey />
+        <RayleighColorRampMode>Blend</RayleighColorRampMode>
+        <WorldRayleighColorIntensity>1</WorldRayleighColorIntensity>
+        <WorldRayleighDensity>10</WorldRayleighDensity>
+        <WorldRayleighExtinctionFactor>1.1</WorldRayleighExtinctionFactor>
+        <WorldRayleighIndirectScatter>0.33</WorldRayleighIndirectScatter>
+        <WorldMieColorIntensity>1</WorldMieColorIntensity>
+        <MieColorRampColorKey />
+        <MieColorRampAlphaKey />
+        <MieColorRampMode>Blend</MieColorRampMode>
+        <WorldMieDensity>15</WorldMieDensity>
+        <WorldMieExtinctionFactor>0</WorldMieExtinctionFactor>
+        <WorldMiePhaseAnisotropy>0.9</WorldMiePhaseAnisotropy>
+        <WorldNearScatterPush>0</WorldNearScatterPush>
+        <WorldNormalDistance>1000</WorldNormalDistance>
+        <HeightRayleighColor>
+          <r>1</r>
+          <g>1</g>
+          <b>1</b>
+          <a>1</a>
+        </HeightRayleighColor>
+        <HeightRayleighIntensity>1</HeightRayleighIntensity>
+        <HeightRayleighDensity>10</HeightRayleighDensity>
+        <HeightMieDensity>0</HeightMieDensity>
+        <HeightExtinctionFactor>1.1</HeightExtinctionFactor>
+        <HeightSeaLevel>0</HeightSeaLevel>
+        <HeightDistance>50</HeightDistance>
+        <HeightPlaneShift>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </HeightPlaneShift>
+        <HeightNearScatterPush>0</HeightNearScatterPush>
+        <HeightNormalDistance>1000</HeightNormalDistance>
+        <UseOcclusion>false</UseOcclusion>
+        <OcclusionBias>0</OcclusionBias>
+        <OcclusionBiasIndirect>0.6</OcclusionBiasIndirect>
+        <OcclusionBiasClouds>0.3</OcclusionBiasClouds>
+        <OcclusionDownscale>x2</OcclusionDownscale>
+        <OcclusionSamples>x64</OcclusionSamples>
+        <OcclusionDepthFixup>true</OcclusionDepthFixup>
+        <OcclusionDepthThreshold>25</OcclusionDepthThreshold>
+        <OcclusionFullSky>false</OcclusionFullSky>
+        <OcclusionBiasSkyRayleigh>0.2</OcclusionBiasSkyRayleigh>
+        <OcclusionBiasSkyMie>0.4</OcclusionBiasSkyMie>
+        <WorldScaleExponent>1</WorldScaleExponent>
+        <ForcePerPixel>false</ForcePerPixel>
+        <ForcePostEffect>false</ForcePostEffect>
+      </AtmosphericScatteringData>
+      <AmbientLightMin>0</AmbientLightMin>
+      <AmbientLightMax>1</AmbientLightMax>
+      <AmbientSkyColor>
+        <r>0</r>
+        <g>0</g>
+        <b>0</b>
+        <a>1</a>
+      </AmbientSkyColor>
+      <AmbientEquatorColor>
+        <r>0</r>
+        <g>0</g>
+        <b>0</b>
+        <a>1</a>
+      </AmbientEquatorColor>
+      <AmbientGroundColor>
+        <r>0</r>
+        <g>0</g>
+        <b>0</b>
+        <a>1</a>
+      </AmbientGroundColor>
+      <SetSunInSkybox>false</SetSunInSkybox>
+      <Stars>
+        <Star Minimum="0" Brightness="NaN" FadeHeight="400" />
+        <Star Minimum="0" Brightness="NaN" FadeHeight="400" />
+      </Stars>
+      <PreviewButton Path="Interface/preview_lunar.png" Format="RGB24" Linear="false" MipMapped="true" LoadType="Preload" />
+      <LavaColor>
+        <r>0.6509434</r>
+        <g>0.279085875</g>
+        <b>0.119748987</b>
+        <a>1</a>
+      </LavaColor>
+      <HasCustomLavaColor>false</HasCustomLavaColor>
+      <AmbienceSound>Moon</AmbienceSound>
+      <SpaceMap Id="MoonSpaceMap"/>
+      <TerrainSettings Path="Worlds/Lunar/Terrain" WorldSize="4096">
+        <Curvature Value="0.5" />
+        <MiniMap Path="Worlds/Lunar/Textures/lunar_mare_mini_map.png" Format="DXT1" Linear="false" MipMapped="true" LoadType="OnRequest" />
+        <MaterialSettings>
+          <Macro>
+            <MacroTextureBlend Value="1" />
+            <Albedo Path="Worlds/Lunar/Textures/lunar_mare_macro_albedo.png" Format="BC7" Linear="false" MipMapped="true" LoadType="OnRequest" />
+            <Normal Path="Worlds/Lunar/Textures/lunar_mare_normal_map.png" Format="DXT5" Linear="false" MipMapped="true" LoadType="OnRequest" Value="1" />
+          </Macro>
+          <Detail UVScale="1" DetailFadeStart="50" DetailFadeEnd="200" FractalDepthScale="0.5" LodMin="2" MipmapBias="-0.1" BlendSharpness="109">
+            <GroupOne>
+              <Albedo Path="Worlds/Lunar/Textures/Moon_Basalt_AO_basecolor.png" Format="DXT1" Linear="false" MipMapped="true" LoadType="OnRequest" />
+              <Normal Path="Worlds/Lunar/Textures/Moon_Basalt_normal.png" Format="DXT5" Linear="false" MipMapped="true" LoadType="OnRequest" Value="0.7" />
+              <Displacement Path="Worlds/Lunar/Textures/Moon_Basalt_height.png" Format="BC4" Linear="false" MipMapped="true" LoadType="OnRequest" Value="0.2" />
+              <Roughness Path="Worlds/Lunar/Textures/Moon_Basalt_roughness.png" Format="BC4" Linear="false" MipMapped="true" LoadType="OnRequest" Value="0.6" />
+            </GroupOne>
+            <GroupTwo>
+              <Albedo Path="Worlds/Lunar/Textures/Moon_Detail_AO_basecolor.png" Format="DXT1" Linear="false" MipMapped="true" LoadType="OnRequest" />
+              <Normal Path="Worlds/Lunar/Textures/Moon_Detail_normal.png" Format="DXT5" Linear="false" MipMapped="true" LoadType="OnRequest" Value="0.7" />
+              <Displacement Path="Worlds/Lunar/Textures/Moon_Detail_Displacement_1024.png" Format="BC4" Linear="false" MipMapped="true" LoadType="OnRequest" Value="0.125" />
+              <Roughness Path="Worlds/Lunar/Textures/Moon_Detail_roughness_1024.png" Format="BC4" Linear="false" MipMapped="true" LoadType="OnRequest" Value="0.3" />
+            </GroupTwo>
+          </Detail>
+        </MaterialSettings>
+      </TerrainSettings>
+      <Minables Id="DefaultMinablesSurface" OreDensity="0.6" />
+    </World>
+  </WorldSettings>
+  
+  <WorldObjective Id="AirlockTutorialObjectives">
+    <Name Value="TutorialAirlockWorldName"/>
+	<Objective Id="AirlockPower"/>
+	<Objective Id="AirlockApc"/>
+	<Objective Id="AirlockTutorialInformation"/>
+    <Objective Id="AirlockTutorialInsertCard"/>
+	<Objective Id="AirlockTutorialVentilation"/>
+    <Objective Id="AirlockTutorialBuildDoors"/>
+    <Objective Id="AirlockTutorialPrograming"/>
+    <Objective Id="AirlockTutorialActivateAirlock"/>
+  </WorldObjective>
+   
+  <Objective Id="AirlockPower" Expand="true">
+	<Name Key="TutorialAirlockPowerName"/>
+	<Info Key="TutorialAirlockPowerInfo"/>
+	<Notice Key="TutorialAirlockPowerPlaceAPC"/>
+	<Network Type="Cable" Hidden="true">
+		<Conditions Operator="Any">
+			<Prefab Id="StructureAreaPowerControl">
+				<PreSpawned Value="false"/>
+			</Prefab>	
+			<Prefab Id="StructureAreaPowerControlReversed">
+				<PreSpawned Value="false"/>
+			</Prefab>
+		</Conditions>
+	 </Network>
+  </Objective>
+  
+  <Objective Id="AirlockApc" Expand="true">
+    <Name Key="TutorialAirlockAPCName"/>
+    <Notice Key="TutorialAirlockAPCPryOpen"/>
+    <Notice Key="TutorialAirlockAPCTurnOn"/>
+    <Notice Key="TutorialAirlockAPCInstallBatt"/>
+    <Conditions Operator="Any" Hidden="true">
+      <Prefab Id="StructureAreaPowerControl">
+        <Interactable Action="OnOff" State="1" />
+        <Item Id="ItemBatteryCellLarge" SlotId="Battery"/>
+      </Prefab>
+      <Prefab Id="StructureAreaPowerControlReversed">
+        <Interactable Action="OnOff" State="1" />
+        <Item Id="ItemBatteryCellLarge" SlotId="Battery"/>
+      </Prefab>
+    </Conditions>
+	<Trigger>
+      <ObjectiveComplete Id="AirlockPower"/>
+    </Trigger>
+  </Objective>
+  
+  <Objective Id="AirlockTutorialInformation" Expand="true">
+    <Name Key="TutorialAirlockInformationName"/>
+	<Info Key="TutorialAirlockInformationInfo"/>
+	<Notice Key="TutorialAirlockInformationPlaceConsole"/>
+	<Notice Key="TutorialAirlockInformationPlaceSensor"/>
+    <Network Type="Cable" Hidden="true">
+	 <Prefab Id="StructureGasSensor"/>
+     <Prefab Id="StructureConsole"/>
+	</Network>
+	<Trigger>
+      <ObjectiveComplete Id="AirlockApc"/>
+    </Trigger>
+  </Objective>
+  
+  <Objective Id="AirlockTutorialInsertCard" Expand="true">
+    <Name Key="TutorialAirlockInsertCardName"/>
+	<Info Key="TutorialAirlockInsertCardInfo"/>
+	<Notice Key="TutorialAirlockInsertCardPutAdvAirlock"/>
+	<Notice Key="TutorialAirlockInsertCardInstallGlass"/>
+		<Network Type="Cable" Hidden="true">
+		<Prefab Id="StructureConsole"> 
+			<Interactable Action="OnOff" State="1" />
+			<Interactable Action="Powered" State="1" />
+			<BuildState IsCompleted="true" />
+			<Item Id="CircuitboardAdvAirlockControl"/>
+		</Prefab>
+		</Network>
+    <Trigger>
+      <ObjectiveComplete Id="AirlockTutorialInformation"/>
+    </Trigger>
+  </Objective>
+  
+  <Objective Id="AirlockTutorialVentilation" Expand="true">
+    <Name Key="TutorialAirlockVentilationName"/>
+	<Info Key="TutorialAirlockVentilationInfo" />
+	<Notice Key="TutorialAirlockVentilationPlaceVents" />
+		<ThingCount Id="StructureActiveVent" Count="2" Compare="EqualOrGreater" Hidden="true" /> 
+    <Trigger>
+      <ObjectiveComplete Id="AirlockTutorialInsertCard"/>
+    </Trigger>
+  </Objective>
+  
+  
+  <Objective Id="AirlockTutorialBuildDoors" Expand="true">
+    <Name Key="TutorialAirlockBuildDoorsName"/>
+	<Info Key="TutorialAirlockBuildDoorsInfo" />
+	<Notice Key="TutorialAirlockBuildDoorsFinish"/>
+	<Notice Key="TutorialAirlockBuildDoorsWelderReminder" />
+	<ThingCount Id="StructureGlassDoor" Count="2" Compare="EqualOrGreater" Hidden="true" >
+		<BuildState IsCompleted="true" />
+	</ThingCount>
+    <Trigger>
+      <ObjectiveComplete Id="AirlockTutorialVentilation"/>
+    </Trigger>
+  </Objective>
+  
+  <Objective Id="AirlockTutorialPrograming" Expand="true">
+    <Name Key="TutorialAirlockProgramingName"/>
+	<Info Key="TutorialAirlockProgramingInfo" />
+	<Notice Key="TutorialAirlockProgramingUseLabeller" />
+	<Notice Key="TutorialAirlockProgramingInserDisk" />
+	<Notice Key="TutorialAirlockProgramingChooseExteriorDoors" /> 
+	<Notice Key="TutorialAirlockProgramingRepeatForVents" />
+	<Notice Key="TutorialAirlockProgramingChooseSensor" />
+    <Notice Key="TutorialAirlockProgramingPressureSettingNote" />
+	<Notice Key="TutorialAirlockProgramingRemoveDisk" />
+	<Prefab Id="StructureConsole" Hidden="true" >
+      <Interactable Action="Error" State="0" />
+      <Interactable Action="Activate" State="0"/>
+	</Prefab>
+    <Trigger>
+      <ObjectiveComplete Id="AirlockTutorialBuildDoors"/>
+    </Trigger>
+  </Objective>
+  
+  <Objective Id="AirlockTutorialActivateAirlock" Expand="true">
+    <Name Key="TutorialAirlockActivateAirlockName"/>
+	<Info Key="TutorialAirlockActivateAirlockInfo" />
+	<Notice Key="TutorialAirlockActivateAirlockOperatingInfo" /> 
+	<Notice Key="TutorialAirlockActivateAirlockHowToIncreaseSpeed" />
+	<Notice Key="TutorialAirlockActivateAirlockCancellButton" />
+	<Notice Key="TutorialAirlockActivateAirlockProgramYourOwn" />
+	<Notice Key="TutorialAirlockActivateAirlockCycleAirlock" />
+	<Prefab Id="StructureGasSensor" Hidden="true">
+	<LogicType Type="Pressure" Value="0" Compare="Equal" />
+	</Prefab>
+    <Trigger>
+      <ObjectiveComplete Id="AirlockTutorialPrograming"/>
+    </Trigger>
+	<CompleteTutorialPopup Delay="5">
+      <Title Key="TutorialComplete"/>
+      <Text Key="TutorialCompleteMessage"/>
+    </CompleteTutorialPopup>
+  </Objective>
+</GameData>

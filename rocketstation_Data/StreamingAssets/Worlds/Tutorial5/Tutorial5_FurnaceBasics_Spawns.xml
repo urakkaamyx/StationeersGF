@@ -1,0 +1,1521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Spawn Id="FurnaceBasics_Things">
+    <DynamicThing Id="LanderCapsuleSmallDoor" HideInStartScreen="true">
+      <Name Value="Lander Capsule Door" />
+      <Name Value="Lander Capsule Door" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-75.7686" y="183.4624" z="230.0176" />
+        <Rotation x="80.8901" y="152.4277" z="344.3495" />
+      </SpawnPosition>
+      <Interaction Type="Open" Value="1" />
+    </DynamicThing>
+    <Structure Id="StructurePipeCowl" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-117.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="0.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-117.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-116.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-116.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-115.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-115.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-114.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-114.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-113.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-113.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-112.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-112.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-111.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-111.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-110.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-110.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-109.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-109.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-108.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-108.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-107.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-107.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-106.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-106.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-105.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-105.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableJunction" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableCorner" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="270.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-94.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-94.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-96.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-96.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="191.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-98.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-98.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-100.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-100.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableJunction" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.5000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureLightLongWide" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="194.0000" z="279.5000" />
+        <Rotation x="90.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <Interaction Type="OnOff" Value="1" />
+      <Interaction Type="Lock" Value="0" />
+      <Interaction Type="Powered" Value="1" />
+    </Structure>
+    <Structure Id="StructureLightLongWide" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="194.0000" z="279.5000" />
+        <Rotation x="90.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <Interaction Type="OnOff" Value="1" />
+      <Interaction Type="Lock" Value="0" />
+      <Interaction Type="Powered" Value="1" />
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.5000" z="276.0000" />
+        <Rotation x="270.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableCorner" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="276.0000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="276.5000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="277.5000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="278.0000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="191.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="191.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="191.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="191.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="191.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="191.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="191.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-91.0000" y="191.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="191.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGreen" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="191.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="191.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="191.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="191.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="191.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="191.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="191.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-91.0000" y="193.0000" z="282.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="191.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="193.0000" z="282.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="193.0000" z="282.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="193.0000" z="282.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="193.0000" z="282.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="193.0000" z="282.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="191.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="180.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="180.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="180.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="180.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-91.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="180.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-90.0000" y="193.0000" z="281.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="180.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-90.0000" y="193.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeWindow" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="193.0000" z="281.0000" />
+        <Rotation x="0.0000" y="270.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureGlassDoor" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-90.0000" y="193.0000" z="277.0000" />
+        <Rotation x="0.0000" y="270.0000" z="0.0000" />
+      </SpawnPosition>
+      <Interaction Type="Open" Value="0" />
+      <Interaction Type="Open" Value="0" />
+      <Interaction Type="Lock" Value="0" />
+      <Interaction Type="Powered" Value="0" />
+      <Interaction Type="OnOff" Value="1" />
+      <Interaction Type="Mode" Value="0" />
+      <Interaction Type="Access" Value="0" />
+      <Logic Type="Setting" Value="0" />
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureRTG" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="195.0000" z="279.0000" />
+        <Rotation x="0.0000" y="270.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="180.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="195.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="195.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="195.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="195.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureCompositeWindow" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="193.0000" z="277.0000" />
+        <Rotation x="0.0000" y="270.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="195.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="195.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="195.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="195.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="195.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="195.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="195.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="195.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="195.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="195.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="195.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="195.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-91.0000" y="195.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="195.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-91.0000" y="195.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="195.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureSign1x1" HideInStartScreen="true">
+      <Color Id="ColorBlack" />
+      <Name Value="Note: RTG is not a craftable item.​" />
+      <Name Value="Note: RTG is not a craftable item.​" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="195.0000" z="278.5000" />
+        <Rotation x="0.0000" y="270.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureSign2x1" HideInStartScreen="true">
+      <Color Id="ColorBlack" />
+      <Name Value="Basic Furnace Tutorial by: BigfootMSR​​" />
+      <Name Value="Basic Furnace Tutorial by: BigfootMSR​​" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="195.5000" z="279.0000" />
+        <Rotation x="0.0000" y="270.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-91.0000" y="195.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="194.5000" z="279.0000" />
+        <Rotation x="270.0000" y="180.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeWindow" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="193.0000" z="279.0000" />
+        <Rotation x="0.0000" y="270.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="194.0000" z="279.5000" />
+        <Rotation x="0.0000" y="0.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-91.0000" y="191.0000" z="281.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructureCableCorner" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="194.0000" z="280.0000" />
+        <Rotation x="0.0000" y="180.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableCorner3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="194.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="193.5000" z="280.0000" />
+        <Rotation x="270.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="193.0000" z="280.0000" />
+        <Rotation x="270.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="192.5000" z="280.0000" />
+        <Rotation x="270.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableCorner" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="279.5000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureTutorialSpawnPoint" HideInStartScreen="true">
+      <Color Id="ColorOrange" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="192.0000" z="279.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureStorageLocker" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-90.5000" y="192.0000" z="279.0000" />
+        <Rotation x="0.0000" y="270.0000" z="0.0000" />
+      </SpawnPosition>
+      <Interaction Type="Open" Value="1" />
+      <Interaction Type="Open" Value="1" />
+      <Interaction Type="Access" Value="0" />
+      <Item Id="ItemIronSheets" HideInStartScreen="true" SlotIndex="10">
+        <Quantity Value="50" />
+      </Item>
+      <Item Id="ItemKitFurnace" HideInStartScreen="true" SlotIndex="11">
+        <Quantity Value="1" />
+      </Item>
+      <Item Id="ItemKitArcFurnace" HideInStartScreen="true" SlotIndex="12">
+        <Quantity Value="1" />
+      </Item>
+      <Item Id="ItemKitPipe" HideInStartScreen="true" SlotIndex="13">
+        <Color Id="ColorYellow" />
+        <Quantity Value="20" />
+      </Item>
+      <Item Id="ItemPipeValve" HideInStartScreen="true" SlotIndex="14">
+        <Color Id="ColorYellow" />
+        <Quantity Value="1" />
+      </Item>
+      <Item Id="ItemMiningBackPack" HideInStartScreen="true" SlotIndex="15">
+        <Color Id="ColorWhite" />
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="0">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="1">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="2">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="3">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="4">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="5">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="6">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="7">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="8">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="9">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="10">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="11">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="12">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="13">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="14">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="15">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="16">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="17">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="18">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="19">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="20">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="21">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="22">
+          <Quantity Value="5" />
+        </Item>
+        <Item Id="ItemOxite" HideInStartScreen="true" SlotIndex="23">
+          <Quantity Value="5" />
+        </Item>
+      </Item>
+      <Item Id="ItemMiningBackPack" HideInStartScreen="true" SlotIndex="16">
+        <Color Id="ColorRed" />
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="0">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="1">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="2">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="3">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="4">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="5">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="6">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="7">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="8">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="9">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="10">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="11">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="12">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="13">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="14">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="15">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="16">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="17">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="18">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="19">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="20">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="21">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="22">
+          <Quantity Value="10" />
+        </Item>
+        <Item Id="ItemVolatiles" HideInStartScreen="true" SlotIndex="23">
+          <Quantity Value="10" />
+        </Item>
+      </Item>
+      <Item Id="ItemMiningBackPack" HideInStartScreen="true" SlotIndex="17">
+        <Color Id="ColorOrange" />
+        <Item Id="ItemNickelOre" HideInStartScreen="true" SlotIndex="0">
+          <Quantity Value="50" />
+          <Reagents Nickel="1" />
+        </Item>
+        <Item Id="ItemNickelOre" HideInStartScreen="true" SlotIndex="1">
+          <Quantity Value="50" />
+          <Reagents Nickel="1" />
+        </Item>
+        <Item Id="ItemSilverOre" HideInStartScreen="true" SlotIndex="2">
+          <Quantity Value="50" />
+          <Reagents Silver="1" />
+        </Item>
+        <Item Id="ItemSilverOre" HideInStartScreen="true" SlotIndex="3">
+          <Quantity Value="50" />
+          <Reagents Silver="1" />
+        </Item>
+        <Item Id="ItemSiliconOre" HideInStartScreen="true" SlotIndex="4">
+          <Quantity Value="50" />
+          <Reagents Silicon="1" />
+        </Item>
+        <Item Id="ItemSiliconOre" HideInStartScreen="true" SlotIndex="5">
+          <Quantity Value="50" />
+          <Reagents Silicon="1" />
+        </Item>
+        <Item Id="ItemSiliconOre" HideInStartScreen="true" SlotIndex="6">
+          <Quantity Value="50" />
+          <Reagents Silicon="1" />
+        </Item>
+        <Item Id="ItemSiliconOre" HideInStartScreen="true" SlotIndex="7">
+          <Quantity Value="50" />
+          <Reagents Silicon="1" />
+        </Item>
+        <Item Id="ItemCopperOre" HideInStartScreen="true" SlotIndex="8">
+          <Quantity Value="50" />
+          <Reagents Copper="1" />
+        </Item>
+        <Item Id="ItemCopperOre" HideInStartScreen="true" SlotIndex="9">
+          <Quantity Value="50" />
+          <Reagents Copper="1" />
+        </Item>
+        <Item Id="ItemCopperOre" HideInStartScreen="true" SlotIndex="10">
+          <Quantity Value="50" />
+          <Reagents Copper="1" />
+        </Item>
+        <Item Id="ItemCopperOre" HideInStartScreen="true" SlotIndex="11">
+          <Quantity Value="50" />
+          <Reagents Copper="1" />
+        </Item>
+        <Item Id="ItemGoldOre" HideInStartScreen="true" SlotIndex="12">
+          <Quantity Value="50" />
+          <Reagents Gold="1" />
+        </Item>
+        <Item Id="ItemGoldOre" HideInStartScreen="true" SlotIndex="13">
+          <Quantity Value="50" />
+          <Reagents Gold="1" />
+        </Item>
+        <Item Id="ItemGoldOre" HideInStartScreen="true" SlotIndex="14">
+          <Quantity Value="50" />
+          <Reagents Gold="1" />
+        </Item>
+        <Item Id="ItemGoldOre" HideInStartScreen="true" SlotIndex="15">
+          <Quantity Value="50" />
+          <Reagents Gold="1" />
+        </Item>
+        <Item Id="ItemCoalOre" HideInStartScreen="true" SlotIndex="16">
+          <Quantity Value="50" />
+          <Reagents Hydrocarbon="1" />
+        </Item>
+        <Item Id="ItemCoalOre" HideInStartScreen="true" SlotIndex="17">
+          <Quantity Value="50" />
+          <Reagents Hydrocarbon="1" />
+        </Item>
+        <Item Id="ItemCoalOre" HideInStartScreen="true" SlotIndex="18">
+          <Quantity Value="50" />
+          <Reagents Hydrocarbon="1" />
+        </Item>
+        <Item Id="ItemIronOre" HideInStartScreen="true" SlotIndex="19">
+          <Quantity Value="50" />
+          <Reagents Iron="1" />
+        </Item>
+        <Item Id="ItemIronOre" HideInStartScreen="true" SlotIndex="20">
+          <Quantity Value="50" />
+          <Reagents Iron="1" />
+        </Item>
+        <Item Id="ItemIronOre" HideInStartScreen="true" SlotIndex="21">
+          <Quantity Value="50" />
+          <Reagents Iron="1" />
+        </Item>
+        <Item Id="ItemIronOre" HideInStartScreen="true" SlotIndex="22">
+          <Quantity Value="50" />
+          <Reagents Iron="1" />
+        </Item>
+        <Item Id="ItemIronOre" HideInStartScreen="true" SlotIndex="23">
+          <Quantity Value="50" />
+          <Reagents Iron="1" />
+        </Item>
+      </Item>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-100.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-100.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-99.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-98.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-98.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-97.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-96.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-96.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-94.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableCorner" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="270.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-94.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.5000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="192.0000" z="280.5000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-95.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="90.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureFrame" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-91.0000" y="191.0000" z="277.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <BuildState Index="2" />
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-104.0000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableJunction" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="280.0000" />
+        <Rotation x="0.0000" y="90.0000" z="180.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="279.0000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCableStraight" HideInStartScreen="true">
+      <Color Id="ColorRed" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-102.0000" y="192.0000" z="278.5000" />
+        <Rotation x="0.0000" y="0.0000" z="270.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructurePipeStraight" HideInStartScreen="true">
+      <Color Id="ColorYellow" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-103.5000" y="193.0000" z="276.0000" />
+        <Rotation x="0.0000" y="90.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureCompositeFloorGrating3" HideInStartScreen="true">
+      <Color Id="ColorGray" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-93.0000" y="193.0000" z="282.0000" />
+        <Rotation x="0.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+    </Structure>
+    <Structure Id="StructureLightLongWide" HideInStartScreen="true">
+      <Color Id="ColorWhite" />
+      <SpawnPosition Rule="Explicit">
+        <Offset x="-101.0000" y="194.0000" z="279.5000" />
+        <Rotation x="90.0000" y="0.0000" z="0.0000" />
+      </SpawnPosition>
+      <Interaction Type="OnOff" Value="1" />
+      <Interaction Type="Lock" Value="0" />
+      <Interaction Type="Powered" Value="1" />
+    </Structure>
+  </Spawn>
+  <Spawn Id="FurnaceBasics_WorldAtmospheres">
+    <WorldAtmosphere x="-890" y="1750" z="2770" RoomId="6" />
+    <WorldAtmosphere x="-910" y="1750" z="2750" RoomId="1" />
+    <WorldAtmosphere x="-930" y="1750" z="2750" RoomId="2" />
+    <WorldAtmosphere x="-950" y="1750" z="2750" RoomId="3" />
+    <WorldAtmosphere x="-970" y="1750" z="2750" RoomId="4" />
+    <WorldAtmosphere x="-990" y="1750" z="2750" RoomId="5" />
+    <WorldAtmosphere x="-890" y="1750" z="2790" RoomId="7" />
+    <WorldAtmosphere x="-1010" y="1770" z="2770" RoomId="8" />
+    <WorldAtmosphere x="-1030" y="1770" z="2790" RoomId="8" />
+    <WorldAtmosphere x="-1030" y="1770" z="2810" RoomId="8" />
+    <WorldAtmosphere x="-1010" y="1770" z="2810" RoomId="8" />
+    <WorldAtmosphere x="-1010" y="1770" z="2790" RoomId="8" />
+    <WorldAtmosphere x="-990" y="1770" z="2810" RoomId="8" />
+    <WorldAtmosphere x="-1030" y="1770" z="2770" RoomId="8" />
+    <WorldAtmosphere x="-990" y="1770" z="2790" RoomId="8" />
+    <WorldAtmosphere x="-970" y="1770" z="2810" RoomId="8" />
+    <WorldAtmosphere x="-990" y="1770" z="2770" RoomId="8" />
+    <WorldAtmosphere x="-970" y="1770" z="2790" RoomId="8" />
+    <WorldAtmosphere x="-950" y="1770" z="2810" RoomId="8" />
+    <WorldAtmosphere x="-970" y="1770" z="2770" RoomId="8" />
+    <WorldAtmosphere x="-950" y="1770" z="2790" RoomId="8" />
+    <WorldAtmosphere x="-930" y="1770" z="2810" RoomId="8" />
+    <WorldAtmosphere x="-950" y="1770" z="2770" RoomId="8" />
+    <WorldAtmosphere x="-930" y="1770" z="2790" RoomId="8" />
+    <WorldAtmosphere x="-910" y="1770" z="2810" RoomId="8" />
+    <WorldAtmosphere x="-930" y="1770" z="2770" RoomId="8" />
+    <WorldAtmosphere x="-910" y="1770" z="2790" RoomId="8" />
+    <WorldAtmosphere x="-910" y="1770" z="2770" RoomId="8" />
+  </Spawn>
+</GameData>

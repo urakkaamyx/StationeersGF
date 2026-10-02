@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WorldSettings>
+        <World Id="Vulcan" Priority="6" Hidden="true" Deprecated="true">
+            <AmbienceSound>Vulcan2</AmbienceSound>
+            <Name Key="NewWorldAreaVulcan2" />
+            <Description Key="NewWorldVulcan2ShortDesc" />
+            <ShortDescription Key="VulcanWorldDescriptionShort"/>
+            <Rating Key="WorldRatingExtreme" Color="Red" />
+            <PreviewButton Path="Interface/preview_vulcan.png" Format="RGB24"/>
+            <StartCondition Id="VulcanDefault" IsDefault="true"/>
+            <StartCondition Id="VulcanBrutal"/>
+<!--            <StartCondition Id="TerrainEdit"/>-->
+            <WorldObjective Id="StationsVulcan"/>
+            <WorldObjective Id="TradingVulcan"/>
+            <WorldObjective Id="ConceptsVulcan"/>
+            <WorldObjective Id="ManufacturingBasicsVulcan"/>
+            <SpaceMap Id="VulcanSpaceMap" />
+            <GlobalAtmosphere>
+                <Temperature>
+                    <Key Time="0" Value="975" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0.5" WeightedMode="Both" />
+                    <Key Time="72" Value="650" InTangent="-5" OutTangent="-5" InWeight="0" OutWeight="0.1" WeightedMode="Both" />
+                    <Key Time="97.2" Value="400" InTangent="0" OutTangent="0" InWeight="0.484" OutWeight="0.333" WeightedMode="In" />
+                </Temperature>
+                <SolarRadiationTemperature>
+                    <Day>
+                        <Key Time="0" Value="0" InTangent="0" OutTangent="-1" InWeight="0" OutWeight="0.65" WeightedMode="Out" />
+                        <Key Time="100" Value="750" InTangent="-1" OutTangent="0" InWeight="0.3" OutWeight="0" WeightedMode="In" />
+                    </Day>
+                    <Night />
+                </SolarRadiationTemperature>
+                <Gas>
+                    <Gas Type="CarbonDioxide" Quantity="12" />
+                    <Gas Type="Volatiles" Quantity="30" />
+                    <Gas Type="Pollutant" Quantity="15" />
+                </Gas>
+            </GlobalAtmosphere>
+            <SkyBoxMaterialName>MagmaSky</SkyBoxMaterialName>
+            <SetSunInSkybox>true</SetSunInSkybox>
+            <SunPrefabName>MagmaSun</SunPrefabName>
+            <Gravity>-5.5</Gravity>
+            <Skybox>
+                <PlanetPrefab>
+                    <Name>Janus</Name>
+                    <Position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                    </Position>
+                    <Rotation>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                    </Rotation>
+                    <Scale>
+                        <x>70</x>
+                        <y>70</y>
+                        <z>70</z>
+                    </Scale>
+                </PlanetPrefab>
+            </Skybox>
+            <CelestialConstants BodyScale="5.2" SkyboxScale="0.1">
+                <TimeOffset Days="0" Hours="0" Minutes="11" Seconds="0" />
+            </CelestialConstants>
+            <PrimaryBody Id="Janus" SolarConstant="2402" />
+            <PlayableBody Id="Vulcan" Parent="Janus" Latitude="-49.2" Longitude="-125.0" />
+            <CelestialBodies>
+                <Body Id="Vulcan" Parent="Janus">
+                    <FixedRotation x="0.4" y="1" z="0" Speed="90" />
+                </Body>
+                <RockyBody Id="Erebus" Parent="Vulcan" RadiusKm="2634" CanOccult="false" Scale="0.028">
+                    <Emissive Value="1.6" />
+                    <Texture Path="Textures/mercury_diffuse.png" Format="DXT1"/>
+                    <Normal Path="Textures/mercury_normal.png" />
+                    <TidalLocking x="0.0269" y="0.9996" z="0" />
+                </RockyBody>
+                <RockyBody Id="Prometheus" Parent="Vulcan" RadiusKm="1812" CanOccult="false" Scale="0.028">
+                    <Emissive Value="1.8" />
+                    <Texture Path="Textures/mercury_diffuse.png" Format="DXT1"/>
+                    <Normal Path="Textures/mercury_normal.png" />
+                    <TidalLocking x="0.0269" y="0.9996" z="0" />
+                </RockyBody>
+                <Sprite Id="Acheron" Magnitude="0.6">
+                    <Material Minimum="0.3" />
+                </Sprite>
+                <Sprite Id="Styx" Magnitude="0.9">
+                    <Material Minimum="0.2" />
+                </Sprite>
+                <Sprite Id="Lethos" Magnitude="1.1">
+                    <Material Minimum="0.15" />
+                </Sprite>
+            </CelestialBodies>
+            <PreviewScene>
+                <CameraPosition>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </CameraPosition>
+                <CameraRotation>
+                    <x>289.387</x>
+                    <y>213.11</y>
+                    <z>337.142</z>
+                </CameraRotation>
+                <SunRotation>
+                    <x>62.103</x>
+                    <y>180</y>
+                    <z>180</z>
+                </SunRotation>
+                <SunPrefab>SpaceSun (UnityEngine.Light)</SunPrefab>
+                <AtmosphericScattering>false</AtmosphericScattering>
+                <LensFlare>true</LensFlare>
+                <LensFlareIntensity>0</LensFlareIntensity>
+                <SkyBoxMaterial>SceneSkyVulcan</SkyBoxMaterial>
+                <Prefabs>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>-320.723</x>
+                            <y>375.989</y>
+                            <z>-79.266</z>
+                        </Position>
+                        <Rotation>
+                            <x>302.241</x>
+                            <y>180</y>
+                            <z>180</z>
+                        </Rotation>
+                        <Scale>
+                            <x>35.82</x>
+                            <y>35.82</y>
+                            <z>35.82</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>-490.723</x>
+                            <y>716.302</y>
+                            <z>-126.547</z>
+                        </Position>
+                        <Rotation>
+                            <x>48.948</x>
+                            <y>180</y>
+                            <z>180</z>
+                        </Rotation>
+                        <Scale>
+                            <x>13.836</x>
+                            <y>13.836</y>
+                            <z>13.836</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>Blackhole</Name>
+                        <Position>
+                            <x>-278.277283</x>
+                            <y>819.000305</y>
+                            <z>-235.0005035</z>
+                        </Position>
+                        <Rotation>
+                            <x>78.996</x>
+                            <y>124.7</y>
+                            <z>96.749</z>
+                        </Rotation>
+                        <Scale>
+                            <x>250</x>
+                            <y>250</y>
+                            <z>250</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>-490.693</x>
+                            <y>718.832</y>
+                            <z>-354.209</z>
+                        </Position>
+                        <Rotation>
+                            <x>48.948</x>
+                            <y>180</y>
+                            <z>180</z>
+                        </Rotation>
+                        <Scale>
+                            <x>17.205</x>
+                            <y>17.205</y>
+                            <z>17.205</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>SpaceAsteroid</Name>
+                        <Position>
+                            <x>-705.783</x>
+                            <y>1021.582</y>
+                            <z>-347.419</z>
+                        </Position>
+                        <Rotation>
+                            <x>48.948</x>
+                            <y>180</y>
+                            <z>180</z>
+                        </Rotation>
+                        <Scale>
+                            <x>9.588</x>
+                            <y>9.588</y>
+                            <z>9.588</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIVulcan</Name>
+                        <Position>
+                            <x>61</x>
+                            <y>194</y>
+                            <z>-101</z>
+                        </Position>
+                        <Rotation>
+                            <x>-42.068</x>
+                            <y>137.302</y>
+                            <z>0</z>
+                        </Rotation>
+                        <Scale>
+                            <x>2643.388</x>
+                            <y>2643.388</y>
+                            <z>2643.388</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>MiscPlanet</Name>
+                        <Position>
+                            <x>-101.723</x>
+                            <y>179.302</y>
+                            <z>-60.209</z>
+                        </Position>
+                        <Rotation>
+                            <x>0</x>
+                            <y>0</y>
+                            <z>0</z>
+                        </Rotation>
+                        <Scale>
+                            <x>2.089</x>
+                            <y>2.089</y>
+                            <z>2.089</z>
+                        </Scale>
+                    </Prefab>
+                </Prefabs>
+            </PreviewScene>
+            <LavaLevel>-8</LavaLevel>
+            <HasLava>true</HasLava>
+            <AtmosphericScattering>true</AtmosphericScattering>
+            <AtmosphericScatteringData>
+                <RayleighColorRampColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.549019635</r>
+                            <g>0.0588235334</g>
+                            <b>0.0509803966</b>
+                            <a>1</a>
+                        </color>
+                        <time>0.00588998245</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.4634524</r>
+                            <g>0.0516090132</g>
+                            <b>0.0448302</b>
+                            <a>1</a>
+                        </color>
+                        <time>0.08235294</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.084905684</r>
+                            <g>0.0196922049</g>
+                            <b>0.0176219363</b>
+                            <a>1</a>
+                        </color>
+                        <time>1</time>
+                    </GradientColorKey>
+                </RayleighColorRampColorKey>
+                <RayleighColorRampAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>1</alpha>
+                        <time>0</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>1</alpha>
+                        <time>1</time>
+                    </GradientAlphaKey>
+                </RayleighColorRampAlphaKey>
+                <RayleighColorRampMode>Blend</RayleighColorRampMode>
+                <WorldRayleighColorIntensity>1</WorldRayleighColorIntensity>
+                <WorldRayleighDensity>19.9</WorldRayleighDensity>
+                <WorldRayleighExtinctionFactor>1</WorldRayleighExtinctionFactor>
+                <WorldRayleighIndirectScatter>0.4</WorldRayleighIndirectScatter>
+                <WorldMieColorIntensity>1.3</WorldMieColorIntensity>
+                <MieColorRampColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>1</r>
+                            <g>0.49379617</g>
+                            <b>0</b>
+                            <a>1</a>
+                        </color>
+                        <time>0.4411841</time>
+                    </GradientColorKey>
+                    <GradientColorKey>
+                        <color>
+                            <r>0.7264151</r>
+                            <g>0.09478613</g>
+                            <b>0</b>
+                            <a>1</a>
+                        </color>
+                        <time>1</time>
+                    </GradientColorKey>
+                </MieColorRampColorKey>
+                <MieColorRampAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>1</alpha>
+                        <time>0</time>
+                    </GradientAlphaKey>
+                    <GradientAlphaKey>
+                        <alpha>1</alpha>
+                        <time>1</time>
+                    </GradientAlphaKey>
+                </MieColorRampAlphaKey>
+                <MieColorRampMode>Blend</MieColorRampMode>
+                <WorldMieDensity>16.26</WorldMieDensity>
+                <WorldMieExtinctionFactor>1</WorldMieExtinctionFactor>
+                <WorldMiePhaseAnisotropy>0.7</WorldMiePhaseAnisotropy>
+                <WorldNearScatterPush>14</WorldNearScatterPush>
+                <WorldNormalDistance>1000</WorldNormalDistance>
+                <HeightRayleighColor>
+                    <r>0.3584906</r>
+                    <g>0.08716242</g>
+                    <b>0</b>
+                    <a>1</a>
+                </HeightRayleighColor>
+                <HeightRayleighIntensity>1</HeightRayleighIntensity>
+                <HeightRayleighDensity>72.7</HeightRayleighDensity>
+                <HeightMieDensity>50</HeightMieDensity>
+                <HeightExtinctionFactor>0.5</HeightExtinctionFactor>
+                <HeightSeaLevel>0</HeightSeaLevel>
+                <HeightDistance>80</HeightDistance>
+                <HeightPlaneShift>
+                    <x>0</x>
+                    <y>0</y>
+                    <z>0</z>
+                </HeightPlaneShift>
+                <HeightNearScatterPush>10.8</HeightNearScatterPush>
+                <HeightNormalDistance>1000</HeightNormalDistance>
+                <UseOcclusion>false</UseOcclusion>
+                <OcclusionBias>0</OcclusionBias>
+                <OcclusionBiasIndirect>0.8</OcclusionBiasIndirect>
+                <OcclusionBiasClouds>0.1</OcclusionBiasClouds>
+                <OcclusionDownscale>x2</OcclusionDownscale>
+                <OcclusionSamples>x64</OcclusionSamples>
+                <OcclusionDepthFixup>true</OcclusionDepthFixup>
+                <OcclusionDepthThreshold>25</OcclusionDepthThreshold>
+                <OcclusionFullSky>true</OcclusionFullSky>
+                <OcclusionBiasSkyRayleigh>0.2</OcclusionBiasSkyRayleigh>
+                <OcclusionBiasSkyMie>0.4</OcclusionBiasSkyMie>
+                <WorldScaleExponent>1</WorldScaleExponent>
+                <ForcePerPixel>false</ForcePerPixel>
+                <ForcePostEffect>false</ForcePostEffect>
+            </AtmosphericScatteringData>
+            <AmbientLightMin>0</AmbientLightMin>
+            <AmbientLightMax>1</AmbientLightMax>
+            <AmbientLighting>
+                <Sky r="0.1419766" g="0.1606386" b="0.1911765" />
+                <Equator r="0.08953287" g="0.1199499" b="0.1323529" />
+                <Ground r="0.3113208" g="0.3113208" b="0.3113208" />
+            </AmbientLighting>
+            <Stars>
+                <Star Minimum="0.2" />
+                <Star Minimum="0.2" />
+            </Stars>
+            <Clouds>-1</Clouds>
+            <LavaColor>
+                <r>0.6509434</r>
+                <g>0.279085875</g>
+                <b>0.119748987</b>
+                <a>1</a>
+            </LavaColor>
+            <HasCustomLavaColor>true</HasCustomLavaColor>
+            <WeatherEvent Id="VulcanAshStorm"/>
+            
+            <StartLocation Id="VulcanSpawnVestaValley">
+                <Name Key="VulcanSpawnVestaValleyName"/>
+                <Description Key="VulcanSpawnVestaValleyDescription"/>
+                <Position x="-871" y="-340"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+            
+            <StartLocation Id="VulcanSpawnEtnasFury">
+                <Name Key="VulcanSpawnEtnasFuryName"/>
+                <Description Key="VulcanSpawnEtnasFuryDescription"/>
+                <Position x="31" y="481"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnIxionsDemise">
+                <Name Key="VulcanSpawnIxionsDemiseName"/>
+                <Description Key="VulcanSpawnIxionsDemiseDescription"/>
+                <Position x="998" y="-634"/>
+                <SpawnRadius Value="9"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnTitusReach">
+                <Name Key="VulcanSpawnTitusReachName"/>
+                <Description Key="VulcanSpawnTitusReachDescription"/>
+                <Position x="713" y="661"/>
+                <SpawnRadius Value="8"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnSerpentPlateau">
+                <Name Key="VulcanSpawnSerpentPlateauName"/>
+                <Description Key="VulcanSpawnSerpentPlateauDescription"/>
+                <Position x="553" y="-1014"/>
+                <SpawnRadius Value="8"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnTalonHeights">
+                <Name Key="VulcanSpawnTalonHeightsName"/>
+                <Description Key="VulcanSpawnTalonHeightsDescription"/>
+                <Position x="-838" y="835"/>
+                <SpawnRadius Value="12"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnKalimarOutlook">
+                <Name Key="VulcanSpawnKalimarOutlookName"/>
+                <Description Key="VulcanSpawnKalimarOutlookDescription"/>
+                <Position x="-170" y="-550"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnDusterPlateauNorth">
+                <Name Key="VulcanSpawnDusterPlateauNorthName"/>
+                <Description Key="VulcanSpawnDusterPlateauNorthDescription"/>
+                <Position x="-687" y="-894"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnCinderPeak">
+                <Name Key="VulcanSpawnCinderPeakName"/>
+                <Description Key="VulcanSpawnCinderPeakDescription"/>
+                <Position x="1275" y="-1229"/>
+                <SpawnRadius Value="4"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnRedJunction">
+                <Name Key="VulcanSpawnRedJunctionName"/>
+                <Description Key="VulcanSpawnRedJunctionDescription"/>
+                <Position x="947" y="-43.9"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnOrensTrack">
+                <Name Key="VulcanSpawnOrensTrackName"/>
+                <Description Key="VulcanSpawnOrensTrackDescription"/>
+                <Position x="1120" y="893"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+
+            <StartLocation Id="VulcanSpawnDogsfoot">
+                <Name Key="VulcanSpawnDogsfootName"/>
+                <Description Key="VulcanSpawnDogsfootDescription"/>
+                <Position x="-1252" y="-788"/>
+                <SpawnRadius Value="10"/>
+            </StartLocation>
+
+
+            <Minables Id="DefaultMinablesSurfaceVulcan" OreDensity="2.5">
+                <Surface Value="true"/>
+            </Minables>
+            <Minables Id="DefaultMinablesNoIce" OreDensity="1">
+                <Surface Value="false"/>
+            </Minables>
+            <RegionSet Id="VulcanNamedRegions">
+                <Texture Path="Worlds/Vulcan/Textures/vulcan_named_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="VulcanNamedRegionDogsheadPassageSouth" R="208" G="108" B="155">
+                    <Name Key="VulcanNamedRegionDogsheadPassageSouthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDogsheadPassageNorth" R="255" G="0" B="119">
+                    <Name Key="VulcanNamedRegionDogsheadPassageNorthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionKalimarPlateauEast" R="254" G="161" B="194">
+                    <Name Key="VulcanNamedRegionKalimarPlateauEastName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDustersOutcrop" R="243" G="105" B="153">
+                    <Name Key="VulcanNamedRegionDustersOutcropName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDustersPlateauNorth" R="255" G="67" B="133">
+                    <Name Key="VulcanNamedRegionDustersPlateauNorthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDustersPlateauSouth" R="235" G="34" B="74">
+                    <Name Key="VulcanNamedRegionDustersPlateauSouthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSerpentRise" R="230" G="77" B="108">
+                    <Name Key="VulcanNamedRegionSerpentRiseName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSouthernHighlands" R="255" G="0" B="51">
+                    <Name Key="VulcanNamedRegionSouthernHighlandsName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionPollenKnoll" R="248" G="175" B="190">
+                    <Name Key="VulcanNamedRegionPollenKnollName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionPollenThumb" R="202" G="96" B="117">
+                    <Name Key="VulcanNamedRegionPollenThumbName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCinderApproach" R="157" G="33" B="58">
+                    <Name Key="VulcanNamedRegionCinderApproachName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSouthEasternWaste" R="160" G="96" B="109">
+                    <Name Key="VulcanNamedRegionSouthEasternWasteName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionBurningTrack" R="255" G="8" B="0">
+                    <Name Key="VulcanNamedRegionBurningTrackName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionJanosPlateau" R="245" G="75" B="69">
+                    <Name Key="VulcanNamedRegionJanosPlateauName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionJanosSlope" R="212" G="59" B="54">
+                    <Name Key="VulcanNamedRegionJanosSlopeName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionBreakersView" R="243" G="81" B="41">
+                    <Name Key="VulcanNamedRegionBreakersViewName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCrescentOutcrop" R="212" G="85" B="54">
+                    <Name Key="VulcanNamedRegionCrescentOutcropName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionLomaHighlands" R="180" G="114" B="98">
+                    <Name Key="VulcanNamedRegionLomaHighlandsName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTalonHighlands" R="187" G="109" B="66">
+                    <Name Key="VulcanNamedRegionTalonHighlandsName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionBurningSaddle" R="174" G="147" B="133">
+                    <Name Key="VulcanNamedRegionBurningSaddleName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTwinsView" R="222" G="176" B="152">
+                    <Name Key="VulcanNamedRegionTwinsViewName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSpearOverlook" R="165" G="58" B="31">
+                    <Name Key="VulcanNamedRegionSpearOverlookName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTwinsPass" R="227" G="160" B="124">
+                    <Name Key="VulcanNamedRegionTwinsPassName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionPrometheusNorth" R="255" G="89" B="0">
+                    <Name Key="VulcanNamedRegionPrometheusNorthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionPrometheusSouth" R="245" G="123" B="56">
+                    <Name Key="VulcanNamedRegionPrometheusSouthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionNorthernWaste" R="188" G="67" B="1">
+                    <Name Key="VulcanNamedRegionNorthernWasteName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionGreyOverlook" R="233" G="151" B="148">
+                    <Name Key="VulcanNamedRegionGreyOverlookName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCrescentOverlook" R="194" G="92" B="67">
+                    <Name Key="VulcanNamedRegionCrescentOverlookName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionValoursRise" R="173" G="68" B="65">
+                    <Name Key="VulcanNamedRegionValoursRiseName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionOrensTrack" R="239" G="119" B="89">
+                    <Name Key="VulcanNamedRegionOrensTrackName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionBrokenPlateau" R="147" G="32" B="72">
+                    <Name Key="VulcanNamedRegionBrokenPlateauName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionKalimarPlateau" R="165" G="60" B="97">
+                    <Name Key="VulcanNamedRegionKalimarPlateauName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTalonHeightsWest" R="255" G="146" B="197">
+                    <Name Key="VulcanNamedRegionTalonHeightsWestName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTalonHeights" R="239" G="172" B="203">
+                    <Name Key="VulcanNamedRegionTalonHeightsName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSorinsDescent" R="132" G="136" B="246">
+                    <Name Key="VulcanNamedRegionSorinsDescentName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSorinsApproach" R="82" G="119" B="240">
+                    <Name Key="VulcanNamedRegionSorinsApproachName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionKalimarTrack" R="132" G="149" B="241">
+                    <Name Key="VulcanNamedRegionKalimarTrackName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionOrensWaste" R="110" G="54" B="184">
+                    <Name Key="VulcanNamedRegionOrensWasteName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionOrensView" R="133" G="83" B="248">
+                    <Name Key="VulcanNamedRegionOrensViewName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTranquilityRise" R="144" G="144" B="225">
+                    <Name Key="VulcanNamedRegionTranquilityRiseName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTalonRise" R="11" G="11" B="178">
+                    <Name Key="VulcanNamedRegionTalonRiseName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionAshRise" R="69" G="69" B="169">
+                    <Name Key="VulcanNamedRegionAshRiseName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSpearValley" R="108" G="108" B="173">
+                    <Name Key="VulcanNamedRegionSpearValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionFingerValley" R="85" G="43" B="255">
+                    <Name Key="VulcanNamedRegionFingerValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionNarrowPassage" R="141" G="120" B="189">
+                    <Name Key="VulcanNamedRegionNarrowPassageName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDamonPassage" R="45" G="81" B="198">
+                    <Name Key="VulcanNamedRegionDamonPassageName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTalonRift" R="77" G="101" B="182">
+                    <Name Key="VulcanNamedRegionTalonRiftName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionWestlandsGully" R="9" G="40" B="143">
+                    <Name Key="VulcanNamedRegionWestlandsGullyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionWestlands" R="41" G="121" B="241">
+                    <Name Key="VulcanNamedRegionWestlandsName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionHalesDescent" R="158" G="169" B="235">
+                    <Name Key="VulcanNamedRegionHalesDescentName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDantesValley" R="16" G="87" B="194">
+                    <Name Key="VulcanNamedRegionDantesValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCrescentValley" R="176" G="126" B="240">
+                    <Name Key="VulcanNamedRegionCrescentValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionBreakersWalk" R="155" G="90" B="238">
+                    <Name Key="VulcanNamedRegionBreakersWalkName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionBreakersGully" R="110" G="0" B="255">
+                    <Name Key="VulcanNamedRegionBreakersGullyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionForgottenValley" R="85" G="91" B="255">
+                    <Name Key="VulcanNamedRegionForgottenValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionPeanutValley" R="118" G="147" B="241">
+                    <Name Key="VulcanNamedRegionPeanutValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDogsfoot" R="38" G="86" B="244">
+                    <Name Key="VulcanNamedRegionDogsfootName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDeepscarSouth" R="155" G="177" B="248">
+                    <Name Key="VulcanNamedRegionDeepscarSouthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDeepscarNorth" R="191" G="204" B="249">
+                    <Name Key="VulcanNamedRegionDeepscarNorthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionValleyOfHope" R="0" G="59" B="255">
+                    <Name Key="VulcanNamedRegionValleyOfHopeName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionOuterWaste" R="47" G="54" B="255">
+                    <Name Key="VulcanNamedRegionOuterWasteName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSerpentValleyNorth" R="0" G="0" B="255">
+                    <Name Key="VulcanNamedRegionSerpentValleyNorthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionSerpentValleySouth" R="72" G="88" B="182">
+                    <Name Key="VulcanNamedRegionSerpentValleySouthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionShatteredValley" R="25" G="49" B="181">
+                    <Name Key="VulcanNamedRegionShatteredValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionValleyOfLoss" R="86" G="60" B="148">
+                    <Name Key="VulcanNamedRegionValleyOfLossName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCinderTrack" R="54" G="13" B="148">
+                    <Name Key="VulcanNamedRegionCinderTrackName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCinderGully" R="72" G="22" B="190">
+                    <Name Key="VulcanNamedRegionCinderGullyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionGreyChannel" R="165" G="132" B="243">
+                    <Name Key="VulcanNamedRegionGreyChannelName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionNeedleValley" R="68" G="94" B="240">
+                    <Name Key="VulcanNamedRegionNeedleValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCalamitySouth" R="35" G="66" B="238">
+                    <Name Key="VulcanNamedRegionCalamitySouthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCalamityNorth" R="0" G="38" B="255">
+                    <Name Key="VulcanNamedRegionCalamityNorthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionRedJunctionSouthEast" R="65" G="92" B="132">
+                    <Name Key="VulcanNamedRegionRedJunctionSouthEastName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionRedJunctionSouthWest" R="52" G="105" B="184">
+                    <Name Key="VulcanNamedRegionRedJunctionSouthWestName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionRedJunctionNorthWest" R="68" G="106" B="162">
+                    <Name Key="VulcanNamedRegionRedJunctionNorthWestName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionRedJunctionNorthEast" R="104" G="129" B="167">
+                    <Name Key="VulcanNamedRegionRedJunctionNorthEastName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDuchValley" R="112" G="112" B="234">
+                    <Name Key="VulcanNamedRegionDuchValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTranquilityNorth" R="141" G="172" B="218">
+                    <Name Key="VulcanNamedRegionTranquilityNorthName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTranquilityWest" R="63" G="128" B="226">
+                    <Name Key="VulcanNamedRegionTranquilityWestName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTranquilityEast" R="106" G="153" B="224">
+                    <Name Key="VulcanNamedRegionTranquilityEastName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionIronValley" R="17" G="64" B="216">
+                    <Name Key="VulcanNamedRegionIronValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionPepperGully" R="114" G="128" B="176">
+                    <Name Key="VulcanNamedRegionPepperGullyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionAshValley" R="40" G="40" B="167">
+                    <Name Key="VulcanNamedRegionAshValleyName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionCinderPeak" R="94" G="181" B="39">
+                    <Name Key="VulcanNamedRegionCinderPeakName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionMountSorin" R="119" G="231" B="50">
+                    <Name Key="VulcanNamedRegionMountSorinName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionDogshead" R="40" G="105" B="0">
+                    <Name Key="VulcanNamedRegionDogsheadName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTalonPeak" R="57" G="150" B="0">
+                    <Name Key="VulcanNamedRegionTalonPeakName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionKalimarVent" R="80" G="144" B="41">
+                    <Name Key="VulcanNamedRegionKalimarVentName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionMountValour" R="56" G="93" B="33">
+                    <Name Key="VulcanNamedRegionMountValourName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionMountOren" R="26" G="67" B="1">
+                    <Name Key="VulcanNamedRegionMountOrenName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionLoma" R="78" G="200" B="2">
+                    <Name Key="VulcanNamedRegionLomaName"/>
+                </Region>
+                <Region Id="VulcanNamedRegionTora" R="98" G="255" B="0">
+                    <Name Key="VulcanNamedRegionToraName"/>
+                </Region>
+            </RegionSet>
+
+            <RegionSet Id="VulcanDeepMiningRegions">
+                <Texture Path="Worlds/Vulcan/Textures/vulcan_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="VulcanDeepMiningRegionCoal" R="245" G="36" B="36"/>
+                <Region Id="VulcanDeepMiningRegionNickel" R="226" G="245" B="51"/>
+                <Region Id="VulcanDeepMiningRegionGold" R="245" G="150" B="36"/>
+                <Region Id="VulcanDeepMiningRegionSilver" R="112" G="36" B="245"/>
+                <Region Id="VulcanDeepMiningRegionLead" R="36" G="188" B="245"/>
+                <Region Id="VulcanDeepMiningRegionIronCopperSilicon" R="36" G="245" B="74"/>
+                <Region Id="VulcanDeepMiningRegionCobalt" R="115" G="255" B="185"/>
+                <Region Id="VulcanDeepMiningRegionGoldSilver" R="36" G="74" B="245"/>
+                <Region Id="VulcanDeepMiningRegionSilverLeadNickel" R="226" G="36" B="245"/>
+                <Region Id="VulcanDeepMiningRegionIron" R="65" G="144" B="23"/>
+                <Region Id="VulcanDeepMiningRegionSilicon" R="245" G="36" B="150"/>
+            </RegionSet>
+
+            <RegionSet Id="VulcanPoiRegions">
+                <Texture Path="Worlds/Vulcan/Textures/vulcan_poi_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="VulcanPoiRegionDogsheadCrater" R="255" G="0" B="30"/>
+                <Region Id="VulcanPoiRegionSorinCrater" R="255" G="98" B="0"/>
+                <Region Id="VulcanPoiRegionKalimarCrater" R="255" G="191" B="0"/>
+                <Region Id="VulcanPoiRegionCinderCrater" R="157" G="255" B="0"/>
+                <Region Id="VulcanPoiRegionValourCrater" R="9" G="255" B="0"/>
+                <Region Id="VulcanPoiRegionOrenCrater" R="0" G="255" B="102"/>
+                <Region Id="VulcanPoiRegionTalonCrater" R="0" G="255" B="145"/>
+                <Region Id="VulcanPoiRegionToraCrater" R="0" G="255" B="195"/>
+                <Region Id="VulcanPoiRegionLomaCrater" R="0" G="255" B="247"/>
+            </RegionSet>
+
+            <DeepMinables Id="DeepMinableProfileIron">
+                <Region Id="VulcanDeepMiningRegionIron"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilicon">
+                <Region Id="VulcanDeepMiningRegionSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
+                <Region Id="VulcanDeepMiningRegionIronCopperSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
+                <Region Id="VulcanDeepMiningRegionSilverLeadNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGoldSilver">
+                <Region Id="VulcanDeepMiningRegionGoldSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilver">
+                <Region Id="VulcanDeepMiningRegionSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileLead">
+                <Region Id="VulcanDeepMiningRegionLead"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileNickel">
+                <Region Id="VulcanDeepMiningRegionNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCoal">
+                <Region Id="VulcanDeepMiningRegionCoal"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCobalt">
+                <Region Id="VulcanDeepMiningRegionCobalt"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGold">
+                <Region Id="VulcanDeepMiningRegionGold"/>
+            </DeepMinables>
+
+            <DeepMinablesRegionData>
+                <RegionSet Id="VulcanDeepMiningRegions"/>
+            </DeepMinablesRegionData>
+
+            <GeographicRegionData>
+                <DefaultRegionName Value="Vulcan"/>
+                <RegionSet Id="VulcanNamedRegions"/>
+            </GeographicRegionData>
+
+<!--            new points of interest-->
+
+            <PointOfInterest Id="VulcanPoiDogsheadPassageSouth">
+                <Region Id="VulcanNamedRegionDogsheadPassageSouth"/>
+                <Name Key="VulcanNamedRegionDogsheadPassageSouthName"/>
+                <Description Key="VulcanPoiDogsheadPassageSouthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDogsheadPassageNorth">
+                <Region Id="VulcanNamedRegionDogsheadPassageNorth"/>
+                <Name Key="VulcanNamedRegionDogsheadPassageNorthName"/>
+                <Description Key="VulcanPoiDogsheadPassageNorthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiKalimarPlateauEast">
+                <Region Id="VulcanNamedRegionKalimarPlateauEast"/>
+                <Name Key="VulcanNamedRegionKalimarPlateauEastName"/>
+                <Description Key="VulcanPoiKalimarPlateauEastDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDustersOutcrop">
+                <Region Id="VulcanNamedRegionDustersOutcrop"/>
+                <Name Key="VulcanNamedRegionDustersOutcropName"/>
+                <Description Key="VulcanPoiDustersOutcropDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDustersPlateauNorth">
+                <Region Id="VulcanNamedRegionDustersPlateauNorth"/>
+                <Name Key="VulcanNamedRegionDustersPlateauNorthName"/>
+                <Description Key="VulcanPoiDustersPlateauNorthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDustersPlateauSouth">
+                <Region Id="VulcanNamedRegionDustersPlateauSouth"/>
+                <Name Key="VulcanNamedRegionDustersPlateauSouthName"/>
+                <Description Key="VulcanPoiDustersPlateauSouthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSerpentRise">
+                <Region Id="VulcanNamedRegionSerpentRise"/>
+                <Name Key="VulcanNamedRegionSerpentRiseName"/>
+                <Description Key="VulcanPoiSerpentRiseDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSouthernHighlands">
+                <Region Id="VulcanNamedRegionSouthernHighlands"/>
+                <Name Key="VulcanNamedRegionSouthernHighlandsName"/>
+                <Description Key="VulcanPoiSouthernHighlandsDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiPollenKnoll">
+                <Region Id="VulcanNamedRegionPollenKnoll"/>
+                <Name Key="VulcanNamedRegionPollenKnollName"/>
+                <Description Key="VulcanPoiPollenKnollDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiPollenThumb">
+                <Region Id="VulcanNamedRegionPollenThumb"/>
+                <Name Key="VulcanNamedRegionPollenThumbName"/>
+                <Description Key="VulcanPoiPollenThumbDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCinderApproach">
+                <Region Id="VulcanNamedRegionCinderApproach"/>
+                <Name Key="VulcanNamedRegionCinderApproachName"/>
+                <Description Key="VulcanPoiCinderApproachDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSouthEasternWaste">
+                <Region Id="VulcanNamedRegionSouthEasternWaste"/>
+                <Name Key="VulcanNamedRegionSouthEasternWasteName"/>
+                <Description Key="VulcanPoiSouthEasternWasteDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiBurningTrack">
+                <Region Id="VulcanNamedRegionBurningTrack"/>
+                <Name Key="VulcanNamedRegionBurningTrackName"/>
+                <Description Key="VulcanPoiBurningTrackDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiJanosPlateau">
+                <Region Id="VulcanNamedRegionJanosPlateau"/>
+                <Name Key="VulcanNamedRegionJanosPlateauName"/>
+                <Description Key="VulcanPoiJanosPlateauDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiJanosSlope">
+                <Region Id="VulcanNamedRegionJanosSlope"/>
+                <Name Key="VulcanNamedRegionJanosSlopeName"/>
+                <Description Key="VulcanPoiJanosSlopeDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiBreakersView">
+                <Region Id="VulcanNamedRegionBreakersView"/>
+                <Name Key="VulcanNamedRegionBreakersViewName"/>
+                <Description Key="VulcanPoiBreakersViewDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCrescentOutcrop">
+                <Region Id="VulcanNamedRegionCrescentOutcrop"/>
+                <Name Key="VulcanNamedRegionCrescentOutcropName"/>
+                <Description Key="VulcanPoiCrescentOutcropDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiLomaHighlands">
+                <Region Id="VulcanNamedRegionLomaHighlands"/>
+                <Name Key="VulcanNamedRegionLomaHighlandsName"/>
+                <Description Key="VulcanPoiLomaHighlandsDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTalonHighlands">
+                <Region Id="VulcanNamedRegionTalonHighlands"/>
+                <Name Key="VulcanNamedRegionTalonHighlandsName"/>
+                <Description Key="VulcanPoiTalonHighlandsDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiBurningSaddle">
+                <Region Id="VulcanNamedRegionBurningSaddle"/>
+                <Name Key="VulcanNamedRegionBurningSaddleName"/>
+                <Description Key="VulcanPoiBurningSaddleDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTwinsView">
+                <Region Id="VulcanNamedRegionTwinsView"/>
+                <Name Key="VulcanNamedRegionTwinsViewName"/>
+                <Description Key="VulcanPoiTwinsViewDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSpearOverlook">
+                <Region Id="VulcanNamedRegionSpearOverlook"/>
+                <Name Key="VulcanNamedRegionSpearOverlookName"/>
+                <Description Key="VulcanPoiSpearOverlookDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTwinsPass">
+                <Region Id="VulcanNamedRegionTwinsPass"/>
+                <Name Key="VulcanNamedRegionTwinsPassName"/>
+                <Description Key="VulcanPoiTwinsPassDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiPrometheusNorth">
+                <Region Id="VulcanNamedRegionPrometheusNorth"/>
+                <Name Key="VulcanNamedRegionPrometheusNorthName"/>
+                <Description Key="VulcanPoiPrometheusNorthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiPrometheusSouth">
+                <Region Id="VulcanNamedRegionPrometheusSouth"/>
+                <Name Key="VulcanNamedRegionPrometheusSouthName"/>
+                <Description Key="VulcanPoiPrometheusSouthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiNorthernWaste">
+                <Region Id="VulcanNamedRegionNorthernWaste"/>
+                <Name Key="VulcanNamedRegionNorthernWasteName"/>
+                <Description Key="VulcanPoiNorthernWasteDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiGreyOverlook">
+                <Region Id="VulcanNamedRegionGreyOverlook"/>
+                <Name Key="VulcanNamedRegionGreyOverlookName"/>
+                <Description Key="VulcanPoiGreyOverlookDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCrescentOverlook">
+                <Region Id="VulcanNamedRegionCrescentOverlook"/>
+                <Name Key="VulcanNamedRegionCrescentOverlookName"/>
+                <Description Key="VulcanPoiCrescentOverlookDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiValoursRise">
+                <Region Id="VulcanNamedRegionValoursRise"/>
+                <Name Key="VulcanNamedRegionValoursRiseName"/>
+                <Description Key="VulcanPoiValoursRiseDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiOrensTrack">
+                <Region Id="VulcanNamedRegionOrensTrack"/>
+                <Name Key="VulcanNamedRegionOrensTrackName"/>
+                <Description Key="VulcanPoiOrensTrackDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiBrokenPlateau">
+                <Region Id="VulcanNamedRegionBrokenPlateau"/>
+                <Name Key="VulcanNamedRegionBrokenPlateauName"/>
+                <Description Key="VulcanPoiBrokenPlateauDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiKalimarPlateau">
+                <Region Id="VulcanNamedRegionKalimarPlateau"/>
+                <Name Key="VulcanNamedRegionKalimarPlateauName"/>
+                <Description Key="VulcanPoiKalimarPlateauDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTalonHeightsWest">
+                <Region Id="VulcanNamedRegionTalonHeightsWest"/>
+                <Name Key="VulcanNamedRegionTalonHeightsWestName"/>
+                <Description Key="VulcanPoiTalonHeightsWestDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTalonHeights">
+                <Region Id="VulcanNamedRegionTalonHeights"/>
+                <Name Key="VulcanNamedRegionTalonHeightsName"/>
+                <Description Key="VulcanPoiTalonHeightsDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSorinsDescent">
+                <Region Id="VulcanNamedRegionSorinsDescent"/>
+                <Name Key="VulcanNamedRegionSorinsDescentName"/>
+                <Description Key="VulcanPoiSorinsDescentDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSorinsApproach">
+                <Region Id="VulcanNamedRegionSorinsApproach"/>
+                <Name Key="VulcanNamedRegionSorinsApproachName"/>
+                <Description Key="VulcanPoiSorinsApproachDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiKalimarTrack">
+                <Region Id="VulcanNamedRegionKalimarTrack"/>
+                <Name Key="VulcanNamedRegionKalimarTrackName"/>
+                <Description Key="VulcanPoiKalimarTrackDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiOrensWaste">
+                <Region Id="VulcanNamedRegionOrensWaste"/>
+                <Name Key="VulcanNamedRegionOrensWasteName"/>
+                <Description Key="VulcanPoiOrensWasteDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiOrensView">
+                <Region Id="VulcanNamedRegionOrensView"/>
+                <Name Key="VulcanNamedRegionOrensViewName"/>
+                <Description Key="VulcanPoiOrensViewDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTranquilityRise">
+                <Region Id="VulcanNamedRegionTranquilityRise"/>
+                <Name Key="VulcanNamedRegionTranquilityRiseName"/>
+                <Description Key="VulcanPoiTranquilityRiseDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTalonRise">
+                <Region Id="VulcanNamedRegionTalonRise"/>
+                <Name Key="VulcanNamedRegionTalonRiseName"/>
+                <Description Key="VulcanPoiTalonRiseDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiAshRise">
+                <Region Id="VulcanNamedRegionAshRise"/>
+                <Name Key="VulcanNamedRegionAshRiseName"/>
+                <Description Key="VulcanPoiAshRiseDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSpearValley">
+                <Region Id="VulcanNamedRegionSpearValley"/>
+                <Name Key="VulcanNamedRegionSpearValleyName"/>
+                <Description Key="VulcanPoiSpearValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiFingerValley">
+                <Region Id="VulcanNamedRegionFingerValley"/>
+                <Name Key="VulcanNamedRegionFingerValleyName"/>
+                <Description Key="VulcanPoiFingerValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiNarrowPassage">
+                <Region Id="VulcanNamedRegionNarrowPassage"/>
+                <Name Key="VulcanNamedRegionNarrowPassageName"/>
+                <Description Key="VulcanPoiNarrowPassageDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDamonPassage">
+                <Region Id="VulcanNamedRegionDamonPassage"/>
+                <Name Key="VulcanNamedRegionDamonPassageName"/>
+                <Description Key="VulcanPoiDamonPassageDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTalonRift">
+                <Region Id="VulcanNamedRegionTalonRift"/>
+                <Name Key="VulcanNamedRegionTalonRiftName"/>
+                <Description Key="VulcanPoiTalonRiftDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiWestlandsGully">
+                <Region Id="VulcanNamedRegionWestlandsGully"/>
+                <Name Key="VulcanNamedRegionWestlandsGullyName"/>
+                <Description Key="VulcanPoiWestlandsGullyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiWestlands">
+                <Region Id="VulcanNamedRegionWestlands"/>
+                <Name Key="VulcanNamedRegionWestlandsName"/>
+                <Description Key="VulcanPoiWestlandsDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiHalesDescent">
+                <Region Id="VulcanNamedRegionHalesDescent"/>
+                <Name Key="VulcanNamedRegionHalesDescentName"/>
+                <Description Key="VulcanPoiHalesDescentDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDantesValley">
+                <Region Id="VulcanNamedRegionDantesValley"/>
+                <Name Key="VulcanNamedRegionDantesValleyName"/>
+                <Description Key="VulcanPoiDantesValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCrescentValley">
+                <Region Id="VulcanNamedRegionCrescentValley"/>
+                <Name Key="VulcanNamedRegionCrescentValleyName"/>
+                <Description Key="VulcanPoiCrescentValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiBreakersWalk">
+                <Region Id="VulcanNamedRegionBreakersWalk"/>
+                <Name Key="VulcanNamedRegionBreakersWalkName"/>
+                <Description Key="VulcanPoiBreakersWalkDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiBreakersGully">
+                <Region Id="VulcanNamedRegionBreakersGully"/>
+                <Name Key="VulcanNamedRegionBreakersGullyName"/>
+                <Description Key="VulcanPoiBreakersGullyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiForgottenValley">
+                <Region Id="VulcanNamedRegionForgottenValley"/>
+                <Name Key="VulcanNamedRegionForgottenValleyName"/>
+                <Description Key="VulcanPoiForgottenValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiPeanutValley">
+                <Region Id="VulcanNamedRegionPeanutValley"/>
+                <Name Key="VulcanNamedRegionPeanutValleyName"/>
+                <Description Key="VulcanPoiPeanutValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDogsfoot">
+                <Region Id="VulcanNamedRegionDogsfoot"/>
+                <Name Key="VulcanNamedRegionDogsfootName"/>
+                <Description Key="VulcanPoiDogsfootDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDeepscarSouth">
+                <Region Id="VulcanNamedRegionDeepscarSouth"/>
+                <Name Key="VulcanNamedRegionDeepscarSouthName"/>
+                <Description Key="VulcanPoiDeepscarSouthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDeepscarNorth">
+                <Region Id="VulcanNamedRegionDeepscarNorth"/>
+                <Name Key="VulcanNamedRegionDeepscarNorthName"/>
+                <Description Key="VulcanPoiDeepscarNorthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiValleyOfHope">
+                <Region Id="VulcanNamedRegionValleyOfHope"/>
+                <Name Key="VulcanNamedRegionValleyOfHopeName"/>
+                <Description Key="VulcanPoiValleyOfHopeDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiOuterWaste">
+                <Region Id="VulcanNamedRegionOuterWaste"/>
+                <Name Key="VulcanNamedRegionOuterWasteName"/>
+                <Description Key="VulcanPoiOuterWasteDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSerpentValleyNorth">
+                <Region Id="VulcanNamedRegionSerpentValleyNorth"/>
+                <Name Key="VulcanNamedRegionSerpentValleyNorthName"/>
+                <Description Key="VulcanPoiSerpentValleyNorthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSerpentValleySouth">
+                <Region Id="VulcanNamedRegionSerpentValleySouth"/>
+                <Name Key="VulcanNamedRegionSerpentValleySouthName"/>
+                <Description Key="VulcanPoiSerpentValleySouthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiShatteredValley">
+                <Region Id="VulcanNamedRegionShatteredValley"/>
+                <Name Key="VulcanNamedRegionShatteredValleyName"/>
+                <Description Key="VulcanPoiShatteredValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiValleyOfLoss">
+                <Region Id="VulcanNamedRegionValleyOfLoss"/>
+                <Name Key="VulcanNamedRegionValleyOfLossName"/>
+                <Description Key="VulcanPoiValleyOfLossDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCinderTrack">
+                <Region Id="VulcanNamedRegionCinderTrack"/>
+                <Name Key="VulcanNamedRegionCinderTrackName"/>
+                <Description Key="VulcanPoiCinderTrackDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCinderGully">
+                <Region Id="VulcanNamedRegionCinderGully"/>
+                <Name Key="VulcanNamedRegionCinderGullyName"/>
+                <Description Key="VulcanPoiCinderGullyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiGreyChannel">
+                <Region Id="VulcanNamedRegionGreyChannel"/>
+                <Name Key="VulcanNamedRegionGreyChannelName"/>
+                <Description Key="VulcanPoiGreyChannelDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiNeedleValley">
+                <Region Id="VulcanNamedRegionNeedleValley"/>
+                <Name Key="VulcanNamedRegionNeedleValleyName"/>
+                <Description Key="VulcanPoiNeedleValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCalamitySouth">
+                <Region Id="VulcanNamedRegionCalamitySouth"/>
+                <Name Key="VulcanNamedRegionCalamitySouthName"/>
+                <Description Key="VulcanPoiCalamitySouthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCalamityNorth">
+                <Region Id="VulcanNamedRegionCalamityNorth"/>
+                <Name Key="VulcanNamedRegionCalamityNorthName"/>
+                <Description Key="VulcanPoiCalamityNorthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiRedJunctionSouthEast">
+                <Region Id="VulcanNamedRegionRedJunctionSouthEast"/>
+                <Name Key="VulcanNamedRegionRedJunctionSouthEastName"/>
+                <Description Key="VulcanPoiRedJunctionSouthEastDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiRedJunctionSouthWest">
+                <Region Id="VulcanNamedRegionRedJunctionSouthWest"/>
+                <Name Key="VulcanNamedRegionRedJunctionSouthWestName"/>
+                <Description Key="VulcanPoiRedJunctionSouthWestDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiRedJunctionNorthWest">
+                <Region Id="VulcanNamedRegionRedJunctionNorthWest"/>
+                <Name Key="VulcanNamedRegionRedJunctionNorthWestName"/>
+                <Description Key="VulcanPoiRedJunctionNorthWestDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiRedJunctionNorthEast">
+                <Region Id="VulcanNamedRegionRedJunctionNorthEast"/>
+                <Name Key="VulcanNamedRegionRedJunctionNorthEastName"/>
+                <Description Key="VulcanPoiRedJunctionNorthEastDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDuchValley">
+                <Region Id="VulcanNamedRegionDuchValley"/>
+                <Name Key="VulcanNamedRegionDuchValleyName"/>
+                <Description Key="VulcanPoiDuchValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTranquilityNorth">
+                <Region Id="VulcanNamedRegionTranquilityNorth"/>
+                <Name Key="VulcanNamedRegionTranquilityNorthName"/>
+                <Description Key="VulcanPoiTranquilityNorthDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTranquilityWest">
+                <Region Id="VulcanNamedRegionTranquilityWest"/>
+                <Name Key="VulcanNamedRegionTranquilityWestName"/>
+                <Description Key="VulcanPoiTranquilityWestDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTranquilityEast">
+                <Region Id="VulcanNamedRegionTranquilityEast"/>
+                <Name Key="VulcanNamedRegionTranquilityEastName"/>
+                <Description Key="VulcanPoiTranquilityEastDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiIronValley">
+                <Region Id="VulcanNamedRegionIronValley"/>
+                <Name Key="VulcanNamedRegionIronValleyName"/>
+                <Description Key="VulcanPoiIronValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiPepperGully">
+                <Region Id="VulcanNamedRegionPepperGully"/>
+                <Name Key="VulcanNamedRegionPepperGullyName"/>
+                <Description Key="VulcanPoiPepperGullyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiAshValley">
+                <Region Id="VulcanNamedRegionAshValley"/>
+                <Name Key="VulcanNamedRegionAshValleyName"/>
+                <Description Key="VulcanPoiAshValleyDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCinderPeak">
+                <Region Id="VulcanNamedRegionCinderPeak"/>
+                <Name Key="VulcanNamedRegionCinderPeakName"/>
+                <Description Key="VulcanPoiCinderPeakDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiMountSorin">
+                <Region Id="VulcanNamedRegionMountSorin"/>
+                <Name Key="VulcanNamedRegionMountSorinName"/>
+                <Description Key="VulcanPoiMountSorinDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiDogshead">
+                <Region Id="VulcanNamedRegionDogshead"/>
+                <Name Key="VulcanNamedRegionDogsheadName"/>
+                <Description Key="VulcanPoiDogsheadDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTalonPeak">
+                <Region Id="VulcanNamedRegionTalonPeak"/>
+                <Name Key="VulcanNamedRegionTalonPeakName"/>
+                <Description Key="VulcanPoiTalonPeakDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiKalimarVent">
+                <Region Id="VulcanNamedRegionKalimarVent"/>
+                <Name Key="VulcanNamedRegionKalimarVentName"/>
+                <Description Key="VulcanPoiKalimarVentDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiMountValour">
+                <Region Id="VulcanNamedRegionMountValour"/>
+                <Name Key="VulcanNamedRegionMountValourName"/>
+                <Description Key="VulcanPoiMountValourDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiMountOren">
+                <Region Id="VulcanNamedRegionMountOren"/>
+                <Name Key="VulcanNamedRegionMountOrenName"/>
+                <Description Key="VulcanPoiMountOrenDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiLoma">
+                <Region Id="VulcanNamedRegionLoma"/>
+                <Name Key="VulcanNamedRegionLomaName"/>
+                <Description Key="VulcanPoiLomaDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTora">
+                <Region Id="VulcanNamedRegionTora"/>
+                <Name Key="VulcanNamedRegionToraName"/>
+                <Description Key="VulcanPoiToraDescription"/>
+            </PointOfInterest>
+
+
+            <!--            old points of interest-->
+            
+            <PointOfInterest Id="VulcanPoiDogsheadCrater">
+                <Region Id="VulcanPoiRegionDogsheadCrater"/>
+                <Name Key="VulcanPoiDogsheadCraterName"/>
+                <Description Key="VulcanPoiDogsheadCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiSorinCrater">
+                <Region Id="VulcanPoiRegionSorinCrater"/>
+                <Name Key="VulcanPoiSorinCraterName"/>
+                <Description Key="VulcanPoiSorinCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiKalimarCrater">
+                <Region Id="VulcanPoiRegionKalimarCrater"/>
+                <Name Key="VulcanPoiKalimarCraterName"/>
+                <Description Key="VulcanPoiKalimarCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiCinderCrater">
+                <Region Id="VulcanPoiRegionCinderCrater"/>
+                <Name Key="VulcanPoiCinderCraterName"/>
+                <Description Key="VulcanPoiCinderCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiValourCrater">
+                <Region Id="VulcanPoiRegionValourCrater"/>
+                <Name Key="VulcanPoiValourCraterName"/>
+                <Description Key="VulcanPoiValourCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiOrenCrater">
+                <Region Id="VulcanPoiRegionOrenCrater"/>
+                <Name Key="VulcanPoiOrenCraterName"/>
+                <Description Key="VulcanPoiOrenCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiTalonCrater">
+                <Region Id="VulcanPoiRegionTalonCrater"/>
+                <Name Key="VulcanPoiTalonCraterName"/>
+                <Description Key="VulcanPoiTalonCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiToraCrater">
+                <Region Id="VulcanPoiRegionToraCrater"/>
+                <Name Key="VulcanPoiToraCraterName"/>
+                <Description Key="VulcanPoiToraCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="VulcanPoiLomaCrater">
+                <Region Id="VulcanPoiRegionLomaCrater"/>
+                <Name Key="VulcanPoiLomaCraterName"/>
+                <Description Key="VulcanPoiLomaCraterDescription"/>
+            </PointOfInterest>
+
+
+
+            <TerrainSettings Path="Worlds/Vulcan/Terrain" WorldSize="4096">
+                <Curvature Value="0.45"/>
+                <MiniMap Path="Worlds/Vulcan/Textures/Vulcan_Minimap.png" Format="DXT1" LoadType="OnRequest"/>
+                <Lava MinHeight="32" MaxHeight="723">
+                    <HeightTexture Path="Worlds/Vulcan/Textures/LAVA_heights.png" Format="BC4" Linear="true" LoadType="OnRequest"/>
+                </Lava>
+                <MaterialSettings>
+                    <Macro>
+                        <MacroTextureBlend Value="0.15"/>
+                        <Albedo Path="Worlds/Vulcan/Textures/Vulcan_Colormap.png" Format="BC7" LoadType="OnRequest"/>
+                        <Normal Path="Worlds/Vulcan/Textures/Vulcan_Normal_Map.png" LoadType="OnRequest" Value="1"/>
+                    </Macro>
+                    <Detail
+                            UVScale="1"
+                            DetailFadeStart="75"
+                            DetailFadeEnd="300"
+                            FractalDepthScale="0.5"
+                            LodMin="2"
+                            MipmapBias="-0.1"
+                            BlendSharpness="100">
+                        <GroupOne>
+                            <Albedo Path="Worlds/Vulcan/Textures/dif1.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Vulcan/Textures/norm1.png" LoadType="OnRequest" Value="1"/>
+                            <Roughness Path="Worlds/Vulcan/Textures/rough1.png" Format="BC4" LoadType="OnRequest" Value="0.01"/>
+                            <Displacement Path="Worlds/Vulcan/Textures/disp1.png" Format="BC4" LoadType="OnRequest" Value="0.1"/>
+                            <Emissive Path="Worlds/Vulcan/Textures/emis1.png" Format="BC7" LoadType="OnRequest" Value="10"/>
+                        </GroupOne>
+                        <GroupTwo>
+                            <Albedo Path="Worlds/Vulcan/Textures/DarkPointyRock_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Vulcan/Textures/DarkPointyRock_normal.png" LoadType="OnRequest" Value="1"/>
+                            <Roughness Path="Worlds/Vulcan/Textures/DarkPointyRock_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.01"/>
+                            <Displacement Path="Worlds/Vulcan/Textures/DarkPointyRock_height.png" Format="BC4" LoadType="OnRequest" Value="0.3"/>
+                        </GroupTwo>
+                    </Detail>
+                </MaterialSettings>
+            </TerrainSettings>
+        </World>
+    </WorldSettings>
+</GameData>

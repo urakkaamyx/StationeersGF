@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Address and port which connects to the listen server-->
+<NetConfig>
+    <IP>40.82.200.175</IP>
+    <Port>8081</Port>
+</NetConfig>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WorldSettings>
+        <World Id="MimasHerschel" Priority="3">
+            <AmbienceSound>Moon</AmbienceSound>
+            <Name Key="WorldMimasHerschel" />
+            <Description Key="NewWorldMimasHerschelShortDesc" />
+            <ShortDescription Key="MimasWorldDescriptionShort"/>
+            <Rating Key="WorldRatingIntermediate" Color="Green" />
+            <PreviewButton Path="Interface/preview_mimas.png" Format="RGB24"/>
+            <StartCondition Id="MimasDefault" IsDefault="true"/>
+            <StartCondition Id="MimasBrutal"/>
+            <StartCondition Id="MimasDefaultCommunity"/>
+            <StartCondition Id="MimasBrutalCommunity"/>
+<!--            <StartCondition Id="TerrainEdit"/>-->
+            <WorldObjective Id="ManufacturingBasics"/>
+            <WorldObjective Id="Stations"/>
+            <WorldObjective Id="Trading"/>
+            <WorldObjective Id="Concepts"/>
+            <SpaceMap Id="MimasSpaceMap"/>
+            <GlobalAtmosphere/>
+            <SkyBoxMaterialName>Starfield Skybox</SkyBoxMaterialName>
+            <SetSunInSkybox>false</SetSunInSkybox>
+            <SunPrefabName>MimasSun</SunPrefabName>
+            <Gravity>-0.97</Gravity>
+            <Skybox />
+            <CelestialConstants BodyScale="1.3">
+                <TimeOffset Minutes="18" Seconds="0" />
+            </CelestialConstants>
+            <PlayableBody Id="Mimas" Latitude="-58.4" Longitude="-32.3" />
+            <CelestialBodies>
+                <Sprite Id="Mercury" Magnitude="1.90" />
+                <Sprite Id="Venus" Magnitude="1.20" />
+                <Sprite Id="Earth" Magnitude="1.10" />
+                <Sprite Id="Mars" Magnitude="1.50" />
+                <Sprite Id="Jupiter" Magnitude="0.80" />
+                <AtmosphericBody Id="Saturn" RadiusKm="58232">
+                    <FixedRotation x="0.466" y="0.884" z="0" />
+                    <Texture Path="Textures/saturn_diffuse.png" Format="DXT1"/>
+                    <Cloud Path="Textures/atmosphere_mask.png" Format="DXT1" Opacity="1" Speed="1">
+                        <Tiling x="50" y="10" />
+                        <Distortion Value="0.072" />
+                        <Shadow Opacity="0.347" Parallax="0.119" />
+                    </Cloud>
+                    <Fresnel r="1" g="0.9274343" b="0.7893081" Power="1.5" />
+                    <Ring />
+                </AtmosphericBody>
+                <RockyBody Id="Mimas" Parent="Saturn" RadiusKm="198.2">
+                    <SynodicRotation x="0.0262" y="0.9997" z="0" Days="0.94242"  />
+                </RockyBody>
+                <RockyBody Id="Enceladus" Parent="Saturn" RadiusKm="500" />
+                <RockyBody Id="Tethys" Parent="Saturn" RadiusKm="531" />
+                <RockyBody Id="Dione" Parent="Saturn" RadiusKm="561.4" />
+                <RockyBody Id="Rhea" Parent="Saturn" RadiusKm="763.8" />
+                <RockyBody Id="Titan" Parent="Saturn" RadiusKm="2574.7" />
+                <RockyBody Id="Iapetus" Parent="Saturn" RadiusKm="734.5" />
+                <Sprite Id="Phoebe" Parent="Saturn" Magnitude="1.60" />
+                <Sprite Id="Hyperion" Parent="Saturn" Magnitude="1.40" />
+                <Sprite Id="Uranus" Magnitude="1.80" />
+                <Sprite Id="Neptune" Magnitude="1.90" />
+                <Sprite Id="Pluto" Magnitude="2.00" />
+                <Sprite Id="Eris" Magnitude="2.50" />
+                <Sprite Id="Haumea" Magnitude="2.50" />
+            </CelestialBodies>
+            <Stars>
+                <Star FadeHeight="400" />
+                <Star FadeHeight="400" />
+            </Stars>
+            <AmbientLighting>
+                <Sky r="0.0705" g="0.0705" b="0.0705" />
+                <Equator r="0.0470" g="0.0470" b="0.0470" />
+                <Ground r="0.0313" g="0.0313" b="0.0313" />
+            </AmbientLighting>
+            <PreviewScene fov="22">
+                <CameraPosition>
+                    <x>-9</x>
+                    <y>-67</y>
+                    <z>77</z>
+                </CameraPosition>
+                <CameraRotation>
+                    <x>-32.85</x>
+                    <y>-179.58</y>
+                    <z>-1.177</z>
+                </CameraRotation>
+                <SunRotation>
+                    <x>-11.223</x>
+                    <y>280.744</y>
+                    <z>-213.042</z>
+                </SunRotation>
+                <Prefabs>
+                    <Prefab>
+                        <Name>UISaturn</Name>
+                        <Position>
+                            <x>-108.4227</x>
+                            <y>231.3017</y>
+                            <z>-315.6085</z>
+                        </Position>
+                        <Rotation>
+                            <x>51.714</x>
+                            <y>416.574</y>
+                            <z>379.833</z>
+                        </Rotation>
+                        <Scale>
+                            <x>101.20480</x>
+                            <y>101.20480</y>
+                            <z>101.20480</z>
+                        </Scale>
+                    </Prefab>
+                    <Prefab>
+                        <Name>UIMimas</Name>
+                        <Position>
+                            <x>-34.02271</x>
+                            <y>77.00171</y>
+                            <z>-171.8368</z>
+                        </Position>
+                        <Rotation>
+                            <x>-50.253</x>
+                            <y>332.302</y>
+                            <z>-20.899</z>
+                        </Rotation>
+                        <Scale>
+                            <x>17.406</x>
+                            <y>17.406</y>
+                            <z>17.406</z>
+                        </Scale>
+                    </Prefab>
+                </Prefabs>
+                <SkyBoxMaterial>SceneSkyMars</SkyBoxMaterial>
+                <SunPrefab>SpaceSun (UnityEngine.Light)</SunPrefab>
+                <LensFlare>true</LensFlare>
+                <LensFlareIntensity>0.250</LensFlareIntensity>
+            </PreviewScene>
+
+            <StartLocation Id="MimasSpawnCentralMesa">
+                <Name Key="MimasSpawnCentralMesaName"/>
+                <Description Key="MimasSpawnCentralMesaDescription"/>
+                <Position x="584" y="-632"/>
+                <SpawnRadius Value="18"/>
+            </StartLocation>
+            <StartLocation Id="MimasSpawnHarrietCrater">
+                <Name Key="MimasSpawnHarrietCraterName"/>
+                <Description Key="MimasSpawnHarrietCraterDescription"/>
+                <Position x="-852" y="-542"/>
+                <SpawnRadius Value="13"/>
+            </StartLocation>
+            <StartLocation Id="MimasSpawnCraterField">
+                <Name Key="MimasSpawnCraterFieldName"/>
+                <Description Key="MimasSpawnCraterFieldDescription"/>
+                <Position x="352" y="498"/>
+                <SpawnRadius Value="12"/>
+            </StartLocation>
+            <StartLocation Id="MimasSpawnDustBowl">
+                <Name Key="MimasSpawnDustBowlName"/>
+                <Description Key="MimasSpawnDustBowlDescription"/>
+                <Position x="-1122" y="1161"/>
+                <SpawnRadius Value="16"/>
+            </StartLocation>
+
+            <RandomStartLocation Id="MimasSpawnRoundRobin">
+                <Name Key="SpawnRoundRobin"/>
+                <Description Key="SpawnRoundRobinDescription"/>
+                <SpawnRadius Value="6"/>
+                <StartLocation Id="MimasSpawnCentralMesa"/>
+                <StartLocation Id="MimasSpawnHarrietCrater"/>
+                <StartLocation Id="MimasSpawnCraterField"/>
+                <StartLocation Id="MimasSpawnDustBowl"/>
+            </RandomStartLocation>
+            
+            <RegionSet Id="4kPlayableBounds"/>
+
+            <RegionSet Id="MimasNamedRegions">
+                <Texture Path="Worlds/Mimas/Textures/mimas_herschel_named_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="MimasNamedRegionCressidasPoint" R="255" G="140" B="58">
+                    <Name Key="MimasNamedRegionCressidasPointName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCressidasFolly" R="255" G="106" B="0">
+                    <Name Key="MimasNamedRegionCressidasFollyName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSouthBarrens" R="255" G="145" B="0">
+                    <Name Key="MimasNamedRegionSouthBarrensName"/>
+                </Region>
+                <Region Id="MimasNamedRegionWestBarrens" R="222" G="139" B="29">
+                    <Name Key="MimasNamedRegionWestBarrensName"/>
+                </Region>
+                <Region Id="MimasNamedRegionNorthBarrens" R="221" G="153" B="63">
+                    <Name Key="MimasNamedRegionNorthBarrensName"/>
+                </Region>
+                <Region Id="MimasNamedRegionEastBarrens" R="173" G="119" B="49">
+                    <Name Key="MimasNamedRegionEastBarrensName"/>
+                </Region>
+                <Region Id="MimasNamedRegionDustlandsWest" R="173" G="146" B="49">
+                    <Name Key="MimasNamedRegionDustlandsWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionDustlandsNorth" R="207" G="174" B="52">
+                    <Name Key="MimasNamedRegionDustlandsNorthName"/>
+                </Region>
+                <Region Id="MimasNamedRegionDustlandsSouth" R="207" G="194" B="52">
+                    <Name Key="MimasNamedRegionDustlandsSouthName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCrumbsWatch" R="255" G="241" B="78">
+                    <Name Key="MimasNamedRegionCrumbsWatchName"/>
+                </Region>
+                <Region Id="MimasNamedRegionNorthernEscarpment" R="45" G="136" B="178">
+                    <Name Key="MimasNamedRegionNorthernEscarpmentName"/>
+                </Region>
+                <Region Id="MimasNamedRegionNorthWesternHighlands" R="135" G="67" B="139">
+                    <Name Key="MimasNamedRegionNorthWesternHighlandsName"/>
+                </Region>
+                <Region Id="MimasNamedRegionNorthEasternHighlands" R="154" G="38" B="160">
+                    <Name Key="MimasNamedRegionNorthEasternHighlandsName"/>
+                </Region>
+                <Region Id="MimasNamedRegionNorthernHighlands" R="200" G="32" B="206">
+                    <Name Key="MimasNamedRegionNorthernHighlandsName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSouthernHighlands" R="214" G="0" B="221">
+                    <Name Key="MimasNamedRegionSouthernHighlandsName"/>
+                </Region>
+                <Region Id="MimasNamedRegionMarsdenCrater" R="0" G="159" B="221">
+                    <Name Key="MimasNamedRegionMarsdenCraterName"/>
+                </Region>
+                <Region Id="MimasNamedRegionHarrietsDitch" R="0" G="167" B="185">
+                    <Name Key="MimasNamedRegionHarrietsDitchName"/>
+                </Region>
+                <Region Id="MimasNamedRegionHarrietCrater" R="0" G="148" B="148">
+                    <Name Key="MimasNamedRegionHarrietCraterName"/>
+                </Region>
+                <Region Id="MimasNamedRegionDesolation" R="6" G="128" B="128">
+                    <Name Key="MimasNamedRegionDesolationName"/>
+                </Region>
+                <Region Id="MimasNamedRegionDustBowl" R="6" G="86" B="86">
+                    <Name Key="MimasNamedRegionDustBowlName"/>
+                </Region>
+                <Region Id="MimasNamedRegionLowlandsNorthWest" R="6" G="86" B="26">
+                    <Name Key="MimasNamedRegionLowlandsNorthWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionLowlandsWest" R="15" G="130" B="44">
+                    <Name Key="MimasNamedRegionLowlandsWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionLowlandsSouth" R="18" G="166" B="55">
+                    <Name Key="MimasNamedRegionLowlandsSouthName"/>
+                </Region>
+                <Region Id="MimasNamedRegionLowlandsEast" R="0" G="188" B="47">
+                    <Name Key="MimasNamedRegionLowlandsEastName"/>
+                </Region>
+                <Region Id="MimasNamedRegionLowlandsNorth" R="0" G="142" B="21">
+                    <Name Key="MimasNamedRegionLowlandsNorthName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCraterFieldNorthWest" R="0" G="180" B="3">
+                    <Name Key="MimasNamedRegionCraterFieldNorthWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCraterFieldWest" R="157" G="221" B="8">
+                    <Name Key="MimasNamedRegionCraterFieldWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCraterFieldSouthWest" R="123" G="176" B="0">
+                    <Name Key="MimasNamedRegionCraterFieldSouthWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCraterFieldSouth" R="100" G="140" B="8">
+                    <Name Key="MimasNamedRegionCraterFieldSouthName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCraterFieldSouthEast" R="66" G="93" B="2">
+                    <Name Key="MimasNamedRegionCraterFieldSouthEastName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCraterFieldEast" R="73" G="183" B="5">
+                    <Name Key="MimasNamedRegionCraterFieldEastName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCraterFieldNorthEast" R="63" G="148" B="11">
+                    <Name Key="MimasNamedRegionCraterFieldNorthEastName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCraterFieldNorth" R="35" G="93" B="0">
+                    <Name Key="MimasNamedRegionCraterFieldNorthName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSuperCraterNorthWest" R="213" G="11" B="21">
+                    <Name Key="MimasNamedRegionSuperCraterNorthWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSuperCraterWest" R="175" G="32" B="0">
+                    <Name Key="MimasNamedRegionSuperCraterWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSuperCraterSouthWest" R="144" G="48" B="0">
+                    <Name Key="MimasNamedRegionSuperCraterSouthWestName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSuperCraterSouth" R="109" G="36" B="0">
+                    <Name Key="MimasNamedRegionSuperCraterSouthName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSuperCraterSouthEast" R="80" G="26" B="0">
+                    <Name Key="MimasNamedRegionSuperCraterSouthEastName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSuperCraterEast" R="190" G="38" B="0">
+                    <Name Key="MimasNamedRegionSuperCraterEastName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSuperCraterNorthEast" R="154" G="33" B="0">
+                    <Name Key="MimasNamedRegionSuperCraterNorthEastName"/>
+                </Region>
+                <Region Id="MimasNamedRegionSuperCraterNorth" R="101" G="21" B="0">
+                    <Name Key="MimasNamedRegionSuperCraterNorthName"/>
+                </Region>
+                <Region Id="MimasNamedRegionCentralMesa" R="101" G="0" B="0">
+                    <Name Key="MimasNamedRegionCentralMesaName"/>
+                </Region>
+            </RegionSet>
+
+            <RegionSet Id="MimasPoiRegions">
+                <Texture Path="Worlds/Mimas/Textures/mimas_herschel_poi_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="MimasPoiRegionMarsdenCrater" R="217" G="0" B="255"/>
+                <Region Id="MimasPoiRegionDesolation" R="55" G="0" B="255"/>
+                <Region Id="MimasPoiRegionDustBowl" R="0" G="89" B="255"/>
+                <Region Id="MimasPoiRegionCraterFieldLookOut" R="0" G="200" B="255"/>
+                <Region Id="MimasPoiRegionSouthHighlandsPass" R="29" G="255" B="0"/>
+                <Region Id="MimasPoiRegionShelteredCraterView" R="255" G="238" B="0"/>
+                <Region Id="MimasPoiRegionCentralMesaCrater" R="255" G="102" B="0"/>
+            </RegionSet>
+
+            <RegionSet Id="MimasDeepMiningRegions">
+                <Texture Path="Worlds/Mimas/Textures/mimas_herschel_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <Region Id="MimasDeepMiningRegionCoal" R="255" G="0" B="145"/>
+                <Region Id="MimasDeepMiningRegionNickel" R="255" G="0" B="199"/>
+                <Region Id="MimasDeepMiningRegionGold" R="209" G="0" B="255"/>
+                <Region Id="MimasDeepMiningRegionSilver" R="119" G="0" B="255"/>
+                <Region Id="MimasDeepMiningRegionLead" R="0" G="75" B="255"/>
+                <Region Id="MimasDeepMiningRegionIronCopperSilicon" R="0" G="180" B="255"/>
+                <Region Id="MimasDeepMiningRegionCobalt" R="0" G="255" B="191"/>
+                <Region Id="MimasDeepMiningRegionGoldSilver" R="71" G="255" B="0"/>
+                <Region Id="MimasDeepMiningRegionSilverLeadNickel" R="255" G="255" B="0"/>
+                <Region Id="MimasDeepMiningRegionSilicon" R="255" G="147" B="0"/>
+                <Region Id="MimasDeepMiningRegionIron" R="255" G="0" B="0"/>
+            </RegionSet>
+
+            <Minables Id="DefaultMinablesNoWaterSurface" OreDensity="0.6">
+                <Surface Value="true"/>
+            </Minables>
+            <Minables Id="DefaultMinablesNoWater" OreDensity="1">
+                <Surface Value="false"/>
+            </Minables>
+            
+            <DeepMinables Id="DeepMinableProfileIron">
+                <Region Id="MimasDeepMiningRegionIron"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilicon">
+                <Region Id="MimasDeepMiningRegionSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
+                <Region Id="MimasDeepMiningRegionIronCopperSilicon"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
+                <Region Id="MimasDeepMiningRegionSilverLeadNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGoldSilver">
+                <Region Id="MimasDeepMiningRegionGoldSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileSilver">
+                <Region Id="MimasDeepMiningRegionSilver"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileLead">
+                <Region Id="MimasDeepMiningRegionLead"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileNickel">
+                <Region Id="MimasDeepMiningRegionNickel"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCoal">
+                <Region Id="MimasDeepMiningRegionCoal"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileCobalt">
+                <Region Id="MimasDeepMiningRegionCobalt"/>
+            </DeepMinables>
+            <DeepMinables Id="DeepMinableProfileGold">
+                <Region Id="MimasDeepMiningRegionGold"/>
+            </DeepMinables>
+
+            <DeepMinablesRegionData>
+                <RegionSet Id="MimasDeepMiningRegions"/>
+            </DeepMinablesRegionData>
+            
+            <PointOfInterest Id="MimasPoiMarsdenCrater">
+                <Region Id="MimasPoiRegionMarsdenCrater"/>
+                <Name Key="MimasPoiMarsdenCraterName"/>
+                <Description Key="MimasPoiMarsdenCraterDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MimasPoiDesolation">
+                <Region Id="MimasPoiRegionDesolation"/>
+                <Name Key="MimasPoiDesolationName"/>
+                <Description Key="MimasPoiDesolationDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MimasPoiDustBowl">
+                <Region Id="MimasPoiRegionDustBowl"/>
+                <Name Key="MimasPoiDustBowlName"/>
+                <Description Key="MimasPoiDustBowlDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MimasPoiCraterFieldLookOut">
+                <Region Id="MimasPoiRegionCraterFieldLookOut"/>
+                <Name Key="MimasPoiCraterFieldLookOutName"/>
+                <Description Key="MimasPoiCraterFieldLookOutDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MimasPoiSouthHighlandsPass">
+                <Region Id="MimasPoiRegionSouthHighlandsPass"/>
+                <Name Key="MimasPoiSouthHighlandsPassName"/>
+                <Description Key="MimasPoiSouthHighlandsPassDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MimasPoiShelteredCraterView">
+                <Region Id="MimasPoiRegionShelteredCraterView"/>
+                <Name Key="MimasPoiShelteredCraterViewName"/>
+                <Description Key="MimasPoiShelteredCraterViewDescription"/>
+            </PointOfInterest>
+            <PointOfInterest Id="MimasPoiCentralMesaCrater">
+                <Region Id="MimasPoiRegionCentralMesaCrater"/>
+                <Name Key="MimasPoiCentralMesaCraterName"/>
+                <Description Key="MimasPoiCentralMesaCraterDescription"/>
+            </PointOfInterest>
+            
+            <GeographicRegionData>
+                <DefaultRegionName Value="Mimas"/>
+                <RegionSet Id="MimasNamedRegions"/>
+            </GeographicRegionData>
+
+            <TerrainSettings Path="Worlds/Mimas/Terrain" WorldSize="4096">
+                <Curvature Value="0.5"/>
+                <MiniMap Path="Worlds/Mimas/Textures/mimas_herschel_minimap.png" Format="DXT1" LoadType="OnRequest"/>
+                <MiniMapDeepMinables Path="Worlds/Mimas/Textures/mimas_herschel_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
+                <MaterialSettings>
+                    <Macro>
+                        <MacroTextureBlend Value="1"/>
+                        <Albedo Path="Worlds/Mimas/Textures/mimas_herschel_macro_albedo.png" Format="BC7" LoadType="OnRequest"/>
+                        <Normal Path="Worlds/Mimas/Textures/mimas_herschel_normal_map.png" LoadType="OnRequest" Value="1"/>
+                    </Macro>
+                    <Detail
+                            UVScale="0.75"
+                            DetailFadeStart="50"
+                            DetailFadeEnd="100"
+                            FractalDepthScale="0.5"
+                            LodMin="2"
+                            MipmapBias="-0.1"
+                            BlendSharpness="11.4">
+                        <GroupOne>
+                            <Albedo Path="Worlds/Mimas/Textures/RockyDirt_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Mimas/Textures/RockyDirt_normal.png" LoadType="OnRequest" Value="0.6"/>
+                            <Roughness Path="Worlds/Mimas/Textures/RockyDirt_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.4"/>
+                            <Displacement Path="Worlds/Mimas/Textures/RockyDirt_height.png" Format="BC4" LoadType="OnRequest" Value="0.125"/>
+                        </GroupOne>
+                        <GroupTwo>
+                            <Albedo Path="Worlds/Mimas/Textures/Mimas_Detail_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
+                            <Normal Path="Worlds/Mimas/Textures/Mimas_Detail_normal.png" LoadType="OnRequest" Value="0.6"/>
+                            <Roughness Path="Worlds/Mimas/Textures/Mimas_Detail_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.4"/>
+                            <Displacement Path="Worlds/Mimas/Textures/Mimas_Detail_height.png" Format="BC4" LoadType="OnRequest" Value="0.125"/>
+                        </GroupTwo>
+                    </Detail>
+                </MaterialSettings>
+            </TerrainSettings>
+
+        </World>
+    </WorldSettings>
+</GameData>

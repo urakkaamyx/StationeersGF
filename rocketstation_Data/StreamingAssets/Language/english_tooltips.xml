@@ -1,0 +1,243 @@
+﻿<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <Name>English</Name>
+  <Code>EN</Code>
+  <Font>font_english</Font>
+  <ScreenSpaceToolTips>
+    <Record>
+      <Key>StatusIconToxinName</Key>
+      <Value>Toxins</Value>
+    </Record>    
+    <Record>
+      <Key>StatusIconToxinDesc</Key>
+      <Value>Current toxicity level</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconToxinWarning</Key>
+      <Value>Needs attention</Value>
+    </Record>
+        <Record>
+      <Key>StatusIconHydrationDesc</Key>
+      <Value>Hydration is running low</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHydrationKey</Key>
+      <Value>Hydration Low</Value>
+    </Record>
+    <Record>
+      <Key>HydrationCaution</Key>
+      <Value>Hydration Caution</Value>
+    </Record>
+    <Record>
+      <Key>HydrationCritical</Key>
+      <Value>Hydration Critical</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconToxinCritical</Key>
+      <Value>In a critical state</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconOxygenName</Key>
+      <Value>Oxygen Supply</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconOxygenDesc</Key>
+      <Value>The atmosphere you are breathing is causing damage to your lungs.</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconOxygenWarning</Key>
+      <Value>Suit's tank is getting low and needs attention</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconOxyegnCritical</Key>
+      <Value>Suit's tank is critical, replace your oxygen tank</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPressureName</Key>
+      <Value>Internal Pressure</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPressureDesc</Key>
+      <Value>Current pressure level, check suit pressure</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPressureWarning</Key>
+      <Value>Suit pressure is low</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPressureCritical</Key>
+      <Value>Suit pressure is critically low</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconTemperatureName</Key>
+      <Value>Internal Tempurature</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconTemperatureDesc</Key>
+      <Value>Current temperature inside your suit</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconTempuratureWarning</Key>
+      <Value>Displays Current Toxicity Level</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconTempuratureCritical</Key>
+      <Value>Displays Current Toxicity Level</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconLeakingName</Key>
+      <Value>Suit's Leaking</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPowerName</Key>
+      <Value>Suit's Power Supply</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconPowerDesc</Key>
+      <Value>Power is running low</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconGravityName</Key>
+      <Value>Zero Gravity</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconGravityDesc</Key>
+      <Value>Currently experiencing weightlessness</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconAccelerationName</Key>
+      <Value>Acceleration</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconAccelerationDesc</Key>
+      <Value>Undergoing excessive G-Forces</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconJetpackName</Key>
+      <Value>Jetpack Active</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconClimbingName</Key>
+      <Value>Climbing</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconLightName</Key>
+      <Value>Toggle Headlight</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconInternalsName</Key>
+      <Value>Toggle Helmet Open/Close</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHandPowerName</Key>
+      <Value>Toggle Item in-hand On/Off</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconInSlotName</Key>
+      <Value>You are inside a slot</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHungerName</Key>
+      <Value>Current Hunger</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconStunName</Key>
+      <Value>Stun Percentage</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconAirTankName</Key>
+      <Value>Current AirTank Capacity</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconJetpackWarningName</Key>
+      <Value>Jetpack Propellant</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconJetpackWarningDesc</Key>
+      <Value>Propellant is running low</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconFilterName</Key>
+      <Value>Filter Capacity</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconWasteName</Key>
+      <Value>Waste Capacity</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconWasteDesc</Key>
+      <Value>Waste tank nearly full</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHealthName</Key>
+      <Value>Current Health</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHealthDesc</Key>
+      <Value>Health is low</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHydrationName</Key>
+      <Value>Current Hydration</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconUnconsciousName</Key>
+      <Value>Unconscious</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconMoodName</Key>
+      <Value>Current Mood</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHygieneName</Key>
+      <Value>Current Hygiene</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconSanitationName</Key>
+      <Value>Sanitation Need</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconSoiledName</Key>
+      <Value>Soiled</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconHealingName</Key>
+      <Value>Healing</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconStimulantName</Key>
+      <Value>Stimulant</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconStunNotice</Key>
+      <Value>Stun</Value>
+    </Record>
+	<Record>
+      <Key>DeconstructCanisterFull</Key>
+      <Value>Cannot deconstruct. Canister needs to be empty</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconLeavingAreaName</Key>
+      <Value>Leaving Mission Area</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconLeavingAreaDesc</Key>
+      <Value>Out of bounds, turn around</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconRespawnStressName</Key>
+      <Value>Respawn Stress</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconRespawnStressDesc</Key>
+      <Value>Affects action speeds</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconCoolantName</Key>
+      <Value>Coolant tank temperature</Value>
+    </Record>
+    <Record>
+      <Key>StatusIconCoolantDesc</Key>
+      <Value>Coolant Temperature is too high</Value>
+    </Record>
+  </ScreenSpaceToolTips>
+</Language>

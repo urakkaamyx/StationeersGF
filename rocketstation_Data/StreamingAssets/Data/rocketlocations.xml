@@ -1,0 +1,4374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Icon Id="IceBelt">
+		<Path>Images/RocketLocationIcons/IceBelt.png</Path>
+	</Icon>
+	<Icon Id="SparseAsteroids">
+		<Path>Images/RocketLocationIcons/SparseAsteroids.png</Path>
+	</Icon>
+	<Icon Id="Satellite">
+		<Path>Images/RocketLocationIcons/Satellite.png</Path>
+	</Icon>
+	<Icon Id="LaunchMount">
+		<Path>Images/RocketLocationIcons/LaunchMount.png</Path>
+	</Icon>
+	<Icon Id="LowOrbitMars">
+		<Path>Images/RocketLocationIcons/LowOrbitMars.png</Path>
+	</Icon>
+	<Icon Id="Asteroid1">
+		<Path>Images/RocketLocationIcons/Asteroid1.png</Path>
+	</Icon>
+	<Icon Id="Asteroid2">
+		<Path>Images/RocketLocationIcons/Asteroid2.png</Path>
+	</Icon>
+	<Icon Id="Phobos">
+		<Path>Images/RocketLocationIcons/Phobos.png</Path>
+	</Icon>
+	<Icon Id="Deimos">
+		<Path>Images/RocketLocationIcons/Deimos.png</Path>
+	</Icon>
+	<Icon Id="SmallOrbitNode">
+		<Path>Images/RocketLocationIcons/SmallOrbitNode.png</Path>
+	</Icon>
+	<Icon Id="MedOrbitNode">
+		<Path>Images/RocketLocationIcons/MedOrbitNode.png</Path>
+	</Icon>
+	<Icon Id="LargeOrbitNode">
+		<Path>Images/RocketLocationIcons/LargeOrbitNode.png</Path>
+	</Icon>
+	<Icon Id="EccentricOrbitNode">
+		<Path>Images/RocketLocationIcons/EccentricOrbitNode.png</Path>
+	</Icon>
+	<Icon Id="Debris1">
+		<Path>Images/RocketLocationIcons/StatDebris01.png</Path>
+	</Icon>
+	<Icon Id="Debris2">
+		<Path>Images/RocketLocationIcons/StatDebris02.png</Path>
+	</Icon>
+	<Icon Id="Debris3">
+		<Path>Images/RocketLocationIcons/StatDebris03.png</Path>
+	</Icon>
+	<Icon Id="Debris4">
+		<Path>Images/RocketLocationIcons/StatDebris04.png</Path>
+	</Icon>
+	<Icon Id="AsteroidBelt01">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidBelt01.png</Path>
+	</Icon>
+	<Icon Id="AsteroidBelt02">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidBelt02Ice.png</Path>
+	</Icon>
+	<Icon Id="AsteroidBelt03">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidBelt03.png</Path>
+	</Icon>
+	<Icon Id="AsteroidCluster01">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidCluster01.png</Path>
+	</Icon>
+	<Icon Id="AsteroidCluster02">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidCluster02.png</Path>
+	</Icon>
+	<Icon Id="AsteroidCluster03">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidCluster03.png</Path>
+	</Icon>
+	<Icon Id="AsteroidCluster04">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidCluster04.png</Path>
+	</Icon>
+	<Icon Id="AsteroidCluster05">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidCluster05.png</Path>
+	</Icon>
+	<Icon Id="AsteroidCluster06">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidCluster06.png</Path>
+	</Icon>
+	<Icon Id="AsteroidMisc01">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidMisc01.png</Path>
+	</Icon>
+	<Icon Id="AsteroidMisc02">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidMisc02.png</Path>
+	</Icon>
+	<Icon Id="AsteroidMisc03">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidMisc03.png</Path>
+	</Icon>
+	<Icon Id="AsteroidMisc04">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidMisc04.png</Path>
+	</Icon>
+	<Icon Id="AsteroidMisc05">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidMisc05.png</Path>
+	</Icon>
+	<Icon Id="AsteroidMisc06">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidMisc06.png</Path>
+	</Icon>
+	<Icon Id="AsteroidMisc07">
+		<Path>Images/SpaceMapImages/Asteroids/AsteroidMisc07.png</Path>
+	</Icon>
+	<Icon Id="DenseAsteroid01">
+		<Path>Images/SpaceMapImages/Asteroids/DenseAsteroid01.png</Path>
+	</Icon>
+	<Icon Id="DenseAsteroid02">
+		<Path>Images/SpaceMapImages/Asteroids/DenseAsteroid02.png</Path>
+	</Icon>
+	<Icon Id="DenseAsteroid03">
+		<Path>Images/SpaceMapImages/Asteroids/DenseAsteroid03.png</Path>
+	</Icon>
+	<Icon Id="DenseAsteroid04">
+		<Path>Images/SpaceMapImages/Asteroids/DenseAsteroid04.png</Path>
+	</Icon>
+	<Icon Id="DenseAsteroid05">
+		<Path>Images/SpaceMapImages/Asteroids/DenseAsteroid05.png</Path>
+	</Icon>
+	<Icon Id="DenseAsteroid06">
+		<Path>Images/SpaceMapImages/Asteroids/DenseAsteroid06.png</Path>
+	</Icon>
+	<Icon Id="MetallicAsteroid01">
+		<Path>Images/SpaceMapImages/Asteroids/MetallicAsteroid01.png</Path>
+	</Icon>
+	<Icon Id="MetallicAsteroid02">
+		<Path>Images/SpaceMapImages/Asteroids/MetallicAsteroid02.png</Path>
+	</Icon>
+	<Icon Id="MetallicAsteroid03">
+		<Path>Images/SpaceMapImages/Asteroids/MetallicAsteroid03.png</Path>
+	</Icon>
+	<Icon Id="MetallicAsteroid04">
+		<Path>Images/SpaceMapImages/Asteroids/MetallicAsteroid04.png</Path>
+	</Icon>
+	<Icon Id="MetallicAsteroid05">
+		<Path>Images/SpaceMapImages/Asteroids/MetallicAsteroid05.png</Path>
+	</Icon>
+	<Icon Id="MetallicAsteroid06">
+		<Path>Images/SpaceMapImages/Asteroids/MetallicAsteroid06.png</Path>
+	</Icon>
+	<Icon Id="SparseAsteroid01">
+		<Path>Images/SpaceMapImages/Asteroids/SparseAsteroid01.png</Path>
+	</Icon>
+	<Icon Id="SparseAsteroid02">
+		<Path>Images/SpaceMapImages/Asteroids/SparseAsteroid02.png</Path>
+	</Icon>
+	<Icon Id="SparseAsteroid03">
+		<Path>Images/SpaceMapImages/Asteroids/SparseAsteroid03.png</Path>
+	</Icon>
+	<Icon Id="SparseAsteroid04">
+		<Path>Images/SpaceMapImages/Asteroids/SparseAsteroid04.png</Path>
+	</Icon>
+	<Icon Id="SparseAsteroid05">
+		<Path>Images/SpaceMapImages/Asteroids/SparseAsteroid05.png</Path>
+	</Icon>
+	<Icon Id="SparseAsteroid06">
+		<Path>Images/SpaceMapImages/Asteroids/SparseAsteroid06.png</Path>
+	</Icon>
+	<Icon Id="SparseAsteroid07">
+		<Path>Images/SpaceMapImages/Asteroids/SparseAsteroid07.png</Path>
+	</Icon>
+	<Icon Id="StatAsteroidFragment">
+		<Path>Images/SpaceMapImages/Asteroids/StatAsteroidFragment.png</Path>
+	</Icon>
+	<Icon Id="IrregularGasCloud01">
+		<Path>Images/SpaceMapImages/GasCloud/IrregularGasCloud01.png</Path>
+	</Icon>
+	<Icon Id="IrregularGasCloud02">
+		<Path>Images/SpaceMapImages/GasCloud/IrregularGasCloud02.png</Path>
+	</Icon>
+	<Icon Id="IrregularGasCloud03">
+		<Path>Images/SpaceMapImages/GasCloud/IrregularGasCloud03.png</Path>
+	</Icon>
+	<Icon Id="RegularGasCloud01">
+		<Path>Images/SpaceMapImages/GasCloud/RegularGasCloud01.png</Path>
+	</Icon>
+	<Icon Id="RegularGasCloud02">
+		<Path>Images/SpaceMapImages/GasCloud/RegularGasCloud02.png</Path>
+	</Icon>
+	<Icon Id="RegularGasCloud03">
+		<Path>Images/SpaceMapImages/GasCloud/RegularGasCloud03.png</Path>
+	</Icon>
+	<Icon Id="RegularGasCloud04">
+		<Path>Images/SpaceMapImages/GasCloud/RegularGasCloud04.png</Path>
+	</Icon>
+	<Icon Id="RegularGasCloud05">
+		<Path>Images/SpaceMapImages/GasCloud/RegularGasCloud05.png</Path>
+	</Icon>
+	<Icon Id="RegularGasCloud06">
+		<Path>Images/SpaceMapImages/GasCloud/RegularGasCloud06.png</Path>
+	</Icon>
+	<Icon Id="SparseGasCloud01">
+		<Path>Images/SpaceMapImages/GasCloud/SparseGasCloud01.png</Path>
+	</Icon>
+	<Icon Id="SparseGasCloud02">
+		<Path>Images/SpaceMapImages/GasCloud/SparseGasCloud02.png</Path>
+	</Icon>
+	<Icon Id="SparseGasCloud03">
+		<Path>Images/SpaceMapImages/GasCloud/SparseGasCloud03.png</Path>
+	</Icon>
+	<Icon Id="HomannNode">
+		<Path>Images/SpaceMapImages/Nodes/HomannNode.png</Path>
+	</Icon>
+	<Icon Id="HomannNode03">
+		<Path>Images/SpaceMapImages/Nodes/HomannNode03.png</Path>
+	</Icon>
+	<Icon Id="RendezvousNode">
+		<Path>Images/SpaceMapImages/Nodes/RendezvousNode.png</Path>
+	</Icon>
+	<Icon Id="RendezvousNode03">
+		<Path>Images/SpaceMapImages/Nodes/RendezvousNode03.png</Path>
+	</Icon>
+	<Icon Id="SlingshotNode">
+		<Path>Images/SpaceMapImages/Nodes/SlingshotNode.png</Path>
+	</Icon>
+	<Icon Id="SlingshotNode03">
+		<Path>Images/SpaceMapImages/Nodes/SlingshotNode03.png</Path>
+	</Icon>
+	<Icon Id="StandardNode01">
+		<Path>Images/SpaceMapImages/Nodes/StandardNode01.png</Path>
+	</Icon>
+	<Icon Id="StatDeimos">
+		<Path>Images/SpaceMapImages/Planets/StatDeimos.png</Path>
+	</Icon>
+	<Icon Id="StatEuropa">
+		<Path>Images/SpaceMapImages/Planets/StatEuropa.png</Path>
+	</Icon>
+	<Icon Id="StatMars">
+		<Path>Images/SpaceMapImages/Planets/StatMars.png</Path>
+	</Icon>
+	<Icon Id="StatMimas">
+		<Path>Images/SpaceMapImages/Planets/StatMimas.png</Path>
+	</Icon>
+	<Icon Id="StatMisc01">
+		<Path>Images/SpaceMapImages/Planets/StatMisc01.png</Path>
+	</Icon>
+	<Icon Id="StatMisc02">
+		<Path>Images/SpaceMapImages/Planets/StatMisc02.png</Path>
+	</Icon>
+	<Icon Id="StatMisc03">
+		<Path>Images/SpaceMapImages/Planets/StatMisc03.png</Path>
+	</Icon>
+	<Icon Id="StatMisc04">
+		<Path>Images/SpaceMapImages/Planets/StatMisc04.png</Path>
+	</Icon>
+	<Icon Id="StatMisc05">
+		<Path>Images/SpaceMapImages/Planets/StatMisc05.png</Path>
+	</Icon>
+	<Icon Id="StatMoon">
+		<Path>Images/SpaceMapImages/Planets/StatMoon.png</Path>
+	</Icon>
+	<Icon Id="StatPhobos">
+		<Path>Images/SpaceMapImages/Planets/StatPhobos.png</Path>
+	</Icon>
+	<Icon Id="StatVenus">
+		<Path>Images/SpaceMapImages/Planets/StatVenus.png</Path>
+	</Icon>
+	<Icon Id="StatJupiter">
+		<Path>Images/SpaceMapImages/Planets/StatJupiter.png</Path>
+	</Icon>
+	<Icon Id="StatJanus">
+		<Path>Images/SpaceMapImages/Planets/StatJanus.png</Path>
+	</Icon>
+	<Icon Id="StatSaturn">
+		<Path>Images/SpaceMapImages/Planets/StatSaturn.png</Path>
+	</Icon>
+	<Icon Id="StatVulkan">
+		<Path>Images/SpaceMapImages/Planets/StatVulkan.png</Path>
+	</Icon>
+    
+	<SpaceMap Id="FallBack" OrbitDistance="200" FallBack="true">
+		<Entry Id="FallBackLowEuropa" Code="10" IsCharted="true">
+			<Name Value="Europa Orbit" />
+			<Connection Id="FallBackIOOrbit" Difficulty="100" />
+			<Connection Id="FallBackProgradeMoonTransfer" Difficulty="200" />
+			<Connection Id="FallBackGanymedeOrbit" Difficulty="300" />
+			<Deploy Type="DeliveryPayload"/>
+			<MapDisplay X="-110" Y="0">
+				<Icon Id="StatEuropa" Size="3" />
+				<Offset x="0" y="-50"/>
+				<DynamicPanel Orientation="0" Offset="0" ExtraSize="60" Grow="true" />
+			</MapDisplay>
+		</Entry>
+        <LowOrbitHub Id="FallbackLowOrbitHub" IsCharted="true">
+            <Name Value="LowOrbitHub" />
+            <MapDisplay X="-110" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="1" Offset="40" />
+            </MapDisplay>
+        </LowOrbitHub>
+		<Node Id="FallBackIOOrbit">
+			<Name Value="Io Orbit" />
+			<Connection Id="FallBackTidalFragments" Difficulty="100" />
+			<Connection Id="FallBackIOCondensate" Difficulty="200" />
+			<MapDisplay X="-100" Y="100">
+				<Icon Id="StatMisc05" Size="02" Tint="219,224,151,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="FallBackProgradeMoonTransfer">
+			<Name Value="Prograde Moon Transfer" />
+			<Connection Id="FallBackErsa" Difficulty="100" />
+			<Connection Id="FallBackDiaFragments" Difficulty="200" />
+			<Connection Id="FallBackRetrogradeMoonTransfer" Difficulty="300" />
+			<MapDisplay X="400" Y="-20">
+				<Icon Id="RendezvousNode03" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="FallBackGanymedeOrbit">
+			<Name Value="Ganymede Orbit" />
+			<Connection Id="FallBackFerrousAsteroids" Difficulty="100" />
+			<Connection Id="FallBackGeyserSpouts" Difficulty="200" />
+			<Connection Id="FallBackCallistoOrbit" Difficulty="300" />
+			<MapDisplay X="0" Y="-100">
+				<Icon Id="StatMisc03" Size="02" Tint="232,253,248,255" />
+				<DynamicPanel Orientation="1" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="FallBackTidalFragments">
+			<Name Value="Tidal Fragments" />
+			<MapDisplay X="-30" Y="150">
+				<Icon Id="DenseAsteroid05" Tint="196,212,195,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="FallBackTidalFragments01" Name="Copper Fragments">
+					<Name Value="Copper Fragments" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackTidalFragments02" Name="Gold Fragments">
+					<Name Value="Gold Fragments" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Gold=".3" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackTidalFragments03" Name="Silicon Fragments">
+					<Name Value="Silicon Fragments" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackIOCondensate">
+			<Name Value="Io Condensate" />
+			<MapDisplay X="-40" Y="100">
+				<Icon Id="SparseGasCloud01" Tint="219,224,151,255" />
+				<DynamicPanel Orientation="3" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="FallBackIOCondensate01" Name="Pollutant Condensate">
+					<Name Value="Pollutant Condensate" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Pollutant="18" Nitrogen="4" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackIOCondensate02" Name="Volatile Condensate">
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Name Value="Volatile Condensate" />
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Volatiles="22" Pollutant="2" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackErsa">
+			<Name Value="Ersa" />
+			<MapDisplay X="370" Y="85">
+				<Icon Id="MetallicAsteroid06" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="FallBackErsa01" Name="Ersa Silver desposit">
+					<Name Value="Ersa Silver deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackErsa02" Name="Ersa Cobalt desposit">
+					<Name Value="Ersa Cobalt deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackErsa03" Name="Ersa Lead desposit">
+					<Name Value="Ersa Lead deposit" />
+					<MapDisplay>
+						<Icon Id="StatAsteroidFragment" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackDiaFragments">
+			<Name Value="Dia Fragments" />
+			<MapDisplay X="420" Y="60">
+				<Icon Id="AsteroidCluster02" Tint="196,212,195,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="FallBackDiaFragments01" Name="Basic Fragments">
+					<Name Value="Basic Fragments" />
+					<MapDisplay>
+						<Icon Id="DenseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="3" Max="6" />
+						<Size Min="1" Max="4" />
+						<Composition>
+							<ReagentMix Iron=".4" Copper=".1" Silicon=".1" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackRetrogradeMoonTransfer">
+			<Name Value="Retrograde Moon Transfer" />
+			<Connection Id="FallBackMnemeCluster" Distance="200" Difficulty="100" />
+			<Connection Id="FallBackLostMoon" Distance="200" Difficulty="100" />
+			<Connection Id="FallBackKore" Distance="800" Difficulty="100" />
+			<MapDisplay X="800" Y="80">
+				<Icon Id="SlingshotNode03" Size="2" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="FallBackCallistoOrbit">
+			<Name Value="Callisto Orbit" />
+			<MapDisplay X="225" Y="-150">
+				<Icon Id="StatMisc01" Size="2" Tint="128,125,118,255" />
+				<DynamicPanel Orientation="3" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="FallBackCallisto01" Name="Graphite Cloud">
+					<Name Value="Graphite Cloud" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="5" />
+						<Composition>
+							<ReagentMix Carbon=".5" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackGeyserSpouts">
+			<Name Value="Geyser Spouts" />
+			<MapDisplay X="55" Y="-155">
+				<Icon Id="RegularGasCloud01" Tint="165,181,255,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="FallBackGeyserSpouts01" Name="Water Spout">
+					<Name Value="Water Spout" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Water="14" CarbonDioxide="8" PollutedWater="2" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackGeyserSpouts02" Name="Oxygen Vent">
+					<Name Value="Oxygen Vent" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Oxygen="22" CarbonDioxide="2" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackFerrousAsteroids">
+			<Name Value="Ferrous Asteroids" />
+			<MapDisplay X="-15" Y="-160">
+				<Icon Id="AsteroidCluster05" Tint="226,150,148,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="FallBackFerrousAsteroids01" Name="Poor Iron Asteroid">
+					<Name Value="Poor Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackFerrousAsteroids02" Name="Rich Iron Asteroid">
+					<Name Value="Rich Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="7" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackFerrousAsteroids03" Name="Nickel Debris">
+					<Name Value="Nickel Debris" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="4" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackFerrousAsteroids04">
+					<Name Value="Poor Salt Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice LiquidSodiumChloride="20" Nitrogen="4" TemperatureC="357" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackMnemeCluster">
+			<Name Value="Mneme Cluster" />
+			<MapDisplay X="950" Y="170">
+				<Icon Id="AsteroidCluster04" Tint="229,229,113,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="FallBackMnemeCluster01" Name="Rich Asteroid">
+					<Name Value="Rich Asteroid" />
+					<MapDisplay>
+						<Icon Id="DenseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Gold=".13" Silver=".7" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackMnemeCluster02" Name="White Gold Asteroid">
+					<Name Value="Copper Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="7" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackMnemeCluster03">
+					<Name Value="Hydrazine Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="3" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice Hydrazine="24" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackLostMoon">
+			<Name Value="Lost Moon" />
+			<MapDisplay X="1200" Y="-20">
+				<Icon Id="AsteroidMisc03" Tint="154,200,198,255" />
+				<DynamicPanel Orientation="3" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="FallBackLostMoon01" Name="Nos Ice Asteroid">
+					<Name Value="Nos Ice Asteroid" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice NitrousOxide="14" Oxygen="4" Nitrogen="4" Helium="2" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackLostMoon02" Name="Dangerous Ice Asteroid">
+					<Name Value="Dangerous Ice Asteroid" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice Volatiles="21" Ozone="2" NitrousOxide="1" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackLostMoon03" Name="Large Silicon Asteroid">
+					<Name Value="Large Silicon Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidMisc06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="2" Max="3" />
+						<Size Min="4" Max="8" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackLostMoon04">
+					<Name Value="Ozone Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Ozone="24" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackLostMoon05">
+					<Name Value="Helium Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="5" />
+						<Composition>
+							<Ice Helium="22" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackLostMoon06">
+					<Name Value="Dangerous Hydrogen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice Hydrogen="22" Ozone="2" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FallBackKore">
+			<Name Value="Kore" />
+			<MapDisplay X="1200" Y="-300">
+				<Icon Id="MetallicAsteroid06" Size="2" Tint="255,171,191,255" />
+				<DynamicPanel Orientation="0" Offset="25" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="FallBackKore01" Name="Large Lead Deposit">
+					<Name Value="Large Lead Deposit" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="8" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackKore02" Name="Large Nickel Deposit">
+					<Name Value="Large Nickel Deposit" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="8" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackKore03" Name="Large Cobalt Deposit">
+					<Name Value="Large Cobalt Deposit" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="8" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackKore04" Name="Large Silver Deposit">
+					<Name Value="Large Silver Deposit" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="8" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="FallBackKore05">
+					<Name Value="Dense Silanol Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Silanol="22" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+	</SpaceMap>
+
+	<SpaceMap Id="MoonSpaceMap" OrbitDistance="200">
+        <Sprite>
+            <MapDisplay X="0" Y="-75">
+                <Icon Id="StatMoon" Size="3"/>
+            </MapDisplay>
+        </Sprite>
+		<Entry Id="MoonOrbit" Code="13" IsCharted="true">
+			<Name Value="Moon Orbit" />
+			<Connection Id="IceEjecta" Difficulty="100" />
+			<Connection Id="OrbitingAsteroidFragments" Difficulty="200" />
+			<Deploy Type="DeliveryPayload"/>
+			<SurfaceScan/>
+			<MapDisplay X="0" Y="0">
+				<Icon Id="StandardNode01" Size="3" />
+				<DynamicPanel Orientation="0" Offset="20" ExtraSize="38" Grow="true" />
+			</MapDisplay>
+		</Entry>
+        <LowOrbitHub Id="MoonLowOrbitHub" IsCharted="true">
+            <Name Value="LowOrbitHub" />
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="1" Offset="40" />
+            </MapDisplay>
+        </LowOrbitHub>
+		<Node Id="IceEjecta">
+			<Name Value="Ice Ejecta" />
+			<MapDisplay X="60" Y="80">
+				<Icon Id="IrregularGasCloud01" Size="1" Tint="165,181,255,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="IceEjecta01">
+					<Name Value="Water Ejecta" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<Ice Water="12" CarbonDioxide="12" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IceEjecta02">
+					<Name Value="Volatile Ejecta" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Volatiles="22" CarbonDioxide="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IceEjecta03">
+					<Name Value="Oxygen Ejecta" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Oxygen="18" CarbonDioxide="6" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IceEjecta04">
+					<Name Value="Pollutant Ejecta" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Pollutant="20" HydrochloricAcid="4" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IceEjecta05">
+					<Name Value="Ozone Ejecta" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Ozone="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="OrbitingAsteroidFragments">
+			<Name Value="Orbiting Asteroid Fragments" />
+			<Connection Id="FarsideLockedAsteroids" Difficulty="250" />
+			<Connection Id="IntraEarthAsteroids" Difficulty="500" />
+			<MapDisplay X="160" Y="-10">
+				<Icon Id="SparseAsteroid02" Size="2" Tint="207,165,140,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="OrbitingAsteroidFragments01">
+					<Name Value="Iron Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="OrbitingAsteroidFragments02">
+					<Name Value="Copper Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="OrbitingAsteroidFragments03">
+					<Name Value="Gold Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Gold=".3" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+				<Site Id="OrbitingAsteroidFragments04">
+					<Name Value="Silicon Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="OrbitingAsteroidFragments05">
+					<Name Value="Coal Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Hydrocarbon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="IntraEarthAsteroids">
+			<Name Value="Intra Earth Asteroids" />
+			<MapDisplay X="280" Y="30">
+				<Icon Id="MetallicAsteroid03" Size="1" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="IntraEarthAsteroids01">
+					<Name Value="Silver deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IntraEarthAsteroids02">
+					<Name Value="Nickel deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IntraEarthAsteroids03">
+					<Name Value="Lead deposit" />
+					<MapDisplay>
+						<Icon Id="StatAsteroidFragment" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FarsideLockedAsteroids">
+			<Name Value="Farside Locked Asteroids" />
+			<Connection Id="L4Cloud" Difficulty="500" />
+			<Connection Id="L5AsteroidCluster" Difficulty="1000" />
+			<MapDisplay X="300" Y="-120">
+				<Icon Id="MetallicAsteroid04" Size="2" Tint="253,224,206,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="FarsideLockedAsteroids01">
+					<Name Value="Cobalt Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="FarsideLockedAsteroids02">
+					<Name Value="Hydrazine Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="3" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice Hydrazine="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="L4Cloud">
+			<Name Value="L4 Cloud" />
+			<MapDisplay X="420" Y="-10">
+				<Icon Id="IrregularGasCloud03" Size="1" Tint="226,185,188,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="L4Cloud01">
+					<Name Value="Dense Oxygen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Oxygen="20" Nitrogen="2" Helium="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="L4Cloud02">
+					<Name Value="NoS Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice NitrousOxide="22" Nitrogen="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="L4Cloud03">
+					<Name Value="Water Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Water="20" Nitrogen="2" PollutedWater="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="L4Cloud04">
+					<Name Value="Dangerous Methane Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="3" Max="5" />
+						<Size Min="4" Max="7" />
+						<Composition>
+							<Ice Volatiles="22" Ozone="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="L4Cloud05">
+					<Name Value="Dangerous Hydrogen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Hydrogen="22" Ozone="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="L4Cloud06">
+					<Name Value="Helium Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Helium="22" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="L5AsteroidCluster">
+			<Name Value="L5 Asteroid Cluster" />
+			<MapDisplay X="140" Y="-160">
+				<Icon Id="DenseAsteroid05" Size="1" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="L5AsteroidCluster01">
+					<Name Value="Dense Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="2" />
+						<Size Min="3" Max="6" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="L5AsteroidCluster02">
+					<Name Value="Dense Silanol Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Silanol="22" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="L5AsteroidCluster03">
+					<Name Value="Poor Salt Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice LiquidSodiumChloride="20" Nitrogen="4" TemperatureC="357" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+	</SpaceMap>
+
+	<SpaceMap Id="MarsSpaceMap" OrbitDistance="200">
+        <Sprite>
+            <MapDisplay X="0" Y="-75">
+                <Icon Id="StatMars" Size="3"/>
+            </MapDisplay>
+        </Sprite>
+		<Entry Id="MarsOrbit" Code="16" IsCharted="true">
+			<Name Value="Mars Orbit" />
+			<Connection Id="Phobos" Difficulty="100" />
+			<Deploy Type="DeliveryPayload"/>
+			<SurfaceScan/>
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="0" Offset="20" ExtraSize="38" Grow="true" />
+            </MapDisplay>
+		</Entry>
+        <LowOrbitHub Id="MarsLowOrbitHub" IsCharted="true">
+            <Name Value="LowOrbitHub" />
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="1" Offset="40" />
+            </MapDisplay>
+        </LowOrbitHub>
+		<Node Id="Phobos">
+			<Name Value="Phobos" />
+			<Connection Id="Deimos" Difficulty="100" />
+			<Connection Id="FrozenVapors" Difficulty="200" />
+			<Connection Id="MetallicField" Difficulty="300" />
+			<Connection Id="RockyAsteroid" Difficulty="400" />
+			<MapDisplay X="150" Y="-20">
+				<Icon Id="Phobos" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="FrozenVapors">
+			<Name Value="Frozen Vapors" />
+			<MapDisplay X="145" Y="20">
+				<Icon Id="IrregularGasCloud03" Size="1" Tint="165,181,255,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="FrozenVapors01">
+					<Name Value="Water Vapor" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<Ice Water="20" CarbonDioxide="2" PollutedWater="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="FrozenVapors02">
+					<Name Value="Volatile Vapor" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Volatiles="22" CarbonDioxide="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Deimos">
+			<Name Value="Deimos" />
+			<Connection Id="MarsLagrangeTransfer" Difficulty="250" />
+			<Connection Id="FerrousAsteroidSector" Difficulty="500" />
+			<Connection Id="ColumnarAsteroids" Difficulty="750" />
+			<MapDisplay X="350" Y="10">
+				<Icon Id="Deimos" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="MetallicField">
+			<Name Value="Metallic Field" />
+			<MapDisplay X="170" Y="-55">
+				<Icon Id="MetallicAsteroid02" Size="1" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="MetallicField01">
+					<Name Value="Silver deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="MetallicField02">
+					<Name Value="Nickel deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="MetallicField03">
+					<Name Value="Lead deposit" />
+					<MapDisplay>
+						<Icon Id="StatAsteroidFragment" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="RockyAsteroid">
+			<Name Value="Rocky Asteroid" />
+			<MapDisplay X="130" Y="-55">
+				<Icon Id="SparseAsteroid06" Size="1" Tint="253,224,206,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="RockyAsteroid01">
+					<Name Value="Iron Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RockyAsteroid02">
+					<Name Value="Copper Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RockyAsteroid03">
+					<Name Value="Gold Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Gold=".3" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RockyAsteroid04">
+					<Name Value="Silicon Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FerrousAsteroidSector">
+			<Name Value="Ferrous Asteroid Sector" />
+			<MapDisplay X="330" Y="45">
+				<Icon Id="SparseAsteroid04" Size="1" Tint="226,150,148,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="FerrousAsteroidSector01">
+					<Name Value="Poor Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="FerrousAsteroidSector02">
+					<Name Value="Dense Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="7" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="FerrousAsteroidSector03">
+					<Name Value="Poor Salt Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+								<Ice LiquidSodiumChloride="20" Nitrogen="4" TemperatureC="357"/>
+						</Composition>
+					</Deposit>
+				</Site>	
+			</Discover>
+		</Node>
+		<Node Id="MarsLagrangeTransfer">
+			<Name Value="Mars Lagrange Transfer" />
+			<Connection Id="MarsL4" Difficulty="250" />
+			<Connection Id="MarsL5" Difficulty="500" />
+			<MapDisplay X="550" Y="0">
+				<Icon Id="HomannNode03" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="ColumnarAsteroids">
+			<Name Value="Columnar Asteroids" />
+			<MapDisplay X="370" Y="-35">
+				<Icon Id="MetallicAsteroid04" Size="1" Tint="139,149,185,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="ColumnarAsteroids01">
+					<Name Value="Cobalt Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="ColumnarAsteroids02">
+					<Name Value="Large Silicon Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidMisc06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="8" />
+						<Richness Min="1" Max="4" />
+						<Size Min="4" Max="6" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="MarsL4">
+			<Name Value="Mars L4" />
+			<Connection Id="RichAsteroids" Difficulty="500" />
+			<Connection Id="OxygenatedIceCluster" Difficulty="1000" />
+			<MapDisplay X="680" Y="150">
+				<Icon Id="RendezvousNode03" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="MarsL5">
+			<Name Value="Mars L5" />
+			<Connection Id="HydrogenatedGasCloud" Difficulty="500" />
+			<Connection Id="LostMoonFragments" Difficulty="1500" />
+			<MapDisplay X="680" Y="-150">
+				<Icon Id="RendezvousNode03" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="RichAsteroids">
+			<Name Value="Rich Asteroids" />
+			<MapDisplay X="630" Y="180">
+				<Icon Id="DenseAsteroid04" Size="1" Tint="196,212,195,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="RichAsteroids01">
+					<Name Value="Copper Asteroid" />
+					<MapDisplay>
+						<Icon Id="DenseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RichAsteroids02">
+					<Name Value="Silicon Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidMisc05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RichAsteroids03">
+					<Name Value="Gold Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Gold=".25" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RichAsteroids04">
+					<Name Value="Carbon Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="3" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Carbon=".25" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RichAsteroids05">
+					<Name Value="Hydrazine Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="3" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice Hydrazine="24"/>
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="OxygenatedIceCluster">
+			<Name Value="Oxygenated Ice Cluster" />
+			<MapDisplay X="720" Y="180">
+				<Icon Id="RegularGasCloud04" Size="1" Tint="165,181,255,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="OxygenatedIceCluster01">
+					<Name Value="Dense Oxygen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Oxygen="20" Nitrogen="4" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="OxygenatedIceCluster02">
+					<Name Value="NoS Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice NitrousOxide="22" Nitrogen="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="OxygenatedIceCluster03">
+					<Name Value="Nitrogen Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Nitrogen="22" Helium="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="OxygenatedIceCluster04">
+					<Name Value="Helium Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Helium="22"/>
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="LostMoonFragments">
+			<Name Value="Lost Moon Fragments" />
+			<MapDisplay X="800" Y="-280">
+				<Icon Id="AsteroidCluster03" Size="2" Tint="207,165,140,255" />
+				<DynamicPanel Orientation="0" Offset="30" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="LostMoonFragments01">
+					<Name Value="Large Lead Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="8" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LostMoonFragments02">
+					<Name Value="Large Nickel Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LostMoonFragments03">
+					<Name Value="Large Cobalt Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LostMoonFragments04">
+					<Name Value="Large Silver Fragment" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+<!--				new silanol ice-->
+				<Site Id="LostMoonFragments05">
+					<Name Value="Dense Silanol Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Silanol="22" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="HydrogenatedGasCloud">
+			<Name Value="Hydrogenated Gas Cloud" />
+			<MapDisplay X="660" Y="-180">
+				<Icon Id="IrregularGasCloud01" Size="1" Tint="226,185,188,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="HydrogenatedGasCloud01">
+					<Name Value="Pollutant Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Pollutant="20" HydrochloricAcid="4" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="HydrogenatedGasCloud02">
+					<Name Value="Dangerous Methane Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="3" Max="5" />
+						<Size Min="4" Max="7" />
+						<Composition>
+							<Ice Volatiles="22" Ozone="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="HydrogenatedGasCloud03">
+					<Name Value="Water Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Water="22" PollutedWater="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="HydrogenatedGasCloud04">
+					<Name Value="Hydrogen Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Hydrogen="22" Ozone="2"/>
+						</Composition>
+					</Deposit>
+				</Site>
+<!--				ozone ice-->
+				<Site Id="HydrogenatedGasCloud05">
+					<Name Value="Ozone Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Ozone="24"/>
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+	</SpaceMap>
+
+	<SpaceMap Id="EuropaSpaceMap" OrbitDistance="200">
+        <Sprite>
+            <MapDisplay X="-110" Y="-75">
+                <Icon Id="StatEuropa" Size="3"/>
+            </MapDisplay>
+        </Sprite>
+		<Entry Id="LowEuropa" Code="11" IsCharted="true">
+			<Name Value="Europa Orbit" />
+			<Connection Id="IOOrbit" Difficulty="100" />
+			<Connection Id="GanymedeOrbit" Difficulty="200" />
+			<Connection Id="ProgradeMoonTransfer" Difficulty="450" />
+			<Deploy Type="DeliveryPayload"/>
+			<SurfaceScan/>
+			<MapDisplay X="-110" Y="0">
+				<Icon Id="StandardNode01" Size="3" />
+				<DynamicPanel Orientation="0" Offset="20" ExtraSize="38" Grow="true" />
+			</MapDisplay>
+		</Entry>
+        <LowOrbitHub Id="EuropaLowOrbitHub" IsCharted="true">
+            <Name Value="LowOrbitHub" />
+            <MapDisplay X="-110" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="1" Offset="40" />
+            </MapDisplay>
+        </LowOrbitHub>
+		<Node Id="IOOrbit">
+			<Name Value="Io Orbit" />
+			<Connection Id="TidalFragments" Difficulty="100" />
+			<Connection Id="IOCondensate" Difficulty="200" />
+			<MapDisplay X="-100" Y="100">
+				<Icon Id="StatMisc05" Size="02" Tint="219,224,151,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="ProgradeMoonTransfer">
+			<Name Value="Prograde Moon Transfer" />
+			<Connection Id="Ersa" Difficulty="250" />
+			<Connection Id="DiaFragments" Difficulty="500" />
+			<Connection Id="RetrogradeMoonTransfer" Difficulty="1000" />
+			<MapDisplay X="400" Y="-20">
+				<Icon Id="RendezvousNode03" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="GanymedeOrbit">
+			<Name Value="Ganymede Orbit" />
+			<Connection Id="FerrousAsteroids" Difficulty="100" />
+			<Connection Id="GeyserSpouts" Difficulty="200" />
+			<Connection Id="CallistoOrbit" Difficulty="300" />
+			<MapDisplay X="0" Y="-100">
+				<Icon Id="StatMisc03" Size="02" Tint="232,253,248,255" />
+				<DynamicPanel Orientation="1" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="TidalFragments">
+			<Name Value="Tidal Fragments" />
+			<MapDisplay X="-30" Y="150">
+				<Icon Id="DenseAsteroid05" Tint="196,212,195,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="TidalFragments01">
+					<Name Value="Copper Fragments" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="TidalFragments02">
+					<Name Value="Gold Fragments" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Gold=".3" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="TidalFragments03">
+					<Name Value="Silicon Fragments" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="IOCondensate">
+			<Name Value="Io Condensate" />
+			<MapDisplay X="-40" Y="100">
+				<Icon Id="SparseGasCloud01" Tint="219,224,151,255" />
+				<DynamicPanel Orientation="3" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="IOCondensate01">
+					<Name Value="Pollutant Condensate" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Pollutant="18" Nitrogen="4" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IOCondensate02">
+					<Name Value="Volatile Condensate" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Volatiles="22" Pollutant="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Ersa">
+			<Name Value="Ersa" />
+			<MapDisplay X="370" Y="85">
+				<Icon Id="MetallicAsteroid06" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="Ersa01">
+					<Name Value="Ersa Silver deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Ersa02">
+					<Name Value="Ersa Cobalt deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Ersa03">
+					<Name Value="Ersa Lead deposit" />
+					<MapDisplay>
+						<Icon Id="StatAsteroidFragment" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="DiaFragments">
+			<Name Value="Dia Fragments" />
+			<MapDisplay X="420" Y="60">
+				<Icon Id="AsteroidCluster02" Tint="196,212,195,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="DiaFragments01">
+					<Name Value="Basic Fragments" />
+					<MapDisplay>
+						<Icon Id="DenseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="3" Max="6" />
+						<Size Min="1" Max="4" />
+						<Composition>
+							<ReagentMix Iron=".4" Copper=".1" Silicon=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="RetrogradeMoonTransfer">
+			<Name Value="Retrograde Moon Transfer" />
+			<Connection Id="LostMoon" Distance="200" Difficulty="300" />
+			<Connection Id="MnemeCluster" Distance="200" Difficulty="1300" />
+			<Connection Id="Kore" Distance="800" Difficulty="2300" />
+			<Connection Id="JupiterLowOrbit" Distance="3500" Difficulty="5000" />
+			<MapDisplay X="800" Y="80">
+				<Icon Id="SlingshotNode03" Size="2" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="JupiterLowOrbit">
+			<Name Value="Jupiter Low Orbit" />
+			<MapDisplay X="1800" Y="200">
+				<Icon Id="StatJupiter" Size="5" SelectionSize="1.5" />
+				<DynamicPanel Orientation="2" Offset="80" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="JupiterClouds01">
+					<Name Value="Upper Cloud Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Volatiles="9" Pollutant="2" Nitrogen="1" CarbonDioxide="1" TemperatureC="-62" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="JupiterClouds02">
+					<Name Value="Helium Layer" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Helium="12" Volatiles="6" Nitrogen="2" TemperatureC="-62" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="JupiterClouds03">
+					<Name Value="Deep Hydrogen Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Hydrogen="14" Volatiles="4" Nitrogen="2" TemperatureC="-62" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="JupiterClouds04">
+					<Name Value="Ozone Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="3" Max="6" />
+						<Size Min="2" Max="5" />
+						<Composition>
+							<Ice Ozone="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="JupiterClouds05">
+					<Name Value="Helium Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="3" Max="6" />
+						<Size Min="2" Max="5" />
+						<Composition>
+							<Ice Helium="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+			<Survey>
+				<Achievement Id="AchievementJupiterAscending" SendToAll="true" />
+			</Survey>
+		</Node>
+		<Node Id="CallistoOrbit">
+			<Name Value="Callisto Orbit" />
+			<MapDisplay X="225" Y="-150">
+				<Icon Id="StatMisc01" Size="2" Tint="128,125,118,255" />
+				<DynamicPanel Orientation="3" Offset="30" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="Callisto01">
+					<Name Value="Graphite Cloud" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="5" />
+						<Composition>
+							<ReagentMix Carbon=".25" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="GeyserSpouts">
+			<Name Value="Geyser Spouts" />
+			<MapDisplay X="55" Y="-155">
+				<Icon Id="RegularGasCloud01" Tint="165,181,255,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="GeyserSpouts01">
+					<Name Value="Water Spout" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Water="10" CarbonDioxide="12" PollutedWater="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="GeyserSpouts02">
+					<Name Value="Oxygen Vent" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Oxygen="22" CarbonDioxide="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="FerrousAsteroids">
+			<Name Value="Ferrous Asteroids" />
+			<MapDisplay X="-15" Y="-160">
+				<Icon Id="AsteroidCluster05" Tint="226,150,148,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="FerrousAsteroids01">
+					<Name Value="Poor Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="FerrousAsteroids02">
+					<Name Value="Rich Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="FerrousAsteroids03">
+					<Name Value="Nickel Debris" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="FerrousAsteroids04">
+					<Name Value="Poor Salt Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice LiquidSodiumChloride="20" Nitrogen="4" TemperatureC="357" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="MnemeCluster">
+			<Name Value="Mneme Cluster" />
+			<MapDisplay X="950" Y="170">
+				<Icon Id="AsteroidCluster04" Tint="229,229,113,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="MnemeCluster01">
+					<Name Value="Rich Asteroid" />
+					<MapDisplay>
+						<Icon Id="DenseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Gold=".13" Silver=".7" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="MnemeCluster02">
+					<Name Value="Copper Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="MnemeCluster03">
+					<Name Value="Hydrazine Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice Hydrazine="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="LostMoon">
+			<Name Value="Lost Moon" />
+			<MapDisplay X="1200" Y="-20">
+				<Icon Id="AsteroidMisc03" Tint="154,200,198,255" />
+				<DynamicPanel Orientation="3" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="LostMoon01">
+					<Name Value="Nos Ice Asteroid" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="3" Max="6" />
+						<Size Min="2" Max="5" />
+						<Composition>
+							<Ice NitrousOxide="14" Oxygen="4" Nitrogen="4" Helium="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LostMoon02">
+					<Name Value="Dangerous Ice Asteroid" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="3" Max="5" />
+						<Size Min="4" Max="7" />
+						<Composition>
+							<Ice Volatiles="21" Ozone="2" NitrousOxide="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LostMoon03">
+					<Name Value="Large Silicon Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidMisc06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="2" Max="3" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LostMoon04">
+					<Name Value="Dangerous Hydrogen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="3" Max="5" />
+						<Size Min="4" Max="7" />
+						<Composition>
+							<Ice Hydrogen="22" Ozone="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Kore">
+			<Name Value="Kore" />
+			<MapDisplay X="1200" Y="-300">
+				<Icon Id="MetallicAsteroid06" Size="2" Tint="255,171,191,255" />
+				<DynamicPanel Orientation="0" Offset="25" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="Kore01">
+					<Name Value="Large Lead Deposit" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="9" />
+						<Richness Min="2" Max="4" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Kore02">
+					<Name Value="Large Nickel Deposit" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="9" />
+						<Richness Min="2" Max="4" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Kore03">
+					<Name Value="Large Cobalt Deposit" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="9" />
+						<Richness Min="2" Max="4" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Kore04">
+					<Name Value="Large Silver Deposit" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="9" />
+						<Richness Min="2" Max="4" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Kore05">
+					<Name Value="Dense Silanol Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Silanol="22" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+	</SpaceMap>
+
+	<SpaceMap Id="MimasSpaceMap" OrbitDistance="200">
+        <Sprite>
+            <MapDisplay X="0" Y="-75">
+                <Icon Id="StatMimas" Size="3"/>
+            </MapDisplay>
+        </Sprite>
+		<Entry Id="LowMimas" Code="12" IsCharted="true">
+			<Name Value="Mimas Orbit" />
+			<Connection Id="ARings" Difficulty="100" />
+			<Connection Id="Enceladus" Difficulty="350" />
+			<Deploy Type="DeliveryPayload"/>
+			<SurfaceScan/>
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="0" Offset="20" ExtraSize="38" Grow="true" />
+            </MapDisplay>
+		</Entry>
+        <LowOrbitHub Id="MimasLowOrbitHub" IsCharted="true">
+            <Name Value="LowOrbitHub" />
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="2" Offset="40" />
+            </MapDisplay>
+        </LowOrbitHub>
+		<Node Id="ARings">
+			<Name Value="A Rings" />
+			<Connection Id="Brings" Difficulty="100" />
+			<MapDisplay X="-250" Y="0">
+				<Icon Id="DenseAsteroid01" Size="3" Tint="207,165,140,255" />
+				<DynamicPanel Orientation="0" Offset="30" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="ARings01">
+					<Name Value="Iron Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="ARings02">
+					<Name Value="Copper Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="ARings03">
+					<Name Value="Gold Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Gold=".3" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="ARings04">
+					<Name Value="Silicon Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Enceladus">
+			<Name Value="Enceladus" />
+			<Connection Id="Titian" Difficulty="200" />
+			<MapDisplay X="200" Y="75">
+				<Icon Id="StatMisc01" Size="2" Tint="232,253,248,255" />
+				<DynamicPanel Orientation="0" Offset="25" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="Enceladus01">
+					<Name Value="Water Vapor" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="2" />
+						<Richness Min="6" Max="8" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Water="12" Nitrogen="12" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Enceladus02">
+					<Name Value="Silver deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Enceladus03">
+					<Name Value="Nickel deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Enceladus04">
+					<Name Value="Lead deposit" />
+					<MapDisplay>
+						<Icon Id="StatAsteroidFragment" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Enceladus05">
+					<Name Value="Poor Salt Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice LiquidSodiumChloride="20" Nitrogen="4" TemperatureC="357" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+
+		</Node>
+		<Node Id="Brings">
+			<Name Value="B Rings" />
+			<Connection Id="CRings" Difficulty="250" />
+			<MapDisplay X="-500" Y="0">
+				<Icon Id="AsteroidBelt02" Size="3" />
+				<DynamicPanel Orientation="0" Offset="30" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="Brings01">
+					<Name Value="Volatile Vapor" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Volatiles="18" CarbonDioxide="4" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Brings02">
+					<Name Value="Oxygen Vapor" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Oxygen="18" CarbonDioxide="6" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Titian">
+			<Name Value="Titian" />
+			<Connection Id="Phoebe" Difficulty="500" />
+			<Connection Id="Fornjot" Difficulty="1000" />
+			<MapDisplay X="600" Y="25">
+				<Icon Id="StatMisc02" Size="2" Tint="219,224,151,255" />
+				<DynamicPanel Orientation="0" Offset="25" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="Titian01">
+					<Name Value="Dense Pollutant Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Pollutant="18" Nitrogen="4" PollutedWater="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Titian02">
+					<Name Value="NoS Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="4" />
+						<Composition>
+							<Ice NitrousOxide="22" Nitrogen="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Titian03">
+					<Name Value="Cobalt Ejecta" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Titian04">
+					<Name Value="Ozone Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Ozone="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="CRings">
+			<Name Value="C Rings" />
+			<Connection Id="SaturnLowOrbit" Difficulty="500" />
+			<MapDisplay X="-750" Y="0">
+				<Icon Id="AsteroidBelt01" Size="3" Tint="156,132,117,255" />
+				<DynamicPanel Orientation="0" Offset="30" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="CRings01">
+					<Name Value="Dense Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="3" Max="5" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="CRings02">
+					<Name Value="Salt Ice Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice LiquidSodiumChloride="20" Nitrogen="4" TemperatureC="357" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Phoebe">
+			<Name Value="Phoebe" />
+			<MapDisplay X="750" Y="300">
+				<Icon Id="AsteroidMisc07" Size="2" Tint="253,224,206,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="Phoebe01">
+					<Name Value="Large Lead Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Phoebe02">
+					<Name Value="Large Nickel Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Phoebe03">
+					<Name Value="Large Cobalt Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Phoebe04">
+					<Name Value="Large Silver Fragment" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Phoebe05">
+					<Name Value="Hydrazine Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="3" Max="8" />
+						<Size Min="2" Max="5" />
+						<Composition>
+							<Ice Hydrazine="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Fornjot">
+			<Name Value="Fornjot" />
+			<MapDisplay X="800" Y="-100">
+				<Icon Id="AsteroidMisc05" Size="2" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="Fornjot01">
+					<Name Value="Large Silicon Asteroid" />
+					<MapDisplay>
+						<Icon Id="DenseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="8" />
+						<Richness Min="3" Max="4" />
+						<Size Min="4" Max="6" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Fornjot02">
+					<Name Value="Rich Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="6" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Gold=".13" Silver=".7" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Fornjot03">
+					<Name Value="Basic Fragments" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="6" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Iron=".4" Copper=".1" Silicon=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Fornjot04">
+					<Name Value="Dense Silanol Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Silanol="22" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="SaturnLowOrbit">
+			<Name Value="Saturn Low Orbit" />
+			<MapDisplay X="-1200" Y="0">
+				<Icon Id="StatSaturn" Size="8" SelectionSize="0.8" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="SaturnClouds01">
+					<Name Value="Helium Layer" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Helium="16" Volatiles="6" Nitrogen="2" TemperatureC="-62" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="SaturnClouds02">
+					<Name Value="Deep Hydrogen Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Hydrogen="16" Volatiles="4" Nitrogen="2" TemperatureC="-62" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="SaturnClouds03">
+					<Name Value="Upper Cloud Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Volatiles="10" Pollutant="2" Nitrogen="1" CarbonDioxide="1" TemperatureC="-62" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="SaturnClouds04">
+					<Name Value="Ozone Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="3" Max="6" />
+						<Size Min="2" Max="5" />
+						<Composition>
+							<Ice Ozone="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+			<Survey>
+				<Achievement Id="AchievementTheCassiniJob" SendToAll="true" />
+			</Survey>
+		</Node>
+	</SpaceMap>
+
+	<SpaceMap Id="VulcanSpaceMap" OrbitDistance="200">
+        <Sprite>
+            <MapDisplay X="0" Y="-75">
+                <Icon Id="StatVulkan" Size="3"/>
+            </MapDisplay>
+        </Sprite>
+		<Entry Id="VulcanOrbit" Code="14" IsCharted="true">
+			<Name Value="Vulcan Orbit" />
+			<Connection Id="Acheron" Difficulty="100" />
+			<Connection Id="SparseVapors" Difficulty="200" />
+			<Deploy Type="DeliveryPayload"/>
+			<SurfaceScan/>
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="0" Offset="20" ExtraSize="38" Grow="true" />
+            </MapDisplay>
+		</Entry>
+        <LowOrbitHub Id="VulcanLowOrbitHub" IsCharted="true">
+            <Name Value="LowOrbitHub" />
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="1" Offset="40" />
+            </MapDisplay>
+        </LowOrbitHub>
+		<Node Id="Acheron">
+			<Name Value="Acheron" />
+			<Connection Id="MetallicAsteroidField" Difficulty="100" />
+			<Connection Id="Styx" Difficulty="200" />
+			<MapDisplay X="250" Y="200">
+				<Icon Id="StatMisc03" Size="2" Tint="200,178,182,255" />
+				<DynamicPanel Orientation="1" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="SparseVapors">
+			<Name Value="Sparse Vapors" />
+			<MapDisplay X="120" Y="-35">
+				<Icon Id="RegularGasCloud02" Size="2" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="SparseVapors01">
+					<Name Value="Water Vapor" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<Ice Water="10" CarbonDioxide="12" PollutedWater="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="SparseVapors02">
+					<Name Value="Oxygenated Vapor" />
+					<MapDisplay>
+						<Icon Id="SparseGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Oxygen="18" CarbonDioxide="4" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="MetallicAsteroidField">
+			<Name Value="Metallic Asteroid Field" />
+			<MapDisplay X="220" Y="280">
+				<Icon Id="SparseAsteroid06" Size="2" Tint="226,150,148,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="MetallicAsteroidField01">
+					<Name Value="Iron Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="MetallicAsteroidField02">
+					<Name Value="Copper Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="MetallicAsteroidField03">
+					<Name Value="Gold Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Gold=".3" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="MetallicAsteroidField04">
+					<Name Value="Silicon Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Styx">
+			<Name Value="Styx" />
+			<Connection Id="PreciousAsteroidCluster" Difficulty="100" />
+			<Connection Id="OuterTransfer" Difficulty="200" />
+			<MapDisplay X="500" Y="-180">
+				<Icon Id="StatMisc04" Size="2" Tint="156,132,117,255" />
+				<DynamicPanel Orientation="1" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="OuterTransfer">
+			<Name Value="Outer Transfer" />
+			<Connection Id="Lethe" Difficulty="100" />
+			<Connection Id="Erebus" Difficulty="200" />
+			<MapDisplay X="700" Y="230">
+				<Icon Id="RendezvousNode03" Size="2" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="PreciousAsteroidCluster">
+			<Name Value="Precious Asteroid Cluster" />
+			<MapDisplay X="480" Y="-230">
+				<Icon Id="SparseAsteroid03" Size="2" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="PreciousAsteroidCluster01">
+					<Name Value="Silver Cluster" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="PreciousAsteroidCluster02">
+					<Name Value="Nickel Cluster" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="PreciousAsteroidCluster03">
+					<Name Value="Lead Cluster" />
+					<MapDisplay>
+						<Icon Id="StatAsteroidFragment" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="PreciousAsteroidCluster04">
+					<Name Value="Cobalt Cluster" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="PreciousAsteroidCluster05">
+					<Name Value="Poor Salt Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice LiquidSodiumChloride="20" Nitrogen="4" TemperatureC="357" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Lethe">
+			<Name Value="Lethe" />
+			<Connection Id="PreciousCapturedAsteroids" Difficulty="100" />
+			<Connection Id="Hypnos" Difficulty="200" />
+			<Connection Id="JanusHighOrbit" Difficulty="300" />
+			<MapDisplay X="1100" Y="270">
+				<Icon Id="StatMisc02" Size="2" Tint="128,125,118,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="Erebus">
+			<Name Value="Erebus" />
+			<Connection Id="LayeredIceField" Difficulty="100" />
+			<Connection Id="OuterErebusRing" Difficulty="200" />
+			<Connection Id="InnerErebusRing" Difficulty="300" />
+			<MapDisplay X="760" Y="-180">
+				<Icon Id="StatMisc01" Size="3" Tint="215,238,233,255" />
+				<DynamicPanel Orientation="3" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="LayeredIceField">
+			<Name Value="Layered Ice Field" />
+			<MapDisplay X="810" Y="-120">
+				<Icon Id="SparseGasCloud03" Size="1" Tint="060,210,055,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="LayeredIceField01">
+					<Name Value="Dense Oxygen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Oxygen="18" Nitrogen="4" Helium="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LayeredIceField02">
+					<Name Value="NoS Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice NitrousOxide="22" Nitrogen="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LayeredIceField03">
+					<Name Value="Water Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Water="22" CarbonDioxide="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LayeredIceField04">
+					<Name Value="Dangerous Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="5" />
+						<Richness Min="4" Max="9" />
+						<Size Min="3" Max="5" />
+						<Composition>
+							<Ice Volatiles="4" Oxygen="17" Ozone="2" NitrousOxide="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LayeredIceField05">
+					<Name Value="Ozone Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Ozone="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LayeredIceField06">
+					<Name Value="Helium Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Helium="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="LayeredIceField07">
+					<Name Value="Dangerous Hydrogen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="3" Max="5" />
+						<Size Min="4" Max="7" />
+						<Composition>
+							<Ice Hydrogen="22" Ozone="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="OuterErebusRing">
+			<Name Value="Outer Erebus Ring" />
+			<MapDisplay X="830" Y="-190">
+				<Icon Id="AsteroidBelt02" Size="2" Tint="253,224,206,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="OuterErebusRing01">
+					<Name Value="Large Silicon Asteroid" />
+					<MapDisplay>
+						<Icon Id="DenseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="7" />
+						<Richness Min="1" Max="4" />
+						<Size Min="4" Max="6" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="OuterErebusRing02">
+					<Name Value="Rich Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="5" Max="9" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Gold=".13" Silver=".7" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="OuterErebusRing03">
+					<Name Value="Basic Fragments" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="4" />
+						<Richness Min="5" Max="9" />
+						<Size Min="3" Max="4" />
+						<Composition>
+							<ReagentMix Iron=".4" Copper=".1" Silicon=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="InnerErebusRing">
+			<Name Value="Inner Erebus Ring" />
+			<MapDisplay X="760" Y="-270">
+				<Icon Id="AsteroidBelt01" Size="2" Tint="207,165,140,255" />
+				<DynamicPanel Orientation="1" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="InnerErebusRing01">
+					<Name Value="Dense Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="2" />
+						<Size Min="3" Max="6" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="InnerErebusRing02">
+					<Name Value="Copper Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="4" Max="8" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="PreciousCapturedAsteroids">
+			<Name Value="Precious Captured Asteroids" />
+			<MapDisplay X="1230" Y="320">
+				<Icon Id="MetallicAsteroid04" Size="1" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="1" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="PreciousCapturedAsteroids01">
+					<Name Value="Large Lead Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="2" Max="5" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Lead=".2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="PreciousCapturedAsteroids02">
+					<Name Value="Large Nickel Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="2" Max="5" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="PreciousCapturedAsteroids03">
+					<Name Value="Large Cobalt Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="2" Max="5" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="PreciousCapturedAsteroids04">
+					<Name Value="Large Silver Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="2" Max="3" />
+						<Size Min="3" Max="8" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="PreciousCapturedAsteroids05">
+					<Name Value="Dense Silanol Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Silanol="22" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Hypnos">
+			<Name Value="Hypnos" />
+			<MapDisplay X="1200" Y="240">
+				<Icon Id="AsteroidMisc01" Size="1" Tint="139,149,185,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="Hypnos01">
+					<Name Value="Rich Gold Deposit" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="2" />
+						<Richness Min="6" Max="9" />
+						<Size Min="3" Max="6" />
+						<Composition>
+							<ReagentMix Gold=".25" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Hypnos02">
+					<Name Value="Rich Iron Deposit" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="6" Max="9" />
+						<Size Min="3" Max="6" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Hypnos03">
+					<Name Value="Rich Copper Deposit" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="2" />
+						<Richness Min="6" Max="9" />
+						<Size Min="3" Max="6" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Hypnos04">
+					<Name Value="Rich Silicon Deposit" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="2" />
+						<Richness Min="6" Max="9" />
+						<Size Min="3" Max="6" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Hypnos05">
+					<Name Value="Rich Carbon Deposit" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="2" />
+						<Richness Min="6" Max="9" />
+						<Size Min="3" Max="6" />
+						<Composition>
+							<ReagentMix Carbon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Hypnos06">
+					<Name Value="Hydrazine Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="3" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice Hydrazine="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="JanusHighOrbit">
+			<Name Value="Janus High Orbit" />
+			<MapDisplay X="1600" Y="-160">
+				<Icon Id="StatJanus" Size="25" SelectionSize="0.36" />
+				<DynamicPanel Orientation="2" Offset="80" />
+			</MapDisplay>
+			<Discover Difficulty="700">
+				<Site Id="JanusAccretionDisk01">
+					<Name Value="Accretion Disk Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Volatiles="12" Oxygen="4" Nitrogen="2" Pollutant="8" TemperatureC="-22" />
+						</Composition>
+					</Deposit>
+				</Site>				
+				<Site Id="JanusAccretionDisk02">
+					<Name Value="Accretion Disk Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas NitrousOxide="8" Pollutant="12" TemperatureC="430" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="JanusAccretionDisk03">
+					<Name Value="Accretion Disk Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Volatiles="18" Pollutant="8" TemperatureC="540" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="JanusAccretionDisk04">
+					<Name Value="Accretion Disk Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Helium="24" TemperatureC="440"/>
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="JanusAccretionDisk05">
+					<Name Value="Accretion Disk Layer" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="6" Max="10" />
+						<Composition>
+							<Gas Hydrogen="20" Nitrogen="2" Pollutant="2" TemperatureC="540"/>
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+			<Survey>
+				<Achievement Id="AchievementComeOnTars" SendToAll="true" />
+			</Survey>
+		</Node>
+	</SpaceMap>
+
+	<SpaceMap Id="VenusSpaceMap" OrbitDistance="200">
+        <Sprite>
+            <MapDisplay X="0" Y="-75">
+                <Icon Id="StatVenus" Size="3"/>
+            </MapDisplay>
+        </Sprite>
+		<Entry Id="VenusLowOrbit" Code="15" IsCharted="true">
+			<Name Value="Venus Orbit" />
+			<Connection Id="AncientVolcanicCondensate" Difficulty="100" />
+			<Connection Id="DustCloud" Difficulty="200" />
+			<Deploy Type="DeliveryPayload"/>
+			<SurfaceScan/>
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="0" Offset="20" ExtraSize="38" Grow="true" />
+            </MapDisplay>
+		</Entry>
+        <LowOrbitHub Id="VenusLowOrbitHub" IsCharted="true">
+            <Name Value="LowOrbitHub" />
+            <MapDisplay X="0" Y="0">
+                <Icon Id="StandardNode01" Size="3" />
+                <DynamicPanel Orientation="1" Offset="40" />
+            </MapDisplay>
+        </LowOrbitHub>
+		<Node Id="AncientVolcanicCondensate">
+			<Name Value="Ancient Volcanic Condensate" />
+			<MapDisplay X="20" Y="90">
+				<Icon Id="SparseGasCloud03" Size="2" Tint="165,181,255,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="AncientVolcanicCondensate01">
+					<Name Value="Oxygen Vapor" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice Oxygen="10" CarbonDioxide="14" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="AncientVolcanicCondensate02">
+					<Name Value="Volatile Vapor" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<Ice Volatiles="8" CarbonDioxide="14" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="DustCloud">
+			<Name Value="Dust Cloud" />
+			<Connection Id="L1Transfer" Difficulty="200" />
+			<Connection Id="L4Transfer" Difficulty="300" />
+			<Connection Id="L5Transfer" Difficulty="400" />
+			<Connection Id="SparseOrbitingAsteroids" Difficulty="100" />
+			<MapDisplay X="140" Y="-10">
+				<Icon Id="StandardNode01" Size="2" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="L1Transfer">
+			<Name Value="L1 Transfer" />
+			<Connection Id="MixedMetalAsteroidField" Difficulty="250" />
+			<Connection Id="Anteros" Difficulty="500" />
+			<MapDisplay X="400" Y="100">
+				<Icon Id="RendezvousNode03" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="L4Transfer">
+			<Name Value="L4 Transfer" />
+			<Connection Id="RareAsteroidCluster" Difficulty="500" />
+			<Connection Id="IceGasCloud" Difficulty="1000" />
+			<MapDisplay X="800" Y="-100">
+				<Icon Id="HomannNode03" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="L5Transfer">
+			<Name Value="L5 Transfer" />
+			<Connection Id="CrystallineAsteroids" Difficulty="500" />
+			<Connection Id="DenseAsteroidField" Difficulty="1000" />
+			<Connection Id="Himeros" Difficulty="2000" />
+			<MapDisplay X="800" Y="-300">
+				<Icon Id="SlingshotNode03" Size="2" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+		</Node>
+		<Node Id="SparseOrbitingAsteroids">
+			<Name Value="Sparse Orbiting Asteroids" />
+			<MapDisplay X="130" Y="-90">
+				<Icon Id="SparseAsteroid01" Size="1.5" Tint="253,224,206,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="100">
+				<Site Id="SparseOrbitingAsteroids01">
+					<Name Value="Iron Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="SparseOrbitingAsteroids02">
+					<Name Value="Copper Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="MixedMetalAsteroidField">
+			<Name Value="Mixed Metal Asteroid Field" />
+			<MapDisplay X="340" Y="120">
+				<Icon Id="SparseAsteroid02" Size="1" Tint="253,224,206,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="MixedMetalAsteroidField01">
+					<Name Value="Gold Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Gold=".3" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="MixedMetalAsteroidField02">
+					<Name Value="Silicon Rocks" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid04" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="5" />
+						<Richness Min="1" Max="2" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Anteros">
+			<Name Value="Anteros" />
+			<MapDisplay X="600" Y="90">
+				<Icon Id="MetallicAsteroid05" Size="2" Tint="156,132,117,255" />
+				<DynamicPanel Orientation="0" Offset="30" />
+			</MapDisplay>
+			<Discover Difficulty="200">
+				<Site Id="Anteros01">
+					<Name Value="Poor Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Anteros02">
+					<Name Value="Dense Iron Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="2" />
+						<Size Min="3" Max="6" />
+						<Composition>
+							<ReagentMix Iron="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Anteros03">
+					<Name Value="Poor Salt Asteroid" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="4" />
+						<Richness Min="1" Max="2" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice LiquidSodiumChloride="20" Nitrogen="4" TemperatureC="357" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="RareAsteroidCluster">
+			<Name Value="Rare Asteroid Cluster" />
+			<MapDisplay X="760" Y="60">
+				<Icon Id="DenseAsteroid05" Size="1" Tint="195,195,212,255" />
+				<DynamicPanel Orientation="2" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="RareAsteroidCluster01">
+					<Name Value="Silver deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RareAsteroidCluster02">
+					<Name Value="Nickel deposit" />
+					<MapDisplay>
+						<Icon Id="SparseAsteroid07" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RareAsteroidCluster03">
+					<Name Value="Lead deposit" />
+					<MapDisplay>
+						<Icon Id="StatAsteroidFragment" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="4" />
+						<Size Min="2" Max="3" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="RareAsteroidCluster04">
+					<Name Value="Hydrazine Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="3" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<Ice Hydrazine="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="IceGasCloud">
+			<Name Value="Ice Gas Cloud" />
+			<Connection Id="Phthonus" Difficulty="2000" />
+			<MapDisplay X="860" Y="-180">
+				<Icon Id="IrregularGasCloud01" Size="2" Tint="060,210,055,255" />
+				<DynamicPanel Orientation="0" Offset="25" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="IceGasCloud01">
+					<Name Value="Pollutant Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Pollutant="10" Nitrogen="12" PollutedWater="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IceGasCloud02">
+					<Name Value="Volatile Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice Volatiles="22" Pollutant="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IceGasCloud03">
+					<Name Value="Nos Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice NitrousOxide="10" Oxygen="14" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="IceGasCloud04">
+					<Name Value="Ozone Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice Ozone="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="CrystallineAsteroids">
+			<Name Value="Crystalline Asteroids" />
+			<MapDisplay X="875" Y="-260">
+				<Icon Id="MetallicAsteroid03" Size="1" Tint="154,200,198,255" />
+				<DynamicPanel Orientation="3" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="CrystallineAsteroids01">
+					<Name Value="Cobalt Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="3" Max="5" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="4" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="CrystallineAsteroids02">
+					<Name Value="Dangerous Hydrogen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice Hydrogen="22" Ozone="2" />
+						</Composition>
+					</Deposit>
+					<Survey />
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Himeros">
+			<Name Value="Himeros" />
+			<MapDisplay X="1254" Y="-350">
+				<Icon Id="AsteroidMisc03" Size="2" Tint="139,149,185,255" />
+				<DynamicPanel Orientation="0" Offset="30" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="Himeros01">
+					<Name Value="Large Lead Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Lead=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Himeros02">
+					<Name Value="Large Nickel Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster03" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Nickel=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Himeros03">
+					<Name Value="Large Cobalt Fragment" />
+					<MapDisplay>
+						<Icon Id="AsteroidCluster06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Cobalt=".1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Himeros04">
+					<Name Value="Large Silver Fragment" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<ReagentMix Silver=".15" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Himeros05">
+					<Name Value="Dense Silanol Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="1" Max="3" />
+						<Size Min="3" Max="7" />
+						<Composition>
+							<Ice Silanol="22" HydrochloricAcid="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="DenseAsteroidField">
+			<Name Value="Dense Asteroid Field" />
+			<MapDisplay X="850" Y="-400">
+				<Icon Id="DenseAsteroid02" Size="1" Tint="233,202,179,255" />
+				<DynamicPanel Orientation="0" Offset="20" />
+			</MapDisplay>
+			<Discover Difficulty="300">
+				<Site Id="DenseAsteroidField01">
+					<Name Value="Copper Asteroid" />
+					<MapDisplay>
+						<Icon Id="DenseAsteroid01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="5" Max="9" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Copper=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="DenseAsteroidField02">
+					<Name Value="Silicon Asteroid" />
+					<MapDisplay>
+						<Icon Id="AsteroidMisc05" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="5" Max="9" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Silicon=".5" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="DenseAsteroidField03">
+					<Name Value="Gold Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="3" />
+						<Richness Min="5" Max="9" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Gold=".25" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="DenseAsteroidField04">
+					<Name Value="Carbon Asteroid" />
+					<MapDisplay>
+						<Icon Id="MetallicAsteroid06" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="1" Max="3" />
+						<Richness Min="5" Max="8" />
+						<Size Min="1" Max="3" />
+						<Composition>
+							<ReagentMix Carbon=".25" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+		<Node Id="Phthonus">
+			<Name Value="Phthonus" />
+			<MapDisplay X="1070" Y="-150">
+				<Icon Id="AsteroidMisc01" Size="2" Tint="215,238,233,255" />
+				<DynamicPanel Orientation="0" Offset="30" />
+			</MapDisplay>
+			<Discover Difficulty="400">
+				<Site Id="Phthonus01">
+					<Name Value="Dense Oxygen Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice Oxygen="20" Nitrogen="4" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Phthonus02">
+					<Name Value="Dense Water Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice Water="22" CarbonDioxide="2" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Phthonus03">
+					<Name Value="Dangerous Ice" />
+					<MapDisplay>
+						<Icon Id="RegularGasCloud02" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="4" Max="8" />
+						<Richness Min="4" Max="6" />
+						<Size Min="4" Max="7" />
+						<Composition>
+							<Ice Volatiles="21" Ozone="2" NitrousOxide="1" />
+						</Composition>
+					</Deposit>
+				</Site>
+				<Site Id="Phthonus04">
+					<Name Value="Dense Helium Ice" />
+					<MapDisplay>
+						<Icon Id="IrregularGasCloud01" />
+					</MapDisplay>
+					<Deposit>
+						<Density Min="2" Max="7" />
+						<Richness Min="1" Max="3" />
+						<Size Min="2" Max="7" />
+						<Composition>
+							<Ice Helium="24" />
+						</Composition>
+					</Deposit>
+				</Site>
+			</Discover>
+		</Node>
+	</SpaceMap>
+</GameData>
