@@ -1,0 +1,22 @@
+using System.Xml.Linq;
+using StationeersModCreator.Core.Models;
+using StationeersModCreator.Core.Interfaces;
+namespace StationeersModCreator.Core.Services;
+
+public sealed class InventoryResolver : IInventoryResolver
+{
+    private readonly INativeCatalogRepository _catalog; private readonly InventoryPredicateEvaluator _predicates;
+    public InventoryResolver(INativeCatalogRepository catalog) { _catalog = catalog; _predicates = new(catalog); }
+    public InventoryResolution Resolve(InventoryContext context, ModProject project) { if (context.Event is not ("NewPlayerKit" or "RespawnPlayerKit")) throw new InvalidDataException("Choose starting or respawn equipment."); var start = Definition("StartCondition", context.StartId, project); var bindings = start.Elements("Spawn").Where(x => (string?)x.Attribute("Event") == context.Event).ToList(); if (bindings.Count == 0) bindings.Add(new XElement("Spawn", new XAttribute("Id", context.Event == "NewPlayerKit" ? "DefaultNewPlayer" : "DefaultRespawnPlayer"))); var root = new XElement("Spawn", new XAttribute("Id", "InventoryPreview")); var sources = new List<string>(); foreach (var binding in bindings) ExpandSpawn(binding, root, context, project, true, [], sources); return new(root.ToString(), sources.Distinct().ToList(), []); }
+    private XElement Definition(string tag, string id, ModProject project) { var staged = project.Definitions.FirstOrDefault(x => x.ExportId == id); if (staged is not null) { var xml = XElement.Parse(staged.Xml); if (xml.Name != tag) throw new InvalidDataException("Definition type mismatch for " + id); return xml; } return XElement.Parse(_catalog.Resolve(tag, id).Xml); }
+    private void ExpandSpawn(XElement spawn, XElement destination, InventoryContext context, ModProject project, bool characterParent, HashSet<string> stack, List<string> sources)
+    {
+        if (!_predicates.Applies(spawn, context, characterParent)) return; var valid = spawn.Elements().Any(x => x.Name == "Item" || x.Name == "DynamicThing" || x.Name == "Spawn" || x.Name == "Structure" || x.Name == "WorldAtmosphere" || x.Name == "PositionList"); if (!valid) { var id = (string?)spawn.Attribute("Id") ?? throw new InvalidDataException("Missing spawn ID."); if (!stack.Add(id)) throw new InvalidDataException("Inventory reference cycle at " + id); sources.Add(id); ExpandSpawn(Definition("Spawn", id, project), destination, context, project, characterParent, stack, sources); stack.Remove(id); return; }
+        if (!_predicates.Applies(spawn, context, characterParent)) return;
+        if (spawn.Elements().Any(x => x.Name == "Actions" || x.Name == "Structure" || x.Name == "WorldAtmosphere" || x.Name == "PositionList")) throw new InvalidDataException("This kit contains spawn actions or world data that cannot be flattened safely.");
+        foreach (var item in spawn.Elements("Item")) ExpandItem(item, destination, context, project, stack, sources);
+        foreach (var item in spawn.Elements("DynamicThing")) ExpandItem(item, destination, context, project, stack, sources);
+        foreach (var child in spawn.Elements("Spawn")) { if (!_predicates.Applies(child, context, characterParent)) continue; ExpandSpawn(child, destination, context, project, characterParent, stack, sources); }
+    }
+    private void ExpandItem(XElement item, XElement destination, InventoryContext context, ModProject project, HashSet<string> stack, List<string> sources) { if (!_predicates.Applies(item, context, false)) return; var copy = new XElement(item.Name, item.Attributes()); foreach (var child in item.Elements().Where(x => x.Name != "Item" && x.Name != "DynamicThing" && x.Name != "Spawn")) copy.Add(new XElement(child)); foreach (var child in item.Elements("DynamicThing")) ExpandItem(child, copy, context, project, stack, sources); foreach (var child in item.Elements("Item")) ExpandItem(child, copy, context, project, stack, sources); foreach (var child in item.Elements("Spawn")) ExpandSpawn(child, copy, context, project, false, stack, sources); if (destination.Name == "Spawn" && copy.Name == "Item" && destination.Elements("DynamicThing").Any()) throw new InvalidDataException("Mixed spawn execution order requires a dedicated reference editor."); if (destination.Name != "Spawn" && copy.Name == "DynamicThing" && destination.Elements("Item").Any()) throw new InvalidDataException("Mixed container execution order requires a dedicated reference editor."); destination.Add(copy); }
+}

@@ -5,5 +5,6 @@ public static class Program
     {
         new CheckRunner(args[0]).Run();
         new NativeCheckRunner(args[0]).Run();
+        new InventoryCheckRunner(args[0]).Run();
     }
 }

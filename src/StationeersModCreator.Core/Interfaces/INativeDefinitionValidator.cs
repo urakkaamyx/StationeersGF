@@ -5,4 +5,5 @@ public interface INativeDefinitionValidator
 {
     void Validate(ModProject project);
     void ValidatePending(NativeDefinitionChange change);
+    void ValidatePendingInventory(PendingInventoryDraft draft);
 }

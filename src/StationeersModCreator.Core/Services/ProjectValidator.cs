@@ -36,6 +36,7 @@ public sealed class ProjectValidator : IProjectValidator
 
     private void ValidatePendingSources(ModProject p)
     {
+        if(p.PendingInventory is { } inventory){if(_native is null)throw new InvalidDataException("Native catalog required for inventory draft.");_native.ValidatePendingInventory(inventory);}
         if (p.PendingDefinition is { } pending)
         {
             if (_native is null)
