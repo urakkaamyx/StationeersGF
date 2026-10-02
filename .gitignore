@@ -20,3 +20,7 @@ obj/
 __pycache__/
 *.pyc
 /rocketstation_Data/.resources.assets.resS.*
+
+# Rebuilt UnityPy desktop catalog and artwork
+/src/StationeersModCreator.Desktop/Content/
+**/.avalonia-build-tasks/

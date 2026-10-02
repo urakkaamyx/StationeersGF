@@ -1,0 +1,9 @@
+<Application xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="StationeersModCreator.Desktop.App" RequestedThemeVariant="Dark">
+ <Application.Resources>
+  <SolidColorBrush x:Key="AccentBrush" Color="#65E3DB"/>
+  <SolidColorBrush x:Key="MutedBrush" Color="#8D9DAE"/>
+  <SolidColorBrush x:Key="PanelBrush" Color="#121E2B"/>
+  <SolidColorBrush x:Key="LineBrush" Color="#28384A"/>
+ </Application.Resources>
+ <Application.Styles><FluentTheme/><StyleInclude Source="avares://Stationeers.ModForge/Styles/Forge.axaml"/></Application.Styles>
+</Application>
