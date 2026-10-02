@@ -1,11 +1,13 @@
-# StationeersGF
+# StationeersGF — Orbital Forge
 
-Private Stationeers source snapshot and the working extraction foundation for a Universal Unity Modding Studio.
+Orbital Forge is a native C# desktop mod creator for the included Stationeers snapshot. Its sci-fi workbench uses actual game thumbnails and planet artwork, searchable recipe and prefab galleries, an override inspector, a project workspace and configurable appearance.
 
+- [Use, build and validate the mod creator](docs/MOD_CREATOR.md)
+- [C# architecture and extension points](docs/MOD_CREATOR_ARCHITECTURE.md)
 - [Verified game analysis](docs/GAME_ANALYSIS.md)
-- [Architecture and remaining work](docs/ARCHITECTURE.md)
-- [Run the scanner, search, UnityPy exporter and native recipe-mod exporter](docs/USAGE.md)
+- [Extraction architecture](docs/ARCHITECTURE.md)
+- [Scanner, UnityPy exporter and CLI tools](docs/USAGE.md)
 
-The backend currently indexes Mono metadata, XML recipes and Unity assets; decodes Thing-derived components using UnityPy; searches a generated SQLite database; and exports separate native XML recipe mods. The desktop editor, runtime bridge, assembly decompiler and IL2CPP adapter remain future work.
+The desktop tool edits native recipe and supported numeric prefab-property overrides, saves editable projects, and exports separate Stationeers mod ZIPs. It includes 621 recipes, 1,569 prefab definitions and 1,558 extracted prefab thumbnails. Generated catalogs and artwork are rebuilt with the pinned UnityPy environment; the prepared Windows download includes them.
 
-UnityPy is pinned to 1.25.3 and TypeTreeGeneratorAPI to 0.0.10 in `tools/requirements-assets-lock.txt`. Generated large extracts stay out of Git and can be rebuilt from this source snapshot. Original game files are input evidence and are not modified by extraction.
+C# source uses one type per file, interfaces for repositories, persistence, validation, drafting and export, and constructor dependency injection. Original game files are inputs. Runtime scripting, assembly patching, new 3D asset import and a general IL2CPP adapter remain future work.
