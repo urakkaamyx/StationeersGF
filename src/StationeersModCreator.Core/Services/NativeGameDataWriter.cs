@@ -7,12 +7,25 @@ namespace StationeersModCreator.Core.Services;
 public sealed class NativeGameDataWriter : IGameDataWriter
 {
     private readonly ICatalogRepository _catalog;
-    public NativeGameDataWriter(ICatalogRepository catalog) => _catalog = catalog;
+    private readonly INativeModWriter? _native;
+    public NativeGameDataWriter(ICatalogRepository catalog, INativeModWriter? native = null)
+    {
+        _catalog = catalog;
+        _native = native;
+    }
+
     public Dictionary<string, byte[]> CreateFiles(ModProject project)
     {
         var files = CreateRecipes(project);
         if (project.Attributes.Count > 0)
             files.Add("GameData/prefabsettings.xml", Encode(CreateAttributes(project)));
+        if (project.Definitions.Count > 0)
+        {
+            if (_native is null)
+                throw new InvalidDataException("Native writer is unavailable.");
+            files.Add("GameData/forge-definitions.xml", _native.Write(project));
+        }
+
         return files;
     }
 

@@ -8,6 +8,6 @@ Orbital Forge is a native C# desktop mod creator for the included Stationeers sn
 - [Extraction architecture](docs/ARCHITECTURE.md)
 - [Scanner, UnityPy exporter and CLI tools](docs/USAGE.md)
 
-The desktop tool edits native recipe and supported numeric prefab-property overrides, saves editable projects, and exports separate Stationeers mod ZIPs. It includes 621 recipes, 1,569 prefab definitions and 1,558 extracted prefab thumbnails. Generated catalogs and artwork are rebuilt with the pinned UnityPy environment; the prepared Windows download includes them.
+The desktop tool edits recipes, supported numeric prefab properties, worlds, starting conditions, lander cargo, loadouts, respawn packages, difficulty, weather, ore veins and plant requirements, saves editable projects, and exports separate Stationeers mod ZIPs. It includes 621 recipes, 1,569 prefab definitions and 1,558 extracted prefab thumbnails, plus 569 native definitions across 16 categories. Generated catalogs and artwork are rebuilt with the pinned UnityPy environment; the prepared Windows download includes them.
 
 C# source uses one type per file, interfaces for repositories, persistence, validation, drafting and export, and constructor dependency injection. Original game files are inputs. Runtime scripting, assembly patching, new 3D asset import and a general IL2CPP adapter remain future work.

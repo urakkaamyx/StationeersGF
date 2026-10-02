@@ -28,6 +28,16 @@ public static class PreviewRenderer
     {
         switch (page)
         {
+            case "Native":
+                vm.NativeStudioCommand.Execute(null);
+                vm.NativeStudio.Editor.Select(vm.NativeStudio.Definitions.First(x => x.Name == "DefaultStart").Definition);
+                break;
+            case "Cargo":
+                vm.NativeStudioCommand.Execute(null);
+                vm.NativeStudio.LandersCommand.Execute(null);
+                vm.NativeStudio.Editor.Select(vm.NativeStudio.Definitions.First(x => x.Name == "DefaultLander").Definition);
+                vm.NativeStudio.Editor.Nodes.First(x => x.Tag == "DynamicThing").OpenCommand.Execute(null);
+                break;
             case "Attributes":
                 vm.AttributesCommand.Execute(null);
                 break;
