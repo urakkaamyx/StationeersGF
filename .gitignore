@@ -1,0 +1,11 @@
+# Windows/editor noise
+Thumbs.db
+Desktop.ini
+.vs/
+.vscode/
+
+# Build/output folders if tools are added later
+bin/
+obj/
+*.user
+*.suo
