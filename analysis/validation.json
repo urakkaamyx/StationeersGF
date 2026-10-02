@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": {
+    "parse_errors_zero": true,
+    "sqlite_integrity": true,
+    "database_counts_match": true,
+    "xml_recipe_count_independent": true,
+    "managed_member_ownership": true,
+    "unitypy_independent_asset_validation": true,
+    "recipe_mod_zip_and_source_preservation": true,
+    "invalid_override_rejection": true,
+    "decoded_prefab_consistency": true,
+    "python_compile": true
+  },
+  "runtime_tested": false,
+  "known_prefab_decode_errors": [
+    {
+      "source_path": "rocketstation_Data/resources.assets",
+      "path_id": 108952,
+      "class_name": "Assets.Scripts.Objects.Book",
+      "error": "Expected to read 2324 bytes, but only read 2216 bytes"
+    }
+  ]
+}

@@ -9,3 +9,14 @@ bin/
 obj/
 *.user
 *.suo
+
+# Reproducible extraction outputs and local Python environments
+/analysis/*
+!/analysis/summary.json
+!/analysis/unitypy_validation.json
+!/analysis/validation.json
+!/analysis/prefab_summary.json
+.venv/
+__pycache__/
+*.pyc
+/rocketstation_Data/.resources.assets.resS.*
