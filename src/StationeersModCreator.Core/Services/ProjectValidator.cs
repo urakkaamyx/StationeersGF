@@ -6,27 +6,54 @@ public sealed class ProjectValidator : IProjectValidator
 {
     private readonly ICatalogRepository _catalog;
     private readonly NumericValueValidator _numbers;
-    public ProjectValidator(ICatalogRepository catalog, NumericValueValidator numbers)
+    private readonly INativeDefinitionValidator? _native;
+    public ProjectValidator(ICatalogRepository catalog, NumericValueValidator numbers, INativeDefinitionValidator? native = null)
     {
         _catalog = catalog;
         _numbers = numbers;
+        _native = native;
     }
 
     public void Validate(ModProject project, bool requireChanges)
     {
         ValidateMetadata(project);
         ValidateUniqueChanges(project);
+        ValidatePendingSources(project);
+        if (project.Definitions.Count > 0)
+        {
+            if (_native is null)
+                throw new InvalidDataException("Native catalog is required to validate these definitions.");
+            _native.Validate(project);
+        }
+
         foreach (var patch in project.Recipes)
             ValidateRecipe(patch);
         foreach (var patch in project.Attributes)
             ValidateAttributes(patch);
-        if (requireChanges && project.Recipes.Count + project.Attributes.Count == 0)
+        if (requireChanges && project.Recipes.Count + project.Attributes.Count + project.Definitions.Count == 0)
             throw new InvalidDataException("Stage at least one change before exporting.");
+    }
+
+    private void ValidatePendingSources(ModProject p)
+    {
+        if (p.PendingDefinition is { } pending)
+        {
+            if (_native is null)
+                throw new InvalidDataException("Native catalog is required to open this draft.");
+            _native.ValidatePending(pending);
+        }
+
+        foreach (var patch in p.PendingRecipes)
+            if (_catalog.FindRecipe(patch.RecipeId).SourceHash != patch.SourceHash)
+                throw new InvalidDataException("Pending recipe source mismatch.");
+        foreach (var patch in p.PendingAttributes)
+            if (_catalog.FindPrefab(patch.PrefabName).SourceHash != patch.SourceHash)
+                throw new InvalidDataException("Pending attribute source mismatch.");
     }
 
     private void ValidateMetadata(ModProject p)
     {
-        if (p.FormatVersion != 1)
+        if (p.FormatVersion is not (1 or 2))
             throw new InvalidDataException("Unsupported project version.");
         if (p.CatalogFingerprint != _catalog.Fingerprint)
             throw new InvalidDataException("This project was created from a different game-data snapshot.");

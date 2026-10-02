@@ -30,6 +30,15 @@ public sealed class MainViewModel : ObservableViewModel
     private RecipeCardViewModel? _recipe;
     private PrefabCardViewModel? _prefab;
     private bool _dirty;
+    private readonly INativeCatalogRepository _nativeCatalog;
+    public NativeStudioViewModel NativeStudio { get; }
+    public RelayCommand NativeStudioCommand { get; }
+    public RelayCommand UndoCommand { get; }
+    public RelayCommand RedoCommand { get; }
+    public bool IsNativeStudio => _page == "Native";
+    public ObservableCollection<ExportPlanEntry> ExportPlan { get; } = [];
+
+    private readonly IExportPlanner _planner;
     public ObservableCollection<MachineCardViewModel> Machines { get; } = [];
     public ObservableCollection<RecipeCardViewModel> Recipes { get; } = [];
     public ObservableCollection<PrefabCardViewModel> Prefabs { get; } = [];
@@ -57,6 +66,7 @@ public sealed class MainViewModel : ObservableViewModel
     public bool IsWorkspace => _page == "Workspace";
     public string PageTitle => _page switch
     {
+        "Native" => "World & content studio",
         "Attributes" => "Prefab attributes",
         "Artwork" => "Asset library",
         "Workspace" => "Your mod workspace",
@@ -64,6 +74,7 @@ public sealed class MainViewModel : ObservableViewModel
     };
     public string PageDescription => _page switch
     {
+        "Native" => "Starts, equipment, respawn, landers and native game definitions.",
         "Attributes" => "Tune the supported native attributes of real game prefabs.",
         "Artwork" => "Choose game artwork for your mod's preview image.",
         "Workspace" => "Review your overrides, edit metadata, then export.",
@@ -194,7 +205,7 @@ public sealed class MainViewModel : ObservableViewModel
     public AsyncRelayCommand OpenCommand { get; }
     public AsyncRelayCommand ExportCommand { get; }
 
-    public MainViewModel(ICatalogRepository catalog, IArtworkRepository artwork, IBitmapProvider images, IDraftService draft, IProjectStore projects, ISettingsStore settingsStore, IThemeService theme, IModExporter exporter, IProjectValidator validator, IFileDialogService dialogs)
+    public MainViewModel(ICatalogRepository catalog, IArtworkRepository artwork, IBitmapProvider images, IDraftService draft, IProjectStore projects, ISettingsStore settingsStore, IThemeService theme, IModExporter exporter, IProjectValidator validator, IFileDialogService dialogs, INativeCatalogRepository nativeCatalog, IExportPlanner planner, INativeForkService fork)
     {
         _catalog = catalog;
         _artwork = artwork;
@@ -207,6 +218,17 @@ public sealed class MainViewModel : ObservableViewModel
         _validator = validator;
         _dialogs = dialogs;
         _settings = settingsStore.Load();
+        _nativeCatalog = nativeCatalog;
+        _planner = planner;
+        var editor = new NativeDefinitionEditorViewModel(nativeCatalog, catalog, images, draft, fork, () =>
+        {
+            RefreshChanges();
+            MarkDirty();
+        });
+        NativeStudio = new NativeStudioViewModel(nativeCatalog, images, editor);
+        NativeStudioCommand = new(() => Navigate("Native"));
+        UndoCommand = new(() => RunAction(Undo));
+        RedoCommand = new(() => RunAction(Redo));
         _allRecipes = catalog.Catalog.Recipes.Select(x => new RecipeCardViewModel(x, images, SelectRecipe)).ToList();
         _allPrefabs = catalog.Catalog.Prefabs.Where(x => x.Attributes.Count > 0).Select(x => new PrefabCardViewModel(x, images, SelectPrefab)).ToList();
         foreach (var definition in catalog.Catalog.Machines)
@@ -246,28 +268,31 @@ public sealed class MainViewModel : ObservableViewModel
 
     private void VerifyAllEditsStaged()
     {
+        NativeStudio.Editor.VerifyStaged();
         foreach (var card in _allRecipes)
         {
             var patch = _draft.Project.Recipes.SingleOrDefault(x => x.RecipeId == card.Definition.Id);
             if (card.Fields.Any(x => x.Value != (patch?.Values.GetValueOrDefault(x.Path, x.Original) ?? x.Original)))
-                throw new InvalidDataException("Stage or restore the pending recipe edits before saving or exporting.");
+                throw new InvalidDataException("Stage or restore the pending recipe edits before exporting.");
         }
 
         foreach (var card in _allPrefabs)
         {
             var patch = _draft.Project.Attributes.SingleOrDefault(x => x.PrefabName == card.Definition.Name);
             if (card.Fields.Any(x => x.Value != (patch?.Values.GetValueOrDefault(x.Path, x.Original) ?? x.Original)))
-                throw new InvalidDataException("Stage or restore the pending prefab edits before saving or exporting.");
+                throw new InvalidDataException("Stage or restore the pending prefab edits before exporting.");
         }
     }
 
     private void Navigate(string page)
     {
+        Status = page == "Native" ? "Select a definition card; stage changes to include them in the mod." : "Ready. Select a card to edit your mod.";
         _page = page;
         _offset = 0;
         _search = "";
         foreach (var name in new[]
         {
+            nameof(IsNativeStudio),
             nameof(IsRecipes),
             nameof(IsAttributes),
             nameof(IsArtwork),
@@ -404,6 +429,21 @@ public sealed class MainViewModel : ObservableViewModel
             Changes.Add(new DraftChangeViewModel(prefab.DisplayName, "Prefab attributes", string.Join("  ·  ", patch.Values.Select(x => x.Key + ": " + prefab.Attributes.Single(f => f.Name == x.Key).Value + " → " + x.Value)), new RelayCommand(() => RemoveAttributes(patch.PrefabName))));
         }
 
+        foreach (var patch in _draft.Project.Definitions)
+        {
+            var definition = _nativeCatalog.Find(patch.SourceKey);
+            Changes.Add(new DraftChangeViewModel(patch.ExportId, definition.Category, patch.IsAddition ? "Add this definition only" : "Replace this exact definition only — required by native loader", new RelayCommand(() =>
+            {
+                _draft.RemoveDefinition(patch.ExportId);
+                RefreshChanges();
+                NativeStudio.Editor.ResetProject();
+                MarkDirty();
+            })));
+        }
+
+        ExportPlan.Clear();
+        foreach (var entry in _planner.Plan(_draft.Project))
+            ExportPlan.Add(entry);
         Notify(nameof(DraftLabel));
     }
 
@@ -434,6 +474,68 @@ public sealed class MainViewModel : ObservableViewModel
         RunAction(() => _settingsStore.Save(_settings));
     }
 
+    private void Undo()
+    {
+        VerifyAllEditsStaged();
+        if (!_draft.CanUndo)
+        {
+            Status = "Nothing to undo.";
+            return;
+        }
+
+        _draft.Undo();
+        RestoreRecipeFields();
+        RestoreAttributeFields();
+        NativeStudio.Editor.ResetProject();
+        RefreshChanges();
+        MarkDirty();
+        Status = "Previous staged edit restored.";
+    }
+
+    private void Redo()
+    {
+        VerifyAllEditsStaged();
+        if (!_draft.CanRedo)
+        {
+            Status = "Nothing to redo.";
+            return;
+        }
+
+        _draft.Redo();
+        RestoreRecipeFields();
+        RestoreAttributeFields();
+        NativeStudio.Editor.ResetProject();
+        RefreshChanges();
+        MarkDirty();
+        Status = "Staged edit reapplied.";
+    }
+
+    private ModProject CaptureProject()
+    {
+        var snapshot = JsonSerializer.Deserialize<ModProject>(JsonSerializer.Serialize(_draft.Project))!;
+        snapshot.FormatVersion = 2;
+        snapshot.PendingRecipes.Clear();
+        foreach (var card in _allRecipes)
+        {
+            var patch = snapshot.Recipes.FirstOrDefault(x => x.RecipeId == card.Definition.Id);
+            var values = card.Fields.Where(x => x.Value != (patch?.Values.GetValueOrDefault(x.Path, x.Original) ?? x.Original)).ToDictionary(x => x.Path, x => x.Value);
+            if (values.Count > 0)
+                snapshot.PendingRecipes.Add(new(card.Definition.Id, card.Definition.SourceHash, values));
+        }
+
+        snapshot.PendingAttributes.Clear();
+        foreach (var card in _allPrefabs)
+        {
+            var patch = snapshot.Attributes.FirstOrDefault(x => x.PrefabName == card.Definition.Name);
+            var values = card.Fields.Where(x => x.Value != (patch?.Values.GetValueOrDefault(x.Path, x.Original) ?? x.Original)).ToDictionary(x => x.Path, x => x.Value);
+            if (values.Count > 0)
+                snapshot.PendingAttributes.Add(new(card.Definition.Name, card.Definition.SourceHash, values));
+        }
+
+        snapshot.PendingDefinition = NativeStudio.Editor.CapturePending();
+        return snapshot;
+    }
+
     private void MarkDirty()
     {
         _dirty = true;
@@ -451,6 +553,7 @@ public sealed class MainViewModel : ObservableViewModel
     private void SetProject(ModProject project)
     {
         _draft.Replace(project);
+        NativeStudio.Editor.ResetProject();
         RestoreRecipeFields();
         RestoreAttributeFields();
         RefreshChanges();
@@ -476,7 +579,7 @@ public sealed class MainViewModel : ObservableViewModel
         {
             var patch = _draft.Project.Recipes.SingleOrDefault(x => x.RecipeId == card.Definition.Id);
             foreach (var field in card.Fields)
-                field.Value = patch?.Values.GetValueOrDefault(field.Path, field.Original) ?? field.Original;
+                field.Value = _draft.Project.PendingRecipes.FirstOrDefault(x => x.RecipeId == card.Definition.Id)?.Values.GetValueOrDefault(field.Path, patch?.Values.GetValueOrDefault(field.Path, field.Original) ?? field.Original) ?? patch?.Values.GetValueOrDefault(field.Path, field.Original) ?? field.Original;
             card.IsStaged = patch is not null;
         }
     }
@@ -487,18 +590,18 @@ public sealed class MainViewModel : ObservableViewModel
         {
             var patch = _draft.Project.Attributes.SingleOrDefault(x => x.PrefabName == card.Definition.Name);
             foreach (var field in card.Fields)
-                field.Value = patch?.Values.GetValueOrDefault(field.Path, field.Original) ?? field.Original;
+                field.Value = _draft.Project.PendingAttributes.FirstOrDefault(x => x.PrefabName == card.Definition.Name)?.Values.GetValueOrDefault(field.Path, patch?.Values.GetValueOrDefault(field.Path, field.Original) ?? field.Original) ?? patch?.Values.GetValueOrDefault(field.Path, field.Original) ?? field.Original;
         }
     }
 
     private async Task SaveProjectAsync()
     {
-        VerifyAllEditsStaged();
-        _validator.Validate(_draft.Project, false);
+        var snapshot = CaptureProject();
+        _validator.Validate(snapshot, false);
         var path = await _dialogs.SaveFileAsync("Save mod project", ModName + ".modforge.json", "json");
         if (path is null)
             return;
-        _projects.Save(path, _draft.Project);
+        _projects.Save(path, snapshot);
         _dirty = false;
         Notify(nameof(SaveState));
         Status = "Project saved: " + path;

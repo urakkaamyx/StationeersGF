@@ -27,7 +27,6 @@ public sealed class ModExporter : IModExporter
         var files = _data.CreateFiles(project);
         AddMetadata(files, project);
         AddArtwork(files, project);
-        files.Add("About/ModForge.project.json", Encoding.UTF8.GetBytes(JsonSerializer.Serialize(project, new JsonSerializerOptions { WriteIndented = true })));
         var folder = Regex.Replace(project.Name.Trim(), "[^A-Za-z0-9_-]+", "_");
         _writer.Write(path, temp => WriteArchive(temp, folder, files));
     }
