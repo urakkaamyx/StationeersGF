@@ -28,6 +28,14 @@ public static class PreviewRenderer
     {
         switch (page)
         {
+            case "Inventory":
+                vm.InventoryCommand.Execute(null);
+                break;
+            case "InventorySuit":
+                vm.InventoryCommand.Execute(null);
+                vm.Inventory.Slots.First(x => x.Slot.Index == 3).SelectCommand.Execute(null);
+                vm.Inventory.OpenContentsCommand.Execute(null);
+                break;
             case "Native":
                 vm.NativeStudioCommand.Execute(null);
                 vm.NativeStudio.Editor.Select(vm.NativeStudio.Definitions.First(x => x.Name == "DefaultStart").Definition);

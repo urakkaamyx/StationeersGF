@@ -14,6 +14,7 @@ public sealed class NativeDefinitionValidator : INativeDefinitionValidator
         _prefabs = prefabs;
     }
 
+    public void ValidatePendingInventory(PendingInventoryDraft draft){var source=_catalog.Find(draft.SourceKey);if(source.Tag!="StartCondition"||source.SourceHash!=draft.SourceHash)throw new InvalidDataException("Inventory draft source mismatch.");if(draft.Context.Event is not ("NewPlayerKit" or "RespawnPlayerKit")||!new[]{"Human","Zrilian","Robot"}.Contains(draft.Context.Species)||!_catalog.Definitions.Any(x=>x.Tag=="DifficultySetting"&&x.Id==draft.Context.Difficulty))throw new InvalidDataException("Invalid inventory draft context.");try{if(XElement.Parse(draft.Xml).Name!="Spawn")throw new InvalidDataException("Invalid inventory draft root.");}catch(System.Xml.XmlException e){throw new InvalidDataException("Invalid inventory draft XML.",e);}}
     public void ValidatePending(NativeDefinitionChange change)
     {
         var source = _catalog.Find(change.SourceKey);

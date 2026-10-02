@@ -213,6 +213,7 @@ public sealed class NativeDefinitionEditorViewModel : ObservableViewModel
 
         var change = new NativeDefinitionChange(_source.Key, _source.SourceHash, ExportId, _xml.Xml, addition);
         _draft.StageDefinition(change);
+        _draft.Project.PendingDefinition = null;
         _pending = false;
         _changed();
         Status = (addition ? "New definition staged: " : "Exact definition replacement staged: ") + ExportId + ". No sibling records are included.";
@@ -288,6 +289,7 @@ public sealed class NativeDefinitionEditorViewModel : ObservableViewModel
         EnsureEditable();
         var changes = _fork.ForkReference(_source!, _xml!.Xml, _path, ExportId, _draft.Project);
         _draft.StageDefinitions(changes);
+        _draft.Project.PendingDefinition = null;
         _pending = false;
         _changed();
         OpenChange(changes[0]);

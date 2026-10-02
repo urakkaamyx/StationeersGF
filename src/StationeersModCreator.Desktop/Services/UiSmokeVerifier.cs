@@ -28,7 +28,8 @@ public static class UiSmokeVerifier
             VerifyAppearance(vm, temporary);
             VerifyArtworkAndExport(window, vm, temporary);
             VerifyNativeStudio(window, vm, temporary);
-            Console.WriteLine("PASS: 6 rendered UI interaction checks.");
+            VerifyInventory(window, vm, temporary);
+            Console.WriteLine("PASS: 7 rendered UI interaction checks.");
         }
         finally
         {
@@ -78,6 +79,35 @@ public static class UiSmokeVerifier
         Require((string? )xml.Descendants("StartCondition").Single().Attribute("Id") == "Forge.UiStart", "Native start export identity incorrect.");
         Require(!archive.Entries.Any(x => x.FullName.EndsWith(".project.json")), "Editable project bundled in native mod.");
         Console.WriteLine("PASS: bound starting-condition clone, exact world assignment, native staging, save/reopen and mod-only export.");
+    }
+
+    private static void VerifyInventory(MainWindow window, MainViewModel vm, string directory)
+    {
+        vm.InventoryCommand.Execute(null);
+        Dispatcher.UIThread.RunJobs();
+        var inventory=vm.Inventory;
+        inventory.Slots.Single(x=>x.Slot.Index==3).SelectCommand.Execute(null);
+        inventory.OpenContentsCommand.Execute(null);
+        Require(inventory.Slots.Count==6 && inventory.Slots.All(x=>x.HasItem), "EVA suit contents did not open.");
+        inventory.Slots.Single(x=>x.Slot.Index==3).SelectCommand.Execute(null);
+        inventory.RemoveCommand.Execute(null);
+        Require(inventory.Slots.Count(x=>x.HasItem)==5 && inventory.HasPendingEdits,"Filter removal failed.");
+        vm.SaveCommand.Execute(null);
+        vm.NewProjectCommand.Execute(null);
+        vm.OpenCommand.Execute(null);
+        Require(vm.Inventory.HasPendingEdits,"Pending inventory lost on project reopen.");
+        vm.Inventory.Slots.Single(x=>x.Slot.Index==3).SelectCommand.Execute(null);
+        vm.Inventory.OpenContentsCommand.Execute(null);
+        Require(vm.Inventory.Slots.Count(x=>x.HasItem)==5,"Pending nested inventory changed on reopen.");
+        Dispatcher.UIThread.RunJobs();
+        window.GetVisualDescendants().OfType<Button>().Single(x=>x.Name=="InventoryStageButton").Command!.Execute(null);
+        Require(vm.Changes.Any(x=>x.Name=="Forge.MyStart.NewPlayerKit.Human.Normal"),"Bound inventory staging failed: "+vm.Inventory.Status);
+        vm.ExportCommand.Execute(null);
+        using var archive=System.IO.Compression.ZipFile.OpenRead(Path.Combine(directory,"mod.zip"));
+        using var stream=archive.Entries.Single(x=>x.FullName.EndsWith("GameData/forge-definitions.xml")).Open();
+        var xml=System.Xml.Linq.XDocument.Load(stream);
+        Require(xml.Descendants("Spawn").Any(x=>(string?)x.Attribute("Id")=="Forge.MyStart.NewPlayerKit.Human.Normal"),"Local inventory kit absent in export.");
+        Console.WriteLine("PASS: suit contents, filter removal, pending inventory save/reopen, bound staging and local kit export.");
     }
 
     private static void VerifySearch(MainWindow window, MainViewModel vm)

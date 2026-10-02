@@ -13,8 +13,12 @@ public static class CompositionRoot
         var artwork = new ZipArtworkRepository(Path.Combine(content, "artwork.zip"));
         var files = new AtomicFileWriter();
         var native = new JsonNativeCatalogRepository(Path.Combine(content, "native-catalog.json"));
+        var inventory = new JsonInventoryCatalog(Path.Combine(content, "inventory-catalog.json"));
+        var layout = new InventoryLayoutService(inventory);
+        var resolver = new InventoryResolver(native);
+        var compiler = new InventoryModCompiler(native, layout, resolver);
         var validator = new ProjectValidator(catalog, new NumericValueValidator(), new NativeDefinitionValidator(native, catalog));
         var settingsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "StationeersModForge", "settings.json");
-        return new MainViewModel(catalog, artwork, new GameBitmapProvider(artwork), new DraftService(catalog.Fingerprint, validator), new JsonProjectStore(files), new JsonSettingsStore(settingsFile ?? settingsPath, files), new ThemeService(), new ModExporter(validator, new NativeGameDataWriter(catalog, new NativeModWriter(native)), artwork, files), validator, dialogs ?? new AvaloniaFileDialogService(() => window), native, new ExportPlanner(catalog, native), new NativeForkService(native));
+        return new MainViewModel(catalog, artwork, new GameBitmapProvider(artwork), new DraftService(catalog.Fingerprint, validator), new JsonProjectStore(files), new JsonSettingsStore(settingsFile ?? settingsPath, files), new ThemeService(), new ModExporter(validator, new NativeGameDataWriter(catalog, new NativeModWriter(native)), artwork, files), validator, dialogs ?? new AvaloniaFileDialogService(() => window), native, new ExportPlanner(catalog, native), new NativeForkService(native), inventory, resolver, layout, compiler);
     }
 }

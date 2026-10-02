@@ -12,3 +12,4 @@ texture2ddecoder==1.0.6
 tpk_ar==0.2.4
 TypeTreeGeneratorAPI==0.0.10
 UnityPy==1.25.3
+dnfile==0.18.0

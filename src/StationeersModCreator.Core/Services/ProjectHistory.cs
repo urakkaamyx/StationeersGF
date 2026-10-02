@@ -16,6 +16,7 @@ public sealed class ProjectHistory : IProjectHistory
         state.PendingRecipes.Clear();
         state.PendingAttributes.Clear();
         state.PendingDefinition = null;
+        state.PendingInventory = null;
         _undo.Add(JsonSerializer.Serialize(state));
         if (_undo.Count > 100)
             _undo.RemoveAt(0);

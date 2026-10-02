@@ -69,7 +69,8 @@ public sealed class DraftService : IDraftService
 
         _validator.Validate(candidate, false);
         _history.Capture(Project);
-        candidate.PendingDefinition = null;
+
+
         Project = candidate;
     }
 

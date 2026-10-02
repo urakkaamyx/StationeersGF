@@ -31,6 +31,9 @@ public sealed class MainViewModel : ObservableViewModel
     private PrefabCardViewModel? _prefab;
     private bool _dirty;
     private readonly INativeCatalogRepository _nativeCatalog;
+    public InventoryEditorViewModel Inventory { get; }
+    public RelayCommand InventoryCommand { get; }
+    public bool IsInventory => _page == "Inventory";
     public NativeStudioViewModel NativeStudio { get; }
     public RelayCommand NativeStudioCommand { get; }
     public RelayCommand UndoCommand { get; }
@@ -66,6 +69,7 @@ public sealed class MainViewModel : ObservableViewModel
     public bool IsWorkspace => _page == "Workspace";
     public string PageTitle => _page switch
     {
+        "Inventory" => "Starting & respawn inventory",
         "Native" => "World & content studio",
         "Attributes" => "Prefab attributes",
         "Artwork" => "Asset library",
@@ -74,6 +78,7 @@ public sealed class MainViewModel : ObservableViewModel
     };
     public string PageDescription => _page switch
     {
+        "Inventory" => "Open equipment, explore containers and build a local kit for your start profile.",
         "Native" => "Starts, equipment, respawn, landers and native game definitions.",
         "Attributes" => "Tune the supported native attributes of real game prefabs.",
         "Artwork" => "Choose game artwork for your mod's preview image.",
@@ -205,7 +210,7 @@ public sealed class MainViewModel : ObservableViewModel
     public AsyncRelayCommand OpenCommand { get; }
     public AsyncRelayCommand ExportCommand { get; }
 
-    public MainViewModel(ICatalogRepository catalog, IArtworkRepository artwork, IBitmapProvider images, IDraftService draft, IProjectStore projects, ISettingsStore settingsStore, IThemeService theme, IModExporter exporter, IProjectValidator validator, IFileDialogService dialogs, INativeCatalogRepository nativeCatalog, IExportPlanner planner, INativeForkService fork)
+    public MainViewModel(ICatalogRepository catalog, IArtworkRepository artwork, IBitmapProvider images, IDraftService draft, IProjectStore projects, ISettingsStore settingsStore, IThemeService theme, IModExporter exporter, IProjectValidator validator, IFileDialogService dialogs, INativeCatalogRepository nativeCatalog, IExportPlanner planner, INativeForkService fork, IInventoryCatalog inventoryCatalog, IInventoryResolver inventoryResolver, IInventoryLayoutService inventoryLayout, IInventoryModCompiler inventoryCompiler)
     {
         _catalog = catalog;
         _artwork = artwork;
@@ -226,6 +231,8 @@ public sealed class MainViewModel : ObservableViewModel
             MarkDirty();
         });
         NativeStudio = new NativeStudioViewModel(nativeCatalog, images, editor);
+        Inventory = new InventoryEditorViewModel(nativeCatalog, inventoryCatalog, inventoryResolver, inventoryLayout, inventoryCompiler, draft, images, () => { RefreshChanges(); MarkDirty(); });
+        InventoryCommand = new(() => Navigate("Inventory"));
         NativeStudioCommand = new(() => Navigate("Native"));
         UndoCommand = new(() => RunAction(Undo));
         RedoCommand = new(() => RunAction(Redo));
@@ -269,6 +276,7 @@ public sealed class MainViewModel : ObservableViewModel
     private void VerifyAllEditsStaged()
     {
         NativeStudio.Editor.VerifyStaged();
+        Inventory.VerifyStaged();
         foreach (var card in _allRecipes)
         {
             var patch = _draft.Project.Recipes.SingleOrDefault(x => x.RecipeId == card.Definition.Id);
@@ -293,6 +301,7 @@ public sealed class MainViewModel : ObservableViewModel
         foreach (var name in new[]
         {
             nameof(IsNativeStudio),
+            nameof(IsInventory),
             nameof(IsRecipes),
             nameof(IsAttributes),
             nameof(IsArtwork),
@@ -437,6 +446,7 @@ public sealed class MainViewModel : ObservableViewModel
                 _draft.RemoveDefinition(patch.ExportId);
                 RefreshChanges();
                 NativeStudio.Editor.ResetProject();
+        Inventory.ResetProject();
                 MarkDirty();
             })));
         }
@@ -487,6 +497,7 @@ public sealed class MainViewModel : ObservableViewModel
         RestoreRecipeFields();
         RestoreAttributeFields();
         NativeStudio.Editor.ResetProject();
+        Inventory.ResetProject();
         RefreshChanges();
         MarkDirty();
         Status = "Previous staged edit restored.";
@@ -505,6 +516,7 @@ public sealed class MainViewModel : ObservableViewModel
         RestoreRecipeFields();
         RestoreAttributeFields();
         NativeStudio.Editor.ResetProject();
+        Inventory.ResetProject();
         RefreshChanges();
         MarkDirty();
         Status = "Staged edit reapplied.";
@@ -533,6 +545,7 @@ public sealed class MainViewModel : ObservableViewModel
         }
 
         snapshot.PendingDefinition = NativeStudio.Editor.CapturePending();
+        snapshot.PendingInventory = Inventory.CapturePending();
         return snapshot;
     }
 
@@ -554,6 +567,7 @@ public sealed class MainViewModel : ObservableViewModel
     {
         _draft.Replace(project);
         NativeStudio.Editor.ResetProject();
+        Inventory.ResetProject();
         RestoreRecipeFields();
         RestoreAttributeFields();
         RefreshChanges();
