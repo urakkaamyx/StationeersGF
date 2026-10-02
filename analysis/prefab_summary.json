@@ -1,0 +1,36 @@
+{
+  "Thing_derived_metadata_types": 694,
+  "decoded_Thing_components": 1574,
+  "distinct_prefab_names": 1569,
+  "other_components_skipped": 18037,
+  "recipe_records": 621,
+  "recipes_with_decoded_prefab": 621,
+  "unresolved_recipe_prefabs": [],
+  "errors": [
+    {
+      "source_path": "rocketstation_Data/resources.assets",
+      "path_id": 108952,
+      "class_name": "Assets.Scripts.Objects.Book",
+      "error": "Expected to read 2324 bytes, but only read 2216 bytes"
+    }
+  ],
+  "scope": "All nine indexed serialized files; Thing inheritance via direct TypeDef/TypeRef metadata. Generic TypeSpec inheritance is not decoded.",
+  "missing_scripts": [
+    {
+      "source_path": "rocketstation_Data/resources.assets",
+      "path_id": 106284
+    },
+    {
+      "source_path": "rocketstation_Data/resources.assets",
+      "path_id": 108380
+    },
+    {
+      "source_path": "rocketstation_Data/resources.assets",
+      "path_id": 108811
+    },
+    {
+      "source_path": "rocketstation_Data/resources.assets",
+      "path_id": 111644
+    }
+  ]
+}

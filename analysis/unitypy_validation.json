@@ -1,0 +1,69 @@
+{
+  "unitypy_version": "1.25.3",
+  "assets": [
+    {
+      "source": "rocketstation_Data/globalgamemanagers",
+      "count": 18,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    },
+    {
+      "source": "rocketstation_Data/globalgamemanagers.assets",
+      "count": 3520,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    },
+    {
+      "source": "rocketstation_Data/level0",
+      "count": 32,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    },
+    {
+      "source": "rocketstation_Data/level1",
+      "count": 23344,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    },
+    {
+      "source": "rocketstation_Data/level2",
+      "count": 1391,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    },
+    {
+      "source": "rocketstation_Data/resources.assets",
+      "count": 113264,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    },
+    {
+      "source": "rocketstation_Data/sharedassets0.assets",
+      "count": 20,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    },
+    {
+      "source": "rocketstation_Data/sharedassets1.assets",
+      "count": 11331,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    },
+    {
+      "source": "rocketstation_Data/sharedassets2.assets",
+      "count": 241,
+      "path_ids_match": true,
+      "class_counts_match": true,
+      "name_mismatches": []
+    }
+  ],
+  "passed": true
+}
