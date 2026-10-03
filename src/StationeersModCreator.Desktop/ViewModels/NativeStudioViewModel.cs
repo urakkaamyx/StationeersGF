@@ -57,9 +57,9 @@ public sealed class NativeStudioViewModel : ObservableViewModel
         _images = images;
         Editor = editor;
         Categories = catalog.Definitions.Select(x => x.Category).Distinct().Order().ToList();
-        WorldsCommand = new(() => Category = "Worlds");
-        StartsCommand = new(() => Category = "Starting conditions");
-        DifficultyCommand = new(() => Category = "Difficulty");
+        WorldsCommand = new(() => OpenCategory("Worlds"));
+        StartsCommand = new(() => OpenCategory("Starting conditions"));
+        DifficultyCommand = new(() => OpenCategory("Difficulty"));
         LandersCommand = new(() => FilterSpawns("Lander"));
         RespawnCommand = new(() => FilterSpawns("Respawn"));
         LoadoutsCommand = new(() => FilterSpawns("Human"));
@@ -80,6 +80,16 @@ public sealed class NativeStudioViewModel : ObservableViewModel
     {
         _category = "Spawn packages";
         _search = text;
+        _offset = 0;
+        Notify(nameof(Category));
+        Notify(nameof(Search));
+        Refresh();
+    }
+
+    private void OpenCategory(string category)
+    {
+        _category = category;
+        _search = "";
         _offset = 0;
         Notify(nameof(Category));
         Notify(nameof(Search));
