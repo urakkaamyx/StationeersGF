@@ -121,6 +121,10 @@ public static class UiSmokeVerifier
         var cards=window.GetVisualDescendants().OfType<Button>().Where(x=>x.DataContext is SetupCardViewModel).ToList();
         cards.Single(x=>((SetupCardViewModel)x.DataContext!).Title=="World setup").Command!.Execute(null);
         Require(vm.IsNativeStudio && vm.NativeStudio.Category=="Worlds", "World setup card routing failed.");
+        vm.NativeStudio.LandersCommand.Execute(null);
+        Require(vm.NativeStudio.Category=="Spawn packages" && vm.NativeStudio.Search=="Lander" && vm.NativeStudio.Definitions.Count>0, "Landers shortcut did not load cargo definitions.");
+        vm.NativeStudio.DifficultyCommand.Execute(null);
+        Require(vm.NativeStudio.Category=="Difficulty" && vm.NativeStudio.Search=="" && vm.NativeStudio.Definitions.Count>0, "Difficulty shortcut kept stale cargo search.");
         vm.SetupCommand.Execute(null);
         cards.Single(x=>((SetupCardViewModel)x.DataContext!).Title=="Starting setup").Command!.Execute(null);
         Require(vm.IsStarting && vm.Inventory.Event=="NewPlayerKit", "Starting setup routing failed.");
