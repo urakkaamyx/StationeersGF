@@ -11,6 +11,7 @@ public sealed class ModProject
     public List<RecipePatch> Recipes { get; set; } = [];
     public List<RecipePatch> PendingRecipes { get; set; } = [];
     public List<AttributePatch> PendingAttributes { get; set; } = [];
+    public PendingInventoryDraft? PendingRespawnInventory { get; set; }
     public PendingInventoryDraft? PendingInventory { get; set; }
     public NativeDefinitionChange? PendingDefinition { get; set; }
     public List<NativeDefinitionChange> Definitions { get; set; } = [];

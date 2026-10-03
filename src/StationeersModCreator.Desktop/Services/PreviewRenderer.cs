@@ -28,6 +28,15 @@ public static class PreviewRenderer
     {
         switch (page)
         {
+            case "Recipes":
+                vm.RecipesCommand.Execute(null);
+                break;
+            case "Setup":
+                vm.SetupCommand.Execute(null);
+                break;
+            case "Respawn":
+                vm.RespawnSetupCommand.Execute(null);
+                break;
             case "Inventory":
                 vm.InventoryCommand.Execute(null);
                 break;

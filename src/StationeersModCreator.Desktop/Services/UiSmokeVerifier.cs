@@ -22,6 +22,8 @@ public static class UiSmokeVerifier
         Dispatcher.UIThread.RunJobs();
         try
         {
+            vm.RecipesCommand.Execute(null);
+            Dispatcher.UIThread.RunJobs();
             VerifySearch(window, vm);
             VerifyBoundRecipeEdit(window, vm, temporary);
             VerifyProjectReopen(vm);
@@ -29,7 +31,8 @@ public static class UiSmokeVerifier
             VerifyArtworkAndExport(window, vm, temporary);
             VerifyNativeStudio(window, vm, temporary);
             VerifyInventory(window, vm, temporary);
-            Console.WriteLine("PASS: 7 rendered UI interaction checks.");
+            VerifySetupDashboard(window, vm, temporary);
+            Console.WriteLine("PASS: 8 rendered UI interaction checks.");
         }
         finally
         {
@@ -108,6 +111,60 @@ public static class UiSmokeVerifier
         var xml=System.Xml.Linq.XDocument.Load(stream);
         Require(xml.Descendants("Spawn").Any(x=>(string?)x.Attribute("Id")=="Forge.MyStart.NewPlayerKit.Human.Normal"),"Local inventory kit absent in export.");
         Console.WriteLine("PASS: suit contents, filter removal, pending inventory save/reopen, bound staging and local kit export.");
+    }
+
+    private static void VerifySetupDashboard(MainWindow window, MainViewModel vm, string directory)
+    {
+        vm.SetupCommand.Execute(null);
+        Dispatcher.UIThread.RunJobs();
+        Require(vm.IsSetup && !ReferenceEquals(vm.StartingInventory, vm.RespawnInventory), "Setup editors are shared.");
+        var cards=window.GetVisualDescendants().OfType<Button>().Where(x=>x.DataContext is SetupCardViewModel).ToList();
+        cards.Single(x=>((SetupCardViewModel)x.DataContext!).Title=="World setup").Command!.Execute(null);
+        Require(vm.IsNativeStudio && vm.NativeStudio.Category=="Worlds", "World setup card routing failed.");
+        vm.SetupCommand.Execute(null);
+        cards.Single(x=>((SetupCardViewModel)x.DataContext!).Title=="Starting setup").Command!.Execute(null);
+        Require(vm.IsStarting && vm.Inventory.Event=="NewPlayerKit", "Starting setup routing failed.");
+        vm.StartingInventory.RootCommand.Execute(null);
+        vm.StartingInventory.Slots.Single(x=>x.Slot.Index==0).SelectCommand.Execute(null);
+        vm.StartingInventory.ItemId="ItemDuctTape";
+        vm.StartingInventory.AddCommand.Execute(null);
+        vm.SetupCommand.Execute(null);
+        cards.Single(x=>((SetupCardViewModel)x.DataContext!).Title=="Respawn setup").Command!.Execute(null);
+        Require(vm.IsRespawn && vm.Inventory.Event=="RespawnPlayerKit", "Respawn setup routing failed.");
+        vm.RespawnInventory.RootCommand.Execute(null);
+        vm.RespawnInventory.Slots.Single(x=>x.Slot.Index==0).SelectCommand.Execute(null);
+        vm.RespawnInventory.ItemId="ItemDuctTape";
+        vm.RespawnInventory.AddCommand.Execute(null);
+        Require(vm.StartingInventory.HasPendingEdits && vm.RespawnInventory.HasPendingEdits,"Switching setups lost a draft.");
+        var count=vm.Changes.Count;
+        vm.Changes.Single(x=>x.Name=="Forge.MyStart").RemoveCommand.Execute(null);
+        Require(vm.Changes.Count==count && vm.StartingInventory.HasPendingEdits && vm.RespawnInventory.HasPendingEdits,"Removing a staged definition discarded pending setup drafts.");
+        vm.SaveCommand.Execute(null);
+        vm.NewProjectCommand.Execute(null);
+        vm.OpenCommand.Execute(null);
+        Require(vm.StartingInventory.HasPendingEdits && vm.RespawnInventory.HasPendingEdits,"Separate drafts lost on reopen.");
+        Require(vm.StartingInventory.CapturePending()!.Context.Event=="NewPlayerKit" && vm.RespawnInventory.CapturePending()!.Context.Event=="RespawnPlayerKit","Saved setup events conflated.");
+        File.Delete(Path.Combine(directory,"mod.zip"));
+        vm.ExportCommand.Execute(null);
+        Require(!File.Exists(Path.Combine(directory,"mod.zip")),"Unstaged separate setups exported.");
+        vm.StartingInventory.StageCommand.Execute(null);
+        Require(!vm.StartingInventory.HasPendingEdits && vm.RespawnInventory.HasPendingEdits,"Staging starting kit changed respawn draft: "+vm.StartingInventory.Status);
+        vm.RespawnInventory.StageCommand.Execute(null);
+        Require(!vm.RespawnInventory.HasPendingEdits,"Respawn staging failed: "+vm.RespawnInventory.Status);
+        vm.ExportCommand.Execute(null);
+        Require(File.Exists(Path.Combine(directory,"mod.zip")),"Separate setups did not export: "+vm.Status);
+        using var archive=System.IO.Compression.ZipFile.OpenRead(Path.Combine(directory,"mod.zip"));
+        using var stream=archive.Entries.Single(x=>x.FullName.EndsWith("GameData/forge-definitions.xml")).Open();
+        var xml=System.Xml.Linq.XDocument.Load(stream);
+        foreach(var evt in new[]{"NewPlayerKit","RespawnPlayerKit"})
+            Require(xml.Descendants("Spawn").Single(x=>(string?)x.Attribute("Id")=="Forge.MyStart."+evt+".Human.Normal" && x.Elements("Item").Any()).Elements("Item").Any(x=>(string?)x.Attribute("Id")=="ItemDuctTape"&&(string?)x.Attribute("SlotIndex")=="0"),"Independent staged kit item missing.");
+        vm.SetupCommand.Execute(null);
+        Dispatcher.UIThread.RunJobs();
+        var machine=window.GetVisualDescendants().OfType<Button>().First(x=>x.DataContext is MachineCardViewModel m && vm.SetupMachines.Contains(m));
+        var selected=(MachineCardViewModel)machine.DataContext!;
+        machine.Command!.Execute(null);
+        Require(vm.IsRecipes && vm.MachineName==selected.Name && vm.Recipes.All(x=>x.Definition.Section==selected.Definition.Id),"Machine card opened incorrect recipes.");
+        Console.WriteLine("PASS: setup cards, independent starting/respawn drafts, save/reopen, staging/export and machine-specific recipes.");
     }
 
     private static void VerifySearch(MainWindow window, MainViewModel vm)

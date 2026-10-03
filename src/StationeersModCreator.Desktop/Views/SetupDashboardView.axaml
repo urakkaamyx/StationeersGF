@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:vm="using:StationeersModCreator.Desktop.ViewModels" x:Class="StationeersModCreator.Desktop.Views.SetupDashboardView">
+ <Border Background="#0B1420" Padding="26,24">
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+   <StackPanel Spacing="22">
+    <Grid ColumnDefinitions="*,Auto">
+     <StackPanel Spacing="8"><TextBlock Classes="eyebrow" Text="WORLD / FIRST ARRIVAL / RESPAWN / PRODUCTION"/><TextBlock FontSize="29" FontWeight="Bold" Text="Set up your mod."/><TextBlock Classes="muted" Text="Configure each setup here. Starting and respawn equipment have their own editors and saved drafts." TextWrapping="Wrap"/></StackPanel>
+     <Button Grid.Column="1" Content="Review staged changes →" Command="{Binding WorkspaceCommand}" VerticalAlignment="Center"/>
+    </Grid>
+    <ItemsControl ItemsSource="{Binding SetupCards}">
+     <ItemsControl.ItemsPanel><ItemsPanelTemplate><WrapPanel/></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+     <ItemsControl.ItemTemplate><DataTemplate x:DataType="vm:SetupCardViewModel">
+      <Button Classes="card" Command="{Binding OpenCommand}" Width="388" Height="236" Margin="0,0,16,0" Padding="20">
+       <Grid RowDefinitions="Auto,*,Auto"><TextBlock Classes="eyebrow" Text="{Binding Label}"/><Grid Grid.Row="1" ColumnDefinitions="*,110" Margin="0,13"><StackPanel Spacing="10" VerticalAlignment="Center"><TextBlock Text="{Binding Title}" FontSize="24" FontWeight="SemiBold"/><TextBlock Text="{Binding Description}" Classes="muted" TextWrapping="Wrap" FontSize="12"/></StackPanel><Image Grid.Column="1" Source="{Binding Image}" Height="103" Margin="8,0,0,0"/></Grid><TextBlock Grid.Row="2" Text="CONFIGURE SETUP →" Foreground="{DynamicResource AccentBrush}" FontSize="10" LetterSpacing="1.4"/></Grid>
+      </Button>
+     </DataTemplate></ItemsControl.ItemTemplate>
+    </ItemsControl>
+    <Border Classes="panel" Padding="18"><Grid ColumnDefinitions="*,*,Auto"><StackPanel Spacing="5"><TextBlock Classes="eyebrow" Text="STARTING INVENTORY"/><TextBlock Text="{Binding StartingSetupState}" Foreground="{DynamicResource AccentBrush}" FontSize="11"/></StackPanel><StackPanel Grid.Column="1" Spacing="5"><TextBlock Classes="eyebrow" Text="RESPAWN INVENTORY"/><TextBlock Text="{Binding RespawnSetupState}" Foreground="#FFB35D" FontSize="11"/></StackPanel><Button Grid.Column="2" Content="Start conditions &amp; lander →" Command="{Binding StartConditionsCommand}"/></Grid></Border>
+    <Grid ColumnDefinitions="*,Auto"><StackPanel Spacing="7"><TextBlock Classes="eyebrow" Text="RECIPES BY MACHINE"/><TextBlock Text="Choose the machine you want to configure." FontSize="21" FontWeight="SemiBold"/><TextBlock Text="Each machine keeps its own recipe overrides, including items produced by more than one machine." Classes="muted" TextWrapping="Wrap"/></StackPanel><Button Grid.Column="1" Content="Open recipe laboratory →" Command="{Binding RecipesCommand}" VerticalAlignment="Center"/></Grid>
+    <ItemsControl ItemsSource="{Binding SetupMachines}"><ItemsControl.ItemsPanel><ItemsPanelTemplate><WrapPanel/></ItemsPanelTemplate></ItemsControl.ItemsPanel><ItemsControl.ItemTemplate><DataTemplate x:DataType="vm:MachineCardViewModel"><Button Classes="card" Command="{Binding SelectCommand}" Width="225" Height="196" Margin="0,0,14,14" Padding="15"><Grid RowDefinitions="106,Auto,Auto"><Image Source="{Binding Image}" Height="98"/><TextBlock Grid.Row="1" Text="{Binding Name}" FontSize="15" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" Margin="0,8,0,0"/><TextBlock Grid.Row="2" Text="{Binding CountLabel}" Classes="muted" FontSize="11" Margin="0,6,0,0"/></Grid></Button></DataTemplate></ItemsControl.ItemTemplate></ItemsControl>
+   </StackPanel>
+  </ScrollViewer>
+ </Border>
+</UserControl>
