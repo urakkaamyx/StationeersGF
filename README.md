@@ -17,3 +17,7 @@ C# source uses one type per file, interfaces for repositories, persistence, vali
 The Start & respawn workbench opens real equipment/container slots, resolves species and difficulty kits, and exports local kit changes through a new start profile. See [inventory mapping](docs/Inventory-System-Mapping.md) for slot indices, export behavior and coverage.
 
 Regenerate metadata with `python tools/prepare_inventory_catalog.py GAME_ROOT --slot-source LOCAL_SLOT_DECOMPILATION.cs`. Install `tools/requirements-assets-lock.txt`; the supplied source package already includes the extracted metadata and artwork.
+
+## Mod setup screen
+
+The app opens on Mod setup, with separate World, Starting and Respawn cards plus recipes grouped by machine. Starting and respawn have independent editors and saved drafts. See [setup guide](docs/SETUP_SCREEN.md).

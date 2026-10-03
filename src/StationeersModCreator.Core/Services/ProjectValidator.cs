@@ -36,7 +36,13 @@ public sealed class ProjectValidator : IProjectValidator
 
     private void ValidatePendingSources(ModProject p)
     {
-        if(p.PendingInventory is { } inventory){if(_native is null)throw new InvalidDataException("Native catalog required for inventory draft.");_native.ValidatePendingInventory(inventory);}
+        if (p.PendingRespawnInventory is { } respawn && respawn.Context.Event != "RespawnPlayerKit")
+            throw new InvalidDataException("Respawn draft must use the respawn equipment event.");
+        foreach (var inventory in new[] { p.PendingInventory, p.PendingRespawnInventory }.OfType<PendingInventoryDraft>())
+        {
+            if (_native is null) throw new InvalidDataException("Native catalog required for inventory draft.");
+            _native.ValidatePendingInventory(inventory);
+        }
         if (p.PendingDefinition is { } pending)
         {
             if (_native is null)

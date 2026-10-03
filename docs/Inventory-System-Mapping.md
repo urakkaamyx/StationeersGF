@@ -50,7 +50,7 @@ Default Human and Zrilian starting kits include duct tape in the right hand, hel
 
 ## Editor and mod export
 
-Open **Start & respawn**, choose the start, event, species and difficulty, then load. Click equipment and use **Open item contents** to navigate its inventory. Empty slots offer compatible prefabs. Items can be removed or moved into a compatible empty destination; nested contents move with the container. Quantity, battery charge, gases and existing XML fields can be edited. Save preserves unfinished edits. Export requires staging.
+Open **Mod setup**, select **Starting setup** or **Respawn setup**, choose the start, species and difficulty, then load. The two pages have fixed, distinct events and independently saved drafts. Click equipment and use **Open item contents** to navigate its inventory. Empty slots offer compatible prefabs. Items can be removed or moved into a compatible empty destination; nested contents move with the container. Quantity, battery charge, gases and existing XML fields can be edited. Save preserves unfinished edits. Export requires staging.
 
 Staging creates a new Forge-prefixed start profile, an event router and the selected context's kit. The router keeps the original references for the other species/difficulty contexts. NewPlayer, RespawnPlayer and the lander remain separate from inventory editing. The native loader receives only selected definitions, never the whole source GameData file. No installed game files are written.
 
@@ -69,4 +69,4 @@ Traced classes: WorldSetting, SpawnData, ThingSpawnData, DynamicSpawnData, Slot,
 - resources.assets SHA-256: `5f7b9db7361a4797881a752e6eb05ccc7ac04c3e4b544d2a2e60c95c71fe65cb`
 - Assembly-CSharp.dll SHA-256: `6caeb8414a83cf47bdc86e0978b0b011ee3ced898a2d7940a9dc66003acf0850`
 
-Validation: existing 17 core/native checks, all 24 default species/difficulty/event combinations, additive context preservation, repeated event edits, occupied/incompatible/hash-selected slots, and seven rendered UI interaction checks. Windows self-contained publishing succeeds; Windows execution and in-game behavior remain untested.
+Validation: existing 17 core/native checks, all 24 default species/difficulty/event combinations, additive context preservation, repeated event edits, occupied/incompatible/hash-selected slots, and eight rendered UI interaction checks. Windows self-contained publishing succeeds; Windows execution and in-game behavior remain untested.

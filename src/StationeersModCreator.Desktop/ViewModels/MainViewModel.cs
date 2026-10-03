@@ -21,7 +21,7 @@ public sealed class MainViewModel : ObservableViewModel
     private readonly List<RecipeCardViewModel> _allRecipes;
     private readonly List<PrefabCardViewModel> _allPrefabs;
     private readonly EditorSettings _settings;
-    private string _page = "Recipes";
+    private string _page = "Setup";
     private string _search = "";
     private string _status = "Ready. Select a recipe to create an override.";
     private bool _settingsOpen;
@@ -31,9 +31,22 @@ public sealed class MainViewModel : ObservableViewModel
     private PrefabCardViewModel? _prefab;
     private bool _dirty;
     private readonly INativeCatalogRepository _nativeCatalog;
-    public InventoryEditorViewModel Inventory { get; }
+    public InventoryEditorViewModel StartingInventory { get; }
+    public InventoryEditorViewModel RespawnInventory { get; }
+    public InventoryEditorViewModel Inventory => IsRespawn ? RespawnInventory : StartingInventory;
+    public bool IsSetup => _page == "Setup";
+    public bool IsStarting => _page == "Starting";
+    public bool IsRespawn => _page == "Respawn";
+    public RelayCommand SetupCommand { get; }
+    public RelayCommand RespawnSetupCommand { get; }
+    public RelayCommand WorldSetupCommand { get; }
+    public RelayCommand StartConditionsCommand { get; }
+    public ObservableCollection<SetupCardViewModel> SetupCards { get; } = [];
+    public ObservableCollection<MachineCardViewModel> SetupMachines { get; } = [];
+    public string StartingSetupState => StartingInventory.HasPendingEdits ? "UNSTAGED STARTING EDITS" : "STARTING KIT READY TO EDIT";
+    public string RespawnSetupState => RespawnInventory.HasPendingEdits ? "UNSTAGED RESPAWN EDITS" : "RESPAWN KIT READY TO EDIT";
     public RelayCommand InventoryCommand { get; }
-    public bool IsInventory => _page == "Inventory";
+    public bool IsInventory => IsStarting || IsRespawn;
     public NativeStudioViewModel NativeStudio { get; }
     public RelayCommand NativeStudioCommand { get; }
     public RelayCommand UndoCommand { get; }
@@ -69,7 +82,9 @@ public sealed class MainViewModel : ObservableViewModel
     public bool IsWorkspace => _page == "Workspace";
     public string PageTitle => _page switch
     {
-        "Inventory" => "Starting & respawn inventory",
+        "Setup" => "Mod setup",
+        "Starting" => "Starting setup",
+        "Respawn" => "Respawn setup",
         "Native" => "World & content studio",
         "Attributes" => "Prefab attributes",
         "Artwork" => "Asset library",
@@ -78,7 +93,9 @@ public sealed class MainViewModel : ObservableViewModel
     };
     public string PageDescription => _page switch
     {
-        "Inventory" => "Open equipment, explore containers and build a local kit for your start profile.",
+        "Setup" => "Configure your world, starting setup, respawn setup and each production machine.",
+        "Starting" => "Equipment for a player joining the world.",
+        "Respawn" => "Equipment for a player returning after death.",
         "Native" => "Starts, equipment, respawn, landers and native game definitions.",
         "Attributes" => "Tune the supported native attributes of real game prefabs.",
         "Artwork" => "Choose game artwork for your mod's preview image.",
@@ -231,15 +248,26 @@ public sealed class MainViewModel : ObservableViewModel
             MarkDirty();
         });
         NativeStudio = new NativeStudioViewModel(nativeCatalog, images, editor);
-        Inventory = new InventoryEditorViewModel(nativeCatalog, inventoryCatalog, inventoryResolver, inventoryLayout, inventoryCompiler, draft, images, () => { RefreshChanges(); MarkDirty(); });
-        InventoryCommand = new(() => Navigate("Inventory"));
+        StartingInventory = new InventoryEditorViewModel(nativeCatalog, inventoryCatalog, inventoryResolver, inventoryLayout, inventoryCompiler, draft, images, () => { RefreshChanges(); MarkDirty(); });
+        RespawnInventory = new InventoryEditorViewModel(nativeCatalog, inventoryCatalog, inventoryResolver, inventoryLayout, inventoryCompiler, draft, images, () => { RefreshChanges(); MarkDirty(); }, "RespawnPlayerKit");
+        SetupCommand = new(() => Navigate("Setup"));
+        InventoryCommand = new(() => Navigate("Starting"));
+        RespawnSetupCommand = new(() => Navigate("Respawn"));
+        WorldSetupCommand = new(() => { Navigate("Native"); NativeStudio.Search = ""; NativeStudio.WorldsCommand.Execute(null); });
+        StartConditionsCommand = new(() => { Navigate("Native"); NativeStudio.Search = ""; NativeStudio.StartsCommand.Execute(null); });
+        SetupCards.Add(new("WORLD", "World setup", "Choose a world and configure its settings and start profile.", images.Get("planets/StatMars.png"), WorldSetupCommand));
+        SetupCards.Add(new("FIRST ARRIVAL", "Starting setup", "Set the equipment and container contents received on joining.", images.Get("ItemSpaceHelmet.png"), InventoryCommand));
+        SetupCards.Add(new("AFTER DEATH", "Respawn setup", "Set separate equipment and container contents for respawning.", images.Get("ItemEmergencySpaceHelmet.png"), RespawnSetupCommand));
         NativeStudioCommand = new(() => Navigate("Native"));
         UndoCommand = new(() => RunAction(Undo));
         RedoCommand = new(() => RunAction(Redo));
         _allRecipes = catalog.Catalog.Recipes.Select(x => new RecipeCardViewModel(x, images, SelectRecipe)).ToList();
         _allPrefabs = catalog.Catalog.Prefabs.Where(x => x.Attributes.Count > 0).Select(x => new PrefabCardViewModel(x, images, SelectPrefab)).ToList();
         foreach (var definition in catalog.Catalog.Machines)
+            {
             Machines.Add(new MachineCardViewModel(definition, images, SelectMachine));
+            SetupMachines.Add(new MachineCardViewModel(definition, images, machine => { SelectMachine(Machines.Single(x => x.Definition.Id == machine.Definition.Id)); Navigate("Recipes"); }));
+        }
         RecipesCommand = new(() => Navigate("Recipes"));
         AttributesCommand = new(() => Navigate("Attributes"));
         ArtworkCommand = new(() => Navigate("Artwork"));
@@ -276,7 +304,8 @@ public sealed class MainViewModel : ObservableViewModel
     private void VerifyAllEditsStaged()
     {
         NativeStudio.Editor.VerifyStaged();
-        Inventory.VerifyStaged();
+        StartingInventory.VerifyStaged();
+        RespawnInventory.VerifyStaged();
         foreach (var card in _allRecipes)
         {
             var patch = _draft.Project.Recipes.SingleOrDefault(x => x.RecipeId == card.Definition.Id);
@@ -302,6 +331,10 @@ public sealed class MainViewModel : ObservableViewModel
         {
             nameof(IsNativeStudio),
             nameof(IsInventory),
+            nameof(IsSetup),
+            nameof(IsStarting),
+            nameof(IsRespawn),
+            nameof(Inventory),
             nameof(IsRecipes),
             nameof(IsAttributes),
             nameof(IsArtwork),
@@ -441,20 +474,26 @@ public sealed class MainViewModel : ObservableViewModel
         foreach (var patch in _draft.Project.Definitions)
         {
             var definition = _nativeCatalog.Find(patch.SourceKey);
-            Changes.Add(new DraftChangeViewModel(patch.ExportId, definition.Category, patch.IsAddition ? "Add this definition only" : "Replace this exact definition only — required by native loader", new RelayCommand(() =>
-            {
-                _draft.RemoveDefinition(patch.ExportId);
-                RefreshChanges();
-                NativeStudio.Editor.ResetProject();
-        Inventory.ResetProject();
-                MarkDirty();
-            })));
+            Changes.Add(new DraftChangeViewModel(patch.ExportId, definition.Category, patch.IsAddition ? "Add this definition only" : "Replace this exact definition only — required by native loader", new RelayCommand(() => RunAction(() => RemoveNativeDefinition(patch.ExportId)))));
         }
 
         ExportPlan.Clear();
         foreach (var entry in _planner.Plan(_draft.Project))
             ExportPlan.Add(entry);
         Notify(nameof(DraftLabel));
+        Notify(nameof(StartingSetupState));
+        Notify(nameof(RespawnSetupState));
+    }
+
+    private void RemoveNativeDefinition(string id)
+    {
+        VerifyAllEditsStaged();
+        _draft.RemoveDefinition(id);
+        NativeStudio.Editor.ResetProject();
+        StartingInventory.ResetProject();
+        RespawnInventory.ResetProject();
+        RefreshChanges();
+        MarkDirty();
     }
 
     private void RemoveRecipe(string id)
@@ -497,7 +536,8 @@ public sealed class MainViewModel : ObservableViewModel
         RestoreRecipeFields();
         RestoreAttributeFields();
         NativeStudio.Editor.ResetProject();
-        Inventory.ResetProject();
+        StartingInventory.ResetProject();
+        RespawnInventory.ResetProject();
         RefreshChanges();
         MarkDirty();
         Status = "Previous staged edit restored.";
@@ -516,7 +556,8 @@ public sealed class MainViewModel : ObservableViewModel
         RestoreRecipeFields();
         RestoreAttributeFields();
         NativeStudio.Editor.ResetProject();
-        Inventory.ResetProject();
+        StartingInventory.ResetProject();
+        RespawnInventory.ResetProject();
         RefreshChanges();
         MarkDirty();
         Status = "Staged edit reapplied.";
@@ -545,7 +586,8 @@ public sealed class MainViewModel : ObservableViewModel
         }
 
         snapshot.PendingDefinition = NativeStudio.Editor.CapturePending();
-        snapshot.PendingInventory = Inventory.CapturePending();
+        snapshot.PendingInventory = StartingInventory.CapturePending();
+        snapshot.PendingRespawnInventory = RespawnInventory.CapturePending();
         return snapshot;
     }
 
@@ -567,7 +609,8 @@ public sealed class MainViewModel : ObservableViewModel
     {
         _draft.Replace(project);
         NativeStudio.Editor.ResetProject();
-        Inventory.ResetProject();
+        StartingInventory.ResetProject();
+        RespawnInventory.ResetProject();
         RestoreRecipeFields();
         RestoreAttributeFields();
         RefreshChanges();
